@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="610" viewBox="0 0 720 610" fill="none">
+<title>一起把麻煩整理好的小辦公室</title>
+<desc>一位穿藍色襯衫的人坐在桌邊，小機器人在旁邊整理紙張，窗外是安靜的城市。</desc>
+<style>
+  .ink{stroke:#344037;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#344037;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .float-a{animation:drift 7s ease-in-out infinite;transform-origin:120px 145px}.float-b{animation:drift 8s ease-in-out -3s infinite;transform-origin:584px 154px}.steam{animation:steam 4s ease-in-out infinite}.robot-head{animation:nod 9s ease-in-out infinite;transform-origin:537px 298px}.eyes{animation:blink 7s infinite;transform-origin:530px 275px}.sorting{animation:sort 10s ease-in-out infinite;transform-origin:460px 305px}
+  @keyframes drift{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+  @keyframes steam{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:.85;transform:translateY(-7px)}}
+  @keyframes nod{0%,35%,70%,100%{transform:rotate(0)}43%,58%{transform:rotate(-6deg)}}
+  @keyframes blink{0%,44%,48%,100%{transform:scaleY(1)}46%{transform:scaleY(.12)}}
+  @keyframes sort{0%,100%{transform:translate(0,0) rotate(0)}30%,60%{transform:translate(-12px,-9px) rotate(-4deg)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<path d="M98 488C69 406 78 321 91 239S119 75 220 56C318 29 402 57 496 74S641 152 651 248C665 355 639 448 610 490Z" fill="#e7e9dc"/>
+<g class="ink"><path d="M344 77 555 81 553 232 342 226Z" fill="#fdfbf1"/><path d="m355 89 188 4-1 125-187-3Z" fill="#cfdee2"/><path d="m451 94-3 122M356 147l187 4"/><path d="m355 191 28-2 1 24m-1-24 1-24 28 2-1 49m62 1 1-38 22-1 1 40m21 0 1-28 22-1" stroke="#9db1b3" stroke-width="1.4"/><path d="M469 117c8-14 21-8 23-2 11-5 22 0 20 10h-53c-1-8 5-11 10-8" fill="#fdfbf1" stroke="none"/><path d="m323 231 247 7-2 10-248-6Z" fill="#d2a57b"/></g>
+<path d="M504 246 402 479H606L546 247Z" fill="#f6e5b7" opacity=".55"/>
+<path d="M40 497c170-7 335-8 633 0M92 515c124 7 330 9 521 0" class="thin"/>
+<g class="float-a ink"><path d="m86 110 70-10 14 87-70 9Z" fill="#fcfbf2"/><path d="m97 127 48-7m-44 20 30-4m-28 17 43-6" class="thin"/><path d="m107 167 6 6 10-13"/><path d="m133 169 17-2" class="thin"/></g>
+<g class="float-b ink"><path d="m597 123 49 9-12 64-48-10Z" fill="#ead3c9"/><path d="m602 143 29 5m-32 7 24 5m-27 6 19 4" class="thin"/></g>
+<g class="ink"><path d="m151 219 56-8 7 45-57 7Z" fill="#dfe7be"/><path d="m165 229 15 16 15-21"/><path d="m206 78-8-15m22 14 6-12M604 220l14-8m-9 23 17 1" class="thin"/></g>
+<!-- A hand-drawn, original office character. -->
+<g class="ink"><path d="M185 365c-24-6-37 8-35 31l10 73 43-1" fill="#dc926d"/><path d="m167 470-8 28m38-30 9 30"/><path d="m205 377 15 78 78 15 38 12 20-21-40-25-55-15 13-34" fill="#525d50"/><path d="m224 452-14 36 17 5 29-32" fill="#525d50"/><path d="M210 486c-9-7-26 3-29 14 22 6 33 8 47 1l-2-11" fill="#fcfbf2"/><path d="m337 475 9 16c15 5 27 1 31-7l-22-25" fill="#fcfbf2"/>
+<path d="M207 281c-23 12-34 50-32 89l20 30 96-6 16-75-41-41Z" fill="#afc9d2"/><path d="m210 281 13 43 22-12 15 15 7-47" fill="#e1edf0"/><path d="m225 321 9 71m-43-64 3 49 27 8m44-64 1 56-25 6"/><path d="M209 228c-5-38 23-59 55-51 39 6 52 35 40 66l-25 33-23 19-32-19-6-25c-9 4-17-5-13-15Z" fill="#e8b48d"/><path d="M213 231c-13-19-8-36-1-49 16-20 47-29 72-11 13 6 18 16 17 27-18 7-35 7-51-1-10 15-17 20-29 22l1 24-7-8" fill="#344037"/><path d="m227 267 10 18-8 27 28-5 20-25-5-19" fill="#e8b48d"/><path d="M265 245c5 4 10 4 14 1m-7-24 6 15-8 1" class="thin"/><path d="m247 216 12-2m26 5 9 3"/><circle cx="254" cy="226" r="2.8" fill="#344037" stroke="none"/><circle cx="287" cy="230" r="2.6" fill="#344037" stroke="none"/>
+<path d="M185 340c-13 23 5 31 27 30l58-1 28-10-6-15-27 9-54-6" fill="#afc9d2"/><path d="m267 353 14-12 20 2 11 8-4 7-13 4-26 7" fill="#e8b48d"/><path d="M280 322c-10 14-11 28 1 35l59-2 18-13-13-12-20 12-32-3" fill="#afc9d2"/><path d="m340 333 12-11 17 3 8 12-20 8-13 9" fill="#e8b48d"/>
+</g>
+<!-- Table, coffee, and a work-in-progress paper trail. -->
+<g class="ink"><path d="m209 369 293-5 23 22-318 8Z" fill="#d6b18a"/><path d="m208 393 4 10 314-7-1-10Z" fill="#b98d69"/><path d="m233 404 6 94h13l-2-94m237-5 3 101h13l-1-102" fill="#b98d69"/><path d="m292 298 77-4 22 66-82 4Z" fill="#f6f3e9"/><path d="m309 364 103-4-6 9-112 3Z" fill="#c6d6d5"/><circle cx="343" cy="331" r="8" fill="#dfe7be"/><path d="m341 331 3 2 3-5" class="thin"/><path d="m416 342 22-1-1 27-19 1Z" fill="#ead3c9"/><path d="M440 347c17-3 12 18-2 14"/><path d="M419 341c3-6 15-5 19 0"/><path d="m414 370 30-1" class="thin"/></g>
+<g class="steam thin"><path d="M421 330c-8-10 8-12 1-23m13 21c-7-7 5-12 0-17"/></g>
+<g class="ink"><path d="m456 377 58-4 4-20-59 4Z" fill="#dfe7be"/><path d="m461 357-3-8 53-4 3 10" fill="#fcfbf2"/><path d="m458 350 50-5m-43 19 37-2m-29 10 24-2" class="thin"/></g>
+<!-- The little sorting companion, carrying one page at a time. -->
+<g class="ink"><path d="m502 326 61-1 24 56-17 66-63-3-19-58Z" fill="#c6d39f"/><path d="m514 444-4 35 18 4 13-37m18 0 12 33 16-4-3-42" fill="#c6d39f"/><path d="M510 476c-12-1-20 8-16 18l38 1 1-15Z" fill="#344037"/><path d="m567 475 24-1 15 12-3 7h-38Z" fill="#344037"/><path d="M511 368h47v39h-46Z" fill="#f6f3e9"/><path d="m520 388 9 8 18-20"/><path d="m562 342 29 18-15 37-13-7 12-25-20-8" fill="#c6d39f"/><path d="m574 392 7 10-8 14-11-5 1-13" fill="#dce6bb"/><path d="m508 343-25-8-20-27-13 8 20 37 27 9" fill="#c6d39f"/></g>
+<g class="sorting ink"><path d="m428 279 52-11 13 62-53 10Z" fill="#fdfbf5"/><path d="m438 293 31-6m-27 17 26-5m-23 16 31-6" class="thin"/><path d="m457 326 2-14 10-7 8 3-1 15-8 9Z" fill="#dce6bb"/></g>
+<g class="robot-head ink"><path d="m521 233 3-19m-7-6c0-8 14-8 15 0s-15 8-15 0" fill="#df744b"/><path d="M489 244q0-13 14-14l64 2q14 1 14 16l-2 52q0 12-13 13l-65-4q-13-1-13-13Z" fill="#dfe7be"/><path d="m489 259-10 1 1 25 9 1m92-23 10 2-2 25-10-1" fill="#c6d39f"/><rect x="503" y="251" width="62" height="42" rx="13" fill="#f6f3e9"/><g class="eyes" fill="#344037" stroke="none"><ellipse cx="519" cy="269" rx="3.5" ry="5"/><ellipse cx="548" cy="271" rx="3.5" ry="5"/></g><path d="M529 281q6 5 12-1" class="thin"/><path d="m518 312-1 14 35 1 1-14" fill="#afbe8c"/></g>
+<!-- A small plant and archive boxes. -->
+<g class="ink"><path d="m91 461 40 1-7 35-25-2Z" fill="#df9472"/><path d="m110 461-3-43m3 20c-30-1-30-32-30-32 24-3 29 20 30 32m-1 5c29-1 37-25 34-29-22 0-32 14-34 29m0-23c-17-13-8-34-6-37 15 9 18 27 6 37" fill="#a9bc8d"/><path d="m597 454 52-1 7 41-62 1Z" fill="#d8c5a5"/><path d="m592 450 57-3 4 9-61 4Z" fill="#f6f3e9"/><path d="m613 465 23-1 1 13-24 1Z" fill="#fdfbf5"/><path d="m620 470 10-1" class="thin"/></g>
+<path d="M326 529c30 4 76 4 109-1" class="thin"/><path d="m336 545 84-1" class="thin"/>
+<text x="375" y="575" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="16" fill="#647066">A little less trouble. A little more life.</text>
+</svg>
