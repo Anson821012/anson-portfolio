@@ -63,6 +63,7 @@ function updateSelection() {
 let activeFacet = 'start';
 let searchQuery = '';
 const tabs = document.querySelector('#categories');
+const mobileCategory = document.querySelector('#mobile-category');
 const searchInput = document.querySelector('#service-search');
 const clearSearch = document.querySelector('#clear-search');
 const facetContainer = document.querySelector('#facets');
@@ -73,6 +74,13 @@ function renderFacets() {
   facetContainer.innerHTML = [{id:'all',name:'全部面向'}, ...facets].map(facet => `<button type="button" data-facet="${facet.id}" aria-pressed="${facet.id === activeFacet}">${facet.name}</button>`).join('');
 }
 function renderTabs() {
+  mobileCategory.innerHTML = visibleCategories().map(({category,index}) => `<option value="${index}">${category.name}</option>`).join('');
+  if (searchQuery) {
+    const option = document.createElement('option');
+    option.value = ''; option.disabled = true; option.selected = true;
+    option.textContent = `搜尋結果：${searchQuery}`;
+    mobileCategory.prepend(option);
+  } else mobileCategory.value = activeCategory;
   tabs.innerHTML = visibleCategories().map(({category,index}) => `<button class="category-button" role="tab" id="category-${index}" aria-controls="service-panel" aria-selected="${index === activeCategory && !searchQuery}" tabindex="${index === activeCategory ? 0 : -1}" data-category="${index}"><span class="cat-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><span>${category.name}</span><span class="cat-arrow" aria-hidden="true">↗</span></button>`).join('');
 }
 function renderCards(services) {
@@ -81,7 +89,7 @@ function renderCards(services) {
     return `<article class="service-card">
       <div class="service-title-line"><h4><span class="service-code">整理項目 ${service.code}${searchQuery ? ` · ${service.category}` : ''}</span>${service.name}</h4><button class="service-add" data-service-id="${service.id}" aria-pressed="false"><span class="add-label">加入我的簡化清單</span><span class="add-symbol" aria-hidden="true">＋</span></button></div>
       <p class="service-solution">${service.solution}</p>
-      <dl class="service-details"><div><dt>適合的狀況</dt><dd>${service.fit}</dd></div><div><dt>最後會拿到</dt><dd>${service.delivery}</dd></div><div><dt>預計時間</dt><dd>盤點後確認時程</dd></div></dl>
+      <details class="service-specs" ${matchMedia('(min-width:801px)').matches ? 'open' : ''}><summary>適合情境與交付內容 <span aria-hidden="true">＋</span></summary><dl class="service-details"><div><dt>適合的狀況</dt><dd>${service.fit}</dd></div><div><dt>最後會拿到</dt><dd>${service.delivery}</dd></div><div><dt>預計時間</dt><dd>盤點後確認時程</dd></div></dl></details>
       <div class="service-bottom"><span class="service-price">依範圍報價</span>${related ? `<a class="service-case" href="#case-${related.id}" data-show-case="${related.id}">相關實作：${related.title} ↗</a>` : '<span class="service-case-note">可討論需求 · 尚未列公開實作</span>'}</div>
     </article>`;
   }).join('') : '<div class="search-empty"><span aria-hidden="true">⌕</span><h4>這個詞，還沒找到對應的項目。</h4><p>試試「活動」「交接」「文案」，或直接把你的狀況寫進簡化清單。</p><button class="button secondary" id="reset-results">看看全部服務</button></div>';
@@ -89,6 +97,8 @@ function renderCards(services) {
 }
 function renderCategory(index, moveFocus = false) {
   activeCategory = index;
+  mobileCategory.querySelector('option[disabled]')?.remove();
+  mobileCategory.value = index;
   searchQuery = ''; searchInput.value = ''; clearSearch.hidden = true;
   tabs.querySelectorAll('[role=tab]').forEach(tab => {
     const active = Number(tab.dataset.category) === index;
@@ -100,7 +110,7 @@ function renderCategory(index, moveFocus = false) {
   document.querySelector('#category-description').textContent = category.description;
   document.querySelector('#service-total').textContent = `${category.services.length} 項整理服務`;
   const panel = document.querySelector('#service-panel');
-  panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', `category-${index}`);
+  panel.setAttribute('role', matchMedia('(max-width:800px)').matches ? 'region' : 'tabpanel'); panel.setAttribute('aria-labelledby', 'category-title');
   renderCards(catalogue.filter(service => service.categoryIndex === index));
   if (moveFocus) document.querySelector(`#category-${index}`).focus({ preventScroll: true });
 }
@@ -144,6 +154,7 @@ tabs.addEventListener('click', event => {
   const button = event.target.closest('[data-category]');
   if (button) renderCategory(Number(button.dataset.category));
 });
+mobileCategory.addEventListener('change', () => renderCategory(Number(mobileCategory.value)));
 tabs.addEventListener('keydown', event => {
   const keys = ['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft', 'Home', 'End'];
   if (!keys.includes(event.key)) return;
@@ -160,7 +171,10 @@ tabs.addEventListener('keydown', event => {
 document.querySelector('#catalogue-summary').textContent = `${facets.length} 個面向 / ${categories.length} 種困擾 / ${catalogue.length} 項可討論的服務`;
 renderFacets(); renderTabs();
 const railMedia = matchMedia('(max-width:800px)');
-function updateOrientation() { tabs.setAttribute('aria-orientation', railMedia.matches ? 'horizontal' : 'vertical'); }
+function updateOrientation() {
+  tabs.setAttribute('aria-orientation', railMedia.matches ? 'horizontal' : 'vertical');
+  document.querySelector('#service-panel').setAttribute('role', railMedia.matches || searchQuery ? 'region' : 'tabpanel');
+}
 railMedia.addEventListener('change', updateOrientation);
 updateOrientation();
 document.querySelector('#service-cards').addEventListener('click', event => {
@@ -243,8 +257,8 @@ dialog.addEventListener('click', event => {
 });
 document.querySelector('#browse-services').addEventListener('click', () => {
   dialog.close();
-  document.querySelector('#services').scrollIntoView();
-  document.querySelector(`#category-${activeCategory}`).focus({ preventScroll: true });
+  window.officeNavigation.go('#services');
+  (railMedia.matches ? mobileCategory : document.querySelector(`#category-${activeCategory}`)).focus({ preventScroll: true });
 });
 noteInput.addEventListener('input', () => { note = noteInput.value; save(); document.querySelector('#plain-list').hidden = true; });
 function consultationText() {
@@ -292,38 +306,52 @@ renderCategory(0);
 
 const caseFilters = [{id:'all',name:'全部作品'},{id:'customer',name:'顧客與服務'},{id:'operations',name:'營運與團隊'},{id:'brand',name:'品牌與內容'},{id:'life',name:'生活與情感'}];
 let activeCaseFilter = 'all';
+let visibleWorkCount = 3;
 function renderPortfolio() {
+  const matching = portfolioCases.filter(item => activeCaseFilter === 'all' || item.group === activeCaseFilter);
+  document.querySelector('#portfolio-count').textContent = `目前顯示 ${Math.min(visibleWorkCount,matching.length)} / ${matching.length} 組作品`;
+  const moreButton = document.querySelector('#more-works');
+  moreButton.hidden = visibleWorkCount >= matching.length;
+  moreButton.textContent = `再看看其他作品（還有 ${Math.max(0,matching.length-visibleWorkCount)} 組）＋`;
   document.querySelector('#case-filters').innerHTML = caseFilters.map(filter => `<button type="button" data-case-filter="${filter.id}" aria-pressed="${filter.id === activeCaseFilter}">${filter.name}</button>`).join('');
-  document.querySelector('#portfolio-grid').innerHTML = portfolioCases.filter(item => activeCaseFilter === 'all' || item.group === activeCaseFilter).map((item) => {
+  document.querySelector('#portfolio-grid').innerHTML = matching.slice(0,visibleWorkCount).map((item) => {
     const index = portfolioCases.indexOf(item);
     const related = catalogue.filter(service => service.caseId === item.id).slice(0,3);
     return `<article class="portfolio-card tone-${index % 4}" id="case-${item.id}">
     <div class="work-visual"><div class="work-topline"><span>整理筆記 / ${String(index+1).padStart(2,'0')}</span><span>流程示意</span></div><p class="work-headline">${item.headline.replace(/\n/g,'<br>')}</p><div class="work-flow">${item.flow.map((step,i) => `<div><span>${String(i+1).padStart(2,'0')}</span><strong>${step}</strong></div>`).join('')}</div><span class="work-stamp" aria-hidden="true">一件一件<br>整理好 ✓</span></div>
-    <div class="work-copy"><p class="eyebrow">${item.kicker}</p><h3>${item.title}</h3><p class="work-summary">${item.summary}</p><div class="work-tags">${item.tags.map(tag=>`<span>${tag}</span>`).join('')}</div><div class="work-care"><span>多想的那一步</span><p>${item.care}</p></div>
-    <details class="work-detail"><summary>展開動機、做法與品牌價值 <span aria-hidden="true">＋</span></summary><div class="work-detail-body"><ol class="work-story"><li><strong>01 / 原本的麻煩</strong><p>${item.problem}</p></li><li><strong>02 / 看見的問題</strong><p>${item.insight}</p></li><li><strong>03 / 做了什麼整理</strong><p>${item.action}</p></li><li><strong>04 / 整理後的工作方式</strong><p>${item.after}</p></li></ol><section class="motive-block"><h4>從設計讀出的動機</h4><p>${item.motive}</p></section><section class="benefit-block"><h4>可以為品牌帶來什麼？</h4><p>${item.benefit}</p></section><h4 class="feature-heading">實際作品中的功能／交付</h4><ul class="verified-features">${item.features.map(feature=>`<li>${feature}</li>`).join('')}</ul>${item.id === 'content' ? '<a class="text-link" href="#growth">查看福韻成長與公開署名 ↗</a>' : ''}${item.id === 'quiz' ? '<a class="text-link" href="https://anson821012.github.io/didactic-carnival/" target="_blank" rel="noopener noreferrer">查看互動問卷 ↗</a>' : ''}${['quiz','report'].includes(item.id) ? '<p class="work-boundary">此案例展示互動與資訊交付設計，內容不作為健康診斷。</p>' : ''}<div class="case-service-links"><span>從這個方法，延伸到你的需求</span>${related.map(service=>`<a href="#services" data-find-service="${service.id}">${service.name} ↗</a>`).join('')}</div></div></details></div></article>`;
+    <div class="work-copy"><p class="eyebrow">${item.kicker}</p><h3>${item.title}</h3><p class="work-summary">${item.summary}</p><div class="work-tags">${item.tags.map(tag=>`<span>${tag}</span>`).join('')}</div>
+    <details class="work-detail"><summary>展開動機、做法與品牌價值 <span aria-hidden="true">＋</span></summary><div class="work-detail-body"><div class="work-care"><span>多想的那一步</span><p>${item.care}</p></div><ol class="work-story"><li><strong>01 / 原本的麻煩</strong><p>${item.problem}</p></li><li><strong>02 / 看見的問題</strong><p>${item.insight}</p></li><li><strong>03 / 做了什麼整理</strong><p>${item.action}</p></li><li><strong>04 / 整理後的工作方式</strong><p>${item.after}</p></li></ol><section class="motive-block"><h4>從設計讀出的動機</h4><p>${item.motive}</p></section><section class="benefit-block"><h4>可以為品牌帶來什麼？</h4><p>${item.benefit}</p></section><h4 class="feature-heading">實際作品中的功能／交付</h4><ul class="verified-features">${item.features.map(feature=>`<li>${feature}</li>`).join('')}</ul>${item.id === 'content' ? '<a class="text-link" href="#growth">查看福韻成長與公開署名 ↗</a>' : ''}${item.id === 'quiz' ? '<a class="text-link" href="https://anson821012.github.io/didactic-carnival/" target="_blank" rel="noopener noreferrer">查看互動問卷 ↗</a>' : ''}${['quiz','report'].includes(item.id) ? '<p class="work-boundary">此案例展示互動與資訊交付設計，內容不作為健康診斷。</p>' : ''}<div class="case-service-links"><span>從這個方法，延伸到你的需求</span>${related.map(service=>`<a href="#services" data-find-service="${service.id}">${service.name} ↗</a>`).join('')}</div></div></details></div></article>`;
   }).join('');
 }
 document.querySelector('#case-filters').addEventListener('click', event => {
   const button = event.target.closest('[data-case-filter]'); if (!button) return;
-  activeCaseFilter = button.dataset.caseFilter; renderPortfolio();
+  activeCaseFilter = button.dataset.caseFilter; visibleWorkCount = 3; renderPortfolio();
   document.querySelector(`[data-case-filter="${activeCaseFilter}"]`).focus({preventScroll:true});
+});
+document.querySelector('#more-works').addEventListener('click', () => {
+  const previous = visibleWorkCount;
+  const openIds = [...document.querySelectorAll('.portfolio-card:has(details[open])')].map(card=>card.id);
+  visibleWorkCount += 3; renderPortfolio();
+  openIds.forEach(id => { const detail = document.getElementById(id)?.querySelector('details'); if (detail) detail.open = true; });
+  const next = document.querySelectorAll('.portfolio-card')[previous];
+  if (next) { const heading = next.querySelector('h3'); heading.tabIndex = -1; heading.focus({preventScroll:true}); next.scrollIntoView({block:'start'}); }
 });
 function revealCase(id, shouldScroll = true) {
   if (!caseById.has(id)) return;
-  if (!document.querySelector(`#case-${id}`)) {activeCaseFilter = 'all'; renderPortfolio();}
+  if (!document.querySelector(`#case-${id}`)) {activeCaseFilter = 'all'; visibleWorkCount = Math.max(visibleWorkCount,portfolioCases.findIndex(item=>item.id === id)+1); renderPortfolio();}
   const card = document.querySelector(`#case-${id}`);
   card.querySelector('details').open = true;
   if (shouldScroll) card.scrollIntoView({block:'start'});
 }
 document.addEventListener('click', event => {
   const link = event.target.closest('[data-show-case]');
-  if (link) { event.preventDefault(); history.pushState(null,'',link.getAttribute('href')); revealCase(link.dataset.showCase); document.querySelector(`#case-${link.dataset.showCase} summary`).focus({preventScroll:true}); }
+  if (link) { event.preventDefault(); window.officeNavigation.go(link.getAttribute('href'),{scroll:false}); revealCase(link.dataset.showCase); document.querySelector(`#case-${link.dataset.showCase} summary`).focus({preventScroll:true}); }
   const serviceLink = event.target.closest('[data-find-service]');
   if (serviceLink) {
     event.preventDefault(); const service = byId.get(serviceLink.dataset.findService);
     activeFacet = service.facet; activeCategory = service.categoryIndex;
     renderFacets(); renderTabs(); renderCategory(activeCategory);
-    history.pushState(null,'','#services');
+    window.officeNavigation.go('#services',{scroll:false});
     const button = document.querySelector(`[data-service-id="${service.id}"]`);
     button.closest('article').scrollIntoView({block:'center'}); button.focus({preventScroll:true});
   }
