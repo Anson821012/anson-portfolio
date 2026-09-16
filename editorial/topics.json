@@ -6,7 +6,9 @@
     "angle": "找出工具之間的重抄、交接與版本問題",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-09-16",
+    "slug": "ai-tools-handoff"
   },
   {
     "id": "ai-or-rules",
