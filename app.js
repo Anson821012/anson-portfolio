@@ -256,9 +256,11 @@ dialog.addEventListener('click', event => {
   backdropDown = false;
 });
 document.querySelector('#browse-services').addEventListener('click', () => {
+  dialog.addEventListener('close', () => {
+    window.officeNavigation.go('#services');
+    (railMedia.matches ? mobileCategory : document.querySelector(`#category-${activeCategory}`)).focus({ preventScroll: true });
+  }, {once:true});
   dialog.close();
-  window.officeNavigation.go('#services');
-  (railMedia.matches ? mobileCategory : document.querySelector(`#category-${activeCategory}`)).focus({ preventScroll: true });
 });
 noteInput.addEventListener('input', () => { note = noteInput.value; save(); document.querySelector('#plain-list').hidden = true; });
 function consultationText() {
