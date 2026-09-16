@@ -1,10 +1,10 @@
 # 麻煩整理所 · The Less Trouble Office
 
-蔡鈞佑 Anson Tsai 個人品牌網站。純 HTML、CSS、JavaScript，無建置步驟，可供 GitHub Pages 使用。
+蔡鈞佑 Anson Tsai 個人品牌網站。前端使用 HTML、CSS、JavaScript；GitHub Actions 以 Python 同步公開資料、Node.js 產生靜態頁面後部署至 GitHub Pages。
 
 ## 預覽
 
-在網站資料夾執行 `python3 -m http.server 8765 --bind 127.0.0.1`，開啟 `http://127.0.0.1:8765`。
+先執行 `node scripts/build.mjs`，再執行 `python3 -m http.server 8767 --bind 127.0.0.1 --directory _site`，開啟 `http://127.0.0.1:8767`。同步方式與資料權限見 [SYNC.md](SYNC.md)。
 
 ## 本版內容
 
@@ -17,6 +17,7 @@
 - 簡化清單：跨分類加入、移除、備註、本機保存、複製與可選取文字；沒有自動傳送或交易後端。
 - 舊版 25 項服務選取與備註，會對應到新版固定 ID。瀏覽器來源（協定、網域、連接埠）需相同才會共用原清單。
 - 原創 SVG 辦公室、小機器人搬卡片、響應式頁面與減少動態效果偏好。
+- 官網署名文章與 Search Console 搜尋成效的每小時同步；各來源分別顯示日期、成功時間與失敗狀態。網頁開啟後每 5 分鐘檢查更新。
 
 ## 檔案
 
@@ -28,6 +29,9 @@
 - `expanded.css`：新版服務地圖與案例卡片樣式。
 - `growth.css`：品牌成果、比較圖與署名資料樣式。
 - `office.svg`、`favicon.svg`、`anson.JPG`：原有插畫、圖示與本人照片。
+- `data/`：已核對備援快照；`growth-view.mjs`、`live.mjs`：統計呈現與頁面更新。
+- `scripts/sync.py`、`scripts/build.mjs`：資料同步與公開檔案白名單建置。
+- `.github/workflows/sync-pages.yml`：自動同步、驗證與 Pages 部署。
 
 ## 資料呈現
 
@@ -35,7 +39,7 @@
 
 尚未確認的價格與時程保留「依範圍報價」「盤點後確認時程」。服務目錄是可討論需求範圍；沒有相關公開案例的項目另有標示。
 
-正式網址：[麻煩整理所](https://anson821012.github.io/anson-portfolio/)。GitHub Pages 使用 `main` 分支根目錄，推送至該分支後自動部署。
+正式網址：[麻煩整理所](https://anson821012.github.io/anson-portfolio/)。自動更新版由 `main` 分支的 GitHub Actions 建置 `_site` 並部署。排程可能延遲；Google 搜尋採平台最新已完成處理的資料，並非即時流量。業績與 YouTube／Facebook／Instagram 尚未自動同步。
 
 
 ## 本版驗證
