@@ -10,3 +10,10 @@
 .editorial-heading h1,.editorial-heading h2,.editorial-main h2{text-wrap:balance}
 
 .topic-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin-top:20px;padding:0}.topic-tags li{font-size:11px;padding:7px 12px;border:1px solid #d7e2d6;border-radius:999px;color:#48644c;background:#eef3e8}.author-intro{padding:25px;border-radius:22px;background:#eeebf4}.author-intro p{font-size:14px}.author-intro .text-link{font-size:12px}.author-intro h2{font-size:22px}
+
+.editorial-contact>.editorial-contact-links{flex:0 1 360px;min-width:0}
+.editorial-contact-links .contact-actions{justify-content:flex-start}
+.editorial-contact-links .contact-actions .button{margin:0;padding:14px 18px;gap:10px;min-height:48px}
+.editorial-contact-links .contact-social{margin:8px 0 0}
+@media(max-width:1000px){.editorial-contact>.editorial-contact-links{flex-basis:100%;margin-left:80px}}
+@media(max-width:800px){.editorial-contact>.editorial-contact-links{grid-column:1/-1;margin-left:0}.editorial-contact-links .contact-actions{display:grid;grid-template-columns:1fr;width:100%}.editorial-contact-links .contact-actions .button{justify-content:center}}

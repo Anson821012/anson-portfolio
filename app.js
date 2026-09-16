@@ -230,6 +230,7 @@ function renderList() {
     li.append(info, remove); list.append(li);
   });
   document.querySelector('#empty-list').hidden = selected.size > 0;
+  updateEmailLink();
 }
 function openList(trigger) {
   lastTrigger = trigger;
@@ -262,7 +263,7 @@ document.querySelector('#browse-services').addEventListener('click', () => {
   }, {once:true});
   dialog.close();
 });
-noteInput.addEventListener('input', () => { note = noteInput.value; save(); document.querySelector('#plain-list').hidden = true; });
+noteInput.addEventListener('input', () => { note = noteInput.value; save(); updateEmailLink(); document.querySelector('#plain-list').hidden = true; });
 function consultationText() {
   if (!selected.size && !note.trim()) return '';
   const lines = ['Anson 你好，我想聊聊這些麻煩：', ''];
@@ -273,6 +274,10 @@ function consultationText() {
   if (note.trim()) lines.push('', '我的狀況：', note.trim());
   lines.push('', '想先一起確認需求、範圍、費用與時程。');
   return lines.join('\n');
+}
+function updateEmailLink() {
+  const body = consultationText() || 'Anson 你好，我想聊聊目前遇到的麻煩：\n\n';
+  document.querySelector('#email-list').href = `mailto:yo30437@gmail.com?subject=${encodeURIComponent('麻煩整理所｜合作詢問')}&body=${encodeURIComponent(body.replace(/\n/g, '\r\n'))}`;
 }
 function legacyCopy(text) {
   const temp = document.createElement('textarea');
@@ -290,7 +295,7 @@ document.querySelector('#copy-list').addEventListener('click', async () => {
   let copied = false;
   try { if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(text); copied = true; } } catch { /* Try the local copy path below. */ }
   if (!copied) copied = legacyCopy(text);
-  announce(copied ? '已複製。開啟 LINE 後，貼上內容即可。' : '瀏覽器未允許複製，請展開「查看文字清單」手動複製。');
+  announce(copied ? '已複製，可貼到 Email 或 LINE 傳給 Anson。' : '瀏覽器未允許複製，請展開「查看文字清單」手動複製。');
 });
 function showPlainList() {
   const text = consultationText();
