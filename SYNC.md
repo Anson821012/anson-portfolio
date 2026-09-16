@@ -1,5 +1,11 @@
 # 自動更新設定與維護
 
+## 上線狀態
+
+2026/09/16 18:48（台灣時間）完成第一次實際 API 同步與 Pages 部署。Google 搜尋及官網文章均回報 `ok`。[首次成功執行](https://github.com/Anson821012/anson-portfolio/actions/runs/35086936299)。
+
+本次 API 回傳 2026/06/03–09/13，共 103 天：2,918 次點擊、69,249 次曝光，與先前人工核對一致。官網最新署名文章為 2026/09/16 韓國交流報導。此處是上線驗證紀錄，網站後續會繼續更新。
+
 ## 同步範圍
 
 - 官網：每小時檢查 6 個文章分類各最新 8 篇；收錄文章正文有「蔡鈞佑」編輯、撰文、作者或企劃署名的文章。保存最近 12 筆，首頁顯示 6 筆；共同署名保留原文。這是最新文章清單，不是完整作品歷史。
@@ -9,17 +15,17 @@
 - YouTube、Facebook、Instagram 目前仍是已核對作品／來源，尚未接入同步。
 - 業績仍為 2026/09/15 人工核對的合約業績快照，未接入營收後台。
 
-## 待帳戶擁有者確認的 Google 授權
+## 已獲同意並完成的 Google 授權
 
 Cloud 專案：`clever-tube-508810-s4`（控制台目前顯示 My First Project）。
 
 服務帳戶：`anson-portfolio-search@clever-tube-508810-s4.iam.gserviceaccount.com`。
 
-1. 經同意後，在 Google Cloud Shell 執行 `scripts/configure-google.sh`。建立專用服務帳戶及 GitHub 工作負載身分聯盟；服務帳戶不需要專案 Owner、Editor 或其他資料權限，也不建立 JSON 金鑰。
-2. 在 Search Console 的 `sc-domain:fuyunlovemommy.com` → 設定 → 使用者與權限，加入該服務帳戶，選擇「受限制」權限。此層級可讀取成效。
-3. 將腳本輸出的 `GSC_SERVICE_ACCOUNT` 和 `GSC_WIF_PROVIDER` 加入 GitHub 儲存庫 Actions variables。兩者是識別資訊，不是密碼或金鑰。
+1. 已透過 Google Cloud 控制台建立專用服務帳戶及 GitHub 工作負載身分聯盟。服務帳戶沒有專案 Owner、Editor 角色，也沒有建立 JSON 金鑰。`scripts/configure-google.sh` 僅供日後重建參考；本次未在 Cloud Shell 執行。
+2. 已在 Search Console 的 `sc-domain:fuyunlovemommy.com` → 設定 → 使用者與權限，加入該服務帳戶，並保存與確認為「限制」權限。此層級可讀取成效。
+3. 已將 `GSC_SERVICE_ACCOUNT` 和 `GSC_WIF_PROVIDER` 加入 GitHub 儲存庫 Actions variables。提供者為 `projects/91870362966/locations/global/workloadIdentityPools/anson-portfolio/providers/github-main`。两者是識別資訊，不是密碼或金鑰。
 4. 身分聯盟同時限制儲存庫 ID `1145977686`、擁有者 ID `258237118`、`main` 分支及 `.github/workflows/sync-pages.yml`。API 存取權杖只要求 `webmasters.readonly`，有效 15 分鐘。
-5. 將 GitHub Pages 的來源切換至 GitHub Actions，發布本次程式，手動執行第一次 workflow。確認搜尋狀態為 `ok`、實際 API 日期和加總，再檢查公開網站。
+5. 已將 GitHub Pages 來源切換至 GitHub Actions。首次 push 觸發的 workflow 已成功；正式網站 JSON 的來源為 `api`、狀態為 `ok`。已核對實際資料期間、加總、署名文章及 1280px／320px 版面。
 
 ## 本機預覽
 
