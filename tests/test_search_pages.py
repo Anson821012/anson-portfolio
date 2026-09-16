@@ -25,7 +25,7 @@ class SearchPagesTest(unittest.TestCase):
 
     def test_all_canonical_pages_are_in_sitemap_and_indexable(self):
         urls = [el.text for el in ET.parse(self.dest / 'sitemap.xml').findall('.//{*}loc')]
-        self.assertEqual(len(urls), 22)
+        self.assertGreaterEqual(len(urls), 22)
         self.assertEqual(len(urls), len(set(urls)))
         self.assertEqual(len(self.pages), len(urls))
         for filename, soup in self.pages.items():
@@ -66,7 +66,9 @@ class SearchPagesTest(unittest.TestCase):
         self.assertEqual(len(self.pages['cases/index.html'].select('.editorial-card')), 9)
         for case in ['menu', 'payroll', 'content']:
             self.assertIn('製作動機', self.pages[f'cases/{case}/index.html'].get_text())
-        self.assertEqual(len(self.pages['notes/index.html'].select('.editorial-card')), 4)
+        article_pages = [p for p in self.pages if p.startswith('notes/') and p != 'notes/index.html']
+        self.assertGreaterEqual(len(article_pages), 4)
+        self.assertEqual(len(self.pages['notes/index.html'].select('.editorial-card')), len(article_pages))
 
     def test_structured_data_ids_titles_and_author_are_consistent(self):
         titles = []

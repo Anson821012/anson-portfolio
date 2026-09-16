@@ -103,7 +103,7 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory ../seo-preview
 - `content/seo-fields.mjs`：22 個網址的獨立 SEO 標題、描述與主題標籤；網頁關鍵字由姓名及對應主題產生。Google 不使用 meta keywords 作為排名依據。
 - 文章 h1 為部落格文章標題；`<title>` 為搜尋網頁標題。標籤可見，作者姓名與介紹連到同一份 Person 身分。
 - 每篇文章保留實作案例、適用範圍、直接回答、主題標籤、作者與日期。
-- 新文章先更新 `content/search-content.mjs`、對應的 `content/seo-fields.mjs`，經內容確認後部署；不自動大量生成未審閱文章。
+- 新文章先更新 `content/search-content.mjs`、對應的 `content/seo-fields.mjs`，依 `EDITORIAL.md` 做事實、語氣與重複內容檢查後部署；2026/09/16 已獲每日例行文章發布授權。
 - `python3 scripts/export-seo-fields.py --site _site --out ../../outputs/seo-settings` 會從實際 HTML 匯出五欄位 Markdown 與 JSON，供維護與審核。
 
 ### 聯絡方式
@@ -111,3 +111,10 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory ../seo-preview
 - 主要詢問入口：`yo30437@gmail.com`；簡化清單透過 mailto 帶入服務與備註，由訪客在郵件程式確認後寄出。
 - 保留 LINE：`https://line.me/ti/p/~imyoyoyo`。
 - Instagram：`https://www.instagram.com/tsaichunyou/`，出現在聯絡區與頁尾，並加入 Person 的 sameAs。
+
+### 每日文章
+
+- `EDITORIAL.md`：使用者授權、語氣、事實、查核與發布規範。
+- `editorial/topics.json`：48 題選題庫；`editorial/publishing-log.json` 記錄已發布與索引狀態。
+- 每篇可設定 published、modified、faq、sources、aiAssisted；舊文日期不隨新文章更新。首頁與筆記總覽按發布日期排列，網站地圖同步新增網址。
+- 排程透過本 Codex 任務每日執行，電腦、App 與網路需可用；一般文章的索引申請走 Search Console，成功提交不等於收錄。

@@ -19,6 +19,7 @@ export const pageFields = {
   'cases/quiz/': {tags:['互動問卷','品牌體驗','顧客溝通','內容設計']},
   'cases/content/': {tags:['內容行銷','YouTube 企劃','品牌整合','福韻']},
   'notes/': {seoTitle:'AI 轉型與品牌整理筆記｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 的實務部落格：從中小企業 AI 轉型、社群內容、公司 SOP 到數位工具設計，用福韻案例拆解日常工作如何一步步整理。', tags:['AI 轉型','中小企業經營','品牌行銷','SOP']},
+  'notes/ai-tools-handoff/': {"seoTitle": "AI 工具越買越多，工作為何沒變簡單？｜蔡鈞佑 Anson Tsai", "description": "工具增加了，資料卻還是要重抄？蔡鈞佑 Anson Tsai 從資料版本、工作交接與每日菜單案例，整理中小企業評估 AI 工具是否真的減少麻煩的方法。", "tags": ["中小企業 AI 轉型", "AI 工具整合", "工作流程", "資料交接"]},
   'notes/ai-first-step/': {seoTitle:'中小企業 AI 轉型第一步：先整理哪件工作？｜蔡鈞佑 Anson Tsai', description:'中小企業想導入 AI，應先整理什麼？蔡鈞佑 Anson Tsai 用福韻每日菜單案例，說明如何盤點輸入、輸出、負責人及覆核方式，從一段可用的小流程開始 AI 轉型。', tags:['中小企業 AI 轉型','AI 導入','工作流程','資料整理']},
   'notes/social-content-brand/': {seoTitle:'社群一直發文，品牌為何仍說不清楚？｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 從福韻內容與影音企劃的參與經驗，整理社群、文章、短影音及網站如何分工，讓中小企業的內容行銷接到品牌理解與顧客詢問。', tags:['內容行銷','社群經營','品牌定位','中小企業行銷']},
   'notes/sop-handover/': {seoTitle:'SOP 寫好了，新人為什麼還是一直問？｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 以福韻薪資排班的資料設計，說明公司 SOP 需要補上哪些入口、判斷、例外及更新責任，讓中小企業數位轉型從可交接的流程開始。', tags:['公司 SOP','新人交接','中小企業數位轉型','流程改善']},

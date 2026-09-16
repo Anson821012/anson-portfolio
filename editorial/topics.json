@@ -1,0 +1,434 @@
+[
+  {
+    "id": "ai-tool-handoffs",
+    "pillar": "AI 與數位轉型",
+    "title": "AI 工具越買越多，工作為什麼沒有變簡單？",
+    "angle": "找出工具之間的重抄、交接與版本問題",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "ai-or-rules",
+    "pillar": "AI 與數位轉型",
+    "title": "這件工作需要 AI，還是一個固定規則就夠？",
+    "angle": "用輸入是否固定、是否需要判斷作比較",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "ai-trial-check",
+    "pillar": "AI 與數位轉型",
+    "title": "試用 AI 工具時，我會先看哪幾件事？",
+    "angle": "正確性、例外、維護與接手者體驗",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "ai-approval",
+    "pillar": "AI 與數位轉型",
+    "title": "AI 做完草稿後，最後由誰說可以？",
+    "angle": "覆核角色與可交付標準",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "automation-fallback",
+    "pillar": "AI 與數位轉型",
+    "title": "自動化有一天停了，工作還能繼續嗎？",
+    "angle": "補救流程與人工備援",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "ai-team-adoption",
+    "pillar": "AI 與數位轉型",
+    "title": "工具做好了，同事為什麼還是回到舊方法？",
+    "angle": "使用情境、學習負擔與試用回饋",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "brand-one-sentence",
+    "pillar": "品牌定位與形象",
+    "title": "介紹公司只能說我們很專業，還能怎麼說？",
+    "angle": "把對象、問題與做法寫成一句話",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "brand-touchpoints",
+    "pillar": "品牌定位與形象",
+    "title": "品牌形象除了 Logo，還藏在哪些地方？",
+    "angle": "表單、訊息、提醒與交付接點",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "brand-tone",
+    "pillar": "品牌定位與形象",
+    "title": "親切又專業的品牌語氣，怎麼拿捏？",
+    "angle": "同一則訊息的不同表達與判斷",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "brand-ip",
+    "pillar": "品牌定位與形象",
+    "title": "品牌想做 IP，先想角色還是先想用途？",
+    "angle": "角色在服務情境中的工作",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "brand-consistency",
+    "pillar": "品牌定位與形象",
+    "title": "每張圖都好看，放在一起卻不像同一家公司",
+    "angle": "視覺、用詞與資訊層級一致性",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "brand-evidence",
+    "pillar": "品牌定位與形象",
+    "title": "我們很用心，要怎麼讓顧客真的看見？",
+    "angle": "用可見流程與細節取代空泛形容",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "planned"
+  },
+  {
+    "id": "content-questions",
+    "pillar": "社群與內容行銷",
+    "title": "不知道今天要發什麼？先整理顧客問過的問題",
+    "angle": "把問題變成可持續選題庫",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "content-reuse",
+    "pillar": "社群與內容行銷",
+    "title": "一段訪談，怎麼變成文章、短影音與社群貼文？",
+    "angle": "各平台保留語意又重新安排用途",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "content-review",
+    "pillar": "社群與內容行銷",
+    "title": "一篇文案改了五次，問題可能出在哪裡？",
+    "angle": "需求、資料、確認人與版本",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "content-library",
+    "pillar": "社群與內容行銷",
+    "title": "素材很多，為什麼每次企劃還是從零開始？",
+    "angle": "素材命名、授權與檢索欄位",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "youtube-planning",
+    "pillar": "社群與內容行銷",
+    "title": "YouTube 企劃開始前，我會先整理哪些問題？",
+    "angle": "觀眾問題、段落與後續內容用途",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "content-measure",
+    "pillar": "社群與內容行銷",
+    "title": "文章有人看，接下來該觀察什麼？",
+    "angle": "閱讀到理解、詢問的觀察指標",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "event-goal",
+    "pillar": "活動與企劃",
+    "title": "活動很熱鬧，結束後品牌留下了什麼？",
+    "angle": "事前目標、現場資訊與後續回顧",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "event-brief",
+    "pillar": "活動與企劃",
+    "title": "一份讓執行者看得懂的活動企劃，要寫什麼？",
+    "angle": "角色、時間、素材與例外",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "event-content",
+    "pillar": "活動與企劃",
+    "title": "活動照片拍很多，怎麼整理成能繼續用的內容？",
+    "angle": "挑選、註記、署名與情境",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "event-handoff",
+    "pillar": "活動與企劃",
+    "title": "活動前一天，為什麼大家還在找同一份資料？",
+    "angle": "共用版本與現場備份",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "campaign-message",
+    "pillar": "活動與企劃",
+    "title": "促銷文案除了折扣，還能說清楚什麼？",
+    "angle": "適用對象、條件與選擇理由",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "event-retrospective",
+    "pillar": "活動與企劃",
+    "title": "活動結束後，怎麼開一場有用的回顧？",
+    "angle": "可改變的流程問題與下一次行動",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "sop-exceptions",
+    "pillar": "SOP 與團隊營運",
+    "title": "SOP 遇到例外就失效，要怎麼補？",
+    "angle": "記錄、確認與回寫責任",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "handover-entry",
+    "pillar": "SOP 與團隊營運",
+    "title": "交接文件都有了，新人為什麼不知道從哪裡看？",
+    "angle": "先後順序與入口設計",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "spreadsheet-version",
+    "pillar": "SOP 與團隊營運",
+    "title": "檔名寫最終版，為什麼還是有三個版本？",
+    "angle": "共同來源與修改紀錄",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "task-owner",
+    "pillar": "SOP 與團隊營運",
+    "title": "大家都知道要做，為什麼最後沒有人做？",
+    "angle": "負責人、狀態與完成定義",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "fixed-variable",
+    "pillar": "SOP 與團隊營運",
+    "title": "每個月都重填的資料，有哪些其實不用重填？",
+    "angle": "固定設定與當次異動分離",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "knowledge-owner",
+    "pillar": "SOP 與團隊營運",
+    "title": "知識庫建好了，誰負責讓它保持有用？",
+    "angle": "更新觸發、負責人與過期處理",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned"
+  },
+  {
+    "id": "customer-repeat",
+    "pillar": "顧客體驗與服務",
+    "title": "顧客一直問同一題，先改回覆還是先改資訊？",
+    "angle": "問題發生位置與資訊可見性",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "customer-form",
+    "pillar": "顧客體驗與服務",
+    "title": "表單欄位越多，真的越了解顧客嗎？",
+    "angle": "目的、必要欄位與後續使用",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "service-status",
+    "pillar": "顧客體驗與服務",
+    "title": "顧客最不安的時候，可能是等待沒有消息",
+    "angle": "流程狀態、提醒與預期",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "contract-journey",
+    "pillar": "顧客體驗與服務",
+    "title": "線上簽約除了簽名，還有哪些步驟要想？",
+    "angle": "版本、確認、完成後查閱",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "personalized-report",
+    "pillar": "顧客體驗與服務",
+    "title": "同一套報告，怎麼照顧不同人的需要？",
+    "angle": "共同結構與個別備註，僅談資訊設計",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "customer-next-step",
+    "pillar": "顧客體驗與服務",
+    "title": "顧客看完介紹後，知道下一步要做什麼嗎？",
+    "angle": "Email、LINE 與服務說明的銜接",
+    "service": "brand-marketing",
+    "case": "contract",
+    "status": "planned"
+  },
+  {
+    "id": "seo-name",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "個人品牌網站，怎麼讓姓名與專長說得一致？",
+    "angle": "作者介紹、署名與真實作品；查官方文件",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "seo-answer",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "一篇說人話的文章，如何把問題回答清楚？",
+    "angle": "直接答案、條件、例子與可執行步驟",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "seo-indexing",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "網站上線了，為什麼搜尋還找不到？",
+    "angle": "抓取、索引與排名差異；查官方文件",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "seo-sitemap",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "網站地圖有什麼用，和導覽列差在哪？",
+    "angle": "發現網址與讀者使用；查官方文件",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "seo-old-content",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "舊文章什麼時候該更新，什麼時候該另外寫？",
+    "angle": "事實變動與搜尋意圖重複",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "seo-trust",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "文章要有可信度，除了作者名字還需要什麼？",
+    "angle": "来源、適用範圍、日期與案例；查官方文件",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "planned"
+  },
+  {
+    "id": "menu-edit-publish",
+    "pillar": "作品細節與製作動機",
+    "title": "資料填完到發布，中間為什麼需要預覽？",
+    "angle": "以已公開菜單功能談確認節點",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "report-reader",
+    "pillar": "作品細節與製作動機",
+    "title": "報告資訊很多，怎麼讓閱讀的人抓到重點？",
+    "angle": "從報告功能拆解資訊層級",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "docs-evidence",
+    "pillar": "作品細節與製作動機",
+    "title": "評鑑資料不是整理完就好，還要找得到",
+    "angle": "目錄、版本、佐證與更新",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "task-reminder",
+    "pillar": "作品細節與製作動機",
+    "title": "待辦工具為什麼需要狀態，而不只是一排勾勾？",
+    "angle": "進度、卡點與責任的設計解讀",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "quiz-experience",
+    "pillar": "作品細節與製作動機",
+    "title": "互動問卷怎麼同時有趣，又真的有用途？",
+    "angle": "問題設計與完成後的下一步",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  },
+  {
+    "id": "life-design",
+    "pillar": "作品細節與製作動機",
+    "title": "生活紀錄網站，為什麼也值得把細節想周到？",
+    "angle": "情感、順序、裝置與日後回看",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned"
+  }
+]
