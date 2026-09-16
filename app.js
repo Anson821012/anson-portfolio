@@ -366,3 +366,21 @@ function readCaseHash() {
 renderPortfolio();
 window.addEventListener('hashchange',readCaseHash);
 readCaseHash();
+
+// Static service pages hand off to the same local consultation list.
+const pageParams = new URLSearchParams(location.search);
+const linkedService = byId.get(pageParams.get('service'));
+if (linkedService) {
+  activeFacet = linkedService.facet; activeCategory = linkedService.categoryIndex;
+  renderFacets(); renderTabs(); renderCategory(activeCategory);
+  window.officeNavigation.go('#services',{scroll:false});
+  const focusLinkedService = () => requestAnimationFrame(() => {
+    const button = document.querySelector(`[data-service-id="${linkedService.id}"]`);
+    button.closest('article').scrollIntoView({block:'center'});
+    button.focus({preventScroll:true});
+  });
+  // Run after the router's initial fragment positioning and image layout.
+  if (document.readyState === 'complete') focusLinkedService();
+  else window.addEventListener('load',focusLinkedService,{once:true});
+}
+if (pageParams.get('list') === 'open') openList(document.querySelector('[data-open-list]'));

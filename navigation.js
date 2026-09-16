@@ -24,7 +24,7 @@
       page.inert = page.hidden;
     });
     nav.querySelectorAll('a').forEach(link => {
-      if (link.hash === `#${active}`) link.setAttribute('aria-current','page');
+      if ((link.dataset.page || link.hash.slice(1)) === active) link.setAttribute('aria-current','page');
       else link.removeAttribute('aria-current');
     });
     document.querySelector('#page-status').textContent = media.matches ? `${titles[active]}` : '';

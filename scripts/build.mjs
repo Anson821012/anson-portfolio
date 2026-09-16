@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {renderSearch,renderContent} from '../growth-view.mjs';
+import {buildSearchPages} from './search-pages.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dest = path.resolve(process.argv[2] || path.join(root,'_site'));
@@ -19,9 +20,10 @@ for (const [name,value] of Object.entries(fragments)) {
   if (!pattern.test(html)) throw new Error(`Missing marker: ${name}`);
   html = html.replace(pattern,()=>`<!-- live:${name}:start -->${value}<!-- live:${name}:end -->`);
 }
-await writeFile(path.join(dest,'index.html'),html);
+const searchReady = await buildSearchPages({root,dest,html,review:process.argv.includes('--review')});
+await writeFile(path.join(dest,'index.html'),searchReady.html);
 // Explicit public allowlist: credentials, source tools and raw reports never enter the artifact.
-for (const file of ['styles.css','expanded.css','growth.css','friends.css','catalogue.js','portfolio.js','navigation.js','app.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
+for (const file of ['styles.css','expanded.css','growth.css','friends.css','content-pages.css','content-pages.js','catalogue.js','portfolio.js','navigation.js','app.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
 await mkdir(path.join(dest,'assets'),{recursive:true});
 for (const scene of ['office-friends','planning-together']) {
   for (const width of [640,960,1536]) {

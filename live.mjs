@@ -2,7 +2,7 @@ import {renderSearch, renderContent} from './growth-view.mjs';
 
 async function load(name, render) {
   try {
-    const response = await fetch(`data/${name}.json`, {cache:'no-store',signal:AbortSignal.timeout(15000)});
+    const response = await fetch(new URL(`data/${name}.json`,import.meta.url), {cache:'no-store',signal:AbortSignal.timeout(15000)});
     if (!response.ok) throw new Error('Data unavailable');
     render(await response.json());
   } catch {

@@ -1,0 +1,111 @@
+import {readFile,writeFile,mkdir,rm} from 'node:fs/promises';
+import path from 'node:path';
+import vm from 'node:vm';
+import {services,notes,editorialDate} from '../content/search-content.mjs';
+import {fieldsFor,identityDescription,blogTitle} from '../content/seo-fields.mjs';
+
+export const siteURL = 'https://anson821012.github.io/anson-portfolio/';
+const verification = 'qqjeD2cQSKVxSADErSEQt0UqwCkArWLd0KJC7EnJbgI';
+const name = '蔡鈞佑 Anson Tsai';
+const brand = '麻煩整理所';
+const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const serial = value => JSON.stringify(value).replaceAll('<','\\u003c');
+const absolute = p => new URL(p,siteURL).href;
+const person = {'@type':'Person','@id':absolute('#anson'),name:'蔡鈞佑',alternateName:['Anson Tsai','蔡鈞佑 Anson Tsai'],url:absolute('about/'),image:absolute('anson.JPG'),description:identityDescription,jobTitle:'中小企業 AI 與品牌營運整合者',knowsAbout:['中小企業 AI 轉型','AI 整合','數位轉型','品牌整合','內容行銷','公司 SOP','工作流程自動化']};
+const website = {'@type':'WebSite','@id':absolute('#website'),url:siteURL,name:`${brand}｜${name}`,inLanguage:'zh-Hant',publisher:{'@id':person['@id']}};
+const list = items => `<ul class="editorial-list">${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+const icons = {
+  top:'<path d="m3 10 9-7 9 7v10h-6v-7H9v7H3Z"/>',
+  growth:'<path d="M4 20h16M7 16v-5m5 5V7m5 9V4"/>',
+  services:'<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><path d="M14 17h7m-3.5-3v7"/>',
+  cases:'<rect x="3" y="6" width="18" height="15" rx="3"/><path d="M8 6V3h8v3M3 12h18"/>',
+  about:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>'
+};
+function graph(page) {
+  const url=absolute(page.path);
+  const crumb = {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{name:'首頁',item:siteURL},...(page.parent?[{name:page.parent[0],item:absolute(page.parent[1])}]:[]),{name:page.title,item:url}].map((p,i)=>({'@type':'ListItem',position:i+1,...p}))};
+  const entity = page.entity ? (page.entity['@type']==='Person' ? person : {...page.entity,'@id':url+'#subject',...(page.entity['@type']==='Article'?{keywords:page.tags,articleSection:page.intro,description:page.description}:{})}) : null;
+  return {'@context':'https://schema.org','@graph':[person,website,{'@type':page.type || 'WebPage','@id':url+'#page',url,name:page.title,description:page.description,inLanguage:'zh-Hant',isPartOf:{'@id':website['@id']},breadcrumb:{'@id':crumb['@id']},...(entity?{mainEntity:{'@id':entity['@id']}}:{})},crumb,...(entity && entity!==person?[entity]:[])]};
+}
+function editorialHead(page) {
+  return `<title>${esc(page.seoTitle)}</title><meta name="description" content="${esc(page.description)}"><meta name="keywords" content="${esc(page.keywords.join(', '))}"><meta name="author" content="${name}"><meta property="og:title" content="${esc(page.seoTitle)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:type" content="${page.entity?.['@type']==='Article'?'article':'website'}">`;
+}
+function metadata(page,{review=false,home=false}={}) {
+  return `<link rel="canonical" href="${absolute(page.path)}"><meta property="og:url" content="${absolute(page.path)}"><meta property="og:locale" content="zh_TW"><meta property="og:site_name" content="${brand}"><meta property="og:image" content="${absolute('assets/office-friends-1536.webp')}"><meta property="og:image:width" content="1536"><meta property="og:image:height" content="1024"><meta property="og:image:alt" content="麻煩整理所的機器人與男女夥伴，一起整理日常工作。"><meta name="twitter:card" content="summary_large_image">${home?`<meta name="google-site-verification" content="${verification}">`:''}${review?'<meta name="robots" content="noindex,nofollow">':''}<script type="application/ld+json">${serial(graph(page))}</script>`;
+}
+function extract(html,cls) {
+  const match=html.match(new RegExp(`<section class="${cls}[^\"]*"[^>]*>[\\s\\S]*?<\\/section>`));
+  if(!match)throw new Error('Missing source section '+cls);
+  return match[0].replace(/ data-mobile-page="[^"]*"/g,'');
+}
+export async function buildSearchPages({root,dest,html,review=false}) {
+  if(!review) await rm(path.join(dest,'__review__'),{recursive:true,force:true});
+  const data=vm.runInNewContext((await readFile(path.join(root,'catalogue.js'),'utf8'))+'; serviceData;');
+  const cases=vm.runInNewContext((await readFile(path.join(root,'portfolio.js'),'utf8'))+'; portfolioCases;');
+  const catalogue=data.categories.flatMap(c=>c.services.map(s=>({...s,category:c.name,facet:c.facet})));
+  const pages=[];
+  function add(page){pages.push(fieldsFor(page));}
+  const card=(url,title,desc,kicker='')=>`<a class="editorial-card" href="${esc(url)}">${kicker?`<span class="eyebrow">${esc(kicker)}</span>`:''}<h2>${esc(title)}</h2><p>${esc(desc)}</p><span class="card-more">看完整內容 ↗</span></a>`;
+  const serviceCards=(prefix='')=>services.map(s=>card(prefix+'services/'+s.slug+'/',s.name,s.label,'可以一起整理的事')).join('');
+  const caseCards=(ids,prefix='')=>ids.map(id=>{const c=cases.find(c=>c.id===id);return card(prefix+'cases/'+id+'/',c.title,c.summary,c.kicker);}).join('');
+  function related(s,c,prefix='../../') {
+    return `<section class="related-section"><h2>把這個方法，接到你的日常。</h2><div class="editorial-cards">${card(prefix+'services/'+s+'/',services.find(x=>x.slug===s).name,'看看適用情境、交付方式與合作範圍。','相關服務')}${caseCards([c],prefix)}</div></section>`;
+  }
+  const catalogueHTML=data.facets.map(f=>`<section class="catalogue-facet"><h2>${esc(f.name)}</h2><p>${esc(f.hint)}</p>${data.categories.filter(c=>c.facet===f.id).map(c=>`<details class="catalogue-category" data-searchable><summary>${esc(c.name)}<span>${c.services.length} 項</span></summary><p>${esc(c.description)}</p>${c.services.map(s=>`<article class="catalogue-item" id="${s.id}"><h3>${esc(s.name)}</h3><p>${esc(s.solution)}</p><dl><div><dt>適合情境</dt><dd>${esc(s.fit)}</dd></div><div><dt>交付內容</dt><dd>${esc(s.delivery)}</dd></div><div><dt>費用與時程</dt><dd>依範圍報價；盤點後確認時程。</dd></div></dl><a href="../?service=${encodeURIComponent(s.id)}#services">前往挑選這項服務 →</a>${s.caseId?`<a href="../cases/${esc(s.caseId)}/">閱讀相關案例 ↗</a>`:''}</article>`).join('')}</details>`).join('')}</section>`).join('');
+  add({path:'services/',title:'品牌、行銷、營運與 AI 整理服務',description:'從三個核心方向開始，探索 6 個經營面向、24 種困擾與 125 項整理服務。依實際需求確認範圍、交付、費用與時程。',active:'services',type:'CollectionPage',intro:'先找到一件值得整理的事，再一起決定怎麼做。',body:`<a class="text-link service-map-shortcut" href="#all-services">直接查找 125 項需求 →</a><div class="editorial-cards">${serviceCards('../')}</div><figure class="editorial-scene"><img src="../assets/planning-together-960.webp" srcset="../assets/planning-together-640.webp 640w, ../assets/planning-together-960.webp 960w, ../assets/planning-together-1536.webp 1536w" sizes="(max-width:800px) 90vw, 960px" width="1536" height="1024" alt="機器人與男女夥伴一起連接品牌、內容和工作流程。" loading="lazy"><figcaption>品牌對外的感受，和公司對內的做法，一起想。</figcaption></figure><section id="all-services"><h2>完整需求地圖</h2><p>6 個面向・24 種困擾・125 項可討論的服務。點開你遇到的情境，看看可以怎麼整理。</p><label class="catalogue-search" for="catalogue-filter">搜尋你的困擾<input id="catalogue-filter" type="search" placeholder="例如：社群、交接、排班、AI" autocomplete="off"></label><p id="catalogue-status" role="status" aria-live="polite"></p><div id="static-catalogue">${catalogueHTML}</div><p class="editorial-boundary">上述項目是可討論的需求範圍；沒有對應公開案例的服務，會在盤點時確認執行方式與合作夥伴。清單尚未構成報價或委託。</p></section>`,script:true});
+  for(const s of services) {
+    const relevant=catalogue.filter(c=>s.facets.includes(c.facet));
+    add({path:`services/${s.slug}/`,title:s.name,description:s.description,intro:s.label,active:'services',parent:['整理服務','services/'],entity:{'@type':'Service',name:s.name,serviceType:s.name,description:s.answer,provider:{'@id':person['@id']}},body:`<div class="answer-box"><p class="eyebrow">這項服務在整理什麼？</p><p>${esc(s.answer)}</p></div><div class="article-columns"><article class="reading-column"><section><h2>適合哪些情況？</h2>${list(s.fit)}</section><section><h2>我們會怎麼做？</h2>${s.steps.map(([h,p],i)=>`<h3>${i+1}. ${esc(h)}</h3><p>${esc(p)}</p>`).join('')}</section><section><h2>最後會拿到什麼？</h2>${list(s.deliver)}</section><section><h2>費用、時程與合作範圍</h2><p>依範圍報價；盤點後確認時程。先了解現有資料、使用者、工作量與維護需求，再確認具體交付內容。</p><p>${esc(s.boundary)}</p></section><section><h2>常見問題</h2>${s.faq.map(([q,a])=>`<details class="question"><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section></article><aside class="reading-aside"><p class="eyebrow">先從一件事開始</p><h2>把現在的狀況<br>拿來聊聊。</h2><p>帶一份表單、一段流程，或最近反覆出現的問題就好。</p><a class="button primary" href="../../#services">整理我的需求清單 →</a><a class="text-link" href="../../notes/${s.note}/">先讀一篇相關筆記 ↗</a></aside></div><section class="related-section"><h2>實際作品，怎麼想、怎麼做？</h2><div class="editorial-cards">${caseCards(s.cases,'../../')}</div></section><section class="topic-menu"><h2>還可以整理哪些項目？</h2><p>以下摘錄相關目錄；點進完整地圖查看情境與交付。</p><ul>${relevant.slice(0,12).map(x=>`<li><a href="../#${x.id}">${esc(x.name)} ↗</a></li>`).join('')}</ul><a class="text-link" href="../#all-services">查看完整 125 項需求地圖 →</a></section>`});
+  }
+  const featured=['content','payroll','menu'];
+  const ordered=[...featured,...cases.map(c=>c.id).filter(id=>!featured.includes(id))];
+  add({path:'cases/',title:'真實作品與品牌價值',description:'九組真實作品，從原本的麻煩、問題判斷、實作方法到製作動機與預期品牌價值，了解蔡鈞佑 Anson Tsai 的整合思考。',intro:'先看三個起點，再看看不同情境裡，多想的那一步。',active:'cases',type:'CollectionPage',body:`<p class="editorial-boundary">案例依已核對的功能及既有交付整理。動機是設計解讀，品牌好處是預期價值；量測成果另標明資料來源與範圍。</p><div class="editorial-cards">${caseCards(featured,'../')}</div><details class="more-case-stories"><summary>再看看其他六組作品 <span aria-hidden="true">＋</span></summary><div class="editorial-cards">${caseCards(ordered.slice(3),'../')}</div></details>`});
+  for(const c of cases) {
+    const service=services.find(s=>s.cases.includes(c.id))||services[1];
+    const publicSources=c.id==='content'?`<section><h2>公開署名與參與來源</h2><ul class="editorial-list"><li><a href="https://www.fuyunlovemommy.com/blogs/news/fuyun-ai-mommy-care-map" target="_blank" rel="noopener noreferrer">福韻官網：品牌服務與 AI 內容，編輯蔡鈞佑 ↗</a></li><li><a href="https://www.youtube.com/watch?v=5vEoR34fMK0" target="_blank" rel="noopener noreferrer">《女人不簡單》EP06：展開資訊欄查看製作名單 ↗</a></li></ul><p>頻道企劃由蔡鈞佑署名，品牌行銷規劃為共同署名；攝影、剪輯及音訊製作另署 Y.T.Lin Studio。</p><a class="text-link" href="../../growth/">查看福韻品牌成果與最新署名文章 →</a></section>`:c.id==='quiz'?'<p><a class="text-link" href="https://anson821012.github.io/didactic-carnival/" target="_blank" rel="noopener noreferrer">查看互動問卷 ↗</a></p>':'';
+    add({path:`cases/${c.id}/`,title:c.title,description:c.summary,active:'cases',parent:['真實作品','cases/'],intro:c.headline.replace('\n',''),entity:{'@type':'CreativeWork',name:c.title,description:c.summary,genre:'作品案例',creator:{'@id':person['@id']}},body:`<div class="answer-box"><p class="eyebrow">${esc(c.kicker)}</p><p>${esc(c.summary)}</p></div><ol class="case-route" aria-label="作品流程示意">${c.flow.map((f,i)=>`<li><span>0${i+1}</span>${esc(f)}</li>`).join('')}</ol><div class="article-columns"><article class="reading-column">${[['原本有多麻煩',c.problem],['我看見的問題',c.insight],['做了什麼整理',c.action],['整理後的工作方式',c.after]].map(([h,p],i)=>`<section><p class="eyebrow">0${i+1} / 整理筆記</p><h2>${esc(h)}</h2><p>${esc(p)}</p></section>`).join('')}<section class="soft-block"><h2>從設計讀出的製作動機</h2><p>${esc(c.motive)}</p></section><section><h2>可以為品牌帶來什麼？</h2><p>${esc(c.benefit)}</p><p class="editorial-boundary">這段說明預期價值，並未以未量測的節省工時、成交率或營收數字取代證據。</p></section><section><h2>實際功能與交付</h2>${list(c.features)}</section>${publicSources}<section class="editorial-boundary"><h2>這個案例的核對範圍</h2><p>${esc(c.boundary)}</p><p>案例整理：${editorialDate}。不公開私人管理端、客戶資料或員工紀錄。</p></section></article><aside class="reading-aside"><p class="eyebrow">多想的那一步</p><h2>前後都顧到，<br>也留下彈性。</h2><p>${esc(c.care)}</p><a class="text-link" href="../../services/${service.slug}/">延伸到你的需求 →</a></aside></div>`});
+  }
+  add({path:'notes/',title:blogTitle,description:'從品牌、內容、SOP 到 AI 導入，用真實作品與工作情境回答企業日常問題。蔡鈞佑 Anson Tsai 的實務觀點與整理方法。',intro:'從中小企業 AI 轉型、品牌內容到日常 SOP，把做過的事整理成下一次用得上的方法。',active:'about',type:'CollectionPage',entity:{'@type':'Blog',name:blogTitle,author:{'@id':person['@id']}},body:`<div class="editorial-cards">${notes.map(n=>card(n.slug+'/',n.title,n.description,n.category)).join('')}</div>`});
+  for(const n of notes) add({path:`notes/${n.slug}/`,title:n.title,description:n.description,active:'about',parent:['整理筆記','notes/'],intro:n.category,entity:{'@type':'Article',headline:n.title,description:n.description,author:{'@id':person['@id']},publisher:{'@id':person['@id']},datePublished:editorialDate,dateModified:editorialDate,mainEntityOfPage:{'@id':absolute(`notes/${n.slug}/`)+'#page'},image:absolute('assets/planning-together-1536.webp')},body:`<p class="byline">撰文：<a href="../../about/">${name}</a> · <time datetime="${editorialDate}">${editorialDate.replaceAll('-','/')}</time></p><div class="answer-box"><p class="eyebrow">先說重點</p><p>${esc(n.answer)}</p></div><div class="article-columns"><article class="reading-column">${n.sections.map(([h,...paras],i)=>`<section id="section-${i+1}"><h2>${esc(h)}</h2>${paras.map(p=>`<p>${esc(p)}</p>`).join('')}</section>`).join('')}<section class="soft-block"><h2>帶走這幾件事</h2>${list(n.takeaways)}</section><p class="editorial-boundary">本文為工作方法與設計觀點。案例依已整理的功能與交付說明，適用方式仍需依企業現況確認。</p></article><aside class="reading-aside"><p class="eyebrow">這篇會談到</p><nav class="article-toc" aria-label="文章目錄">${n.sections.map(([h],i)=>`<a href="#section-${i+1}">${esc(h)}</a>`).join('')}</nav></aside></div><section class="author-intro"><h2>關於作者：${name}</h2><p>${esc(identityDescription)}</p><a class="text-link" href="../../about/">認識 Anson 的 AI 與品牌整合方法 →</a></section>${related(n.service,n.case)}`});
+  const about=extract(html,'about-section').replaceAll('src="anson.JPG"','src="../anson.JPG"').replace('<h2>','<h2>').replace('class="about-section wrap"','class="about-section"');
+  const story=extract(html,'story-section').replace('class="wrap story-grid"','class="story-grid"');
+  add({path:'about/',title:'關於蔡鈞佑 Anson Tsai',description:'認識麻煩整理所的蔡鈞佑 Anson Tsai：從品牌、行銷與營運現場出發，把複雜需求整理成大家看得懂、用得起來的方法。',intro:'一個怕麻煩的人，也是一個總想再周到一點的人。',active:'about',type:'ProfilePage',entity:person,body:`<div class="answer-box"><p class="eyebrow">${name} 是誰？</p><p>${esc(identityDescription)}</p></div>${about}<details class="question about-philosophy"><summary>讀讀我的整理哲學</summary>${story}</details><section class="related-section"><h2>從實際工作，認識我的方法</h2><div class="editorial-cards">${caseCards(featured,'../')}</div><a class="text-link" href="../notes/">閱讀全部整理筆記 →</a></section>`});
+  let growth=extract(html,'growth-section').replace('class="growth-section wrap"','class="growth-section"');
+  growth=growth.replace(/<h2 id="growth-title">[\s\S]*?<\/h2>/,'<h2 id="growth-title">讓品牌被看見，也把工作接下去。</h2>');
+  add({path:'growth/',title:'福韻品牌整合成果與公開署名',description:'查看福韻已核對的累計合約業績、Google 搜尋成效與蔡鈞佑的公開署名作品，附資料日期、統計口徑及團隊共同參與說明。',intro:'把投入、資料與參與範圍，放在一起看清楚。',active:'growth',body:growth,live:true});
+
+  function template(page) {
+    page=fieldsFor(page);
+    const prefix='../'.repeat(page.path.split('/').filter(Boolean).length);
+    const links=[['top','','首頁'],['growth','growth/','成果'],['services','services/','服務'],['cases','cases/','作品'],['about','about/','關於']];
+    const breadcrumb=`<nav class="breadcrumbs" aria-label="麵包屑"><a href="${prefix}">首頁</a>${page.parent?`<span aria-hidden="true">/</span><a href="${prefix+page.parent[1]}">${esc(page.parent[0])}</a>`:''}<span aria-hidden="true">/</span><span aria-current="page">${esc(page.title)}</span></nav>`;
+    return `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#faf8f2">${editorialHead(page)}${metadata(page,{review})}<link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml">${['styles.css','expanded.css','growth.css','friends.css','content-pages.css'].map(f=>`<link rel="stylesheet" href="${prefix+f}">`).join('')}<script src="${prefix}content-pages.js" defer></script>${page.live?`<script type="module" src="${prefix}live.mjs"></script>`:''}</head><body class="content-page"><a class="skip-link" href="#main">跳至主要內容</a><header class="site-header"><a class="brand" href="${prefix}" aria-label="${brand}首頁"><span class="brand-mark" aria-hidden="true"><span class="robot-face"></span></span><span><strong>蔡鈞佑 <span>Anson Tsai</span></strong><small>麻煩整理所 · THE LESS TROUBLE OFFICE</small></span></a><nav class="desktop-nav" aria-label="主要導覽">${links.slice(1).map(([id,url,label])=>`<a href="${prefix+url}"${page.active===id?' aria-current="page"':''}>${label}</a>`).join('')}<a href="${prefix}notes/">筆記</a></nav><a class="list-trigger" href="${prefix}?list=open#services" aria-label="開啟我的簡化清單">我的簡化清單 <span aria-hidden="true">↗</span></a></header>${review?`<div class="review-ribbon">待審核預覽 · 尚未發佈 <a href="${prefix}__review__/">審核總覽 ↗</a></div>`:''}<main class="wrap editorial-main" id="main">${breadcrumb}<div class="editorial-heading"><p class="eyebrow">THE LESS TROUBLE OFFICE / ${esc(page.parent?.[0]||page.title)}</p><h1>${esc(page.title)}</h1><p>${esc(page.intro||page.description)}</p>${page.tags.length?`<ul class="topic-tags" aria-label="內容標籤">${page.tags.map(tag=>`<li>${esc(tag)}</li>`).join('')}</ul>`:''}</div>${page.body}<section class="editorial-contact"><span class="robot-face" aria-hidden="true"></span><div><h2>有一件事，你也覺得很麻煩？</h2><p>從現況開始聊，一起確認需求、範圍、費用與時程。</p></div><a class="button primary" href="https://line.me/ti/p/~imyoyoyo" target="_blank" rel="noopener noreferrer">和 Anson 聊聊 ↗</a></section></main><footer class="wrap"><div><strong>${name}</strong><span>${brand} / The Less Trouble Office</span></div><a href="${prefix}notes/">整理筆記 ↗</a><a href="${prefix}services/">服務地圖 ↗</a></footer><nav class="mobile-nav" aria-label="手機主要導覽">${links.map(([id,url,label])=>`<a href="${prefix+url}"${page.active===id?' aria-current="page"':''}><svg viewBox="0 0 24 24" aria-hidden="true">${icons[id]}</svg><span>${label}</span></a>`).join('')}</nav></body></html>`;
+  }
+  for(const page of pages) {
+    await mkdir(path.join(dest,page.path),{recursive:true});
+    await writeFile(path.join(dest,page.path,'index.html'),template(page));
+  }
+  const homepage=fieldsFor({path:'',title:`${brand}｜${name}`,type:'WebPage',entity:person});
+  html=html.replace(/<title>[\s\S]*?<\/title>|<meta (?:name="description"|property="og:(?:title|description|type)")[^>]*>/g,'');
+  html=html.replace('</head>',editorialHead(homepage)+metadata(homepage,{home:true,review})+'<link rel="stylesheet" href="content-pages.css"></head>');
+  // Keep hash URLs for the interactive planner; use normal links for public content pages.
+  for(const cls of ['desktop-nav','directory-grid','mobile-nav']) {
+    const re=new RegExp(`(<(?:nav|div) class="${cls}"[^>]*>)([\\s\\S]*?)(<\\/(?:nav|div)>)`);
+    html=html.replace(re,(_,start,body,end)=>start+body.replace(/href="#(growth|services|cases|about)"/g,(_,id)=>`href="${id}/" data-page="${id}"`)+end);
+  }
+  const notesBlock=`<section class="wrap home-notes" data-mobile-page="top"><div class="directory-heading"><h2>從一個問題，開始整理。</h2><a href="notes/">所有筆記 ↗</a></div><div class="editorial-cards">${notes.slice(0,2).map(n=>card('notes/'+n.slug+'/',n.title,n.description,n.category)).join('')}</div></section>`;
+  html=html.replace('<div class="manifesto-strip"',notesBlock+'<div class="manifesto-strip"');
+  html=html.replace('<div class="service-discovery"','<p class="search-page-link"><a href="services/">查看完整服務地圖與各項交付 →</a></p><div class="service-discovery"');
+  html=html.replace('<div id="portfolio-grid"',`<p class="search-page-link"><a href="cases/">閱讀九組完整作品故事 →</a></p><div id="portfolio-grid"`);
+  html=html.replace('<footer class="wrap">','<footer class="wrap"><a href="notes/">整理筆記 ↗</a>');
+  if(review)html=html.replace('<main id="main">','<div class="review-ribbon">待審核預覽 · 尚未發佈 <a href="__review__/">審核總覽 ↗</a></div><main id="main">');
+  const all=[{path:'',title:homepage.title},...pages];
+  const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${all.map(p=>`\n  <url><loc>${esc(absolute(p.path))}</loc><lastmod>${editorialDate}</lastmod></url>`).join('')}\n</urlset>\n`;
+  await writeFile(path.join(dest,'sitemap.xml'),xml);
+  if(review) {
+    const reviewPage={path:'__review__/',title:'SEO 上線前審核',description:'麻煩整理所搜尋收錄與內容審核版。',active:'top',intro:'一次看清楚：會新增什麼、資料怎麼說、接下來會做什麼。',body:`<div class="answer-box"><p>目前為本機審核版，尚未推送或改動正式網站。請先看三個核心服務、三個重點案例及四篇文章的定位與語氣。</p></div><section><h2>你只需要看這三件事</h2>${list(['服務範圍是否符合你希望承接的工作。','文章語氣及觀點是否像你；四篇文章目前為待你確認的署名草稿。','案例中的參與角色、核對範圍與預期價值是否表達準確。'])}</section><section><h2>三個核心服務</h2><div class="editorial-cards">${serviceCards('../')}</div></section><section><h2>三個重點案例</h2><div class="editorial-cards">${caseCards(featured,'../')}</div></section><section><h2>四篇實務文章</h2><div class="editorial-cards">${notes.map(n=>card('../notes/'+n.slug+'/',n.title,n.description,n.category)).join('')}</div></section><section><h2>已準備好的收錄設定</h2>${list(['首頁 Google 驗證標籤：對應目前登入的 yo30437@gmail.com。','22 個標準網址與網站地圖，內容頁不依賴 JavaScript 產生主要文字。','每頁獨立標題、說明、社群分享資訊及對應內容的結構化資料。','完整保留 125 項服務、9 組作品與資料來源說明。','此預覽所有頁面設定 noindex；正式建置不帶預覽標記或審核頁。'])}</section><section><h2>審核通過後</h2><ol class="editorial-list"><li>發佈內容與驗證標籤，核對正式網址。</li><li>以 yo30437@gmail.com 完成這個網站的 Search Console 擁有權驗證。</li><li>提交 sitemap.xml，檢查首頁與重點頁的可索引狀態並申請索引；如遇 Google 驗證碼，需由你接手。</li><li>檢查可用的 AI 搜尋納入設定與成效報表，記錄初始狀態。</li></ol></section><section><h2>全部頁面</h2><ul class="review-pages">${all.map(p=>`<li><a href="../${p.path}">${esc(p.title)}</a></li>`).join('')}</ul></section>`};
+    await mkdir(path.join(dest,'__review__'),{recursive:true});
+    await writeFile(path.join(dest,'__review__/index.html'),template(reviewPage));
+  }
+  return {html,pages:all};
+}

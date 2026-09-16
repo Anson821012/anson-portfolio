@@ -65,3 +65,43 @@
 - 作品分批顯示由 3 → 6 → 9 組，並可依情境篩選。
 - 已檢查 320、390、768、801、1280px；800px 分頁與 801px 桌面模式切換不遺漏區塊。
 - 原有搜尋成效、文章更新標記與資料口徑維持，來源時間顯示在成果區。
+
+
+## SEO 與 AI 轉型定位（2026/09/16）
+
+本版經使用者核准，將原首頁的主要導覽接到可直接閱讀、分享及收錄的靜態網址，保留原互動需求清單與舊 hash 連結。定位為「蔡鈞佑 Anson Tsai｜中小企業 AI 轉型與品牌營運整合」。
+
+- 22 個標準網址：首頁、3 個核心服務、完整服務地圖、9 組案例及總覽、4 篇實務文章及總覽、關於與成果。
+- `content/search-content.mjs`：核心服務及署名文章。更新文章時同步維護內容日期。
+- `scripts/search-pages.mjs`：靜態內容、canonical、社群分享資訊、Person / WebSite / Service / Article / CreativeWork / BreadcrumbList 與 sitemap。
+- `content-pages.css`、`content-pages.js`：閱讀頁樣式與漸進增強。主要文字不依賴 JavaScript。
+- `tests/test_search_pages.py`：網址、內部連結、初始 HTML 內容、結構化資料及預覽隔離。
+- 首頁保留經使用者同意的 Search Console 驗證標記，以維持網站驗證。
+- 根網域 robots.txt 不由此專案控制；不在子目錄放置無效的 robots 規則。
+
+審核版建置（不修改既有 `_site`）：
+
+```sh
+node scripts/build.mjs ../seo-preview --review
+python3 -m http.server 8769 --bind 127.0.0.1 --directory ../seo-preview
+```
+
+審核入口：`http://127.0.0.1:8769/__review__/`。所有審核頁有 noindex 標記；正式建置會移除審核入口且不含預覽 noindex。正式建置方式維持 `node scripts/build.mjs`。
+
+### 本輪驗證
+
+- 11 項 Python 與 3 項 Node 測試通過，檢查 22 個網址、獨立標題、canonical、站內連結與結構化資料。
+- 服務地圖的初始 HTML 有完整 125 項內容、24 種分類與 6 個面向。
+- 瀏覽器操作確認：搜尋、無結果與清空、深層連結、服務定位、跨頁清單保存、移除與 Escape 關閉後的焦點。
+- 320 / 390 / 768 / 801 / 1280px 代表頁沒有水平溢出；801px 導覽與本人照片正常。
+- `/growth/` 的兩份資料請求回傳 200，手機預設收合、桌面展開。
+- Google 收錄與 AI 引用由平台處理；本機測試、發布或提交，不等於搜尋平台已完成索引。
+
+
+### 五欄位與後續內容維護
+
+- `content/seo-fields.mjs`：22 個網址的獨立 SEO 標題、描述與主題標籤；網頁關鍵字由姓名及對應主題產生。Google 不使用 meta keywords 作為排名依據。
+- 文章 h1 為部落格文章標題；`<title>` 為搜尋網頁標題。標籤可見，作者姓名與介紹連到同一份 Person 身分。
+- 每篇文章保留實作案例、適用範圍、直接回答、主題標籤、作者與日期。
+- 新文章先更新 `content/search-content.mjs`、對應的 `content/seo-fields.mjs`，經內容確認後部署；不自動大量生成未審閱文章。
+- `python3 scripts/export-seo-fields.py --site _site --out ../../outputs/seo-settings` 會從實際 HTML 匯出五欄位 Markdown 與 JSON，供維護與審核。
