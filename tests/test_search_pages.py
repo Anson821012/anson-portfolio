@@ -118,6 +118,29 @@ class SearchPagesTest(unittest.TestCase):
         subprocess.run(['node', 'scripts/build.mjs', str(self.dest)], cwd=ROOT, check=True, capture_output=True)
         self.assertFalse((self.dest/'__review__').exists())
 
+    def test_sharing_assets_are_published_and_brand_identity_is_at_host_root(self):
+        import struct
+        for filename, soup in self.pages.items():
+            with self.subTest(page=filename):
+                image = soup.select('meta[property="og:image"]')
+                self.assertEqual(len(image), 1)
+                self.assertEqual(soup.select_one('meta[name="twitter:image"]')['content'], image[0]['content'])
+                self.assertEqual(soup.select_one('meta[name="twitter:title"]')['content'], soup.title.string)
+                self.assertEqual(soup.select_one('meta[property="og:image:type"]')['content'], 'image/jpeg')
+                self.assertEqual(soup.select_one('meta[property="og:image:width"]')['content'], '1200')
+                self.assertEqual(soup.select_one('meta[property="og:image:height"]')['content'], '630')
+                asset = self.dest / urlparse(image[0]['content']).path.removeprefix('/anson-portfolio/')
+                self.assertTrue(asset.read_bytes().startswith(b'\xff\xd8\xff'))
+                favicon = urljoin(BASE+filename, soup.select_one('link[rel=icon]')['href'])
+                png = (self.dest / urlparse(favicon).path.removeprefix('/anson-portfolio/')).read_bytes()
+                self.assertEqual(png[:8], b'\x89PNG\r\n\x1a\n')
+                self.assertEqual(struct.unpack('>II', png[16:24]), (96, 96))
+                graph = json.loads(soup.select_one('script[type="application/ld+json"]').string)['@graph']
+                site = next(e for e in graph if e['@type']=='WebSite')
+                self.assertEqual(site['url'], 'https://anson821012.github.io/')
+                self.assertEqual(site['name'], '麻煩整理所')
+                self.assertIn('蔡鈞佑 Anson Tsai', site['alternateName'])
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,13 @@
 # 麻煩整理所 · The Less Trouble Office
 
+## 2026/09/17 搜尋品牌與連結分享
+
+- `https://anson821012.github.io/` 使用獨立 `anson821012.github.io` 儲存庫提供品牌入口，供 Google 辨識主機名稱層級的 WebSite 名稱與 favicon。
+- 本站文章、服務與案例仍使用既有 `/anson-portfolio/` 網址與 canonical；不搬移已被收錄的文章。
+- 所有頁面分享使用 `assets/share-robot-20260917.jpg`（1200 × 630 JPEG），搭配各頁獨立標題、描述及完整 Open Graph / Twitter 圖片欄位。
+- 網頁與品牌入口使用 `favicon-robot-96.png` 及 `apple-touch-icon.png`；圖像與最終提示詞見 ART-DIRECTION.md。
+- 新增分享圖片、圖示發布與根網址品牌身分測試。Google 名稱／圖示、LINE 等平台預覽需等待各平台重新抓取；標籤正確不代表快取立即更新。
+
 蔡鈞佑 Anson Tsai 個人品牌網站。前端使用 HTML、CSS、JavaScript；GitHub Actions 以 Python 同步公開資料、Node.js 產生靜態頁面後部署至 GitHub Pages。
 
 ## 預覽

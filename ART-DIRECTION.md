@@ -1,5 +1,22 @@
 # 整理所的新夥伴 · 圖像製作紀錄
 
+## 2026/09/17 搜尋與分享圖
+
+使用 Codex 內建 imagegen 製作，未使用 CLI。以原首頁場景作為角色參考，產生適合連結縮圖閱讀的機器人特寫封面與獨立方形圖示。使用 macOS sips 輸出網頁尺寸與格式。
+
+- `assets/share-robot-20260917.jpg`：1200 × 630，Open Graph 與 Twitter 共用分享封面。字樣為「麻煩整理所」「蔡鈞佑 Anson Tsai」「THE LESS TROUBLE OFFICE」。
+- `favicon-robot-96.png`：96 × 96 機器人頭像。
+- `apple-touch-icon.png`：180 × 180 同角色圖示。
+- 根網址品牌入口使用相同檔案，放在獨立的 `anson821012.github.io` 儲存庫；文章網址維持原狀。
+
+### 分享封面最終提示詞
+
+Use case: ads-marketing / stylized-concept. Create ONE original premium cinematic 3D animated-film social sharing cover for the Taiwanese studio 麻煩整理所 (The Less Trouble Office), with the warm, expressive charm of a Pixar-style animated movie. The supplied image is ONLY a reference for the studio's established robot identity, material quality and palette. New composition: a close, irresistibly cute cream ceramic and soft sage-green robot with a rounded body, dark teal glass face, two bright cyan expressive oval eyes and a tiny antenna, facing the viewer and happily holding neatly arranged peach, sage and lavender folders. Robot is the main focal point, large and readable as a tiny link thumbnail. Warm ivory creative-office setting, soft curved shelves, a few floating translucent interface tiles with simple abstract folder/heart/lightbulb symbols; lots of clean breathing room, tasteful advanced technology, soft golden daylight, high-quality global illumination, sculptural materials. No human characters in this particular cover. Wide landscape social-card aspect ratio 1.91:1, ideally 1536x800; the face, folders and all type must stay within the central 80 percent safe area for crops. Robot on the right half, large elegant dark forest-green Traditional Chinese title on left: exact text '麻煩整理所'. Below, exact smaller text '蔡鈞佑 Anson Tsai'. Below that a quiet English line: 'THE LESS TROUBLE OFFICE'. No other text. Beautiful editorial typography, legible and uncluttered, strong hierarchy. This is a finished social cover image, not a screenshot of a webpage. Original robot design consistent with reference, no existing franchise character, no watermark, no mock browser.
+
+### 方形圖示最終提示詞
+
+Use case: logo-brand / stylized-concept. Generate a square 1024x1024 website favicon and app icon, matching the original cute robot in the supplied brand-cover reference. Only the robot's head and short antenna, straight-on, big centered face occupying 80 percent of the square. Cream ceramic rounded head, soft sage side panels and tiny antenna, dark teal glossy faceplate, two friendly luminous mint/cyan oval eyes. Warm sophisticated 3D animated-film character charm, simple smooth silhouette, soft lighting. Plain warm ivory background, no environment, no body, no folders, no text, no letters, no border, no watermark. Make the facial features and silhouette highly readable at 48 pixels. Keep all head and antenna inside a generous 8 percent margin. Original brand character.
+
 製作日期：2026/09/16。使用 Codex 內建 imagegen；未使用 CLI 或外部生成服務。兩張圖為原創情境插畫，實際人物介紹仍使用 Anson 本人照片。
 
 ## 網站素材
