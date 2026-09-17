@@ -116,7 +116,9 @@
     "angle": "把問題變成可持續選題庫",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "prepared",
+    "published": "2026-09-17",
+    "slug": "content-from-customer-questions"
   },
   {
     "id": "content-reuse",

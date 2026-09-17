@@ -23,5 +23,23 @@
     },
     "indexRequestDate": "2026-09-16",
     "indexing": "not_yet_confirmed"
+  },
+  {
+    "date": "2026-09-17",
+    "topicId": "content-questions",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/content-from-customer-questions/",
+    "title": "不知道今天要發什麼？先整理顧客問過的問題",
+    "publication": "prepared",
+    "indexRequest": "pending_deployment",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "Anson 在本任務提供的品牌、內容與麻煩整理所工作理念"
+    ],
+    "sourcesCheckedAt": "2026-09-17",
+    "editorialNotes": "與既有品牌理解文章區分：聚焦顧客問題如何記錄、確認與排序成選題。餅乾店為明確標示的假設練習，未使用私人客戶資料或聲稱實測成效。",
+    "deployment": {
+      "status": "pending"
+    },
+    "indexing": "not_yet_confirmed"
   }
 ]

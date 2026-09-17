@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/content-from-customer-questions/': {"seoTitle":"社群不知道發什麼？從顧客問題整理選題｜蔡鈞佑 Anson Tsai","description":"社群不知道要發什麼，可以先從顧客問題找題目。蔡鈞佑 Anson Tsai 整理問題紀錄、選題順序與內容分工，附手作餅乾店的假設練習，讓中小企業的內容行銷更貼近日常需求。","tags":["社群選題","內容行銷","顧客問題","中小企業行銷"]},
   '': {seoTitle:'蔡鈞佑 Anson Tsai｜中小企業 AI 轉型與品牌整合｜麻煩整理所', description:'蔡鈞佑 Anson Tsai 創立麻煩整理所，從品牌行銷、公司 SOP、資料整理與 AI 工具整合，陪中小企業一步步推進 AI 轉型與數位轉型。閱讀福韻實作案例、服務範圍與實務筆記，找到最值得先整理的工作。', tags:['中小企業 AI 轉型','AI 整合','數位轉型','品牌營運整合']},
   'services/': {seoTitle:'中小企業 AI 轉型、品牌行銷與 SOP 服務｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 的中小企業轉型服務地圖：AI 導入、品牌行銷、SOP 與數位工具。從 6 個面向、24 種困擾及 125 項需求，找到適合先改善的工作，再確認範圍、費用與時程。', tags:['中小企業轉型','AI 導入','品牌行銷','公司 SOP']},
   'services/brand-marketing/': {seoTitle:'品牌與行銷整合：社群、內容、影音與活動｜蔡鈞佑 Anson Tsai', tags:['品牌整合','內容行銷','社群經營','行銷企劃']},
