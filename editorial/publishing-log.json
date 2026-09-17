@@ -22,7 +22,18 @@
       "googleStatus": "could_not_fetch"
     },
     "indexRequestDate": "2026-09-16",
-    "indexing": "not_yet_confirmed"
+    "indexing": "indexed",
+    "indexingVerifiedAt": "2026-09-17T12:55:29+08:00",
+    "indexingEvidence": "Google Search Console 網址檢查顯示「網址在 Google 服務中」及「網頁已編入索引」。",
+    "metadataRefresh": {
+      "date": "2026-09-17",
+      "reason": "發布機器人分享封面、PNG favicon 與一致的根網址品牌識別後要求重新檢索。",
+      "indexRequest": "accepted_priority_crawl_queue",
+      "indexRequestAttempts": 1,
+      "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+      "verifiedAt": "2026-09-17T12:55:29+08:00",
+      "searchAppearance": "pending_google_recrawl_and_automatic_selection"
+    }
   },
   {
     "date": "2026-09-17",
