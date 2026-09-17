@@ -51,7 +51,7 @@ export async function buildSearchPages({root,dest,html,review=false}) {
   const pages=[];
   const datedNotes=notes.map(n=>({...n,published:n.published||editorialDate,modified:n.modified||n.published||editorialDate})).sort((a,b)=>b.published.localeCompare(a.published));
   const latestNoteDate=datedNotes.reduce((date,n)=>n.modified>date?n.modified:date,editorialDate);
-  function add(page){pages.push(fieldsFor(page));}
+  function add(page){pages.push(fieldsFor({modified:'2026-09-17',...page}));}
   const card=(url,title,desc,kicker='')=>`<a class="editorial-card" href="${esc(url)}">${kicker?`<span class="eyebrow">${esc(kicker)}</span>`:''}<h2>${esc(title)}</h2><p>${esc(desc)}</p><span class="card-more">看完整內容 ↗</span></a>`;
   const serviceCards=(prefix='')=>services.map(s=>card(prefix+'services/'+s.slug+'/',s.name,s.label,'可以一起整理的事')).join('');
   const caseCards=(ids,prefix='')=>ids.map(id=>{const c=cases.find(c=>c.id===id);return card(prefix+'cases/'+id+'/',c.title,c.summary,c.kicker);}).join('');
