@@ -126,3 +126,16 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory ../seo-preview
 - `editorial/topics.json`：48 題選題庫；`editorial/publishing-log.json` 記錄已發布與索引狀態。
 - 每篇可設定 published、modified、faq、sources、aiAssisted；舊文日期不隨新文章更新。首頁與筆記總覽按發布日期排列，網站地圖同步新增網址。
 - 排程透過本 Codex 任務每日執行，電腦、App 與網路需可用；一般文章的索引申請走 Search Console，成功提交不等於收錄。
+
+## 合作詢問與服務導覽（2026-09-17）
+
+- `services/` 是統一服務入口：三種合作方式、六面向篩選、125 項服務與跨頁簡化清單。費用保持依範圍確認，不將草案數字當正式報價。
+- `contact/` 使用 Anson 的 Google 表單。表單載入前不向 Google 傳送清單；訪客仍需在表單中提交。Email、LINE、IG 是替代聯絡方式。
+- 表單由 `yo30437@gmail.com` 管理，名稱為「麻煩整理所｜合作詢問」。已開啟新回覆 Email 通知；以表單內的成功訊息確認送達，不以 iframe 載入事件推測提交成功。
+- `consultation-state.mjs` 管理公開表單 URL、預填欄位、清單格式與長內容備援。若表單欄位被重建，需要重新取得對應預填連結並測試。
+- 清單使用既有 `less-trouble-office:list:v2` 本機儲存，跨頁共用；清單超過安全網址長度時，提供完整文字複製，不靜默截斷。
+- `profile/` 提供合作／招募摘要與列印成 PDF；三個代表案例明確區分流程示範、已核對交付與待量測指標。
+- 表單詢問紀錄並不等於網站訪客統計。本次未新增 GA4，也未把福韻搜尋成果改稱本網站成效。
+- 上線測試留存一筆「網站上線測試（非客戶）」回覆，請勿計入有效商機。
+
+驗證：`python3 -m unittest discover -s tests -p 'test_*.py'`、`node --test tests/*.test.mjs`、`node scripts/build.mjs`，並以 320 / 390 / 1280 px 檢查主要版面及實際填表流程。

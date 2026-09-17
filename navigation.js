@@ -16,7 +16,16 @@
     if (hash === '#main') return active;
     return targetFor(hash)?.closest('[data-mobile-page]')?.dataset.mobilePage || 'top';
   }
+  function routeServices(hash) {
+    const params=new URLSearchParams(location.search);
+    if(hash!=='#services'&&hash!=='#service-discovery'&&!params.has('service')&&!params.has('list'))return false;
+    const next=new URL('services/',location.href);
+    if(params.has('list'))next.searchParams.set('list',params.get('list'));
+    const service=params.get('service');if(service)next.hash=service;
+    location.replace(next.href);return true;
+  }
   function display(hash, {scroll = true, focus = false} = {}) {
+    if(routeServices(hash))return;
     active = pageFor(hash);
     document.documentElement.classList.toggle('mobile-app',media.matches);
     pages.forEach(page => {
