@@ -23,7 +23,7 @@ for (const [name,value] of Object.entries(fragments)) {
 const searchReady = await buildSearchPages({root,dest,html,review:process.argv.includes('--review')});
 await writeFile(path.join(dest,'index.html'),searchReady.html);
 // Explicit public allowlist: credentials, source tools and raw reports never enter the artifact.
-for (const file of ['styles.css','expanded.css','growth.css','friends.css','content-pages.css','content-pages.js','consultation.js','consultation-state.mjs','catalogue.js','portfolio.js','navigation.js','app.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','favicon-robot-96.png','apple-touch-icon.png','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
+for (const file of ['styles.css','expanded.css','growth.css','friends.css','content-pages.css','content-pages.js','consultation.js','consultation-state.mjs','site-config.mjs','analytics.mjs','engagement.css','engagement-api.mjs','article-engagement.mjs','inquiry.mjs','catalogue.js','portfolio.js','navigation.js','app.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','favicon-robot-96.png','apple-touch-icon.png','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
 await mkdir(path.join(dest,'assets'),{recursive:true});
 for (const width of [480,800]) await copyFile(path.join(root,`assets/anson-${width}.webp`),path.join(dest,`assets/anson-${width}.webp`));
 await copyFile(path.join(root,'assets/share-robot-20260917.jpg'),path.join(dest,'assets/share-robot-20260917.jpg'));
