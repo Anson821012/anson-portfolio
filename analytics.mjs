@@ -1,4 +1,4 @@
-import {measurementId,siteBase} from './site-config.mjs';
+import {measurementId,siteBase} from './site-config.mjs?v=20260917b';
 const preferenceKey='less-trouble-office:analytics';
 let enabled=false, initialized=false;
 const production=location.hostname==='anson821012.github.io';

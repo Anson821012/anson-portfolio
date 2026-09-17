@@ -1,5 +1,5 @@
-import {track} from './analytics.mjs';
-import {request,readArticle,errorText} from './engagement-api.mjs';
+import {track} from './analytics.mjs?v=20260917b';
+import {request,readArticle,errorText} from './engagement-api.mjs?v=20260917b';
 const section=document.querySelector('#article-engagement');
 if(section){
   const article=JSON.parse(document.querySelector('#article-share-data').textContent);
@@ -58,7 +58,7 @@ if(section){
     if(!data.comments.length){const p=document.createElement('p');p.textContent='還沒有公開留言。你的日常裡，也有類似的情況嗎？';list.append(p);}
     data.comments.forEach(comment=>{const item=document.createElement('article'),name=document.createElement('strong'),date=document.createElement('time'),text=document.createElement('p');name.textContent=comment.name;date.textContent=comment.date;date.dateTime=comment.date;text.textContent=comment.text;item.append(name,date,text);list.append(item);});
   }
-  const load=()=>readArticle(article.slug).then(data=>{render(data);publicStatus.textContent='';heart.disabled=false;}).catch(()=>{publicStatus.textContent='互動資料暫時讀取不到，請稍後重試。';heart.disabled=true;});
+  const load=()=>readArticle(article.slug).then(data=>{render(data);publicStatus.textContent='';heart.disabled=false;}).catch(error=>{console.warn('Article interaction read failed:',error.name,error.message);publicStatus.textContent='互動資料暫時讀取不到，請展開留言後按「重新整理留言」重試。';heart.querySelector('span').textContent='喜歡 · 暫無資料';heart.disabled=true;});
   document.querySelector('#reload-comments').addEventListener('click',load);load();
   heart.addEventListener('click',async()=>{
     heart.disabled=true;try{const next=!liked,data=await request({action:'heart',article:article.slug,liked:next,request:crypto.randomUUID()});render(data);publicStatus.textContent=next?'謝謝你的喜歡，已記下來了。':'已收回喜歡。';if(next)track('article_like',{item_id:article.slug});}catch(error){publicStatus.textContent=errorText(error);}finally{heart.disabled=false;}
