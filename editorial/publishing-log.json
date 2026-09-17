@@ -29,8 +29,8 @@
     "topicId": "content-questions",
     "url": "https://anson821012.github.io/anson-portfolio/notes/content-from-customer-questions/",
     "title": "不知道今天要發什麼？先整理顧客問過的問題",
-    "publication": "prepared",
-    "indexRequest": "pending_deployment",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/content/",
       "Anson 在本任務提供的品牌、內容與麻煩整理所工作理念"
@@ -38,8 +38,40 @@
     "sourcesCheckedAt": "2026-09-17",
     "editorialNotes": "與既有品牌理解文章區分：聚焦顧客問題如何記錄、確認與排序成選題。餅乾店為明確標示的假設練習，未使用私人客戶資料或聲稱實測成效。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "58a2a2216c658cabbda35590eeefe607e58093da",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35169317746"
     },
-    "indexing": "not_yet_confirmed"
+    "indexing": "not_yet_confirmed",
+    "indexRequestDate": "2026-09-17",
+    "indexRequestAttempts": 1,
+    "validation": {
+      "pythonTests": 11,
+      "nodeTests": 3,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "articleLive": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "canonical": "verified",
+      "indexableHTML": "verified",
+      "faq": "verified",
+      "liveHTTP": 200
+    },
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 24,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "could_not_fetch",
+      "submissionAttemptsToday": 1,
+      "lastAttemptDate": "2026-09-17",
+      "submitted": true,
+      "googleEvidence": "Google 顯示「已成功提交 Sitemap」；關閉提示後報表仍顯示「無法擷取」，探索網頁為 0。"
+    },
+    "followUp": "後續檢查索引結果；同一文章已接受申請，不重複提交。Sitemap 本日已重試一次，待隔日或確認修正後再重試。",
+    "verifiedAt": "2026-09-17T09:14:14+08:00"
   }
 ]
