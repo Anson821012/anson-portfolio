@@ -84,5 +84,39 @@
     },
     "followUp": "後續檢查索引結果；同一文章已接受申請，不重複提交。Sitemap 本日已重試一次，待隔日或確認修正後再重試。",
     "verifiedAt": "2026-09-17T09:14:14+08:00"
+  },
+  {
+    "date": "2026-09-18",
+    "topicId": "task-owner",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/tasks-owner-and-done/",
+    "title": "大家都知道要做，為什麼最後沒有人做？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexing": "not_yet_confirmed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/tasks/",
+      "Anson 在本任務提供的麻煩整理所工作理念"
+    ],
+    "sourcesCheckedAt": "2026-09-18",
+    "editorialNotes": "聚焦任務負責窗口、交付驗收與卡點追蹤，與舊文的新人 SOP 閱讀及工具資料交接意圖不同。新品禮盒情境明確標為假設；採用更直接相關的 tasks 公開案例取代題庫原 payroll 關聯。團隊分工是延伸方法，未寫成個人工具現有功能或量測成果。",
+    "aiAssisted": true,
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "relatedLinks": "verified",
+      "engagementTemplate": "verified",
+      "sitemapURLCount": 28
+    }
   }
 ]

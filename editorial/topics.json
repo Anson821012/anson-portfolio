@@ -252,8 +252,9 @@
     "title": "大家都知道要做，為什麼最後沒有人做？",
     "angle": "負責人、狀態與完成定義",
     "service": "operations-sop",
-    "case": "payroll",
-    "status": "planned"
+    "case": "tasks",
+    "status": "publishing",
+    "slug": "tasks-owner-and-done"
   },
   {
     "id": "fixed-variable",
