@@ -253,8 +253,9 @@
     "angle": "負責人、狀態與完成定義",
     "service": "operations-sop",
     "case": "tasks",
-    "status": "publishing",
-    "slug": "tasks-owner-and-done"
+    "status": "published",
+    "slug": "tasks-owner-and-done",
+    "published": "2026-09-18"
   },
   {
     "id": "fixed-variable",

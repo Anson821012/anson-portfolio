@@ -53,7 +53,7 @@
       "commit": "58a2a2216c658cabbda35590eeefe607e58093da",
       "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35169317746"
     },
-    "indexing": "not_yet_confirmed",
+    "indexing": "not_indexed",
     "indexRequestDate": "2026-09-17",
     "indexRequestAttempts": 1,
     "validation": {
@@ -82,17 +82,19 @@
       "submitted": true,
       "googleEvidence": "Google 顯示「已成功提交 Sitemap」；關閉提示後報表仍顯示「無法擷取」，探索網頁為 0。"
     },
-    "followUp": "後續檢查索引結果；同一文章已接受申請，不重複提交。Sitemap 本日已重試一次，待隔日或確認修正後再重試。",
-    "verifiedAt": "2026-09-17T09:14:14+08:00"
+    "followUp": "2026-09-18 已檢查仍未收錄；原申請已接受，不重複申請。Sitemap 的最新檢查與當日重試記錄見 2026-09-18 條目。",
+    "verifiedAt": "2026-09-17T09:14:14+08:00",
+    "indexingVerifiedAt": "2026-09-18T09:09:56.636355+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」與「Google 無法辨識的網址」，上次檢索時間不適用。先前已接受申請，未再次提交。"
   },
   {
     "date": "2026-09-18",
     "topicId": "task-owner",
     "url": "https://anson821012.github.io/anson-portfolio/notes/tasks-owner-and-done/",
     "title": "大家都知道要做，為什麼最後沒有人做？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexing": "not_yet_confirmed",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/tasks/",
       "Anson 在本任務提供的麻煩整理所工作理念"
@@ -101,7 +103,9 @@
     "editorialNotes": "聚焦任務負責窗口、交付驗收與卡點追蹤，與舊文的新人 SOP 閱讀及工具資料交接意圖不同。新品禮盒情境明確標為假設；採用更直接相關的 tasks 公開案例取代題庫原 payroll 關聯。團隊分工是延伸方法，未寫成個人工具現有功能或量測成果。",
     "aiAssisted": true,
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "b4e0036b33b039d8cc6c91e73174fc58e1fe14e1",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35293972123"
     },
     "validation": {
       "pythonTests": 12,
@@ -112,11 +116,31 @@
       "canonical": "verified",
       "indexableHTML": "verified",
       "oldArticleDates": "preserved",
-      "homeEntry": "verified",
-      "notesEntry": "verified",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
       "relatedLinks": "verified",
       "engagementTemplate": "verified",
-      "sitemapURLCount": 28
-    }
+      "sitemapURLCount": 28,
+      "articleLive": "verified",
+      "liveHTTP": 200,
+      "heartRead": "live_zero_verified",
+      "browserErrors": 0
+    },
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 28,
+      "containsArticle": true,
+      "xml": "valid",
+      "submitted": true,
+      "submissionAttemptsToday": 1,
+      "lastAttemptDate": "2026-09-18",
+      "googleStatus": "could_not_fetch",
+      "googleEvidence": "Google 顯示「已成功提交 Sitemap」；同時列表仍顯示「無法擷取」，探索網頁為 0。"
+    },
+    "indexRequestDate": "2026-09-18",
+    "indexRequestAttempts": 1,
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+    "verifiedAt": "2026-09-18T09:12:31.749667+08:00",
+    "followUp": "索引申請已接受，後續只檢查是否收錄，不重複申請。Sitemap 本日已重試一次；公開 XML 可讀且包含新文，但 Google 報表仍為無法擷取，待隔日或確認修正後再試。"
   }
 ]
