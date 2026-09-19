@@ -407,8 +407,9 @@
     "title": "評鑑資料不是整理完就好，還要找得到",
     "angle": "目錄、版本、佐證與更新",
     "service": "ai-integration",
-    "case": "menu",
-    "status": "planned"
+    "case": "docs",
+    "status": "publishing",
+    "slug": "documents-findable-current"
   },
   {
     "id": "task-reminder",

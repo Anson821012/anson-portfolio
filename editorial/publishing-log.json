@@ -142,5 +142,39 @@
     "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
     "verifiedAt": "2026-09-18T09:12:31.749667+08:00",
     "followUp": "索引申請已接受，後續只檢查是否收錄，不重複申請。Sitemap 本日已重試一次；公開 XML 可讀且包含新文，但 Google 報表仍為無法擷取，待隔日或確認修正後再試。"
+  },
+  {
+    "date": "2026-09-19",
+    "topicId": "docs-evidence",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/documents-findable-current/",
+    "title": "評鑑資料整理好了，為什麼還是找不到？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexing": "not_yet_confirmed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/docs/",
+      "portfolio.js 的 docs 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-19",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦文件可查找性、用途與目前版本辨識，與任務分工、新人 SOP 及工具間資料重抄意圖不同。禮盒規格為明示假設；案例只談公開功能，不核驗證書、不讀私人文件、不宣稱 AI 已實作。題庫 case 改為更直接相關的 docs。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "relatedLinks": "verified",
+      "engagementTemplate": "verified",
+      "sitemapURLCount": 29
+    }
   }
 ]

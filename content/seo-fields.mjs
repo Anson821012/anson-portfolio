@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/documents-findable-current/": {"seoTitle": "評鑑資料如何整理？目錄、版本與查找方法｜蔡鈞佑 Anson Tsai", "description": "資料庫需要讓人找得到，也看得懂目前能用哪一份。蔡鈞佑 Anson Tsai 從福韻評鑑與專業資料庫的公開設計，整理文件目錄、用途說明、版本與公開範圍的實作方法，並說明 AI 分類前要先確認的事。", "tags": ["評鑑資料整理", "文件管理", "資訊設計", "AI 工具整合"]},
   "notes/tasks-owner-and-done/": {"seoTitle": "工作交代了卻沒人做？釐清負責人與完成標準｜蔡鈞佑 Anson Tsai", "description": "事情交代了卻沒往下走，可能缺的是負責窗口、下一步與完成標準。蔡鈞佑 Anson Tsai 用假設的新品上架情境，整理中小企業把待辦接成可追蹤工作的做法，並說明 AI 能協助到哪裡。", "tags": ["工作分工", "待辦管理", "完成標準", "公司 SOP", "AI 工作流程"]},
   'contact/': {seoTitle:'合作詢問｜蔡鈞佑 Anson Tsai・麻煩整理所',tags:['AI 整合合作','品牌營運','需求盤點']},
   'profile/': {seoTitle:'合作與招募摘要｜蔡鈞佑 Anson Tsai',tags:['AI 與品牌營運整合','專案合作','內容企劃','流程整理']},
