@@ -194,9 +194,9 @@
     "topicId": "brand-ip",
     "url": "https://anson821012.github.io/anson-portfolio/notes/brand-character-purpose/",
     "title": "品牌想做 IP，先想角色還是先想用途？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexing": "not_yet_confirmed",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/quiz/",
       "portfolio.js 的 quiz 公開功能與核對範圍"
@@ -205,7 +205,9 @@
     "aiAssisted": true,
     "editorialNotes": "新搜尋意圖為品牌角色用途與設計需求，不重複既有內容選題或品牌平台分工。家居品牌小鳥與尺寸指引均為明示假設；互動問卷只用作流程參考，未宣稱已有 IP、AI 功能或轉換成果。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "3a34c57340ae20b5601c68cced00c33166acf12f",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35480529574"
     },
     "validation": {
       "pythonTests": 12,
@@ -213,14 +215,38 @@
       "syntax": "passed",
       "diffCheck": "passed",
       "build": "passed",
-      "canonical": "verified",
+      "canonical": "live_verified",
       "indexableHTML": "verified",
       "oldArticleDates": "preserved",
-      "homeEntry": "verified",
-      "notesEntry": "verified",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
       "relatedLinks": "verified",
       "engagementTemplate": "verified",
-      "sitemapURLCount": 30
-    }
+      "sitemapURLCount": 30,
+      "articleLive": "verified",
+      "liveHTTP": 200,
+      "heartRead": "live_zero_verified",
+      "browserErrors": 0,
+      "horizontalOverflow": false
+    },
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 30,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "could_not_fetch",
+      "submissionStatus": "accepted",
+      "submissionAttemptsToday": 1,
+      "lastAttemptDate": "2026-09-20",
+      "submitted": true,
+      "googleEvidence": "Google 顯示「已成功提交 Sitemap」；關閉後列表仍顯示「無法擷取」，已送出日期為 2026年9月20日，探索網頁為 0。"
+    },
+    "indexRequestDate": "2026-09-20",
+    "indexRequestAttempts": 1,
+    "indexingVerifiedAt": "2026-09-20T09:10:55.267014+08:00",
+    "indexingEvidence": "Google Search Console 顯示網址不在 Google 服務中、Google 無法辨識的網址。",
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+    "verifiedAt": "2026-09-20T09:12:03.794282+08:00",
+    "followUp": "已發布且索引申請已接受，尚未確認收錄；之後只檢查索引狀態。Sitemap 於 2026-09-20 已重試一次，公開 XML 可讀且含新文，Google 列表仍為無法擷取，當日不再提交。"
   }
 ]

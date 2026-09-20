@@ -89,8 +89,9 @@
     "angle": "角色在服務情境中的工作",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "publishing",
-    "slug": "brand-character-purpose"
+    "status": "published",
+    "slug": "brand-character-purpose",
+    "published": "2026-09-20"
   },
   {
     "id": "brand-consistency",
