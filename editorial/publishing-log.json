@@ -148,9 +148,9 @@
     "topicId": "docs-evidence",
     "url": "https://anson821012.github.io/anson-portfolio/notes/documents-findable-current/",
     "title": "評鑑資料整理好了，為什麼還是找不到？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexing": "not_yet_confirmed",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/docs/",
       "portfolio.js 的 docs 公開功能與核對範圍"
@@ -158,6 +158,52 @@
     "sourcesCheckedAt": "2026-09-19",
     "aiAssisted": true,
     "editorialNotes": "聚焦文件可查找性、用途與目前版本辨識，與任務分工、新人 SOP 及工具間資料重抄意圖不同。禮盒規格為明示假設；案例只談公開功能，不核驗證書、不讀私人文件、不宣稱 AI 已實作。題庫 case 改為更直接相關的 docs。",
+    "deployment": {
+      "status": "success",
+      "commit": "b76046575c0c8d758eddaa13cd391ed02b4ad09d",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35475240482",
+      "verifiedAt": "2026-09-20"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "relatedLinks": "verified",
+      "engagementTemplate": "verified",
+      "sitemapURLCount": 29,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "indexRequestDate": "2026-09-20",
+    "indexRequestAttempts": 1,
+    "indexingVerifiedAt": "2026-09-20T09:05:05.693165+08:00",
+    "indexingEvidence": "Google Search Console 顯示網址不在 Google 服務中、Google 無法辨識的網址；9/19 未申請，9/20 續辦首次申請。",
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+    "verifiedAt": "2026-09-20T09:06:34.356827+08:00",
+    "followUp": "2026-09-20 補核對正式發布並完成首次索引申請；已接受，尚未收錄，之後只檢查狀態。"
+  },
+  {
+    "date": "2026-09-20",
+    "topicId": "brand-ip",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/brand-character-purpose/",
+    "title": "品牌想做 IP，先想角色還是先想用途？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexing": "not_yet_confirmed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/",
+      "portfolio.js 的 quiz 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-20",
+    "aiAssisted": true,
+    "editorialNotes": "新搜尋意圖為品牌角色用途與設計需求，不重複既有內容選題或品牌平台分工。家居品牌小鳥與尺寸指引均為明示假設；互動問卷只用作流程參考，未宣稱已有 IP、AI 功能或轉換成果。",
     "deployment": {
       "status": "pending"
     },
@@ -174,7 +220,7 @@
       "notesEntry": "verified",
       "relatedLinks": "verified",
       "engagementTemplate": "verified",
-      "sitemapURLCount": 29
+      "sitemapURLCount": 30
     }
   }
 ]

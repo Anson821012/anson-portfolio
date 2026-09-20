@@ -89,7 +89,8 @@
     "angle": "角色在服務情境中的工作",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "publishing",
+    "slug": "brand-character-purpose"
   },
   {
     "id": "brand-consistency",
@@ -408,8 +409,9 @@
     "angle": "目錄、版本、佐證與更新",
     "service": "ai-integration",
     "case": "docs",
-    "status": "publishing",
-    "slug": "documents-findable-current"
+    "status": "published",
+    "slug": "documents-findable-current",
+    "published": "2026-09-19"
   },
   {
     "id": "task-reminder",
