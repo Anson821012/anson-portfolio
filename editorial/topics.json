@@ -17,7 +17,8 @@
     "angle": "用輸入是否固定、是否需要判斷作比較",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "publishing",
+    "slug": "ai-or-fixed-rules"
   },
   {
     "id": "ai-trial-check",

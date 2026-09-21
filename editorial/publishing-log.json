@@ -248,5 +248,40 @@
     "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
     "verifiedAt": "2026-09-20T09:12:03.794282+08:00",
     "followUp": "已發布且索引申請已接受，尚未確認收錄；之後只檢查索引狀態。Sitemap 於 2026-09-20 已重試一次，公開 XML 可讀且含新文，Google 列表仍為無法擷取，當日不再提交。"
+  },
+  {
+    "date": "2026-09-21",
+    "topicId": "ai-or-rules",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/ai-or-fixed-rules/",
+    "title": "這件工作需要 AI，還是一個固定規則就夠？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexing": "not_yet_confirmed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/menu/",
+      "portfolio.js 的 menu 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-21",
+    "aiAssisted": true,
+    "editorialNotes": "新搜尋意圖為按工作步驟選擇固定規則、AI 草稿或人工確認；細化決策條件、混合流程及例外試用，與舊文選擇第一件工作、工具間交接不同。營業公告為明示假設；菜單功能依公開案例，AI 草稿與測試為規劃建議，未宣稱已實作或量測成果。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "relatedLinks": "verified",
+      "faq": "verified",
+      "engagementTemplate": "verified",
+      "sitemapURLCount": 31
+    }
   }
 ]
