@@ -82,10 +82,10 @@
       "submitted": true,
       "googleEvidence": "Google 顯示「已成功提交 Sitemap」；關閉提示後報表仍顯示「無法擷取」，探索網頁為 0。"
     },
-    "followUp": "2026-09-18 已檢查仍未收錄；原申請已接受，不重複申請。Sitemap 的最新檢查與當日重試記錄見 2026-09-18 條目。",
+    "followUp": "2026-09-21 已檢查仍未收錄；原申請已接受，不重複申請。",
     "verifiedAt": "2026-09-17T09:14:14+08:00",
-    "indexingVerifiedAt": "2026-09-18T09:09:56.636355+08:00",
-    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」與「Google 無法辨識的網址」，上次檢索時間不適用。先前已接受申請，未再次提交。"
+    "indexingVerifiedAt": "2026-09-21T09:47:34.366973+08:00",
+    "indexingEvidence": "Search Console 仍顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，上次檢索時間不適用。原申請已接受，本次只讀取狀態。"
   },
   {
     "date": "2026-09-18",
@@ -254,9 +254,9 @@
     "topicId": "ai-or-rules",
     "url": "https://anson821012.github.io/anson-portfolio/notes/ai-or-fixed-rules/",
     "title": "這件工作需要 AI，還是一個固定規則就夠？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexing": "not_yet_confirmed",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/menu/",
       "portfolio.js 的 menu 公開功能與核對範圍"
@@ -265,7 +265,9 @@
     "aiAssisted": true,
     "editorialNotes": "新搜尋意圖為按工作步驟選擇固定規則、AI 草稿或人工確認；細化決策條件、混合流程及例外試用，與舊文選擇第一件工作、工具間交接不同。營業公告為明示假設；菜單功能依公開案例，AI 草稿與測試為規劃建議，未宣稱已實作或量測成果。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "dd5faeb2deedf805a25f12cf3ff453bc578b0948",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35551957699"
     },
     "validation": {
       "pythonTests": 12,
@@ -273,15 +275,40 @@
       "syntax": "passed",
       "diffCheck": "passed",
       "build": "passed",
-      "canonical": "verified",
+      "canonical": "live_verified",
       "indexableHTML": "verified",
       "oldArticleDates": "preserved",
-      "homeEntry": "verified",
-      "notesEntry": "verified",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
       "relatedLinks": "verified",
       "faq": "verified",
       "engagementTemplate": "verified",
-      "sitemapURLCount": 31
-    }
+      "sitemapURLCount": 31,
+      "articleLive": "verified",
+      "liveHTTP": 200,
+      "heartRead": "live_zero_verified",
+      "browserErrors": 0,
+      "horizontalOverflow": false
+    },
+    "verifiedAt": "2026-09-21T09:52:53.816169+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 31,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "could_not_fetch",
+      "submissionStatus": "accepted",
+      "submissionAttemptsToday": 1,
+      "lastAttemptDate": "2026-09-21",
+      "googleEvidence": "Google 顯示「已成功提交 Sitemap」；關閉後列表仍顯示「無法擷取」，已送出日期 2026年9月21日，探索網頁為 0。",
+      "submitted": true
+    },
+    "indexRequestDate": "2026-09-21",
+    "indexRequestAttempts": 1,
+    "indexingVerifiedAt": "2026-09-21T09:49:36.147886+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」。",
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
+    "indexRequestAcceptedAt": "2026-09-21T09:50:30.619980+08:00",
+    "followUp": "已發布且索引申請已接受，尚未確認收錄；之後只檢查索引狀態。Sitemap 於 2026-09-21 已重試一次，公開 XML 可讀且含新文，Google 列表仍為無法擷取，當日不再提交。"
   }
 ]
