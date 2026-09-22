@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/customer-form-purpose/': {seoTitle:'顧客詢問表單怎麼設計？從欄位用途與服務階段開始｜蔡鈞佑 Anson Tsai',description:'顧客詢問表單該問哪些資料？蔡鈞佑 Anson Tsai 從後續工作倒推欄位用途，用客製桌子的假設情境，整理必填、選填、分階段收集與填完後的銜接，讓中小企業的表單真正幫上忙。',tags:['顧客詢問表單','表單設計','顧客體驗','服務流程','AI 需求整理']},
   'notes/ai-or-fixed-rules/': {seoTitle:'AI 還是固定規則？中小企業工作自動化怎麼選｜蔡鈞佑 Anson Tsai',description:'中小企業想簡化工作，如何判斷該用 AI、固定規則，或交回人確認？蔡鈞佑 Anson Tsai 從資料、處理方式與驗收標準拆解，附營業公告的假設練習，以及福韻每日菜單的公開設計案例。',tags:['中小企業 AI 轉型','工作自動化','固定規則','AI 導入評估','流程設計']},
   "notes/brand-character-purpose/": {"seoTitle": "品牌 IP 怎麼開始？先替角色找到用途｜蔡鈞佑 Anson Tsai", "description": "品牌想做吉祥物或 IP，先決定它要在哪個情境幫誰做什麼。蔡鈞佑 Anson Tsai 從互動問卷的流程設計，整理角色任務、語氣、出場位置與小範圍試用的方法，讓可愛接到實際的品牌體驗。", "tags": ["品牌 IP", "角色設計", "品牌體驗", "品牌語氣", "AI 品牌整合"]},
   "notes/documents-findable-current/": {"seoTitle": "評鑑資料如何整理？目錄、版本與查找方法｜蔡鈞佑 Anson Tsai", "description": "資料庫需要讓人找得到，也看得懂目前能用哪一份。蔡鈞佑 Anson Tsai 從福韻評鑑與專業資料庫的公開設計，整理文件目錄、用途說明、版本與公開範圍的實作方法，並說明 AI 分類前要先確認的事。", "tags": ["評鑑資料整理", "文件管理", "資訊設計", "AI 工具整合"]},

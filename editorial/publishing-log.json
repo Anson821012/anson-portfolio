@@ -310,5 +310,43 @@
     "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」，網址已加入優先檢索佇列。",
     "indexRequestAcceptedAt": "2026-09-21T09:50:30.619980+08:00",
     "followUp": "已發布且索引申請已接受，尚未確認收錄；之後只檢查索引狀態。Sitemap 於 2026-09-21 已重試一次，公開 XML 可讀且含新文，Google 列表仍為無法擷取，當日不再提交。"
+  },
+  {
+    "date": "2026-09-22",
+    "topicId": "customer-form",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/customer-form-purpose/",
+    "title": "表單欄位越多，真的越了解顧客嗎？",
+    "publication": "pending_deployment",
+    "indexRequest": "pending",
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/contract/",
+      "portfolio.js 的 contract 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-22",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦顧客表單的欄位用途、分階段收集與未知答案；與內容選題、工作分工和AI方法選擇意圖不同。客製桌子為明示假設，未使用昨日本地潛客作客戶故事。引用服務交接的公開欄位，不宣稱新表單或AI摘要已實作、已提升完成率。",
+    "deployment": {
+      "status": "pending"
+    },
+    "indexRequestAttempts": 0,
+    "indexRequestBlocker": "本輪CUA回報Mac鎖定，無法操作Search Console；已請使用者解鎖。",
+    "followUp": "完成部署後申請一次索引；目前尚未送出索引要求。",
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified",
+      "notesEntry": "verified",
+      "relatedLinks": "verified",
+      "faq": "verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 32
+    }
   }
 ]

@@ -295,7 +295,9 @@
     "angle": "目的、必要欄位與後續使用",
     "service": "brand-marketing",
     "case": "contract",
-    "status": "planned"
+    "status": "published",
+    "slug": "customer-form-purpose",
+    "published": "2026-09-22"
   },
   {
     "id": "service-status",
