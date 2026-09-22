@@ -316,8 +316,8 @@
     "topicId": "customer-form",
     "url": "https://anson821012.github.io/anson-portfolio/notes/customer-form-purpose/",
     "title": "表單欄位越多，真的越了解顧客嗎？",
-    "publication": "pending_deployment",
-    "indexRequest": "pending",
+    "publication": "published",
+    "indexRequest": "pending_mac_unlock",
     "indexing": "not_checked",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/contract/",
@@ -327,26 +327,44 @@
     "aiAssisted": true,
     "editorialNotes": "聚焦顧客表單的欄位用途、分階段收集與未知答案；與內容選題、工作分工和AI方法選擇意圖不同。客製桌子為明示假設，未使用昨日本地潛客作客戶故事。引用服務交接的公開欄位，不宣稱新表單或AI摘要已實作、已提升完成率。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "6ded17f8c9c285b7386554a2fb2d3af88c29ccfe",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35674604033"
     },
     "indexRequestAttempts": 0,
     "indexRequestBlocker": "本輪CUA回報Mac鎖定，無法操作Search Console；已請使用者解鎖。",
-    "followUp": "完成部署後申請一次索引；目前尚未送出索引要求。",
+    "followUp": "文章已正式發布並核對可读HTML、首頁／筆記入口及Sitemap。Mac鎖定導致本輪未進入Search Console、索引要求尚未送出（0次）；解鎖後申請一次並核對結果。Sitemap公開XML正常，Google擷取狀態今天未重查／未重送。",
     "validation": {
       "pythonTests": 12,
       "nodeTests": 13,
       "syntax": "passed",
       "diffCheck": "passed",
       "build": "passed",
-      "canonical": "verified",
+      "canonical": "live_verified",
       "indexableHTML": "verified",
       "oldArticleDates": "preserved",
-      "homeEntry": "verified",
-      "notesEntry": "verified",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
       "relatedLinks": "verified",
       "faq": "verified",
       "engagementTemplate": "preserved",
-      "sitemapURLCount": 32
+      "sitemapURLCount": 32,
+      "articleLive": "verified",
+      "liveHTTP": 200,
+      "liveArticleText": "matches_checked_local_HTML",
+      "browserVisual": "not_checked_mac_locked"
+    },
+    "verifiedAt": "2026-09-22T09:09:38.834057+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 32,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "not_checked_mac_locked",
+      "lastKnownGoogleStatus": "could_not_fetch",
+      "lastKnownGoogleStatusDate": "2026-09-21",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
     }
   }
 ]
