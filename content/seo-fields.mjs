@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/event-brief-for-execution/': {seoTitle:'活動企劃書怎麼寫？讓執行者接得住的五個重點｜蔡鈞佑 Anson Tsai',description:'活動企劃書怎麼寫，現場才不會一直問？蔡鈞佑 Anson Tsai 用烘焙品牌快閃的假設情境，整理目標、角色、時間、素材、完成標準與例外處理，讓中小企業的活動企劃能直接接到執行。',tags:['活動企劃書','活動流程','執行清單','品牌行銷','團隊協作']},
   'notes/customer-form-purpose/': {seoTitle:'顧客詢問表單怎麼設計？從欄位用途與服務階段開始｜蔡鈞佑 Anson Tsai',description:'顧客詢問表單該問哪些資料？蔡鈞佑 Anson Tsai 從後續工作倒推欄位用途，用客製桌子的假設情境，整理必填、選填、分階段收集與填完後的銜接，讓中小企業的表單真正幫上忙。',tags:['顧客詢問表單','表單設計','顧客體驗','服務流程','AI 需求整理']},
   'notes/ai-or-fixed-rules/': {seoTitle:'AI 還是固定規則？中小企業工作自動化怎麼選｜蔡鈞佑 Anson Tsai',description:'中小企業想簡化工作，如何判斷該用 AI、固定規則，或交回人確認？蔡鈞佑 Anson Tsai 從資料、處理方式與驗收標準拆解，附營業公告的假設練習，以及福韻每日菜單的公開設計案例。',tags:['中小企業 AI 轉型','工作自動化','固定規則','AI 導入評估','流程設計']},
   "notes/brand-character-purpose/": {"seoTitle": "品牌 IP 怎麼開始？先替角色找到用途｜蔡鈞佑 Anson Tsai", "description": "品牌想做吉祥物或 IP，先決定它要在哪個情境幫誰做什麼。蔡鈞佑 Anson Tsai 從互動問卷的流程設計，整理角色任務、語氣、出場位置與小範圍試用的方法，讓可愛接到實際的品牌體驗。", "tags": ["品牌 IP", "角色設計", "品牌體驗", "品牌語氣", "AI 品牌整合"]},
