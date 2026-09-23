@@ -366,5 +366,61 @@
       "submissionAttemptsToday": 0,
       "submittedToday": false
     }
+  },
+  {
+    "date": "2026-09-23",
+    "topicId": "event-brief",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/event-brief-for-execution/",
+    "title": "一份讓執行者看得懂的活動企劃，要寫什麼？",
+    "publication": "published",
+    "indexRequest": "awaiting_action_confirmation",
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "portfolio.js 的 content 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-23",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦活動企劃如何接到執行，與近期 AI 方法選擇、顧客表單、品牌 IP 等搜尋意圖不同。烘焙品牌快閃為明示假設；公開內容案例僅支持跨平台交付規格，不宣稱活動流量或成交成果。",
+    "deployment": {
+      "status": "success",
+      "commit": "4e8b642e1a2c6fa65ddd613af52a6e1578f0e865",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35804810711"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "verified",
+      "faq": "verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 33,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-23T09:11:17+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 33,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "not_rechecked",
+      "lastKnownGoogleStatus": "could_not_fetch",
+      "lastKnownGoogleStatusDate": "2026-09-21",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": "2026-09-23T09:08:00+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供「要求建立索引」按鈕。",
+    "indexRequestBlocker": "已完成網址審查並停在「要求建立索引」前；瀏覽器操作規則要求在這個對外提交動作發生前取得當下確認。",
+    "followUp": "文章已正式發布並完成正式頁面、筆記入口及 Sitemap 核對。索引要求尚未送出（0次）；取得當下確認後只按一次並核對 Google 回應。"
   }
 ]
