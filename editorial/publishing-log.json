@@ -373,7 +373,7 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/event-brief-for-execution/",
     "title": "一份讓執行者看得懂的活動企劃，要寫什麼？",
     "publication": "published",
-    "indexRequest": "awaiting_action_confirmation",
+    "indexRequest": "accepted_priority_crawl_queue",
     "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/content/",
@@ -417,10 +417,13 @@
       "submissionAttemptsToday": 0,
       "submittedToday": false
     },
-    "indexRequestAttempts": 0,
+    "indexRequestAttempts": 1,
     "indexingVerifiedAt": "2026-09-23T09:08:00+08:00",
     "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供「要求建立索引」按鈕。",
-    "indexRequestBlocker": "已完成網址審查並停在「要求建立索引」前；瀏覽器操作規則要求在這個對外提交動作發生前取得當下確認。",
-    "followUp": "文章已正式發布並完成正式頁面、筆記入口及 Sitemap 核對。索引要求尚未送出（0次）；取得當下確認後只按一次並核對 Google 回應。"
+    "followUp": "Google 已接受一次建立索引要求並加入優先檢索佇列；目前仍未確認實際收錄，後續由 Search Console 再檢查。",
+    "indexRequestDate": "2026-09-23",
+    "indexRequestStartedAt": "2026-09-23T11:49:11+08:00",
+    "indexRequestAcceptedAt": "2026-09-23T11:49:28+08:00",
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」及「已將網址加入優先檢索佇列」。"
   }
 ]
