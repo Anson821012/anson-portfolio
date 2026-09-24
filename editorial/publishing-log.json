@@ -425,5 +425,56 @@
     "indexRequestStartedAt": "2026-09-23T11:49:11+08:00",
     "indexRequestAcceptedAt": "2026-09-23T11:49:28+08:00",
     "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」及「已將網址加入優先檢索佇列」。"
+  },
+  {
+    "date": "2026-09-24",
+    "topicId": "sop-exceptions",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/sop-exceptions-have-a-place/",
+    "title": "SOP 一遇到例外就失效，該怎麼補？",
+    "publication": "published",
+    "indexRequest": "not_attempted",
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/payroll/",
+      "portfolio.js 的 payroll 公開功能與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-24",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦 SOP 例外處理與回寫，和近期活動企劃、AI 規則及內容改寫的搜尋意圖不同。門市支援為明示假設；公開案例只支持固定設定、每月異動與特殊日期的資訊設計，不宣稱自動排班、計薪法規核驗或量測成效。",
+    "deployment": {
+      "status": "success",
+      "commit": "d47d625c5140f56e73e588d8402b70b86dc945e9",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/35949343232"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "verified_in_build",
+      "notesEntry": "verified_in_build",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 34,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-24T11:05:58+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 34,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "not_rechecked",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "followUp": "正式頁面與 Sitemap 已公開。Google Search Console 本輪未提出新的索引要求；已發布不等於已收錄。"
   }
 ]
