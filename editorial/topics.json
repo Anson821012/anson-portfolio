@@ -232,7 +232,9 @@
     "angle": "記錄、確認與回寫責任",
     "service": "operations-sop",
     "case": "payroll",
-    "status": "planned"
+    "status": "published",
+    "slug": "sop-exceptions-have-a-place",
+    "published": "2026-09-24"
   },
   {
     "id": "handover-entry",

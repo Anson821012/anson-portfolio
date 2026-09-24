@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/sop-exceptions-have-a-place/': {seoTitle:'SOP 遇到例外怎麼辦？例外紀錄與回寫方法｜蔡鈞佑 Anson Tsai',description:'SOP 遇到臨時支援、資料缺漏或特殊日期時，怎麼讓同事知道下一步？蔡鈞佑 Anson Tsai 整理例外紀錄、確認權限、暫時處理與回寫方法，讓中小企業的流程保留彈性，也能持續交接。',tags:['公司 SOP','例外處理','新人交接','流程改善','中小企業管理']},
   'notes/event-brief-for-execution/': {seoTitle:'活動企劃書怎麼寫？讓執行者接得住的五個重點｜蔡鈞佑 Anson Tsai',description:'活動企劃書怎麼寫，現場才不會一直問？蔡鈞佑 Anson Tsai 用烘焙品牌快閃的假設情境，整理目標、角色、時間、素材、完成標準與例外處理，讓中小企業的活動企劃能直接接到執行。',tags:['活動企劃書','活動流程','執行清單','品牌行銷','團隊協作']},
   'notes/customer-form-purpose/': {seoTitle:'顧客詢問表單怎麼設計？從欄位用途與服務階段開始｜蔡鈞佑 Anson Tsai',description:'顧客詢問表單該問哪些資料？蔡鈞佑 Anson Tsai 從後續工作倒推欄位用途，用客製桌子的假設情境，整理必填、選填、分階段收集與填完後的銜接，讓中小企業的表單真正幫上忙。',tags:['顧客詢問表單','表單設計','顧客體驗','服務流程','AI 需求整理']},
   'notes/ai-or-fixed-rules/': {seoTitle:'AI 還是固定規則？中小企業工作自動化怎麼選｜蔡鈞佑 Anson Tsai',description:'中小企業想簡化工作，如何判斷該用 AI、固定規則，或交回人確認？蔡鈞佑 Anson Tsai 從資料、處理方式與驗收標準拆解，附營業公告的假設練習，以及福韻每日菜單的公開設計案例。',tags:['中小企業 AI 轉型','工作自動化','固定規則','AI 導入評估','流程設計']},
