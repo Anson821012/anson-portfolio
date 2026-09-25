@@ -111,7 +111,9 @@
     "angle": "用可見流程與細節取代空泛形容",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "published",
+    "slug": "make-brand-care-visible",
+    "published": "2026-09-25"
   },
   {
     "id": "content-questions",
