@@ -476,5 +476,58 @@
     },
     "indexRequestAttempts": 0,
     "followUp": "正式頁面與 Sitemap 已公開。Google Search Console 本輪未提出新的索引要求；已發布不等於已收錄。"
+  },
+  {
+    "date": "2026-09-25",
+    "topicId": "brand-evidence",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/make-brand-care-visible/",
+    "title": "品牌很用心，顧客為什麼不一定看得見？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/",
+      "portfolio.js 的 quiz 公開功能、動機與範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-25",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦把品牌用心翻成可見服務細節，與近期 SOP 例外、活動企劃及顧客表單的搜尋意圖不同。只使用公開互動問卷流程與製作動機；未宣稱健康診斷、轉換成效或顧客實測結果。語氣採短句、溫和幽默與可回答的互動問題。",
+    "deployment": {
+      "status": "success",
+      "commit": "fa26b1e40eb0387b315eb400520cbf1ab124b7d9",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36093929179"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 35,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-25T12:21:05+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 35,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "url_inspection_sitemap_not_detected_yet",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": "2026-09-25T12:21:05+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
+    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
   }
 ]
