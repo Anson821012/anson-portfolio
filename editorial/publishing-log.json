@@ -483,7 +483,7 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/make-brand-care-visible/",
     "title": "品牌很用心，顧客為什麼不一定看得見？",
     "publication": "published",
-    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequest": "accepted",
     "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/quiz/",
@@ -525,9 +525,10 @@
       "submissionAttemptsToday": 0,
       "submittedToday": false
     },
-    "indexRequestAttempts": 0,
-    "indexingVerifiedAt": "2026-09-25T12:21:05+08:00",
-    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
-    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
+    "indexRequestAttempts": 1,
+    "indexRequestAcceptedAt": "2026-09-25T13:43:15+08:00",
+    "indexingVerifiedAt": "2026-09-25T13:43:15+08:00",
+    "indexingEvidence": "Google Search Console 顯示「已要求建立索引」與「已將網址加入優先檢索佇列」。目前尚未編入索引。",
+    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開；索引要求已由 Google 接受。等待 Google 後續檢索與收錄，不重複送出。"
   }
 ]
