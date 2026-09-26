@@ -530,5 +530,58 @@
     "indexingVerifiedAt": "2026-09-25T13:43:15+08:00",
     "indexingEvidence": "Google Search Console 顯示「已要求建立索引」與「已將網址加入優先檢索佇列」。目前尚未編入索引。",
     "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開；索引要求已由 Google 接受。等待 Google 後續檢索與收錄，不重複送出。"
+  },
+  {
+    "date": "2026-09-26",
+    "topicId": "ai-trial-check",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/ai-tool-trial-checklist/",
+    "title": "試用 AI 工具時，我會先看哪幾件事？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/menu/",
+      "portfolio.js 的 menu 公開功能、製作動機與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-26",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦 AI 工具試用的正確性、例外、成本與交接，與近期品牌接點、SOP 例外及活動企劃的搜尋意圖不同。只使用公開每日菜單的固定欄位、草稿、預覽、發布及輸出功能；未宣稱案例以 AI 自動判斷或已量測成效。語氣採短句、收納盒與工具休息等溫和幽默，並加入可回答的互動問題。",
+    "deployment": {
+      "status": "success",
+      "commit": "e7ad7fb97c4a124e4a88f84bcd3044973d7f53ed",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36216386801"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 36,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-26T11:59:26+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 36,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "url_inspection_sitemap_not_detected_yet",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": "2026-09-26T11:59:26+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
+    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
   }
 ]
