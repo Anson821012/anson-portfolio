@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/ai-tool-trial-checklist/': {seoTitle:'AI 工具怎麼試用？正確性、例外與維護檢查表｜蔡鈞佑 Anson Tsai',description:'AI 工具試用時，不只看第一份結果快不快。蔡鈞佑 Anson Tsai 從正確性、例外處理、維護成本與接手者體驗，整理中小企業評估 AI 工具是否真的適合日常工作的方法。',tags:['AI 工具試用','中小企業 AI 轉型','AI 導入評估','工作流程','AI 風險管理']},
   'notes/make-brand-care-visible/': {seoTitle:'品牌很用心，如何讓顧客看得見？從服務細節開始｜蔡鈞佑 Anson Tsai',description:'品牌總說自己很用心，顧客卻未必感受得到。蔡鈞佑 Anson Tsai 從服務前、等待中與完成後三個接點，整理如何把品牌用心變成看得見、說得清楚的服務細節。',tags:['品牌形象','品牌體驗','顧客溝通','服務設計','中小企業行銷']},
   'notes/sop-exceptions-have-a-place/': {seoTitle:'SOP 遇到例外怎麼辦？例外紀錄與回寫方法｜蔡鈞佑 Anson Tsai',description:'SOP 遇到臨時支援、資料缺漏或特殊日期時，怎麼讓同事知道下一步？蔡鈞佑 Anson Tsai 整理例外紀錄、確認權限、暫時處理與回寫方法，讓中小企業的流程保留彈性，也能持續交接。',tags:['公司 SOP','例外處理','新人交接','流程改善','中小企業管理']},
   'notes/event-brief-for-execution/': {seoTitle:'活動企劃書怎麼寫？讓執行者接得住的五個重點｜蔡鈞佑 Anson Tsai',description:'活動企劃書怎麼寫，現場才不會一直問？蔡鈞佑 Anson Tsai 用烘焙品牌快閃的假設情境，整理目標、角色、時間、素材、完成標準與例外處理，讓中小企業的活動企劃能直接接到執行。',tags:['活動企劃書','活動流程','執行清單','品牌行銷','團隊協作']},

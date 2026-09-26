@@ -28,7 +28,9 @@
     "angle": "正確性、例外、維護與接手者體驗",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-09-26",
+    "slug": "ai-tool-trial-checklist"
   },
   {
     "id": "ai-approval",
