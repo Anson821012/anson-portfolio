@@ -144,7 +144,9 @@
     "angle": "需求、資料、確認人與版本",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-09-27",
+    "slug": "copy-review-needs-clear-decisions"
   },
   {
     "id": "content-library",
