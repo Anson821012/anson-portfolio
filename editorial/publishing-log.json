@@ -583,5 +583,58 @@
     "indexingVerifiedAt": "2026-09-26T11:59:26+08:00",
     "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
     "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
+  },
+  {
+    "date": "2026-09-27",
+    "topicId": "content-review",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/copy-review-needs-clear-decisions/",
+    "title": "一篇文案改了五次，問題真的都在文字嗎？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "portfolio.js 的 content 公開交付、署名與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-27",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦文案反覆修改時的目的、資料、確認人與版本，與近期 AI 工具試用、品牌接點及 SOP 例外的搜尋意圖不同。只使用公開內容案例的文章、影音企劃、雙平台文案、FAQ 與 SEO 交付，以及已核對署名；未把搜尋或品牌成效歸因單一內容。語氣採短句、最終版檔名與逗號延長賽等溫和幽默，並加入可回答的互動問題。",
+    "deployment": {
+      "status": "success",
+      "commit": "cf1d58cb49a2eb3ce4fe46311849fe221414f9db",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36294408822"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 37,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-27T12:30:12+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 37,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "url_inspection_sitemap_not_detected_yet",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": "2026-09-27T12:30:12+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
+    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
   }
 ]
