@@ -48,7 +48,9 @@
     "angle": "補救流程與人工備援",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-09-28",
+    "slug": "automation-needs-manual-fallback"
   },
   {
     "id": "ai-team-adoption",

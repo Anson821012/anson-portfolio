@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/automation-needs-manual-fallback/': {seoTitle:'自動化失敗怎麼辦？人工備援與恢復流程｜蔡鈞佑 Anson Tsai',description:'自動化遇到網路、登入或工具異常時，工作如何繼續？蔡鈞佑 Anson Tsai 整理中小企業保留人工入口、失敗狀態、接手責任與避免重複執行的方法。',tags:['自動化失敗','人工備援流程','中小企業 AI 轉型','工作流程自動化','異常處理']},
   'notes/copy-review-needs-clear-decisions/': {seoTitle:'文案一直修改怎麼辦？先整理目的、資料與確認人｜蔡鈞佑 Anson Tsai',description:'文案反覆修改，常見原因不只是寫得不好，而是目的、資料、確認人與版本沒有先說清楚。蔡鈞佑 Anson Tsai 整理中小企業減少無效來回、保留品牌判斷的方法。',tags:['文案修改','內容審核流程','品牌語氣','內容行銷','社群文案']},
   'notes/ai-tool-trial-checklist/': {seoTitle:'AI 工具怎麼試用？正確性、例外與維護檢查表｜蔡鈞佑 Anson Tsai',description:'AI 工具試用時，不只看第一份結果快不快。蔡鈞佑 Anson Tsai 從正確性、例外處理、維護成本與接手者體驗，整理中小企業評估 AI 工具是否真的適合日常工作的方法。',tags:['AI 工具試用','中小企業 AI 轉型','AI 導入評估','工作流程','AI 風險管理']},
   'notes/make-brand-care-visible/': {seoTitle:'品牌很用心，如何讓顧客看得見？從服務細節開始｜蔡鈞佑 Anson Tsai',description:'品牌總說自己很用心，顧客卻未必感受得到。蔡鈞佑 Anson Tsai 從服務前、等待中與完成後三個接點，整理如何把品牌用心變成看得見、說得清楚的服務細節。',tags:['品牌形象','品牌體驗','顧客溝通','服務設計','中小企業行銷']},
