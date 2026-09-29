@@ -68,7 +68,9 @@
     "angle": "把對象、問題與做法寫成一句話",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-09-29",
+    "slug": "company-introduction-beyond-professional"
   },
   {
     "id": "brand-touchpoints",
