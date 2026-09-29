@@ -689,5 +689,58 @@
     "indexingVerifiedAt": null,
     "indexingEvidence": "正式文章、首頁入口、筆記入口與 Sitemap 已驗證；尚未在 Search Console 送出索引要求。",
     "followUp": "Search Console 的「要求建立索引」是代表帳號對外提交的動作，需在使用者當下確認後才能送出；不得把尚未送出記成已申請。"
+  },
+  {
+    "date": "2026-09-29",
+    "topicId": "brand-one-sentence",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/company-introduction-beyond-professional/",
+    "title": "公司介紹只寫「我們很專業」，顧客看得懂嗎？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/",
+      "portfolio.js 的 quiz 公開流程、製作動機與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-29",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦公司一句話介紹的服務對象、具體問題與主要做法，和前一日自動化備援的搜尋意圖不同。只使用公開品牌互動問卷的八題作答、分類結果與 LINE 銜接流程；未宣稱問卷有健康診斷或轉換成效。加入白飯、搬倉庫與換氣等溫和幽默，以及容易回答的互動問題。",
+    "deployment": {
+      "status": "success",
+      "commit": "622106caf8e2a8f601ec356eff5103b0c00ff0f0",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36520112837"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 39,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-29T12:08:29+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 39,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "not_checked",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": null,
+    "indexingEvidence": "正式文章、首頁入口、筆記入口與 Sitemap 已驗證；尚未在 Search Console 送出索引要求。",
+    "followUp": "Search Console 的「要求建立索引」是代表帳號對外提交的動作，需在使用者當下確認後才能送出；不得把尚未送出記成已申請。"
   }
 ]
