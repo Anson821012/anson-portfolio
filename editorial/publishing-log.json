@@ -742,5 +742,58 @@
     "indexingVerifiedAt": null,
     "indexingEvidence": "正式文章、首頁入口、筆記入口與 Sitemap 已驗證；尚未在 Search Console 送出索引要求。",
     "followUp": "Search Console 的「要求建立索引」是代表帳號對外提交的動作，需在使用者當下確認後才能送出；不得把尚未送出記成已申請。"
+  },
+  {
+    "date": "2026-09-30",
+    "topicId": "service-status",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/customer-waiting-needs-status/",
+    "title": "顧客等待沒消息，服務進度怎麼說才安心？",
+    "publication": "published",
+    "indexRequest": "not_attempted",
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/contract/",
+      "portfolio.js 的 contract 公開功能、製作動機與核對範圍"
+    ],
+    "sourcesCheckedAt": "2026-09-30",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦顧客等待時的服務狀態、補件、下一次更新與延後通知，和前一日公司一句話介紹的搜尋意圖不同。只使用公開線上簽約案例的方案、權益、簽署、匯款資料、核對、覆簽與狀態設計；未宣稱法律效力、款項流程或通知成效。加入電梯樓層與服務實況轉播等溫和幽默，以及容易回答的互動問題。",
+    "deployment": {
+      "status": "success",
+      "commit": "49a9101c914898e4ea19165ccd35a31a1bda3f82",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36660280826"
+    },
+    "validation": {
+      "pythonTests": 12,
+      "nodeTests": 13,
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "live_verified",
+      "indexableHTML": "verified",
+      "oldArticleDates": "preserved",
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
+      "relatedLinks": "live_verified",
+      "faq": "live_verified",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 40,
+      "articleLive": "verified",
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-09-30T10:33:53+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 40,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "not_checked",
+      "submissionAttemptsToday": 0,
+      "submittedToday": false
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": null,
+    "indexingEvidence": "正式文章、首頁入口、筆記入口與 Sitemap 已驗證；尚未在 Search Console 送出索引要求。",
+    "followUp": "索引要求尚未送出；發布、Sitemap 可讀與 Google 實際收錄是不同狀態。"
   }
 ]
