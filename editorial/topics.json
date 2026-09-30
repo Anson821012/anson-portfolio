@@ -320,7 +320,9 @@
     "angle": "流程狀態、提醒與預期",
     "service": "brand-marketing",
     "case": "contract",
-    "status": "planned"
+    "status": "published",
+    "slug": "customer-waiting-needs-status",
+    "published": "2026-09-30"
   },
   {
     "id": "contract-journey",

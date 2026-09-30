@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  'notes/customer-waiting-needs-status/': {seoTitle:'服務進度怎麼通知？讓顧客等待時少一點不安｜蔡鈞佑 Anson Tsai',description:'顧客等待時一直追問，不一定是沒有耐心。蔡鈞佑 Anson Tsai 整理服務狀態、補件提醒、下一次更新時間與延後通知，讓中小企業把等待說清楚。',tags:['服務進度通知','顧客等待','顧客體驗','服務流程','中小企業管理']},
   'notes/company-introduction-beyond-professional/': {seoTitle:'公司介紹怎麼寫？用對象、問題與做法說清楚｜蔡鈞佑 Anson Tsai',description:'公司介紹只寫專業與用心，顧客仍可能不知道你能幫誰。蔡鈞佑 Anson Tsai 用對象、問題與做法三個欄位，整理中小企業的一句話品牌介紹。',tags:['公司介紹怎麼寫','品牌定位','一句話品牌介紹','中小企業行銷','品牌文案']},
   'notes/automation-needs-manual-fallback/': {seoTitle:'自動化失敗怎麼辦？人工備援與恢復流程｜蔡鈞佑 Anson Tsai',description:'自動化遇到網路、登入或工具異常時，工作如何繼續？蔡鈞佑 Anson Tsai 整理中小企業保留人工入口、失敗狀態、接手責任與避免重複執行的方法。',tags:['自動化失敗','人工備援流程','中小企業 AI 轉型','工作流程自動化','異常處理']},
   'notes/copy-review-needs-clear-decisions/': {seoTitle:'文案一直修改怎麼辦？先整理目的、資料與確認人｜蔡鈞佑 Anson Tsai',description:'文案反覆修改，常見原因不只是寫得不好，而是目的、資料、確認人與版本沒有先說清楚。蔡鈞佑 Anson Tsai 整理中小企業減少無效來回、保留品牌判斷的方法。',tags:['文案修改','內容審核流程','品牌語氣','內容行銷','社群文案']},
