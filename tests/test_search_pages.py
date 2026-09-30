@@ -141,6 +141,23 @@ class SearchPagesTest(unittest.TestCase):
                 self.assertEqual(site['name'], '麻煩整理所')
                 self.assertIn('蔡鈞佑 Anson Tsai', site['alternateName'])
 
+    def test_home_motion_assets_are_progressive_and_published(self):
+        soup = self.pages['index.html']
+        robot = soup.select_one('a.hero-robot-pop[href="services/"]')
+        self.assertIsNotNone(robot)
+        self.assertEqual(robot['aria-label'], '跟著整理所機器人查看整理服務')
+        self.assertIsNotNone(soup.select_one('link[href="motion.css"]'))
+        self.assertIsNotNone(soup.select_one('script[src="motion.js"][defer]'))
+        for name in ['motion.css', 'motion.js', 'assets/robot-pop-640.webp', 'assets/robot-pop-1000.webp']:
+            with self.subTest(asset=name):
+                asset = self.dest / name
+                self.assertTrue(asset.is_file())
+                if asset.suffix == '.webp':
+                    data = asset.read_bytes()
+                    self.assertEqual(data[:4], b'RIFF')
+                    self.assertEqual(data[8:12], b'WEBP')
+        self.assertIn('prefers-reduced-motion:reduce', (self.dest / 'motion.css').read_text())
+
 
 if __name__ == '__main__':
     unittest.main()

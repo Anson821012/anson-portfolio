@@ -28,6 +28,16 @@ Use case: logo-brand / stylized-concept. Generate a square 1024x1024 website fav
 
 圖片原始比例 3:2，使用 WebP 尺寸版本和 `srcset`，首頁優先載入、服務場景延遲載入。文字、按鈕與資料皆由 HTML 呈現。
 
+## 2026/09/30 首頁互動機器人與動態層
+
+使用 Codex 內建 imagegen，以首頁場景內既有機器人為角色一致性參考，產生一張透明背景、抱著資料夾向前走的完整角色。原始生成檔經 Pillow 輸出為含透明度的 WebP：
+
+- `assets/robot-pop-640.webp`：首頁一般與手機尺寸。
+- `assets/robot-pop-1000.webp`：高像素密度螢幕尺寸。
+- `assets/robot-pop.prompt.txt`：完整生成提示詞。
+
+角色會從主場景右下方走出來，滑鼠移動時與背景產生不同幅度的視差；移到角色或使用鍵盤聚焦時，才顯示「今天，想先整理哪件事？」。內容區塊依閱讀位置逐步進場，桌機右側提供精簡段落指示。手機降低視差幅度、固定顯示提示文字，並保留既有分頁導覽。使用者選擇減少動態時，所有進場、漂浮與視差動畫都會停用。
+
 ## 最終提示詞：首頁場景
 
 Create a polished hero illustration for a Taiwanese creative strategy and AI integration studio called The Less Trouble Office. Use case: stylized-concept, narrative website art. A cinematic, charming premium 3D animated feature film look, original characters, sophisticated art direction. Wide landscape 3:2 composition, no text, no letters, no logos, no watermark. A friendly small cream-white and soft sage-green robot with a rounded pill-shaped body, dark teal glass face, two expressive glowing cyan oval eyes, tiny antenna, short rounded arms and feet, stands center-front holding a neatly sorted stack of pastel folders; it has a playful curious expression. A stylish young East Asian adult man with black fluffy hair, rounded glasses, ivory shirt and terracotta trousers on the left, and an East Asian adult woman with dark shoulder-length hair, lilac cardigan and cream trousers on the right. All three work together to organize a delightfully miniature futuristic creative studio. The man gently places a floating task tile into a rounded modular shelf; the woman arranges translucent interface cards above a curved mint table. Environment: expansive cream architectural studio with large rounded portal windows, little indoor tree, sculptural lamps, warm apricot sunlight, a few floating translucent turquoise interface panels with simple abstract icons only, pastel folders, coffee cup, tactile curved furniture. Visual storytelling: a few scattered paper cards on the left transition into beautifully organized colorful stacks and connected glowing blocks on the right. Characters friendly, expressive, warm, competent, large enough to be recognizable on mobile. Soft clay-like materials mixed with glossy ceramic robot and subtle translucent technology, extraordinary 3D detail, ambient occlusion, soft global illumination, volumetric golden afternoon light, subtle depth of field. Palette: warm ivory, sage green, mint, pastel lavender, coral peach, dark forest accents. Keep scene coherent, beautiful, clean, spacious, not cluttered; all characters and main props inside center 85% safe area. Eye-level camera at slight high angle, cinematic wide scene. Original character design only; no existing franchise characters. Image is artwork without any interface chrome or website text.

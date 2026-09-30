@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: transparent character cutout for an interactive website hero
+Input image: reference image for the established original robot identity, materials, proportions, palette and premium 3D animated-film quality only
+Primary request: create one isolated full-body version of the same original cream-white and soft sage-green robot, walking forward with a friendly confident expression while hugging a tidy stack of pastel peach, sage and lavender folders
+Subject: rounded pill-shaped ceramic body, dark teal glossy faceplate, two luminous cyan oval eyes, tiny sage antenna, rounded arms and feet; preserve the recognizable design from the reference
+Style/medium: premium cinematic 3D character render, tactile ceramic and softly brushed materials, sophisticated warm animation-film quality, original character design
+Composition/framing: transparent square canvas; entire robot, antenna, folders and both feet fully visible; three-quarter front view; centered with generous clear space on every side; no crop
+Lighting/mood: warm soft studio lighting consistent with the supplied reference, gentle rim light and believable soft ambient occlusion
+Color palette: warm ivory, sage green, dark teal, pastel peach, lavender and mint
+Constraints: genuinely transparent alpha background; preserve clean edges and fine antialiasing; no ground plane; no text; no letters; no logos; no watermark; no human characters; no furniture; no room; no extra objects; no duplicate limbs; no franchise character resemblance
