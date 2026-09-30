@@ -749,8 +749,8 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/customer-waiting-needs-status/",
     "title": "顧客等待沒消息，服務進度怎麼說才安心？",
     "publication": "published",
-    "indexRequest": "not_attempted",
-    "indexing": "not_checked",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/contract/",
       "portfolio.js 的 contract 公開功能、製作動機與核對範圍"
@@ -792,8 +792,8 @@
       "submittedToday": false
     },
     "indexRequestAttempts": 0,
-    "indexingVerifiedAt": null,
-    "indexingEvidence": "正式文章、首頁入口、筆記入口與 Sitemap 已驗證；尚未在 Search Console 送出索引要求。",
-    "followUp": "索引要求尚未送出；發布、Sitemap 可讀與 Google 實際收錄是不同狀態。"
+    "indexingVerifiedAt": "2026-09-30T10:35:12+08:00",
+    "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
+    "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
   }
 ]
