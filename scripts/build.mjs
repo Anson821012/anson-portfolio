@@ -23,7 +23,7 @@ for (const [name,value] of Object.entries(fragments)) {
 const searchReady = await buildSearchPages({root,dest,html,review:process.argv.includes('--review')});
 await writeFile(path.join(dest,'index.html'),searchReady.html);
 // Explicit public allowlist: credentials, source tools and raw reports never enter the artifact.
-for (const file of ['styles.css','expanded.css','growth.css','friends.css','motion.css','content-pages.css','content-pages.js','consultation.js','consultation-state.mjs','site-config.mjs','analytics.mjs','engagement.css','engagement-api.mjs','article-engagement.mjs','inquiry.mjs','catalogue.js','portfolio.js','navigation.js','app.js','motion.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','favicon-robot-96.png','apple-touch-icon.png','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
+for (const file of ['styles.css','expanded.css','growth.css','friends.css','motion.css','robot.css','needs-guide.css','needs-guide.mjs','needs-guide-state.mjs','robot3d.mjs','robot-state.mjs','robot-model.mjs','content-pages.css','content-pages.js','consultation.js','consultation-state.mjs','site-config.mjs','analytics.mjs','engagement.css','engagement-api.mjs','article-engagement.mjs','inquiry.mjs','catalogue.js','portfolio.js','navigation.js','app.js','motion.js','growth-view.mjs','live.mjs','office.svg','favicon.svg','favicon-robot-96.png','apple-touch-icon.png','anson.JPG']) await copyFile(path.join(root,file),path.join(dest,file));
 await mkdir(path.join(dest,'assets'),{recursive:true});
 for (const width of [480,800]) await copyFile(path.join(root,`assets/anson-${width}.webp`),path.join(dest,`assets/anson-${width}.webp`));
 await copyFile(path.join(root,'assets/share-robot-20260917.jpg'),path.join(dest,'assets/share-robot-20260917.jpg'));
@@ -36,3 +36,6 @@ for (const scene of ['office-friends','planning-together']) {
 for (const width of [640,1000]) await copyFile(path.join(root,`assets/robot-pop-${width}.webp`),path.join(dest,`assets/robot-pop-${width}.webp`));
 await writeFile(path.join(dest,'.nojekyll'),'');
 console.log('Built public site at '+dest);
+
+await mkdir(path.join(dest,'vendor/three-0.180.0'),{recursive:true});
+for (const file of ['three.module.min.js','three.core.min.js','LICENSE']) await copyFile(path.join(root,'vendor/three-0.180.0',file),path.join(dest,'vendor/three-0.180.0',file));

@@ -65,6 +65,9 @@
 
 .hero-robot-pop img{
   object-fit:contain;
+}
+
+.motion-ready .hero-robot-pop img{
   animation:robot-idle 4.4s ease-in-out 1.25s infinite;
 }
 

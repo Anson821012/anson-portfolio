@@ -143,12 +143,20 @@ class SearchPagesTest(unittest.TestCase):
 
     def test_home_motion_assets_are_progressive_and_published(self):
         soup = self.pages['index.html']
-        robot = soup.select_one('a.hero-robot-pop[href="services/"]')
+        robot = soup.select_one('.hero-robot-pop[data-robot-stage]')
         self.assertIsNotNone(robot)
-        self.assertEqual(robot['aria-label'], '跟著整理所機器人查看整理服務')
+        self.assertTrue(robot.select_one('picture img')['alt'])
+        self.assertEqual(robot.select_one('canvas')['aria-hidden'], 'true')
+        self.assertIsNotNone(soup.select_one('script[type="module"][src="robot3d.mjs"]'))
+        self.assertIsNotNone(soup.select_one('link[href="robot.css"]'))
+        # Visitors without scripts or a graphics context can still use every route.
+        routes = soup.select('.robot-guide a')
+        self.assertEqual(len(routes), 3)
+        self.assertEqual(routes[-1]['href'], 'contact/')
+        self.assertIn('facet=operations', routes[1]['href'])
         self.assertIsNotNone(soup.select_one('link[href="motion.css"]'))
         self.assertIsNotNone(soup.select_one('script[src="motion.js"][defer]'))
-        for name in ['motion.css', 'motion.js', 'assets/robot-pop-640.webp', 'assets/robot-pop-1000.webp']:
+        for name in ['motion.css', 'motion.js', 'robot.css', 'robot3d.mjs', 'robot-model.mjs', 'robot-state.mjs', 'vendor/three-0.180.0/three.module.min.js', 'vendor/three-0.180.0/three.core.min.js', 'vendor/three-0.180.0/LICENSE', 'assets/robot-pop-640.webp', 'assets/robot-pop-1000.webp']:
             with self.subTest(asset=name):
                 asset = self.dest / name
                 self.assertTrue(asset.is_file())
@@ -157,6 +165,27 @@ class SearchPagesTest(unittest.TestCase):
                     self.assertEqual(data[:4], b'RIFF')
                     self.assertEqual(data[8:12], b'WEBP')
         self.assertIn('prefers-reduced-motion:reduce', (self.dest / 'motion.css').read_text())
+
+    def test_guide_can_load_and_all_recommendations_link_to_real_pages(self):
+        soup = self.pages['index.html']
+        self.assertIsNotNone(soup.select_one('button[data-open-guide][hidden]'))
+        self.assertIsNotNone(soup.select_one('dialog#needs-guide[aria-labelledby="guide-title"]'))
+        self.assertIsNotNone(soup.select_one('script[type="module"][src="needs-guide.mjs"]'))
+        for asset in ['needs-guide.css', 'needs-guide.mjs', 'needs-guide-state.mjs']:
+            self.assertTrue((self.dest / asset).is_file())
+        script = """
+import fs from 'node:fs'; import vm from 'node:vm';
+import {questions,recommend} from './needs-guide-state.mjs';
+const c={};vm.runInNewContext(fs.readFileSync('catalogue.js','utf8')+';this.data=serviceData.categories.flatMap(c=>c.services)',c);
+const results=[];
+for(const p of questions[0].options)for(const m of questions[1].options)for(const g of questions[2].options)results.push(recommend({pain:p.id,method:m.id,goal:g.id},c.data));
+console.log(JSON.stringify(results));
+"""
+        results = json.loads(subprocess.check_output(['node', '--input-type=module', '-e', script], cwd=ROOT, text=True))
+        for result in results:
+            self.assertIn('cases/' + result['caseId'] + '/index.html', self.pages)
+            for service in result['services']:
+                self.assertIsNotNone(self.pages['services/index.html'].find(id=service['id']))
 
 
 if __name__ == '__main__':

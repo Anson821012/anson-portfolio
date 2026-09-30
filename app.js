@@ -59,7 +59,26 @@ function updateSelection() {
   });
   renderList();
   document.querySelector('#plain-list').hidden = true;
+  publishListState();
 }
+function publishListState() {
+  document.dispatchEvent(new CustomEvent('office:list-changed',{detail:{ids:[...selected],persisted:storageAvailable}}));
+}
+document.addEventListener('office:guide-read-list',publishListState);
+document.addEventListener('office:guide-add',async event=>{
+  const request=event.detail?.request;
+  try {
+    const {mergeSelectionIds}=await import('./needs-guide-state.mjs');
+    if(!Array.isArray(event.detail?.ids))throw new Error('Invalid service selection');
+    selected=new Set(mergeSelectionIds([...selected],event.detail.ids,[...byId.keys()]));
+    save();updateSelection();
+    document.dispatchEvent(new CustomEvent('office:guide-added',{detail:{request,ok:true,ids:[...selected],persisted:storageAvailable}}));
+  } catch {
+    document.dispatchEvent(new CustomEvent('office:guide-added',{detail:{request,ok:false}}));
+  }
+});
+document.addEventListener('office:guide-open-list',event=>openList(event.detail?.opener));
+document.documentElement.dataset.selectionReady='true';
 let activeFacet = 'start';
 let searchQuery = '';
 const tabs = document.querySelector('#categories');
@@ -189,7 +208,7 @@ document.querySelector('#service-cards').addEventListener('click', event => {
   announce(`${removed ? '已移除' : '已加入'}：${byId.get(id).name}`);
 });
 function deliverCard(button) {
-  if (matchMedia('(prefers-reduced-motion:reduce)').matches || !Element.prototype.animate) return;
+  if (document.documentElement.dataset.motionPaused==='true' || matchMedia('(prefers-reduced-motion:reduce)').matches || !Element.prototype.animate) return;
   const start = button.getBoundingClientRect();
   const end = document.querySelector('[data-open-list]').getBoundingClientRect();
   const helper = document.createElement('div');

@@ -19,6 +19,7 @@
   if (heroArt && finePointer.matches) {
     let frame = 0;
     const updateDepth = event => {
+      if (root.dataset.motionPaused === 'true' || reduceMotion.matches) return;
       const bounds = heroArt.getBoundingClientRect();
       const x = (event.clientX - bounds.left) / bounds.width - .5;
       const y = (event.clientY - bounds.top) / bounds.height - .5;

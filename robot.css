@@ -1,0 +1,65 @@
+/* A small playable scene, with real links and a useful static fallback. */
+.hero-art{padding-bottom:0}
+.hero-stage{position:relative;padding-bottom:66px}
+.hero-robot-pop{right:-28px;bottom:-8px;width:clamp(225px,25vw,330px);aspect-ratio:1;filter:none}
+.hero-robot-pop:hover{transform:translate3d(var(--robot-x),var(--robot-y),45px);filter:none}
+.hero-robot-pop canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity .5s ease}
+.hero-robot-pop picture{transition:opacity .3s ease}
+.hero-robot-pop[data-renderer="ready"] canvas{opacity:1}
+.hero-robot-pop[data-renderer="ready"] picture{opacity:0;visibility:hidden}
+.hero-robot-pop[data-renderer="ready"] img{animation:none}
+.robot-speech{backdrop-filter:none;background:#fffdf5;right:64%;top:17%;opacity:1;transform:none;max-width:188px;font-size:11px}
+.scene-badge{max-width:65%}
+.robot-dock{position:relative;z-index:5;margin:4px 0 0;padding:18px 20px 16px;border:1px solid #dce5d9;border-radius:23px;background:linear-gradient(135deg,#fffef9f5,#f1f5eef5);box-shadow:0 16px 40px #304c3910;text-align:left}
+.robot-dock-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}
+.robot-label{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:650;letter-spacing:.12em;color:#627363}
+.robot-label::before{content:"";width:7px;height:7px;border-radius:50%;background:#819f87;box-shadow:0 0 0 4px #819f8712}
+.robot-dock button,.robot-guide summary{font:inherit;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.robot-dock [hidden]{display:none!important}
+.robot-dock button:focus-visible,.robot-guide summary:focus-visible,.robot-routes a:focus-visible{outline:3px solid #448674;outline-offset:4px}
+.robot-pause{min-height:32px;padding:4px 6px;border:0;background:transparent;color:#5f6c60;font-size:10px!important;text-decoration:underline;text-underline-offset:4px}
+.robot-pause:disabled{cursor:default;text-decoration:none}
+.robot-actions{position:relative}
+.robot-wave,.robot-guide summary{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:10px 17px;border-radius:13px;border:1px solid #cfd9ce;font-size:12px!important;font-weight:650!important;line-height:1.5;white-space:nowrap}
+.robot-wave{position:absolute;left:0;top:0;width:106px;color:#405b49;background:#fffef9}
+.robot-wave:not([hidden]) ~ .robot-guide > summary{margin-left:115px}
+.robot-wave:disabled{opacity:.5;cursor:default}
+.robot-guide{flex:1;min-width:0}
+.robot-guide summary{list-style:none;background:#294e3f;color:#fffef4;border-color:#294e3f}
+.robot-guide summary::-webkit-details-marker{display:none}
+.robot-guide summary::after{content:"＋";font-size:17px;font-weight:400;margin-left:auto}
+.robot-guide[open] summary::after{content:"−"}
+.robot-guide summary:hover{background:#36604e}
+.robot-routes{padding-top:12px}
+.robot-routes p{font-size:12px!important;line-height:1.7!important;margin:0 0 9px!important;color:#5f6c60}
+.robot-routes a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #dce3d8;text-decoration:none;color:#294e3f;font-size:12px;line-height:1.6}
+.robot-routes a:last-child{border-bottom:0}
+.robot-routes a span{display:block;font-size:10px;color:#748173;font-weight:400}
+.robot-routes a b{font-weight:650}
+.robot-routes a::after{content:"↗";font-size:18px}
+.robot-routes a:hover b{text-decoration:underline;text-underline-offset:4px}
+.robot-footnote{margin:10px 0 0!important;font-size:10px!important;color:#748173;line-height:1.6!important}
+.hero-art .art-caption{margin:13px 0 0}
+html[data-motion-paused="true"]{scroll-behavior:auto}
+html[data-motion-paused="true"] .hero-art *,html[data-motion-paused="true"] .hero-copy>*{animation:none!important;transition:none!important;opacity:1}
+html[data-motion-paused="true"] .hero-robot-pop{transform:none!important}
+html[data-motion-paused="true"] .hero-art .scene-frame{transform:rotate(1.5deg)!important}
+html[data-motion-paused="true"] .motion-reveal{opacity:1!important;transform:none!important;transition:none!important}
+html[data-motion-paused="true"] .hero-robot-pop:not([data-renderer="ready"]) canvas{opacity:0}
+html[data-motion-paused="true"] .hero-robot-pop[data-renderer="ready"] picture{opacity:0}
+@media(max-width:800px){
+  .hero-stage{padding-bottom:53px}
+  .hero-art::before{right:0}
+  html[data-motion-paused="true"] .hero-art .scene-frame{transform:none!important}
+  .hero-robot-pop{right:-12px;bottom:-11px;width:49vw;max-width:245px}
+  .robot-speech{right:69%;top:21%;max-width:154px;padding:8px 10px;font-size:10px}
+  .robot-dock{margin-top:0;padding:14px 16px 12px;border-radius:20px}
+  .robot-pause{min-height:40px;margin:-4px -4px -4px 0}
+  .robot-wave,.robot-guide summary{padding:10px 12px}
+  .robot-footnote{font-size:10px!important}
+}
+@media(max-width:380px){.robot-speech{max-width:128px;font-size:9px}.robot-label{font-size:9px;letter-spacing:.06em}.robot-wave,.robot-guide summary{font-size:11px!important;padding:10px}}
+@media(prefers-reduced-motion:reduce){
+ .hero-robot-pop *{animation:none!important;transition:none!important}
+ .hero-robot-pop{transform:none!important}
+}
