@@ -154,8 +154,8 @@ class SearchPagesTest(unittest.TestCase):
         self.assertEqual(len(routes), 3)
         self.assertEqual(routes[-1]['href'], 'contact/')
         self.assertIn('facet=operations', routes[1]['href'])
-        self.assertIsNotNone(soup.select_one('link[href="motion.css"]'))
-        self.assertIsNotNone(soup.select_one('script[src="motion.js"][defer]'))
+        self.assertIsNotNone(soup.select_one('link[href="motion.css?v=20260930-phase3"]'))
+        self.assertIsNotNone(soup.select_one('script[src="motion.js?v=20260930-phase3"][defer]'))
         for name in ['motion.css', 'motion.js', 'robot.css', 'robot3d.mjs', 'robot-model.mjs', 'robot-state.mjs', 'vendor/three-0.180.0/three.module.min.js', 'vendor/three-0.180.0/three.core.min.js', 'vendor/three-0.180.0/LICENSE', 'assets/robot-pop-640.webp', 'assets/robot-pop-1000.webp']:
             with self.subTest(asset=name):
                 asset = self.dest / name
@@ -169,6 +169,7 @@ class SearchPagesTest(unittest.TestCase):
     def test_guide_can_load_and_all_recommendations_link_to_real_pages(self):
         soup = self.pages['index.html']
         self.assertIsNotNone(soup.select_one('button[data-open-guide][hidden]'))
+        self.assertIsNotNone(soup.select_one('script[src="app.js?v=20260930-phase3"][defer]'))
         self.assertIsNotNone(soup.select_one('dialog#needs-guide[aria-labelledby="guide-title"]'))
         self.assertIsNotNone(soup.select_one('script[type="module"][src="needs-guide.mjs"]'))
         for asset in ['needs-guide.css', 'needs-guide.mjs', 'needs-guide-state.mjs']:
