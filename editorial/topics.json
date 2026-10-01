@@ -139,7 +139,9 @@
     "angle": "各平台保留語意又重新安排用途",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-01",
+    "slug": "interview-reuse-with-context"
   },
   {
     "id": "content-review",

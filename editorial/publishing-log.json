@@ -795,5 +795,44 @@
     "indexingVerifiedAt": "2026-09-30T10:35:12+08:00",
     "indexingEvidence": "Google Search Console 顯示「網址不在 Google 服務中」「Google 無法辨識的網址」，並提供可用的「要求建立索引」按鈕。",
     "followUp": "文章、首頁入口、筆記入口與 Sitemap 已公開。Search Console 已停在「要求建立索引」前；依瀏覽器外部動作確認規則，需使用者在當下確認後才可送出。"
+  },
+  {
+    "date": "2026-10-01",
+    "topicId": "content-reuse",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/interview-reuse-with-context/",
+    "title": "一段訪談，怎麼變成文章、短影音與社群貼文？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-01",
+    "aiAssisted": true,
+    "editorialNotes": "以訪談原文位置、適用條件與改寫核對為主，區別既有平台分工、顧客問題選題與文案審核文章。花店為明示假設，沒有虛構訪談或成效。幽默為同一意思換衣服；結尾詢問讀者選段或改寫困難。公開案例保留共同參與與製作分工。",
+    "deployment": {
+      "status": "pending",
+      "commit": null,
+      "run": null
+    },
+    "indexRequestAttempts": 0,
+    "indexingVerifiedAt": null,
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "correct",
+      "indexableHTML": true,
+      "oldArticleDates": "all 19 prior notes unchanged",
+      "homeEntry": true,
+      "notesEntry": true,
+      "relatedLinks": "all local article links resolve",
+      "faq": "3 visible questions",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 41,
+      "phase3Assets": "preserved"
+    }
   }
 ]
