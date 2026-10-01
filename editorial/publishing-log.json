@@ -801,9 +801,9 @@
     "topicId": "content-reuse",
     "url": "https://anson821012.github.io/anson-portfolio/notes/interview-reuse-with-context/",
     "title": "一段訪談，怎麼變成文章、短影音與社群貼文？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexing": "not_checked",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/content/"
     ],
@@ -811,12 +811,12 @@
     "aiAssisted": true,
     "editorialNotes": "以訪談原文位置、適用條件與改寫核對為主，區別既有平台分工、顧客問題選題與文案審核文章。花店為明示假設，沒有虛構訪談或成效。幽默為同一意思換衣服；結尾詢問讀者選段或改寫困難。公開案例保留共同參與與製作分工。",
     "deployment": {
-      "status": "pending",
-      "commit": null,
-      "run": null
+      "status": "success",
+      "commit": "0756a427f0220704de7b5087a71dd1d6c07c1118",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36799707391"
     },
-    "indexRequestAttempts": 0,
-    "indexingVerifiedAt": null,
+    "indexRequestAttempts": 1,
+    "indexingVerifiedAt": "2026-10-01T09:12:04.031087+08:00",
     "validation": {
       "pythonTests": "14 passed",
       "nodeTests": "21 passed",
@@ -832,7 +832,29 @@
       "faq": "3 visible questions",
       "engagementTemplate": "preserved",
       "sitemapURLCount": 41,
-      "phase3Assets": "preserved"
-    }
+      "phase3Assets": "preserved",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "browserVisibleArticle": "title, date, body, FAQ, source, author, service, case and contact links verified; desktop layout visually checked"
+    },
+    "verifiedAt": "2026-10-01T09:10:43.196317+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 41,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "無法擷取",
+      "submissionAttemptsToday": 1,
+      "submittedToday": true,
+      "submissionState": "accepted",
+      "lastAttemptDate": "2026-10-01",
+      "submissionEvidence": "已成功提交 Sitemap；提交日期更新為 2026年10月1日，但表格狀態仍為無法擷取",
+      "verifiedAt": "2026-10-01T09:12:04.031087+08:00"
+    },
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；Google 無法辨識的網址",
+    "indexRequestAttemptAt": "2026-10-01T09:12:04.031087+08:00",
+    "indexRequestAcceptedAt": "2026-10-01T09:13:48.949883+08:00",
+    "indexRequestEvidence": "已要求建立索引；已將網址加入優先檢索佇列",
+    "followUp": "文章已發布並已申請索引，尚未確認收錄。Sitemap 公開網址 HTTP 200、XML 有效且包含新文；Google 已接受今日重新提交，但表格仍顯示無法擷取。今日不重複提交。"
   }
 ]
