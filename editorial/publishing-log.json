@@ -856,5 +856,41 @@
     "indexRequestAcceptedAt": "2026-10-01T09:13:48.949883+08:00",
     "indexRequestEvidence": "已要求建立索引；已將網址加入優先檢索佇列",
     "followUp": "文章已發布並已申請索引，尚未確認收錄。Sitemap 公開網址 HTTP 200、XML 有效且包含新文；Google 已接受今日重新提交，但表格仍顯示無法擷取。今日不重複提交。"
+  },
+  {
+    "date": "2026-10-02",
+    "topicId": "fixed-variable",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/recurring-data-change-only/",
+    "title": "每個月都重填同一份資料，哪些其實可以留下來？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/payroll/"
+    ],
+    "sourcesCheckedAt": "2026-10-02",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦重複表單的固定設定、當次覆寫、生效範圍與完成快照，與既有 SOP 例外及文件查找文章不同。點心配送為明示假設；快照與追溯是建議，未宣稱公開作品已全部實作。只談資料設計，不涉及私人資料或計薪。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "syntax": "passed",
+      "diffCheck": "passed",
+      "build": "passed",
+      "canonical": "correct",
+      "indexableHTML": true,
+      "oldArticles": "all 20 prior notes unchanged",
+      "homeEntry": true,
+      "notesEntry": true,
+      "relatedLinks": "all local article links resolve",
+      "faq": "3 visible questions",
+      "engagementTemplate": "preserved",
+      "sitemapURLCount": 42,
+      "phase3Assets": "preserved"
+    }
   }
 ]

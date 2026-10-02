@@ -284,7 +284,9 @@
     "angle": "固定設定與當次異動分離",
     "service": "operations-sop",
     "case": "payroll",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-02",
+    "slug": "recurring-data-change-only"
   },
   {
     "id": "knowledge-owner",
