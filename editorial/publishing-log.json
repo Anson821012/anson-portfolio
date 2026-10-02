@@ -862,10 +862,10 @@
     "topicId": "fixed-variable",
     "url": "https://anson821012.github.io/anson-portfolio/notes/recurring-data-change-only/",
     "title": "每個月都重填同一份資料，哪些其實可以留下來？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "publication": "published",
+    "indexRequest": "accepted",
+    "indexRequestAttempts": 1,
+    "indexing": "requested_not_yet_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/payroll/"
     ],
@@ -873,7 +873,9 @@
     "aiAssisted": true,
     "editorialNotes": "聚焦重複表單的固定設定、當次覆寫、生效範圍與完成快照，與既有 SOP 例外及文件查找文章不同。點心配送為明示假設；快照與追溯是建議，未宣稱公開作品已全部實作。只談資料設計，不涉及私人資料或計薪。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "commit": "c8af146015bc9df0f4d2fa9f55cab5a9e8047296",
+      "run": "https://github.com/Anson821012/anson-portfolio/actions/runs/36956846420"
     },
     "validation": {
       "pythonTests": "14 passed",
@@ -881,16 +883,34 @@
       "syntax": "passed",
       "diffCheck": "passed",
       "build": "passed",
-      "canonical": "correct",
+      "canonical": "live_verified",
       "indexableHTML": true,
       "oldArticles": "all 20 prior notes unchanged",
-      "homeEntry": true,
-      "notesEntry": true,
+      "homeEntry": "live_verified",
+      "notesEntry": "live_verified",
       "relatedLinks": "all local article links resolve",
       "faq": "3 visible questions",
       "engagementTemplate": "preserved",
       "sitemapURLCount": 42,
-      "phase3Assets": "preserved"
-    }
+      "phase3Assets": "preserved",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "verifiedAt": "2026-10-02T14:42:50.937238+08:00",
+    "sitemap": {
+      "httpStatus": 200,
+      "URLCount": 42,
+      "containsArticle": true,
+      "xml": "valid",
+      "googleStatus": "無法擷取",
+      "submissionAttemptsToday": 1,
+      "submissionStatus": "accepted",
+      "submittedAt": "2026-10-02T14:42:50.937238+08:00",
+      "note": "Public sitemap HTTP 200 and valid XML with 42 URLs; Search Console accepted the resubmission, but table still reports 無法擷取. No repeat submission today."
+    },
+    "indexRequestAttemptedAt": "2026-10-02T14:41:12.034607+08:00",
+    "indexRequestedAt": "2026-10-02T14:42:50.937238+08:00",
+    "indexRequestEvidence": "Google Search Console displayed 已要求建立索引 and 已將網址加入優先檢索佇列",
+    "notes": "Article published and live verified; Search Console accepted one indexing request. Actual inclusion in Google index is not yet confirmed."
   }
 ]
