@@ -234,8 +234,10 @@
     "title": "活動結束後，怎麼開一場有用的回顧？",
     "angle": "可改變的流程問題與下一次行動",
     "service": "brand-marketing",
-    "case": "content",
-    "status": "planned"
+    "case": "tasks",
+    "status": "published",
+    "published": "2026-10-03",
+    "slug": "event-review-next-small-change"
   },
   {
     "id": "sop-exceptions",

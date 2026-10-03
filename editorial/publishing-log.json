@@ -912,5 +912,33 @@
     "indexRequestedAt": "2026-10-02T14:42:50.937238+08:00",
     "indexRequestEvidence": "Google Search Console displayed 已要求建立索引 and 已將網址加入優先檢索佇列",
     "notes": "Article published and live verified; Search Console accepted one indexing request. Actual inclusion in Google index is not yet confirmed."
+  },
+  {
+    "date": "2026-10-03",
+    "topicId": "event-retrospective",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/event-review-next-small-change/",
+    "title": "活動結束後，怎麼開一場不只說「下次注意」的回顧？",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/tasks/"
+    ],
+    "sourcesCheckedAt": "2026-10-03",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦活動事後回顧的證據、原因假設、保留項目與單項測試，區別既有事前企劃和任務分工文章。手作品牌活動為明示假設；引用個人待辦工具的公開回看功能，未擴大宣稱團隊功能或活動成效。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "previousArticles": "21 unchanged",
+      "pageChecks": "canonical, visible HTML, SEO fields, FAQ, related links, contacts, sharing data, sitemap and home/notes entry passed"
+    }
   }
 ]

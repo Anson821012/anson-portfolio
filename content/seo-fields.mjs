@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/event-review-next-small-change/": {"seoTitle": "活動回顧怎麼做？把下次注意變成具體改進｜蔡鈞佑 Anson Tsai", "description": "活動檢討總是以「下次再注意」收尾？蔡鈞佑 Anson Tsai 整理活動回顧的做法：分清事實與推測、保留有效安排，挑一項可測試的改進，讓中小企業的企劃經驗能接到下一場。", "tags": ["活動回顧", "活動檢討", "活動企劃", "品牌營運", "AI 紀錄整理"]},
   "notes/recurring-data-change-only/": {"seoTitle": "每月資料重複填寫怎麼改善？固定與變動分開｜蔡鈞佑 Anson Tsai", "description": "每月複製表格，卻連沒變的資料也重填？蔡鈞佑 Anson Tsai 用固定資料、當次異動與完成快照，整理中小企業減少重抄、保留歷史紀錄的流程做法。", "tags": ["重複填寫資料", "表單流程", "固定資料與異動", "公司 SOP", "中小企業數位轉型"]},
   "notes/interview-reuse-with-context/": {"seoTitle": "訪談素材再利用：文章、短影音與社群怎麼拆｜蔡鈞佑 Anson Tsai", "description": "訪談剪短、改寫成貼文後，怎麼避免原意走樣？蔡鈞佑 Anson Tsai 用來源時間、適用條件與三種交付示範，整理中小企業把一份訪談素材延伸成多種內容的方法。", "tags": ["訪談素材再利用", "內容改寫", "短影音企劃", "內容行銷", "AI 內容整理"]},
   'notes/customer-waiting-needs-status/': {seoTitle:'服務進度怎麼通知？讓顧客等待時少一點不安｜蔡鈞佑 Anson Tsai',description:'顧客等待時一直追問，不一定是沒有耐心。蔡鈞佑 Anson Tsai 整理服務狀態、補件提醒、下一次更新時間與延後通知，讓中小企業把等待說清楚。',tags:['服務進度通知','顧客等待','顧客體驗','服務流程','中小企業管理']},
