@@ -918,10 +918,10 @@
     "topicId": "event-retrospective",
     "url": "https://anson821012.github.io/anson-portfolio/notes/event-review-next-small-change/",
     "title": "活動結束後，怎麼開一場不只說「下次注意」的回顧？",
-    "publication": "pending_deployment",
-    "indexRequest": "not_attempted",
-    "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "publication": "published",
+    "indexRequest": "accepted",
+    "indexRequestAttempts": 1,
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/tasks/"
     ],
@@ -929,7 +929,10 @@
     "aiAssisted": true,
     "editorialNotes": "聚焦活動事後回顧的證據、原因假設、保留項目與單項測試，區別既有事前企劃和任務分工文章。手作品牌活動為明示假設；引用個人待辦工具的公開回看功能，未擴大宣稱團隊功能或活動成效。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "workflowRunId": 37085033832,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/37085033832",
+      "headSha": "2860817d7cc2ffae15cb9e46581ca41704318f5c"
     },
     "validation": {
       "pythonTests": "14 passed",
@@ -938,7 +941,31 @@
       "syntax": "passed",
       "gitDiff": "passed",
       "previousArticles": "21 unchanged",
-      "pageChecks": "canonical, visible HTML, SEO fields, FAQ, related links, contacts, sharing data, sitemap and home/notes entry passed"
-    }
+      "pageChecks": "canonical, visible HTML, SEO fields, FAQ, related links, contacts, sharing data, sitemap and home/notes entry passed",
+      "visualQA": "Live desktop article title, date, tags, text layout and sharing controls visually verified",
+      "sharingUI": "Live share dialog contains exact article URL, copy link, Threads and IG story-card controls; heart count loaded"
+    },
+    "commit": "2860817d7cc2ffae15cb9e46581ca41704318f5c",
+    "publishedAt": "2026-10-03T09:10:49+08:00",
+    "liveVerifiedAt": "2026-10-03T09:11:55.143209+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/event-review-next-small-change/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 43,
+      "retryStatus": "accepted",
+      "retryAttempts": 1,
+      "retryAt": "2026-10-03T09:12:23.987475+08:00",
+      "gscFetchStatusBeforeRetry": "無法擷取",
+      "retryEvidence": "Google displayed 已成功提交 Sitemap; submitted date 2026年10月3日",
+      "gscFetchStatusAfterRetry": "無法擷取",
+      "gscDiscoveredPages": 0
+    },
+    "indexRequestAttemptedAt": "2026-10-03T09:13:57.981897+08:00",
+    "indexingEvidence": "Google Search Console: 網頁未編入索引：Google 無法辨識的網址",
+    "indexRequestedAt": "2026-10-03T09:15:04.868456+08:00",
+    "indexRequestEvidence": "Google Search Console displayed 已要求建立索引 and 已將網址加入優先檢索佇列",
+    "notes": "Article deployed and live verified. Google accepted one indexing request; actual inclusion is not confirmed. Public sitemap is valid and includes 43 URLs; today one resubmission was accepted but GSC still reports 無法擷取."
   }
 ]
