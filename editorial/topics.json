@@ -88,7 +88,9 @@
     "angle": "同一則訊息的不同表達與判斷",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-04",
+    "slug": "friendly-professional-brand-tone"
   },
   {
     "id": "brand-ip",

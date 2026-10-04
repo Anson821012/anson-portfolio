@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/friendly-professional-brand-tone/": {"seoTitle": "品牌語氣怎麼拿捏？親切又專業的寫法｜蔡鈞佑 Anson Tsai", "description": "品牌文案太正式有距離，太口語又怕不專業？蔡鈞佑 Anson Tsai 用結論、重要資訊與下一步三層寫法，整理中小企業建立親切、清楚又能負責的品牌語氣。", "tags": ["品牌語氣", "品牌文案", "客服回覆", "顧客溝通", "品牌一致性"]},
   "notes/event-review-next-small-change/": {"seoTitle": "活動回顧怎麼做？把下次注意變成具體改進｜蔡鈞佑 Anson Tsai", "description": "活動檢討總是以「下次再注意」收尾？蔡鈞佑 Anson Tsai 整理活動回顧的做法：分清事實與推測、保留有效安排，挑一項可測試的改進，讓中小企業的企劃經驗能接到下一場。", "tags": ["活動回顧", "活動檢討", "活動企劃", "品牌營運", "AI 紀錄整理"]},
   "notes/recurring-data-change-only/": {"seoTitle": "每月資料重複填寫怎麼改善？固定與變動分開｜蔡鈞佑 Anson Tsai", "description": "每月複製表格，卻連沒變的資料也重填？蔡鈞佑 Anson Tsai 用固定資料、當次異動與完成快照，整理中小企業減少重抄、保留歷史紀錄的流程做法。", "tags": ["重複填寫資料", "表單流程", "固定資料與異動", "公司 SOP", "中小企業數位轉型"]},
   "notes/interview-reuse-with-context/": {"seoTitle": "訪談素材再利用：文章、短影音與社群怎麼拆｜蔡鈞佑 Anson Tsai", "description": "訪談剪短、改寫成貼文後，怎麼避免原意走樣？蔡鈞佑 Anson Tsai 用來源時間、適用條件與三種交付示範，整理中小企業把一份訪談素材延伸成多種內容的方法。", "tags": ["訪談素材再利用", "內容改寫", "短影音企劃", "內容行銷", "AI 內容整理"]},
