@@ -39,7 +39,9 @@
     "angle": "覆核角色與可交付標準",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-05",
+    "slug": "ai-draft-final-approval"
   },
   {
     "id": "automation-fallback",
