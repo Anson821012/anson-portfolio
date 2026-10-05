@@ -1014,5 +1014,52 @@
     "indexRequestBlockedAt": "2026-10-04T09:05:49+08:00",
     "indexRequestBlocker": "Mac was locked; the authorized Chrome session and Search Console UI were unavailable. No request was submitted.",
     "notes": "Article deployed and live verified. Public sitemap is valid and includes the new article. Search Console indexing request remains pending because the Mac was locked; no submission was claimed."
+  },
+  {
+    "date": "2026-10-05",
+    "topicId": "ai-approval",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/ai-draft-final-approval/",
+    "title": "AI 做完草稿後，最後由誰說可以？",
+    "publication": "published",
+    "indexRequest": "pending_browser_locked",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/menu/"
+    ],
+    "sourcesCheckedAt": "2026-10-05",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦 AI 草稿的影響分級、覆核角色、完成標準、退回原因與發布權限，與既有工具試跑及內容檢查文章不同。新品活動為明示假設；公開每日菜單案例只支持草稿、預覽、發布與輸出流程，未宣稱菜單內容由 AI 自動判斷。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 37249914406,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/37249914406",
+      "headSha": "225fc78caaef655df4083ee6796ecc372c510ca2"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, contacts, sitemap and home/notes entry passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "225fc78caaef655df4083ee6796ecc372c510ca2",
+    "publishedAt": "2026-10-05T09:05:57+08:00",
+    "liveVerifiedAt": "2026-10-05T09:05:57+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/ai-draft-final-approval/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 45,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted_browser_locked"
+    },
+    "indexRequestBlockedAt": "2026-10-05T09:05:57+08:00",
+    "indexRequestBlocker": "Mac was locked; the authorized Chrome session and Search Console UI were unavailable. No request was submitted.",
+    "notes": "Article deployed and live verified. Public sitemap is valid and includes the new article. Search Console indexing request remains pending because the Mac was locked; no submission was claimed."
   }
 ]
