@@ -310,7 +310,9 @@
     "angle": "問題發生位置與資訊可見性",
     "service": "brand-marketing",
     "case": "contract",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-06",
+    "slug": "customer-repeat-question-fix-info"
   },
   {
     "id": "customer-form",
