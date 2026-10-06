@@ -1064,5 +1064,54 @@
     "indexRequestAcceptedAt": "2026-10-05T10:56:14+08:00",
     "indexRequestEvidence": "Google Search Console displayed 已要求建立索引 and 已將網址加入優先檢索佇列",
     "notes": "Article deployed and live verified. Public sitemap is valid and includes the new article. Google accepted one indexing request; actual inclusion in Google search is not yet confirmed."
+  },
+  {
+    "date": "2026-10-06",
+    "topicId": "customer-repeat",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/customer-repeat-question-fix-info/",
+    "title": "顧客一直問同一題，先改回覆還是先改資訊？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/contract/"
+    ],
+    "sourcesCheckedAt": "2026-10-06",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦重複詢問發生的位置、正式資訊入口、暫時回覆與更新責任，與既有等待進度通知及表單欄位文章不同。只使用線上簽約案例的公開功能說明，未讀取契約或顧客資料，也未宣稱減少詢問或提升成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 37406170208,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/37406170208",
+      "headSha": "8c72ac566397713d932cbf23ff217ed788fb510f"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, contacts, sitemap and home/notes entry passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "8c72ac566397713d932cbf23ff217ed788fb510f",
+    "publishedAt": "2026-10-06T10:53:53+08:00",
+    "liveVerifiedAt": "2026-10-06T10:53:53+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/customer-repeat-question-fix-info/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 46,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-06T10:53:53+08:00",
+    "indexingEvidence": "Google Search Console: 網址不在 Google 服務中；網頁未編入索引：Google 無法辨識的網址",
+    "indexRequestReadyAt": "2026-10-06T10:53:53+08:00",
+    "indexRequestAction": "Google Search Console is open on the verified yo30437@gmail.com property with the article URL inspected. The next action is the external 要求建立索引 submission and requires action-time confirmation.",
+    "notes": "Article deployed and live verified. Public sitemap is valid and includes the new article. The indexing request is prepared but has not been submitted; no accepted request is claimed."
   }
 ]
