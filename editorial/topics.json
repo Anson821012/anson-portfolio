@@ -474,5 +474,49 @@
     "service": "ai-integration",
     "case": "menu",
     "status": "planned"
+  },
+  {
+    "id": "seo-ai-consultant-prepare",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "中小企業找 AI 導入顧問前，要先準備哪三件事？",
+    "angle": "問題、資料與覆核責任，承接 AI 導入顧問搜尋意圖",
+    "service": "ai-integration",
+    "case": "menu",
+    "status": "planned",
+    "priority": "high",
+    "targetQueries": ["中小企業 AI 導入顧問", "企業 AI 導入", "AI 導入怎麼開始"]
+  },
+  {
+    "id": "seo-workflow-automation-first",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "工作流程自動化要先做哪一段？從重複又能覆核的工作開始",
+    "angle": "選擇第一個自動化流程與人工備援",
+    "service": "ai-integration",
+    "case": "tasks",
+    "status": "planned",
+    "priority": "high",
+    "targetQueries": ["AI 工作流程自動化", "AI 自動化顧問", "重複工作自動化"]
+  },
+  {
+    "id": "seo-sop-build",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "公司 SOP 怎麼建立？先跟著一件真實工作走完",
+    "angle": "步驟、負責人、完成標準與例外處理",
+    "service": "operations-sop",
+    "case": "payroll",
+    "status": "planned",
+    "priority": "high",
+    "targetQueries": ["公司 SOP 怎麼建立", "SOP 建立顧問", "新人交接 SOP"]
+  },
+  {
+    "id": "seo-brand-consultant",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "找品牌行銷顧問前，先釐清要被誰記住、要接到哪一步",
+    "angle": "品牌定位、內容分工與顧客下一步",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "planned",
+    "priority": "high",
+    "targetQueries": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問"]
   }
 ]
