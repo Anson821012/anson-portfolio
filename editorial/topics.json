@@ -452,8 +452,10 @@
     "title": "待辦工具為什麼需要狀態，而不只是一排勾勾？",
     "angle": "進度、卡點與責任的設計解讀",
     "service": "ai-integration",
-    "case": "menu",
-    "status": "planned"
+    "case": "tasks",
+    "status": "published",
+    "slug": "tasks-need-status-not-just-checkmarks",
+    "published": "2026-10-07"
   },
   {
     "id": "quiz-experience",

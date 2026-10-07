@@ -1113,5 +1113,28 @@
     "indexRequestReadyAt": "2026-10-06T10:53:53+08:00",
     "indexRequestAction": "Google Search Console is open on the verified yo30437@gmail.com property with the article URL inspected. The next action is the external 要求建立索引 submission and requires action-time confirmation.",
     "notes": "Article deployed and live verified. Public sitemap is valid and includes the new article. The indexing request is prepared but has not been submitted; no accepted request is claimed."
+  },
+  {
+    "date": "2026-10-07",
+    "topicId": "task-reminder",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/tasks-need-status-not-just-checkmarks/",
+    "title": "待辦工具為什麼需要狀態，而不只是一排勾勾？",
+    "publication": "prepared_for_deployment",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/tasks/"
+    ],
+    "sourcesCheckedAt": "2026-10-07",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦待辦狀態、負責人、卡點與完成標準，與既有任務分工、SOP 交接及每月資料文章的搜尋意圖不同。只使用 Anson 待辦事項案例的公開功能與製作動機，未讀取私人任務，也未宣稱效率成效。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "status": "pending"
+    },
+    "notes": "文章已完成本機內容與 SEO 欄位，等待測試與部署。"
   }
 ]
