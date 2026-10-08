@@ -515,8 +515,10 @@
     "angle": "品牌定位、內容分工與顧客下一步",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned",
+    "status": "published",
     "priority": "high",
+    "published": "2026-10-08",
+    "slug": "brand-consultant-prepare-three-things",
     "targetQueries": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問"]
   }
 ]

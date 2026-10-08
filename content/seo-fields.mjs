@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/brand-consultant-prepare-three-things/": {"seoTitle": "高雄品牌行銷顧問怎麼找？合作前先釐清三件事｜蔡鈞佑 Anson Tsai", "description": "找品牌行銷顧問前要準備什麼？蔡鈞佑 Anson Tsai 從服務對象、目前卡點與顧客下一步三件事，整理中小企業如何讓品牌定位接到內容與實際合作。", "tags": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問", "品牌整合行銷", "中小企業行銷"]},
   "notes/tasks-need-status-not-just-checkmarks/": {"seoTitle": "待辦為什麼需要狀態？負責人、卡點與完成標準｜蔡鈞佑 Anson Tsai", "description": "待辦事項只有完成與未完成，為什麼事情還是會卡住？蔡鈞佑 Anson Tsai 從待處理、進行中、等待確認與完成四種狀態，整理責任、卡點與下一步。", "tags": ["待辦狀態", "工作進度", "任務管理", "公司 SOP", "AI 工作流程"]},
   "notes/customer-repeat-question-fix-info/": {"seoTitle": "顧客一直問同一題怎麼辦？先修資訊入口｜蔡鈞佑 Anson Tsai", "description": "顧客一直問同一題，該先做罐頭回覆還是修改服務資訊？蔡鈞佑 Anson Tsai 整理問題出現的位置、資訊入口、暫時回覆與更新責任，讓重複詢問變成改善線索。", "tags": ["顧客常見問題", "客服回覆", "顧客體驗", "服務流程", "資訊設計"]},
   "notes/ai-draft-final-approval/": {"seoTitle": "AI 草稿誰負責確認？覆核與發布流程｜蔡鈞佑 Anson Tsai", "description": "AI 草稿寫得很快，誰負責最後確認？蔡鈞佑 Anson Tsai 整理中小企業的 AI 覆核角色、檢查清單、發布權限與退回方式，讓速度接得上責任。", "tags": ["AI 草稿覆核", "AI 內容審核", "中小企業 AI 轉型", "人工確認", "發布流程"]},
