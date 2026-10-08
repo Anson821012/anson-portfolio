@@ -1162,5 +1162,54 @@
     "indexRequestReadyAt": "2026-10-07T10:28:03+08:00",
     "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在『要求建立索引』按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
     "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
+  },
+  {
+    "date": "2026-10-08",
+    "topicId": "seo-brand-consultant",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/brand-consultant-prepare-three-things/",
+    "title": "找品牌行銷顧問前，先釐清哪三件事？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-08",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦找品牌行銷顧問前的服務對象、目前卡點與顧客下一步，承接高雄品牌行銷顧問搜尋意圖；與既有公司介紹、品牌語氣及平台分工文章不同。只使用公開內容整合案例與署名範圍，未宣稱流量、成交或 AI 成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 37715695376,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/37715695376",
+      "headSha": "512aeaebdc459cd33c525f6f0e152b0a43a9c187"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, contacts, sitemap and home/notes entry passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "512aeaebdc459cd33c525f6f0e152b0a43a9c187",
+    "publishedAt": "2026-10-08T10:01:43+08:00",
+    "liveVerifiedAt": "2026-10-08T10:01:43+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/brand-consultant-prepare-three-things/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 48,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。",
+    "indexInspectionAt": "2026-10-08T10:01:43+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-08T10:01:43+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。"
   }
 ]
