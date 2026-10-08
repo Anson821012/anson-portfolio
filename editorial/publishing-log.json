@@ -1169,9 +1169,9 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/brand-consultant-prepare-three-things/",
     "title": "找品牌行銷顧問前，先釐清哪三件事？",
     "publication": "published",
-    "indexRequest": "ready_awaiting_action_time_confirmation",
-    "indexRequestAttempts": 0,
-    "indexing": "not_indexed",
+    "indexRequest": "accepted",
+    "indexRequestAttempts": 1,
+    "indexing": "requested_not_yet_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/content/"
     ],
@@ -1206,10 +1206,12 @@
       "retryAttempts": 0,
       "retryStatus": "not_attempted"
     },
-    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；Google 已接受一次索引要求並加入優先檢索佇列，目前仍未確認收錄。",
     "indexInspectionAt": "2026-10-08T10:01:43+08:00",
     "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
     "indexRequestReadyAt": "2026-10-08T10:01:43+08:00",
-    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。"
+    "indexRequestAttemptedAt": "2026-10-08T12:33:15+08:00",
+    "indexRequestAcceptedAt": "2026-10-08T12:33:15+08:00",
+    "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」及「已將網址加入優先檢索佇列」。"
   }
 ]
