@@ -1213,5 +1213,54 @@
     "indexRequestAttemptedAt": "2026-10-08T12:33:15+08:00",
     "indexRequestAcceptedAt": "2026-10-08T12:33:15+08:00",
     "indexRequestEvidence": "Google Search Console 顯示「已要求建立索引」及「已將網址加入優先檢索佇列」。"
+  },
+  {
+    "date": "2026-10-09",
+    "topicId": "ai-team-adoption",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/ai-tool-team-adoption/",
+    "title": "AI 工具做好了，同事為什麼還是回到舊方法？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/menu/"
+    ],
+    "sourcesCheckedAt": "2026-10-09",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦工具採用的使用情境、學習負擔、無提示試走、回退方式與維護責任，與既有工具選擇、試用、故障備援及發布審核文章不同。只使用每日菜單案例的公開功能與設計動機，未宣稱同事採用率、AI 推論或效率成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 37875310734,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/37875310734",
+      "headSha": "9c865adab45f0495258153b55186f58df8193f69"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "9c865adab45f0495258153b55186f58df8193f69",
+    "publishedAt": "2026-10-09T10:37:44+08:00",
+    "liveVerifiedAt": "2026-10-09T10:37:44+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/ai-tool-team-adoption/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 49,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-09T10:37:44+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-09T10:37:44+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   }
 ]
