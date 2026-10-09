@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/ai-tool-team-adoption/": {"seoTitle": "AI 工具上線後同事不用？從使用情境改善採用率｜蔡鈞佑 Anson Tsai", "description": "AI 工具上線後同事還是回到 Excel、群組或紙本？蔡鈞佑 Anson Tsai 從使用情境、學習負擔與試用回饋，整理中小企業提高工具採用率的做法。", "tags": ["AI 工具導入", "企業 AI 導入", "工具採用率", "數位轉型", "工作流程改善"]},
   "notes/brand-consultant-prepare-three-things/": {"seoTitle": "高雄品牌行銷顧問怎麼找？合作前先釐清三件事｜蔡鈞佑 Anson Tsai", "description": "找品牌行銷顧問前要準備什麼？蔡鈞佑 Anson Tsai 從服務對象、目前卡點與顧客下一步三件事，整理中小企業如何讓品牌定位接到內容與實際合作。", "tags": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問", "品牌整合行銷", "中小企業行銷"]},
   "notes/tasks-need-status-not-just-checkmarks/": {"seoTitle": "待辦為什麼需要狀態？負責人、卡點與完成標準｜蔡鈞佑 Anson Tsai", "description": "待辦事項只有完成與未完成，為什麼事情還是會卡住？蔡鈞佑 Anson Tsai 從待處理、進行中、等待確認與完成四種狀態，整理責任、卡點與下一步。", "tags": ["待辦狀態", "工作進度", "任務管理", "公司 SOP", "AI 工作流程"]},
   "notes/customer-repeat-question-fix-info/": {"seoTitle": "顧客一直問同一題怎麼辦？先修資訊入口｜蔡鈞佑 Anson Tsai", "description": "顧客一直問同一題，該先做罐頭回覆還是修改服務資訊？蔡鈞佑 Anson Tsai 整理問題出現的位置、資訊入口、暫時回覆與更新責任，讓重複詢問變成改善線索。", "tags": ["顧客常見問題", "客服回覆", "顧客體驗", "服務流程", "資訊設計"]},
