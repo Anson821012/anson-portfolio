@@ -1262,5 +1262,54 @@
     "indexRequestReadyAt": "2026-10-09T10:37:44+08:00",
     "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
     "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
+  },
+  {
+    "date": "2026-10-10",
+    "topicId": "content-library",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/content-library-reuse-materials/",
+    "title": "素材很多，為什麼每次企劃還是從零開始？",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-10",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦素材來源、用途、授權、版本與可再用片段，與既有訪談拆分及顧客問題選題文章的搜尋意圖不同。只使用公開內容整合案例與署名範圍，未讀取私人素材，也未宣稱流量、成交或 AI 分類成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 38025553250,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/38025553250",
+      "headSha": "136b4fd4626be6c15953d232c3b8c4afc6f1d1f6"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "136b4fd4626be6c15953d232c3b8c4afc6f1d1f6",
+    "publishedAt": "2026-10-10T14:06:41+08:00",
+    "liveVerifiedAt": "2026-10-10T14:06:41+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/content-library-reuse-materials/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 50,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-10T14:06:41+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-10T14:06:41+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   }
 ]
