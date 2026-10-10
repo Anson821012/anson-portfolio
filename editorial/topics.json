@@ -165,7 +165,9 @@
     "angle": "素材命名、授權與檢索欄位",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-10",
+    "slug": "content-library-reuse-materials"
   },
   {
     "id": "youtube-planning",

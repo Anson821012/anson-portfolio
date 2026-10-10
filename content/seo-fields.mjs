@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/content-library-reuse-materials/": {"seoTitle": "內容素材庫怎麼整理？讓社群企劃不用每次重來｜蔡鈞佑 Anson Tsai", "description": "素材很多卻每次重新找？蔡鈞佑 Anson Tsai 從來源、主題、用途、授權與版本，整理中小企業建立可查找、可再利用內容素材庫的方法。", "tags": ["內容素材庫", "素材管理", "內容再利用", "社群企劃", "品牌行銷"]},
   "notes/ai-tool-team-adoption/": {"seoTitle": "AI 工具上線後同事不用？從使用情境改善採用率｜蔡鈞佑 Anson Tsai", "description": "AI 工具上線後同事還是回到 Excel、群組或紙本？蔡鈞佑 Anson Tsai 從使用情境、學習負擔與試用回饋，整理中小企業提高工具採用率的做法。", "tags": ["AI 工具導入", "企業 AI 導入", "工具採用率", "數位轉型", "工作流程改善"]},
   "notes/brand-consultant-prepare-three-things/": {"seoTitle": "高雄品牌行銷顧問怎麼找？合作前先釐清三件事｜蔡鈞佑 Anson Tsai", "description": "找品牌行銷顧問前要準備什麼？蔡鈞佑 Anson Tsai 從服務對象、目前卡點與顧客下一步三件事，整理中小企業如何讓品牌定位接到內容與實際合作。", "tags": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問", "品牌整合行銷", "中小企業行銷"]},
   "notes/tasks-need-status-not-just-checkmarks/": {"seoTitle": "待辦為什麼需要狀態？負責人、卡點與完成標準｜蔡鈞佑 Anson Tsai", "description": "待辦事項只有完成與未完成，為什麼事情還是會卡住？蔡鈞佑 Anson Tsai 從待處理、進行中、等待確認與完成四種狀態，整理責任、卡點與下一步。", "tags": ["待辦狀態", "工作進度", "任務管理", "公司 SOP", "AI 工作流程"]},
