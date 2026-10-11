@@ -223,7 +223,9 @@
     "angle": "共用版本與現場備份",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-11",
+    "slug": "event-one-source-and-backup"
   },
   {
     "id": "campaign-message",
