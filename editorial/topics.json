@@ -383,7 +383,9 @@
     "angle": "直接答案、條件、例子與可執行步驟",
     "service": "ai-integration",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-14",
+    "slug": "keywords-answer-search-intent"
   },
   {
     "id": "seo-indexing",
