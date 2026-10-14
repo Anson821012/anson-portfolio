@@ -1360,5 +1360,54 @@
     "indexRequestReadyAt": "2026-10-11T10:45:39+08:00",
     "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
     "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
+  },
+  {
+    "date": "2026-10-14",
+    "topicId": "seo-answer",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/keywords-answer-search-intent/",
+    "title": "關鍵字放進文章就會有排名嗎？先回答搜尋者真正的問題",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-14",
+    "aiAssisted": true,
+    "editorialNotes": "回答關鍵字、搜尋意圖與以人為本 AI 內容流程的關係，並說明服務頁、問題型文章與案例頁如何連成內容系統。與既有 SEO、搜尋及 AI 導入文章的搜尋意圖不同；未虛構客戶或成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 38554133499,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/38554133499",
+      "headSha": "c24c2c332fe50d4f55020b1fbc913f543c9d3b55"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, visible FAQ, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "c24c2c332fe50d4f55020b1fbc913f543c9d3b55",
+    "publishedAt": "2026-10-14T19:12:18+08:00",
+    "liveVerifiedAt": "2026-10-14T19:12:18+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/keywords-answer-search-intent/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 52,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-14T19:12:18+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-14T19:12:18+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   }
 ]
