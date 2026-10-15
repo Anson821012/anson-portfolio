@@ -1409,5 +1409,54 @@
     "indexRequestReadyAt": "2026-10-14T19:12:18+08:00",
     "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
     "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
+  },
+  {
+    "date": "2026-10-15",
+    "topicId": "seo-sop-build",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/company-sop-follow-one-real-workflow/",
+    "title": "公司 SOP 怎麼建立？先跟著一件真實工作走完",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
+    "indexRequestAttempts": 0,
+    "indexing": "not_indexed",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/payroll/"
+    ],
+    "sourcesCheckedAt": "2026-10-15",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦從一件真實工作建立第一份 SOP，整理起點、資料、步驟、責任、完成標準與接手試做；與既有新人交接、例外處理及固定資料文章的搜尋意圖不同。只使用公開薪資台帳與排班介面案例，未讀取私人薪資、人事資料，也未宣稱自動排班、計薪或法規正確性。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 38692010870,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/38692010870",
+      "headSha": "12de6fbe331dead3755ffe962f611ddb397e9674"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, visible FAQ, related service and case links, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "12de6fbe331dead3755ffe962f611ddb397e9674",
+    "publishedAt": "2026-10-15T14:24:20+08:00",
+    "liveVerifiedAt": "2026-10-15T14:24:20+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/company-sop-follow-one-real-workflow/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 53,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-15T14:24:20+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-15T14:24:20+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   }
 ]
