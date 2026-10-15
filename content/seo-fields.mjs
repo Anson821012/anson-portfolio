@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/company-sop-follow-one-real-workflow/": {"seoTitle": "公司 SOP 怎麼建立？從一件真實工作開始｜蔡鈞佑 Anson Tsai", "description": "公司 SOP 怎麼建立才有人使用？蔡鈞佑 Anson Tsai 從一件真實工作整理起點、資料、步驟、負責人、完成標準與例外，再用接手試做修正。", "tags": ["公司 SOP 怎麼建立", "SOP 建立顧問", "新人交接 SOP", "工作流程標準化", "公司流程改善"]},
   "notes/keywords-answer-search-intent/": {"seoTitle": "SEO 關鍵字怎麼寫？先回答搜尋者真正的問題｜蔡鈞佑 Anson Tsai", "description": "關鍵字放進文章，為什麼排名仍沒起色？蔡鈞佑 Anson Tsai 從搜尋意圖、直接答案、內容組合與人工覆核，整理以人為本的 SEO 寫作方法。", "tags": ["SEO 關鍵字", "搜尋意圖", "SEO 文章", "內容行銷", "AI 內容整理"]},
   "notes/event-one-source-and-backup/": {"seoTitle": "活動資料怎麼交接？共用版本、角色與離線備份｜蔡鈞佑 Anson Tsai", "description": "活動前一天仍在找流程和素材？蔡鈞佑 Anson Tsai 從共用入口、現場版本、角色責任與離線備份，整理中小企業活動資料交接方法。", "tags": ["活動資料交接", "活動流程表", "活動企劃", "版本管理", "現場執行"]},
   "notes/content-library-reuse-materials/": {"seoTitle": "內容素材庫怎麼整理？讓社群企劃不用每次重來｜蔡鈞佑 Anson Tsai", "description": "素材很多卻每次重新找？蔡鈞佑 Anson Tsai 從來源、主題、用途、授權與版本，整理中小企業建立可查找、可再利用內容素材庫的方法。", "tags": ["內容素材庫", "素材管理", "內容再利用", "社群企劃", "品牌行銷"]},

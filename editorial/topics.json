@@ -510,8 +510,10 @@
     "angle": "步驟、負責人、完成標準與例外處理",
     "service": "operations-sop",
     "case": "payroll",
-    "status": "planned",
+    "status": "published",
     "priority": "high",
+    "published": "2026-10-15",
+    "slug": "company-sop-follow-one-real-workflow",
     "targetQueries": ["公司 SOP 怎麼建立", "SOP 建立顧問", "新人交接 SOP"]
   },
   {
