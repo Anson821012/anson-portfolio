@@ -81,7 +81,9 @@
     "angle": "表單、訊息、提醒與交付接點",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-16",
+    "slug": "brand-image-beyond-logo-touchpoints"
   },
   {
     "id": "brand-tone",
