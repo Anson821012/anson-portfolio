@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-18",
+    "topicId": "knowledge-owner",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/knowledge-base-owner-update-rules/",
+    "title": "知識庫建好了，誰負責讓它保持有用？",
+    "publication": "prepared",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "unknown",
+    "sources": ["https://anson821012.github.io/anson-portfolio/cases/payroll/"],
+    "sourcesCheckedAt": "2026-10-18",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦知識庫的內容負責人、更新觸發、複查日期、過期處理與錯誤回報，與既有 SOP 建立、交接及固定資料文章的搜尋意圖不同。只使用公開薪資台帳與排班介面的欄位與流程設計，未讀取私人資料，也未宣稱自動排班、計薪或法規正確性。"
+  },
+  {
     "date": "2026-10-16",
     "topicId": "brand-touchpoints",
     "url": "https://anson821012.github.io/anson-portfolio/notes/brand-image-beyond-logo-touchpoints/",
