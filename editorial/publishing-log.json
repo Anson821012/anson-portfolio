@@ -4,14 +4,47 @@
     "topicId": "knowledge-owner",
     "url": "https://anson821012.github.io/anson-portfolio/notes/knowledge-base-owner-update-rules/",
     "title": "知識庫建好了，誰負責讓它保持有用？",
-    "publication": "prepared",
-    "indexRequest": "not_attempted",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
     "indexRequestAttempts": 0,
-    "indexing": "unknown",
+    "indexing": "not_indexed",
     "sources": ["https://anson821012.github.io/anson-portfolio/cases/payroll/"],
     "sourcesCheckedAt": "2026-10-18",
     "aiAssisted": true,
-    "editorialNotes": "聚焦知識庫的內容負責人、更新觸發、複查日期、過期處理與錯誤回報，與既有 SOP 建立、交接及固定資料文章的搜尋意圖不同。只使用公開薪資台帳與排班介面的欄位與流程設計，未讀取私人資料，也未宣稱自動排班、計薪或法規正確性。"
+    "editorialNotes": "聚焦知識庫的內容負責人、更新觸發、複查日期、過期處理與錯誤回報，與既有 SOP 建立、交接及固定資料文章的搜尋意圖不同。只使用公開薪資台帳與排班介面的欄位與流程設計，未讀取私人資料，也未宣稱自動排班、計薪或法規正確性。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 39092405242,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39092405242",
+      "headSha": "d17c33e7e21a7c2b00c38aa936b232fe68d027fd"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, visible FAQ, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "d17c33e7e21a7c2b00c38aa936b232fe68d027fd",
+    "publishedAt": "2026-10-18T11:07:43+08:00",
+    "liveVerifiedAt": "2026-10-18T11:07:43+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/knowledge-base-owner-update-rules/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 55,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-18T11:07:43+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-18T11:07:43+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   },
   {
     "date": "2026-10-16",
