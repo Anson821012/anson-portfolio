@@ -492,9 +492,11 @@
     "angle": "問題、資料與覆核責任，承接 AI 導入顧問搜尋意圖",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned",
+    "status": "published",
     "priority": "high",
-    "targetQueries": ["中小企業 AI 導入顧問", "企業 AI 導入", "AI 導入怎麼開始"]
+    "targetQueries": ["中小企業 AI 導入顧問", "企業 AI 導入", "AI 導入怎麼開始"],
+    "published": "2026-10-19",
+    "slug": "ai-consultant-prepare-problem-data-owner"
   },
   {
     "id": "seo-workflow-automation-first",

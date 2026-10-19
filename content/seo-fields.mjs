@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/ai-consultant-prepare-problem-data-owner/": {"seoTitle": "中小企業找 AI 導入顧問前，要準備哪三件事？｜蔡鈞佑 Anson Tsai", "description": "找 AI 導入顧問前要準備什麼？蔡鈞佑 Anson Tsai 從工作問題、真實資料與覆核責任三件事，整理中小企業第一次會談可帶上的內容。", "tags": ["中小企業 AI 導入顧問", "企業 AI 導入", "AI 導入怎麼開始", "AI 顧問", "工作流程盤點"]},
   "notes/knowledge-base-owner-update-rules/": {"seoTitle": "知識庫怎麼維護？更新負責人、觸發與過期處理｜蔡鈞佑 Anson Tsai", "description": "知識庫建好後為什麼很快過期？蔡鈞佑 Anson Tsai 整理內容負責人、更新觸發、複查日期與過期處理，讓公司知識真的能被接手使用。", "tags": ["知識庫維護", "知識管理", "SOP 更新", "公司流程改善", "新人交接"]},
   "notes/brand-image-beyond-logo-touchpoints/": {"seoTitle": "品牌形象不只 Logo：5 個顧客接點怎麼整理？｜蔡鈞佑 Anson Tsai", "description": "品牌形象除了 Logo，還藏在表單、等待通知、交付與後續聯絡。蔡鈞佑 Anson Tsai 整理 5 個顧客接點與檢查方法，幫中小企業先從最常卡住的一段開始。", "tags": ["品牌形象", "品牌接點", "顧客體驗", "品牌行銷", "品牌一致性"]},
   "notes/company-sop-follow-one-real-workflow/": {"seoTitle": "公司 SOP 怎麼建立？從一件真實工作開始｜蔡鈞佑 Anson Tsai", "description": "公司 SOP 怎麼建立才有人使用？蔡鈞佑 Anson Tsai 從一件真實工作整理起點、資料、步驟、負責人、完成標準與例外，再用接手試做修正。", "tags": ["公司 SOP 怎麼建立", "SOP 建立顧問", "新人交接 SOP", "工作流程標準化", "公司流程改善"]},
