@@ -1602,15 +1602,48 @@
     "topicId": "seo-workflow-automation-first",
     "url": "https://anson821012.github.io/anson-portfolio/notes/workflow-automation-start-repeatable-reviewable/",
     "title": "工作流程自動化要先做哪一段？先找重複、規則清楚又能覆核的工作",
-    "publication": "prepared",
-    "indexRequest": "not_attempted",
+    "publication": "published",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
     "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "indexing": "not_indexed",
     "sources": [
       "https://anson821012.github.io/anson-portfolio/cases/tasks/"
     ],
     "sourcesCheckedAt": "2026-10-20",
     "aiAssisted": true,
-    "editorialNotes": "聚焦第一個工作流程自動化的選擇條件、停止條件、人工覆核與小型試跑；與既有 AI 顧問準備、AI 或固定規則、工具採用、待辦狀態及人工備援文章的搜尋意圖不同。只使用公開 Anson 待辦事項案例的時間、分類與狀態設計，未讀取私人任務，也未宣稱 AI 自動排程或量化成效。"
+    "editorialNotes": "聚焦第一個工作流程自動化的選擇條件、停止條件、人工覆核與小型試跑；與既有 AI 顧問準備、AI 或固定規則、工具採用、待辦狀態及人工備援文章的搜尋意圖不同。只使用公開 Anson 待辦事項案例的時間、分類與狀態設計，未讀取私人任務，也未宣稱 AI 自動排程或量化成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 39351263828,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39351263828",
+      "headSha": "b15693149ea31dc6735b351b8acbd2472fd63c40"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, visible FAQ, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "b15693149ea31dc6735b351b8acbd2472fd63c40",
+    "publishedAt": "2026-10-20T09:03:21+08:00",
+    "liveVerifiedAt": "2026-10-20T09:04:25+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/workflow-automation-start-repeatable-reviewable/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 57,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "indexInspectionAt": "2026-10-20T09:05:17+08:00",
+    "indexingEvidence": "Google Search Console：網址不在 Google 服務中；網頁未編入索引，Google 無法辨識的網址。",
+    "indexRequestReadyAt": "2026-10-20T09:05:17+08:00",
+    "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
+    "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
   }
 ]
