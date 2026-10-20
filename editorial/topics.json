@@ -505,9 +505,11 @@
     "angle": "選擇第一個自動化流程與人工備援",
     "service": "ai-integration",
     "case": "tasks",
-    "status": "planned",
+    "status": "published",
     "priority": "high",
-    "targetQueries": ["AI 工作流程自動化", "AI 自動化顧問", "重複工作自動化"]
+    "targetQueries": ["AI 工作流程自動化", "AI 自動化顧問", "重複工作自動化"],
+    "published": "2026-10-20",
+    "slug": "workflow-automation-start-repeatable-reviewable"
   },
   {
     "id": "seo-sop-build",
