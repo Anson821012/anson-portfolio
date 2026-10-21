@@ -1645,5 +1645,60 @@
     "indexRequestReadyAt": "2026-10-20T09:05:17+08:00",
     "indexRequestAction": "Google Search Console 已使用 yo30437@gmail.com 檢查正式文章網址，畫面停在「要求建立索引」按鈕前。此按鈕會向 Google 提交要求，依瀏覽器操作規則需取得動作當下確認。",
     "notes": "文章已部署並完成正式站、首頁、筆記入口與 Sitemap 驗證；索引申請已備妥但尚未提交，未宣稱 Google 已接受或已收錄。"
+  },
+  {
+    "date": "2026-10-21",
+    "topicId": "seo-geo-beginner-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/seo-geo-beginner-guide/",
+    "title": "SEO、GEO 是什麼？把 Google 想成圖書館就懂了",
+    "publication": "published",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://developers.google.com/search/docs/fundamentals/how-search-works",
+      "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "https://developers.google.com/search/docs/appearance/ai-features",
+      "https://support.google.com/webmasters/answer/7576553",
+      "https://support.google.com/analytics/answer/15612152",
+      "https://support.google.com/analytics/answer/9267568",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-21",
+    "aiAssisted": true,
+    "editorialNotes": "把 SEO 基本流程、sitemap、robots.txt、canonical、標題結構、內部連結、結構化資料、GSC、GA4 與 GEO 整理成圖書館比喻、十題測驗和面試說法。搜尋意圖為初學者完整入門，與 2026-10-14 的關鍵字與搜尋意圖文章不同；不保證排名、收錄或 AI 引用。另提供已目視核對的 16 頁圖解 PDF。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 39589639026,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39589639026",
+      "headSha": "6213da79cfe04d417159bf59b1f0513974593856"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 3 FAQ items, 8 source and case links, author, downloadable PDF, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "pdfLive": true,
+      "pdfHTTP": 200
+    },
+    "commit": "6213da79cfe04d417159bf59b1f0513974593856",
+    "publishedAt": "2026-10-21T19:08:28+08:00",
+    "liveVerifiedAt": "2026-10-21T19:09:00+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/seo-geo-beginner-guide/",
+    "downloadUrl": "https://anson821012.github.io/anson-portfolio/assets/seo-geo-beginner-guide.pdf",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 58,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章與 PDF 已部署，正式站、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
   }
 ]
