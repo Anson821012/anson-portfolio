@@ -1,20 +1,21 @@
 import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
-import {renderSearch,renderContent} from '../growth-view.mjs';
+import {renderSearch,renderContent,renderRevenue} from '../growth-view.mjs';
 import {buildSearchPages} from './search-pages.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dest = path.resolve(process.argv[2] || path.join(root,'_site'));
 await mkdir(path.join(dest,'data'),{recursive:true});
-for (const name of ['search','content']) {
+for (const name of ['search','content','revenue']) {
   try { await readFile(path.join(dest,`data/${name}.json`)); }
   catch { await copyFile(path.join(root,`data/${name}.json`),path.join(dest,`data/${name}.json`)); }
 }
 const search = JSON.parse(await readFile(path.join(dest,'data/search.json'),'utf8'));
 const content = JSON.parse(await readFile(path.join(dest,'data/content.json'),'utf8'));
+const revenue = JSON.parse(await readFile(path.join(dest,'data/revenue.json'),'utf8'));
 let html = await readFile(path.join(root,'index.html'),'utf8');
-const fragments = {...renderSearch(search),content:renderContent(content)};
+const fragments = {...renderSearch(search),...renderRevenue(revenue),content:renderContent(content)};
 for (const [name,value] of Object.entries(fragments)) {
   const pattern = new RegExp(`<!-- live:${name}:start -->[\\s\\S]*?<!-- live:${name}:end -->`);
   if (!pattern.test(html)) throw new Error(`Missing marker: ${name}`);

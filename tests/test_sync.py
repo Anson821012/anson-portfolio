@@ -14,6 +14,7 @@ spec.loader.exec_module(sync)
 class SyncTests(unittest.TestCase):
     def setUp(self):
         self.search = json.loads((ROOT/'data/search.json').read_text())
+        self.revenue = json.loads((ROOT/'data/revenue.json').read_text())
 
     def test_failure_preserves_payload_and_success_date(self):
         def failed(): raise ValueError('Source changed')
@@ -48,6 +49,24 @@ class SyncTests(unittest.TestCase):
 
     def test_missing_article_structure_is_not_success(self):
         with self.assertRaises(ValueError): sync.parse_article('<h1>Access denied</h1>','test')
+
+    def test_revenue_accepts_only_aggregate_safe_fields(self):
+        self.assertIs(sync.validate_revenue(self.revenue), self.revenue)
+        invalid = copy.deepcopy(self.revenue)
+        invalid['momName'] = '不得公開'
+        with self.assertRaises(AssertionError): sync.validate_revenue(invalid)
+        invalid = copy.deepcopy(self.revenue)
+        invalid['total'] = -1
+        with self.assertRaises(AssertionError): sync.validate_revenue(invalid)
+
+    def test_revenue_failure_keeps_last_verified_total(self):
+        def failed(): raise OSError('Source unavailable')
+        now = dt.datetime(2026,10,22,tzinfo=dt.timezone.utc)
+        result, error = sync.refresh(self.revenue, failed, now)
+        self.assertEqual(result['total'], 98246351)
+        self.assertEqual(result['last_success'], self.revenue['last_success'])
+        self.assertEqual(result['status'], 'error')
+        self.assertEqual(error, 'OSError')
 
 
 if __name__ == '__main__': unittest.main()

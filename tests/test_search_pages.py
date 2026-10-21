@@ -76,7 +76,7 @@ class SearchPagesTest(unittest.TestCase):
             with self.subTest(page=filename):
                 self.assertIn('NT$98,246,351', visible)
                 self.assertIn('共 41 期', visible)
-                self.assertIn('截至 2026/10/21', visible)
+                self.assertIn('同步至 2026/10/21', visible)
                 self.assertIn('並非財務認列營收', visible)
 
     def test_structured_data_ids_titles_and_author_are_consistent(self):

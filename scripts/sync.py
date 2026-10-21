@@ -1,4 +1,4 @@
-"""Fetch public article credits and read-only Search Console aggregates.
+"""Fetch public article credits, Search Console data, and revenue aggregates.
 
 Credentials enter only through GSC_ACCESS_TOKEN; no credentials are serialized.
 Network/source failures retain the last successful payload and its timestamp.
@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = "https://anson821012.github.io/anson-portfolio/"
 BRAND = "https://www.fuyunlovemommy.com"
 PROPERTY = "sc-domain:fuyunlovemommy.com"
+REVENUE_SOURCE = "https://fuyun-contract-signing.fuyunwithlove.chatgpt.site/api/public-performance-summary"
 CATEGORIES = ["news", "口碑好評", "坐月子qa", "嬰兒與健康專欄", "術後修復與營養照護", "媒體報導"]
 
 
@@ -86,8 +87,26 @@ def validate_content(data):
     return data
 
 
+def validate_revenue(data):
+    allowed = {"schema", "source", "metric", "unit", "total", "periodCount", "firstPeriod", "latestPeriod",
+               "mode", "status", "last_success", "last_attempt"}
+    assert set(data) <= allowed
+    assert data["schema"] == 1 and data["source"] == "fuyun-contract-signing"
+    assert data["metric"] == "優惠後合約業績" and data["unit"] == "TWD"
+    assert isinstance(data["total"], int) and not isinstance(data["total"], bool) and 0 < data["total"] < 1_000_000_000_000
+    assert isinstance(data["periodCount"], int) and not isinstance(data["periodCount"], bool) and 0 < data["periodCount"] <= 240
+    pattern = re.compile(r"^\d{4}-(?:0[1-9]|1[0-2])$")
+    assert pattern.fullmatch(data["firstPeriod"]) and pattern.fullmatch(data["latestPeriod"])
+    assert data["firstPeriod"] <= data["latestPeriod"]
+    start_year, start_month = map(int, data["firstPeriod"].split("-"))
+    end_year, end_month = map(int, data["latestPeriod"].split("-"))
+    available_months = (end_year - start_year) * 12 + end_month - start_month + 1
+    assert data["periodCount"] <= available_months
+    return data
+
+
 def previous(name, online):
-    validator = validate_search if name == "search" else validate_content
+    validator = {"search": validate_search, "content": validate_content, "revenue": validate_revenue}[name]
     local = validator(json.loads((ROOT / "data" / (name + ".json")).read_text()))
     if online:
         try:
@@ -160,6 +179,12 @@ def fetch_content(now):
     return validate_content({"schema": 1, "source": BRAND, "items": items, "status": "ok", "last_success": now.isoformat(), "last_attempt": now.isoformat()})
 
 
+def fetch_revenue(now):
+    result = validate_revenue(json.loads(request(REVENUE_SOURCE)))
+    result.update(mode="api", status="ok", last_success=now.isoformat(), last_attempt=now.isoformat())
+    return validate_revenue(result)
+
+
 def refresh(old, fetcher, now, enabled=True):
     if enabled:
         try:
@@ -183,7 +208,11 @@ def main():
     token = os.environ.get("GSC_ACCESS_TOKEN")
     failures = []
     args.output.mkdir(parents=True, exist_ok=True)
-    for name, fetcher, enabled in [("search", lambda: fetch_search(token, now), bool(token)), ("content", lambda: fetch_content(now), True)]:
+    for name, fetcher, enabled in [
+        ("search", lambda: fetch_search(token, now), bool(token)),
+        ("content", lambda: fetch_content(now), True),
+        ("revenue", lambda: fetch_revenue(now), True),
+    ]:
         old = previous(name, args.use_live_fallback)
         result, error = refresh(old, fetcher, now, enabled)
         if name == "search" and not token and os.environ.get("GSC_CONFIGURED") == "true":

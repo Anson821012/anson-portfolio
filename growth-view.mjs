@@ -4,6 +4,7 @@ const esc = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<'
 const day = value => esc(value.replaceAll('-', '/'));
 const percent = (value, places = 1) => `${(value * 100).toFixed(places)}%`;
 const stamp = value => value ? new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit', ...(value.includes('T') ? {hour:'2-digit',minute:'2-digit'} : {})}).format(new Date(value)) : '尚未完成';
+const period = value => esc(value.replace('-', '/'));
 
 export function monthsFor(daily) {
   const groups = new Map();
@@ -21,6 +22,19 @@ function syncNote(data, label) {
   if (data.status === 'error') return `${label}：本次同步未完成，保留上次成功資料（${esc(stamp(data.last_success))}）`;
   const stale = Date.now() - new Date(data.last_success).getTime() > 36 * 3600 * 1000;
   return `${label}：${stale ? '超過 36 小時未同步・' : ''}最近同步 ${esc(stamp(data.last_success))}（台灣時間）`;
+}
+
+export function renderRevenue(data) {
+  const allowed = new Set(['schema','source','metric','unit','total','periodCount','firstPeriod','latestPeriod','mode','status','last_success','last_attempt']);
+  if (Object.keys(data).some(key => !allowed.has(key))) throw new Error('Unexpected revenue field');
+  if (data.schema !== 1 || data.source !== 'fuyun-contract-signing' || data.metric !== '優惠後合約業績' || data.unit !== 'TWD') throw new Error('Invalid revenue data');
+  if (!Number.isSafeInteger(data.total) || data.total <= 0 || !Number.isSafeInteger(data.periodCount) || data.periodCount <= 0) throw new Error('Invalid revenue totals');
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(data.firstPeriod) || !/^\d{4}-(0[1-9]|1[0-2])$/.test(data.latestPeriod) || data.firstPeriod > data.latestPeriod) throw new Error('Invalid revenue period');
+  const tenThousands = Math.floor(data.total / 10000);
+  const checked = stamp(data.last_success);
+  const card = `<p>福韻累計業績</p><strong><span>${n(tenThousands)}</span> 萬元</strong><div class="metric-exact">後台合計 NT$${n(data.total)}</div><small>${period(data.firstPeriod)}—${period(data.latestPeriod)}，共 ${n(data.periodCount)} 期<br>${esc(data.metric)}・同步至 ${esc(checked)}</small>`;
+  const detail = `<p><strong>業績：</strong>由福韻業績分析後台 ${n(data.periodCount)} 個期別加總，採優惠後總價，包含已完成的電子契約，以及未作廢的手動業績與歷史 Excel。週期以每月 4 日 12:00 至隔月 4 日 12:00 前劃分；歷史 Excel 依原工作表月份歸期。最新資料期別為 ${period(data.latestPeriod)}。</p><p>此處呈現系統記錄的合約業績，並非財務認列營收或實收款項的查核結果；品牌合計也不等於個人直接成交額。</p><p class="source-updated">${syncNote(data,'業績')}。公開資料僅包含加總金額與期別範圍，不包含客戶或單筆合約資料。</p>`;
+  return {revenue:card,revenueDetail:detail};
 }
 
 export function renderSearch(data) {
@@ -44,7 +58,7 @@ export function renderSearch(data) {
   }
   const chart = `<figcaption>有資料的月份，平均每天帶來多少點擊？</figcaption>${months.map((m,i) => `<div class="comparison-row${i === months.length-1 ? ' current' : ''}"><div><span>${esc(m.month)} · ${m.full ? `完整 ${m.days} 天` : `${m.days} 個資料日`}</span><strong>${m.average.toFixed(1)}<small> 次／日</small></strong></div><div class="bar-track" aria-hidden="true"><span style="width:${(m.average/ceiling*100).toFixed(3)}%"></span></div></div>`).join('')}<p>${esc(comparison)}</p><small>日均點擊＝點擊÷有資料的天數；長條均以 0–${ceiling} 次／日為刻度。未回傳的日期不當作零，也不推估整月。<br>資料：Google Search Console，網路搜尋。</small>`;
   const table = (caption, headers, body) => `<div class="metric-table-wrap"><table class="metric-table"><caption>${caption}</caption><thead><tr>${headers.map(h => `<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${body.map(row => `<tr><th scope="row">${row[0]}</th>${row.slice(1).map(cell=>`<td>${cell}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
-  const detail = `<p><strong>搜尋：</strong>查詢近 12 個月（${day(data.requested.start)}—${day(data.requested.end)}），只採已完成處理的 Google 網路搜尋資料。實際回傳 ${range}，${coverage}；平台處理資料需要時間，並非即時流量。</p>${table(`${coverage}的整體指標`,['指標','結果'],[['點擊',n(totals.clicks)],['曝光',n(totals.impressions)],['平均點閱率',percent(totals.ctr)],['平均排序',totals.position.toFixed(1)]])}${table('依實際資料天數整理的每月表現',['期間','點擊','曝光','點閱率'],months.map(m=>[`${day(m.start)}—${day(m.end)}`,n(m.clicks),n(m.impressions),percent(m.impressions ? m.clicks/m.impressions : 0,2)]))}<p>每日點擊與曝光加總已與整體指標核對。平均排序使用來源的整體指標；月份點閱率依點擊÷曝光計算。資料不足一年時，不推估全年或計算年增率。</p><p class="source-updated">${syncNote(data,'搜尋')}。業績核對：2026/10/21；業績仍為人工核對快照。搜尋數據僅代表官網 Google 網路搜尋。</p>`;
+  const detail = `<p><strong>搜尋：</strong>查詢近 12 個月（${day(data.requested.start)}—${day(data.requested.end)}），只採已完成處理的 Google 網路搜尋資料。實際回傳 ${range}，${coverage}；平台處理資料需要時間，並非即時流量。</p>${table(`${coverage}的整體指標`,['指標','結果'],[['點擊',n(totals.clicks)],['曝光',n(totals.impressions)],['平均點閱率',percent(totals.ctr)],['平均排序',totals.position.toFixed(1)]])}${table('依實際資料天數整理的每月表現',['期間','點擊','曝光','點閱率'],months.map(m=>[`${day(m.start)}—${day(m.end)}`,n(m.clicks),n(m.impressions),percent(m.impressions ? m.clicks/m.impressions : 0,2)]))}<p>每日點擊與曝光加總已與整體指標核對。平均排序使用來源的整體指標；月份點閱率依點擊÷曝光計算。資料不足一年時，不推估全年或計算年增率。</p><p class="source-updated">${syncNote(data,'搜尋')}。搜尋數據僅代表官網 Google 網路搜尋。</p>`;
   return {cards, chart, detail, coverage:`<strong>近一年查詢，清楚標明可用期間。</strong>${range}，${coverage}。<br>${syncNote(data,'搜尋')}`};
 }
 

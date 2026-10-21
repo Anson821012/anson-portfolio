@@ -1,4 +1,4 @@
-import {renderSearch, renderContent} from './growth-view.mjs';
+import {renderSearch, renderContent, renderRevenue} from './growth-view.mjs';
 
 async function load(name, render) {
   try {
@@ -14,6 +14,12 @@ async function load(name, render) {
 
 function refresh() {
   if (document.hidden) return;
+  load('revenue', data => {
+    const fragments = renderRevenue(data);
+    document.getElementById('revenue-card').innerHTML = fragments.revenue;
+    document.getElementById('revenue-detail').innerHTML = fragments.revenueDetail;
+    document.getElementById('revenue-connection-note').textContent = '';
+  });
   load('search', data => {
     const fragments = renderSearch(data);
     for (const [key,value] of Object.entries(fragments)) document.getElementById(`search-${key}`).innerHTML = value;

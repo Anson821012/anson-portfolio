@@ -1,8 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {monthsFor,renderSearch,renderContent} from '../growth-view.mjs';
+import {monthsFor,renderSearch,renderContent,renderRevenue} from '../growth-view.mjs';
 const data = JSON.parse(readFileSync(new URL('../data/search.json',import.meta.url)));
+const revenue = JSON.parse(readFileSync(new URL('../data/revenue.json',import.meta.url)));
 
 test('verified partial-year coverage and only complete-month comparison',()=>{
   const view = renderSearch(data);
@@ -25,4 +26,10 @@ test('external links and HTML are not executed',()=>{
   assert.ok(!html.includes('<img'));
   assert.ok(html.includes('&lt;img'));
   assert.ok(!html.includes('evil.example'));
+});
+test('revenue renders exact total and rejects unexpected fields',()=>{
+  const view = renderRevenue(revenue);
+  assert.match(view.revenue,/NT\$98,246,351/);
+  assert.match(view.revenue,/共 41 期/);
+  assert.throws(()=>renderRevenue({...revenue,momName:'不得公開'}),/Unexpected revenue field/);
 });

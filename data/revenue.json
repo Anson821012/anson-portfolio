@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "source": "fuyun-contract-signing",
+  "metric": "優惠後合約業績",
+  "unit": "TWD",
+  "total": 98246351,
+  "periodCount": 41,
+  "firstPeriod": "2023-06",
+  "latestPeriod": "2026-10",
+  "mode": "api",
+  "status": "ok",
+  "last_success": "2026-10-21T12:06:00+00:00",
+  "last_attempt": "2026-10-21T12:06:00+00:00"
+}
