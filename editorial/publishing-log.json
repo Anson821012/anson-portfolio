@@ -1700,5 +1700,61 @@
       "retryStatus": "not_attempted"
     },
     "notes": "文章與 PDF 已部署，正式站、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
+  },
+  {
+    "date": "2026-10-21",
+    "topicId": "seo-ga4-beginner-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+    "title": "GA4 怎麼看？新手從流量來源、事件到轉換的白話教學",
+    "publication": "published",
+    "publicationReason": "使用者於 2026-10-21 直接要求把已完成的 GA4 教學加入麻煩整理所網站；此為當次明確委託的內容發布，不是排程補量。",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://support.google.com/analytics/answer/12923437",
+      "https://support.google.com/analytics/answer/14731736",
+      "https://support.google.com/analytics/answer/9271392",
+      "https://support.google.com/analytics/answer/14292358",
+      "https://support.google.com/analytics/answer/15258820",
+      "https://support.google.com/analytics/answer/10917952",
+      "https://anson821012.github.io/anson-portfolio/notes/seo-geo-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-21",
+    "aiAssisted": true,
+    "editorialNotes": "以 GA4 教學、GA4 新手為主要搜尋意圖，延伸 GA4 怎麼看、流量來源、事件、關鍵事件與 UTM 等具體問題。內容對象包含品牌工作者、行銷人與學生，以店面比喻、五步操作及十五分鐘練習整理；與同日 SEO／GEO 全流程入門文的搜尋意圖分開，並建立雙向站內連結。不保證流量、排名或轉換。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 39592646834,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39592646834",
+      "headSha": "80a3174d16f9e698e7ddfb1f9ac694293973d6a2"
+    },
+    "validation": {
+      "pythonTests": "14 passed",
+      "nodeTests": "21 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO title and description, 6 topic tags, 4 visible FAQ items, official sources, bidirectional internal links, author, downloadable PDF, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "pdfLive": true,
+      "pdfHTTP": 200
+    },
+    "commit": "80a3174d16f9e698e7ddfb1f9ac694293973d6a2",
+    "publishedAt": "2026-10-21T19:32:49+08:00",
+    "liveVerifiedAt": "2026-10-21T19:33:09+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+    "downloadUrl": "https://anson821012.github.io/anson-portfolio/assets/ga4-beginner-hands-on-guide.pdf",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 59,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章與 26 頁 PDF 已部署，正式文章、PDF、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；正式發布不代表已申請索引、已收錄或能取得大量曝光。"
   }
 ]
