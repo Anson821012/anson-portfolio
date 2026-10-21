@@ -70,6 +70,15 @@ class SearchPagesTest(unittest.TestCase):
         self.assertGreaterEqual(len(article_pages), 4)
         self.assertEqual(len(self.pages['notes/index.html'].select('.editorial-card')), len(article_pages))
 
+    def test_growth_uses_latest_verified_contract_snapshot(self):
+        for filename in ['index.html', 'growth/index.html']:
+            visible = self.pages[filename].body.get_text(' ', strip=True)
+            with self.subTest(page=filename):
+                self.assertIn('NT$98,246,351', visible)
+                self.assertIn('共 41 期', visible)
+                self.assertIn('截至 2026/10/21', visible)
+                self.assertIn('並非財務認列營收', visible)
+
     def test_structured_data_ids_titles_and_author_are_consistent(self):
         titles = []
         for filename, soup in self.pages.items():
