@@ -549,5 +549,18 @@
     "published": "2026-10-21",
     "slug": "seo-geo-beginner-guide",
     "targetQueries": ["SEO 是什麼", "GEO 是什麼", "GSC GA4 差別"]
+  },
+  {
+    "id": "seo-ga4-beginner-guide",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "GA4 怎麼看？新手從流量來源、事件到轉換的白話教學",
+    "angle": "用網站像一間店的比喻，帶新手完成第一輪 GA4 報表操作",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "high",
+    "published": "2026-10-21",
+    "slug": "ga4-beginner-traffic-events-key-events",
+    "targetQueries": ["GA4 教學", "GA4 新手", "GA4 怎麼看", "GA4 流量來源", "GA4 事件", "GA4 關鍵事件"]
   }
 ]

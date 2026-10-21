@@ -28,6 +28,7 @@ await mkdir(path.join(dest,'assets'),{recursive:true});
 for (const width of [480,800]) await copyFile(path.join(root,`assets/anson-${width}.webp`),path.join(dest,`assets/anson-${width}.webp`));
 await copyFile(path.join(root,'assets/share-robot-20260917.jpg'),path.join(dest,'assets/share-robot-20260917.jpg'));
 await copyFile(path.join(root,'assets/seo-geo-beginner-guide.pdf'),path.join(dest,'assets/seo-geo-beginner-guide.pdf'));
+await copyFile(path.join(root,'assets/ga4-beginner-hands-on-guide.pdf'),path.join(dest,'assets/ga4-beginner-hands-on-guide.pdf'));
 for (const scene of ['office-friends','planning-together']) {
   for (const width of [640,960,1536]) {
     const file = `assets/${scene}-${width}.webp`;
