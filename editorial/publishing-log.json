@@ -1708,9 +1708,11 @@
     "title": "GA4 怎麼看？新手從流量來源、事件到轉換的白話教學",
     "publication": "published",
     "publicationReason": "使用者於 2026-10-21 直接要求把已完成的 GA4 教學加入麻煩整理所網站；此為當次明確委託的內容發布，不是排程補量。",
-    "indexRequest": "not_attempted",
-    "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "indexRequest": "accepted",
+    "indexRequestAttempts": 1,
+    "indexRequestSubmittedAt": "2026-10-21T19:36:42+08:00",
+    "indexing": "not_indexed",
+    "indexingEvidence": "Google Search Console 在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ 資源中顯示：網址不在 Google 服務中，網頁未編入索引，Google 無法辨識的網址；送出一次要求後，畫面明確顯示『已要求建立索引』。",
     "sources": [
       "https://support.google.com/analytics/answer/12923437",
       "https://support.google.com/analytics/answer/14731736",
@@ -1755,6 +1757,6 @@
       "retryAttempts": 0,
       "retryStatus": "not_attempted"
     },
-    "notes": "文章與 26 頁 PDF 已部署，正式文章、PDF、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；正式發布不代表已申請索引、已收錄或能取得大量曝光。"
+    "notes": "文章與 26 頁 PDF 已部署，正式文章、PDF、首頁、筆記入口及 Sitemap 均已驗證。Search Console 已檢查並只送出一次索引要求，Google 明確顯示『已要求建立索引』；目前仍未收錄。已申請不代表已收錄，也不保證大量曝光。"
   }
 ]
