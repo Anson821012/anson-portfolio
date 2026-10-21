@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/seo-geo-beginner-guide/": {"seoTitle": "SEO、GEO 是什麼？從收錄到 AI 引用的白話指南｜蔡鈞佑 Anson Tsai", "description": "SEO、GEO、GSC 與 GA4 怎麼分？蔡鈞佑 Anson Tsai 用圖書館比喻，白話整理抓取、索引、排名、搜尋數據、可信度與 AI 引用。", "tags": ["SEO 是什麼", "GEO 是什麼", "Google Search Console", "GA4", "搜尋引擎最佳化"]},
   "notes/workflow-automation-start-repeatable-reviewable/": {"seoTitle": "工作流程自動化先做哪一段？4 個選擇條件｜蔡鈞佑 Anson Tsai", "description": "工作流程自動化要從哪裡開始？蔡鈞佑 Anson Tsai 用重複頻率、輸入輸出、人工覆核與備援四個條件，整理中小企業第一個自動化試跑的選法。", "tags": ["AI 工作流程自動化", "AI 自動化顧問", "重複工作自動化", "中小企業 AI 導入", "人工覆核"]},
   "notes/ai-consultant-prepare-problem-data-owner/": {"seoTitle": "中小企業找 AI 導入顧問前，要準備哪三件事？｜蔡鈞佑 Anson Tsai", "description": "找 AI 導入顧問前要準備什麼？蔡鈞佑 Anson Tsai 從工作問題、真實資料與覆核責任三件事，整理中小企業第一次會談可帶上的內容。", "tags": ["中小企業 AI 導入顧問", "企業 AI 導入", "AI 導入怎麼開始", "AI 顧問", "工作流程盤點"]},
   "notes/knowledge-base-owner-update-rules/": {"seoTitle": "知識庫怎麼維護？更新負責人、觸發與過期處理｜蔡鈞佑 Anson Tsai", "description": "知識庫建好後為什麼很快過期？蔡鈞佑 Anson Tsai 整理內容負責人、更新觸發、複查日期與過期處理，讓公司知識真的能被接手使用。", "tags": ["知識庫維護", "知識管理", "SOP 更新", "公司流程改善", "新人交接"]},

@@ -536,5 +536,18 @@
     "published": "2026-10-08",
     "slug": "brand-consultant-prepare-three-things",
     "targetQueries": ["高雄品牌行銷顧問", "品牌定位顧問", "內容行銷顧問"]
+  },
+  {
+    "id": "seo-geo-beginner-guide",
+    "pillar": "SEO AEO GEO 與網站",
+    "title": "SEO、GEO 是什麼？從抓取、索引到 AI 引用的白話指南",
+    "angle": "用圖書館比喻串起技術、內容、數據與可信度，附測驗與面試說法",
+    "service": "ai-integration",
+    "case": "content",
+    "status": "published",
+    "priority": "high",
+    "published": "2026-10-21",
+    "slug": "seo-geo-beginner-guide",
+    "targetQueries": ["SEO 是什麼", "GEO 是什麼", "GSC GA4 差別"]
   }
 ]
