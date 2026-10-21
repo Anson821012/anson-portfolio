@@ -1,4 +1,4 @@
-import {renderSearch, renderContent, renderRevenue} from './growth-view.mjs';
+import {renderSearch, renderContent, renderRevenue} from './growth-view.mjs?v=20261021b';
 
 async function load(name, render) {
   try {
