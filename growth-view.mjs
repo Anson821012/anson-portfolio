@@ -30,7 +30,7 @@ export function renderRevenue(data) {
   if (data.schema !== 1 || data.source !== 'fuyun-contract-signing' || data.metric !== '優惠後合約業績' || data.unit !== 'TWD') throw new Error('Invalid revenue data');
   if (!Number.isSafeInteger(data.total) || data.total <= 0 || !Number.isSafeInteger(data.periodCount) || data.periodCount <= 0) throw new Error('Invalid revenue totals');
   if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(data.firstPeriod) || !/^\d{4}-(0[1-9]|1[0-2])$/.test(data.latestPeriod) || data.firstPeriod > data.latestPeriod) throw new Error('Invalid revenue period');
-  const tenThousands = Math.floor(data.total / 10000);
+  const tenThousands = Math.round(data.total / 10000);
   const checked = stamp(data.last_success);
   const card = `<p>福韻累計業績</p><strong><span>${n(tenThousands)}</span> 萬元</strong><div class="metric-exact">後台合計 NT$${n(data.total)}</div><small>${period(data.firstPeriod)}—${period(data.latestPeriod)}，共 ${n(data.periodCount)} 期<br>${esc(data.metric)}・同步至 ${esc(checked)}</small>`;
   const detail = `<p><strong>業績：</strong>由福韻業績分析後台 ${n(data.periodCount)} 個期別加總，採優惠後總價，包含已完成的電子契約，以及未作廢的手動業績與歷史 Excel。週期以每月 4 日 12:00 至隔月 4 日 12:00 前劃分；歷史 Excel 依原工作表月份歸期。最新資料期別為 ${period(data.latestPeriod)}。</p><p>此處呈現系統記錄的合約業績，並非財務認列營收或實收款項的查核結果；品牌合計也不等於個人直接成交額。</p><p class="source-updated">${syncNote(data,'業績')}。公開資料僅包含加總金額與期別範圍，不包含客戶或單筆合約資料。</p>`;
