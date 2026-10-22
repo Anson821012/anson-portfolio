@@ -63,9 +63,14 @@ class SearchPagesTest(unittest.TestCase):
         self.assertEqual(len(soup.select('.catalogue-item')), 125)
         self.assertEqual(len(soup.select('.catalogue-category')), 24)
         self.assertEqual(len(soup.select('.catalogue-facet')), 6)
-        self.assertEqual(len(self.pages['cases/index.html'].select('.editorial-card')), 9)
+        self.assertEqual(len(self.pages['cases/index.html'].select('.editorial-card')), 12)
         for case in ['menu', 'payroll', 'content']:
             self.assertIn('製作動機', self.pages[f'cases/{case}/index.html'].get_text())
+        for case in ['nutrition-care', 'team-intranet', 'line-cs-pilot']:
+            detail = self.pages[f'cases/{case}/index.html']
+            self.assertIn('我的想法與這段製作歷程', detail.get_text())
+            self.assertIn('作品網站與存取狀態', detail.get_text())
+            self.assertIsNotNone(detail.select_one('a[href^="https://fuyun-"]'))
         article_pages = [p for p in self.pages if p.startswith('notes/') and p != 'notes/index.html']
         self.assertGreaterEqual(len(article_pages), 4)
         self.assertEqual(len(self.pages['notes/index.html'].select('.editorial-card')), len(article_pages))

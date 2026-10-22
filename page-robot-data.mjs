@@ -27,8 +27,8 @@ export const pageRobotGuides = {
     intro:'作品不只看成品。選一個角度，看看麻煩怎麼被拆開、整理，再留下可以使用的方法。',
     accent:'#c8c7ef',
     choices:[
-      {label:'先看代表作品',icon:'✦',message:'三組代表案例放在前面，分別看內容、營運和系統如何被整理。',href:'#featured-cases',linkLabel:'看三組代表作品',gesture:'celebrate'},
-      {label:'看更多不同情境',icon:'☁',message:'另外六組作品保留不同的工作現場，適合慢慢逛、比較做法。',href:'#more-cases',linkLabel:'展開其他作品',gesture:'wave'},
+      {label:'先看最新作品',icon:'✦',message:'三組最新案例放在前面，看看顧客照護、員工內網與客服知識如何被整理。',href:'#featured-cases',linkLabel:'看三組最新作品',gesture:'celebrate'},
+      {label:'看更多不同情境',icon:'☁',message:'另外九組作品保留不同的工作現場，適合慢慢逛、比較做法。',href:'#more-cases',linkLabel:'展開其他作品',gesture:'wave'},
       {label:'先學讀案例的方法',icon:'♡',message:'建議依序看：原本的麻煩、判斷、做法、整理後的工作方式。',href:'../studio/',linkLabel:'去行銷 QA 闖關',gesture:'think'}
     ]
   },

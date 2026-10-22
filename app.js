@@ -1,6 +1,8 @@
 'use strict';
 const { categories, facets, legacyIds } = serviceData;
 const caseById = new Map(portfolioCases.map(item => [item.id, item]));
+const latestCaseIds = ['nutrition-care','team-intranet','line-cs-pilot'];
+const portfolioDisplayCases = [...latestCaseIds.map(id => caseById.get(id)).filter(Boolean),...portfolioCases.filter(item => !latestCaseIds.includes(item.id))];
 const catalogue = categories.flatMap((category, categoryIndex) => category.services.map((item, index) => ({
   ...item, code: `${String(categoryIndex + 1).padStart(2, '0')}.${index + 1}`,
   category: category.name, categoryIndex, facet: category.facet
@@ -334,19 +336,19 @@ const caseFilters = [{id:'all',name:'全部作品'},{id:'customer',name:'顧客�
 let activeCaseFilter = 'all';
 let visibleWorkCount = 3;
 function renderPortfolio() {
-  const matching = portfolioCases.filter(item => activeCaseFilter === 'all' || item.group === activeCaseFilter);
+  const matching = portfolioDisplayCases.filter(item => activeCaseFilter === 'all' || item.group === activeCaseFilter);
   document.querySelector('#portfolio-count').textContent = `目前顯示 ${Math.min(visibleWorkCount,matching.length)} / ${matching.length} 組作品`;
   const moreButton = document.querySelector('#more-works');
   moreButton.hidden = visibleWorkCount >= matching.length;
   moreButton.textContent = `再看看其他作品（還有 ${Math.max(0,matching.length-visibleWorkCount)} 組）＋`;
   document.querySelector('#case-filters').innerHTML = caseFilters.map(filter => `<button type="button" data-case-filter="${filter.id}" aria-pressed="${filter.id === activeCaseFilter}">${filter.name}</button>`).join('');
   document.querySelector('#portfolio-grid').innerHTML = matching.slice(0,visibleWorkCount).map((item) => {
-    const index = portfolioCases.indexOf(item);
+    const index = portfolioDisplayCases.indexOf(item);
     const related = catalogue.filter(service => service.caseId === item.id).slice(0,3);
     return `<article class="portfolio-card tone-${index % 4}" id="case-${item.id}">
     <div class="work-visual"><div class="work-topline"><span>整理筆記 / ${String(index+1).padStart(2,'0')}</span><span>流程示意</span></div><p class="work-headline">${item.headline.replace(/\n/g,'<br>')}</p><div class="work-flow">${item.flow.map((step,i) => `<div><span>${String(i+1).padStart(2,'0')}</span><strong>${step}</strong></div>`).join('')}</div><span class="work-stamp" aria-hidden="true">一件一件<br>整理好 ✓</span></div>
     <div class="work-copy"><p class="eyebrow">${item.kicker}</p><h3>${item.title}</h3><p class="work-summary">${item.summary}</p><div class="work-tags">${item.tags.map(tag=>`<span>${tag}</span>`).join('')}</div>
-    <details class="work-detail"><summary>展開動機、做法與品牌價值 <span aria-hidden="true">＋</span></summary><div class="work-detail-body"><div class="work-care"><span>多想的那一步</span><p>${item.care}</p></div><ol class="work-story"><li><strong>01 / 原本的麻煩</strong><p>${item.problem}</p></li><li><strong>02 / 看見的問題</strong><p>${item.insight}</p></li><li><strong>03 / 做了什麼整理</strong><p>${item.action}</p></li><li><strong>04 / 整理後的工作方式</strong><p>${item.after}</p></li></ol><section class="motive-block"><h4>從設計讀出的動機</h4><p>${item.motive}</p></section><section class="benefit-block"><h4>可以為品牌帶來什麼？</h4><p>${item.benefit}</p></section><h4 class="feature-heading">實際作品中的功能／交付</h4><ul class="verified-features">${item.features.map(feature=>`<li>${feature}</li>`).join('')}</ul>${item.id === 'content' ? '<a class="text-link" href="#growth">查看福韻成長與公開署名 ↗</a>' : ''}${item.id === 'quiz' ? '<a class="text-link" href="https://anson821012.github.io/didactic-carnival/" target="_blank" rel="noopener noreferrer">查看互動問卷 ↗</a>' : ''}${['quiz','report'].includes(item.id) ? '<p class="work-boundary">此案例展示互動與資訊交付設計，內容不作為健康診斷。</p>' : ''}<div class="case-service-links"><span>從這個方法，延伸到你的需求</span>${related.map(service=>`<a href="#services" data-find-service="${service.id}">${service.name} ↗</a>`).join('')}</div></div></details></div></article>`;
+    <details class="work-detail"><summary>展開動機、做法與品牌價值 <span aria-hidden="true">＋</span></summary><div class="work-detail-body"><div class="work-care"><span>多想的那一步</span><p>${item.care}</p></div><ol class="work-story"><li><strong>01 / 原本的麻煩</strong><p>${item.problem}</p></li><li><strong>02 / 看見的問題</strong><p>${item.insight}</p></li><li><strong>03 / 做了什麼整理</strong><p>${item.action}</p></li><li><strong>04 / 整理後的工作方式</strong><p>${item.after}</p></li></ol>${item.journey ? `<section class="motive-block"><h4>我的想法與這段製作歷程</h4><p>${item.journey}</p></section>` : ''}<section class="motive-block"><h4>這個作品的製作動機</h4><p>${item.motive}</p></section><section class="benefit-block"><h4>可以為品牌帶來什麼？</h4><p>${item.benefit}</p></section><h4 class="feature-heading">實際作品中的功能／交付</h4><ul class="verified-features">${item.features.map(feature=>`<li>${feature}</li>`).join('')}</ul>${item.id === 'content' ? '<a class="text-link" href="#growth">查看福韻成長與公開署名 ↗</a>' : ''}${item.id === 'quiz' ? '<a class="text-link" href="https://anson821012.github.io/didactic-carnival/" target="_blank" rel="noopener noreferrer">查看互動問卷 ↗</a>' : ''}${['quiz','report'].includes(item.id) ? '<p class="work-boundary">此案例展示互動與資訊交付設計，內容不作為健康診斷。</p>' : ''}<a class="text-link" href="cases/${item.id}/">閱讀完整作品故事與核對範圍 →</a><div class="case-service-links"><span>從這個方法，延伸到你的需求</span>${related.map(service=>`<a href="#services" data-find-service="${service.id}">${service.name} ↗</a>`).join('')}</div></div></details></div></article>`;
   }).join('');
 }
 document.querySelector('#case-filters').addEventListener('click', event => {
@@ -364,7 +366,7 @@ document.querySelector('#more-works').addEventListener('click', () => {
 });
 function revealCase(id, shouldScroll = true) {
   if (!caseById.has(id)) return;
-  if (!document.querySelector(`#case-${id}`)) {activeCaseFilter = 'all'; visibleWorkCount = Math.max(visibleWorkCount,portfolioCases.findIndex(item=>item.id === id)+1); renderPortfolio();}
+  if (!document.querySelector(`#case-${id}`)) {activeCaseFilter = 'all'; visibleWorkCount = Math.max(visibleWorkCount,portfolioDisplayCases.findIndex(item=>item.id === id)+1); renderPortfolio();}
   const card = document.querySelector(`#case-${id}`);
   card.querySelector('details').open = true;
   if (shouldScroll) card.scrollIntoView({block:'start'});
