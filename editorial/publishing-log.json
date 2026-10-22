@@ -1770,8 +1770,8 @@
     "topicId": "brand-consistency",
     "url": "https://anson821012.github.io/anson-portfolio/notes/brand-visual-consistency-five-rules/",
     "title": "每張圖都好看，放在一起卻不像同一家公司？先固定 5 個品牌規則",
-    "publication": "prepared",
-    "indexRequest": "not_attempted",
+    "publication": "published",
+    "indexRequest": "pending_browser_unlock",
     "indexRequestAttempts": 0,
     "indexing": "not_checked",
     "sources": [
@@ -1781,7 +1781,10 @@
     "aiAssisted": true,
     "editorialNotes": "聚焦品牌視覺一致性的五個共同規則、資訊層級、範本與例外回寫；與既有品牌接點、品牌語氣、公司介紹及品牌證據文章的搜尋意圖不同。只使用公開品牌互動問卷案例的題目、結果與聯絡路徑，未宣稱設計、轉換、流量或營收成效。",
     "deployment": {
-      "status": "pending"
+      "status": "success",
+      "workflowRunId": 39703844031,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39703844031",
+      "headSha": "479c686fb9d0ab97f3999b7c0426f983e622308d"
     },
     "validation": {
       "pythonTests": "17 passed",
@@ -1789,8 +1792,22 @@
       "build": "passed",
       "syntax": "passed",
       "gitDiff": "passed",
-      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry, noindex absence and sitemap passed"
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
     },
-    "notes": "文章內容與建置驗證已完成，等待提交與正式部署。"
+    "commit": "479c686fb9d0ab97f3999b7c0426f983e622308d",
+    "publishedAt": "2026-10-22T09:05:00+08:00",
+    "liveVerifiedAt": "2026-10-22T09:09:12+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/brand-visual-consistency-five-rules/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 60,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 索引申請因目前 Mac 鎖定而未執行；不得把正式發布視為已申請或已收錄。"
   }
 ]
