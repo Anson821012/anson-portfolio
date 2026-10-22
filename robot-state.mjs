@@ -22,7 +22,14 @@ export function createAnimationLoop({requestFrame, cancelFrame, render, fps = 45
 export function gesturePose(kind, elapsed) {
   if (kind === 'wave') {
     const envelope = ease(elapsed / .45) * (1 - ease((elapsed - 2.25) / .55));
-    return {wave: envelope, wiggle: Math.sin(elapsed * 12) * .16 * envelope, tidy: 0};
+    return {wave: envelope, wiggle: Math.sin(elapsed * 12) * .16 * envelope, tidy: 0, celebrate: 0, think: 0};
   }
-  return {wave: 0, wiggle: 0, tidy: kind === 'tidy' ? ease(elapsed / 1.3) : 0};
+  if (kind === 'celebrate') {
+    const envelope = ease(elapsed / .35) * (1 - ease((elapsed - 2.4) / .6));
+    return {wave: 0, wiggle: Math.sin(elapsed * 10) * .08 * envelope, tidy: 0, celebrate: envelope, think: 0};
+  }
+  if (kind === 'think') {
+    return {wave: 0, wiggle: 0, tidy: 0, celebrate: 0, think: ease(elapsed / .55)};
+  }
+  return {wave: 0, wiggle: 0, tidy: kind === 'tidy' ? ease(elapsed / 1.3) : 0, celebrate: 0, think: 0};
 }

@@ -29,11 +29,14 @@ test('fallback inside a failed render never schedules another frame',()=>{
   loop.start(); frame(0); assert.equal(queued,1);
 });
 test('a wave eases back to neutral; sorting settles and stays sorted',()=>{
-  assert.deepEqual(gesturePose('wave',-1),{wave:0,wiggle:0,tidy:0});
+  assert.deepEqual(gesturePose('wave',-1),{wave:0,wiggle:0,tidy:0,celebrate:0,think:0});
   assert.equal(gesturePose('wave',1).wave,1);
   assert.equal(gesturePose('wave',3).wave,0);
   assert.equal(gesturePose('tidy',0).tidy,0);
   assert.equal(gesturePose('tidy',.65).tidy,.5);
   assert.equal(gesturePose('tidy',20).tidy,1);
-  assert.deepEqual(gesturePose('idle',99),{wave:0,wiggle:0,tidy:0});
+  assert.deepEqual(gesturePose('idle',99),{wave:0,wiggle:0,tidy:0,celebrate:0,think:0});
+  assert.equal(gesturePose('celebrate',1).celebrate,1);
+  assert.equal(gesturePose('celebrate',4).celebrate,0);
+  assert.equal(gesturePose('think',.55).think,1);
 });

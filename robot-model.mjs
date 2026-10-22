@@ -2,7 +2,7 @@ import * as T from './vendor/three-0.180.0/three.module.min.js';
 import {clamp, gesturePose} from './robot-state.mjs';
 
 // Original, locally constructed character. No remote models, textures, or tracking.
-export function createRobot(canvas, {onContextLost, compact = false} = {}) {
+export function createRobot(canvas, {onContextLost, compact = false, accent = 0xa8d7e9} = {}) {
   const renderer = new T.WebGLRenderer({canvas, alpha: true, antialias: true, powerPreference: 'low-power'});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, compact ? 1.5 : 2));
   renderer.outputColorSpace = T.SRGBColorSpace;
@@ -12,27 +12,28 @@ export function createRobot(canvas, {onContextLost, compact = false} = {}) {
   const camera = new T.PerspectiveCamera(33, 1, .1, 30);
   camera.position.set(2.5, 2.65, 6.7);
   camera.lookAt(0, 1.45, 0);
-  scene.add(new T.HemisphereLight(0xfffaf0, 0x637a6a, 1.9));
-  const key = new T.DirectionalLight(0xfff3d9, 3.4); key.position.set(-3, 5, 6); scene.add(key);
-  const rim = new T.DirectionalLight(0xc4ffe8, 2.2); rim.position.set(4, 3, -2); scene.add(rim);
-  const fill = new T.DirectionalLight(0xe6e1ff, 1.2); fill.position.set(-4, 1, -2); scene.add(fill);
-  const cream = new T.MeshPhysicalMaterial({color: 0xf6eada, roughness: .29, metalness: .02, clearcoat: .7});
-  const sage = new T.MeshPhysicalMaterial({color: 0x91aa92, roughness: .32, metalness: .12, clearcoat: .6});
-  const dark = new T.MeshPhysicalMaterial({color: 0x103634, roughness: .15, metalness: .18, clearcoat: 1});
-  const eyeMat = new T.MeshBasicMaterial({color: 0x94ffe0});
-  const trim = new T.MeshStandardMaterial({color: 0xc5d8bf, roughness: .36, metalness: .22});
+  scene.add(new T.HemisphereLight(0xfffbf7, 0x7896ac, 2.05));
+  const key = new T.DirectionalLight(0xfff6ea, 3.5); key.position.set(-3, 5, 6); scene.add(key);
+  const rim = new T.DirectionalLight(0xcceefe, 2.4); rim.position.set(4, 3, -2); scene.add(rim);
+  const fill = new T.DirectionalLight(0xf0dcff, 1.35); fill.position.set(-4, 1, -2); scene.add(fill);
+  const cream = new T.MeshPhysicalMaterial({color: 0xfffaf4, roughness: .27, metalness: .015, clearcoat: .82});
+  const sage = new T.MeshPhysicalMaterial({color: accent, roughness: .3, metalness: .08, clearcoat: .72});
+  const dark = new T.MeshPhysicalMaterial({color: 0x29485e, roughness: .17, metalness: .14, clearcoat: 1});
+  const eyeMat = new T.MeshBasicMaterial({color: 0x9fe6ff});
+  const trim = new T.MeshStandardMaterial({color: 0xe7c4d9, roughness: .34, metalness: .13});
+  const blush = new T.MeshBasicMaterial({color:0xf5bed2,transparent:true,opacity:.75});
   // A small procedural studio environment supplies soft reflections without remote textures.
   const studio=document.createElement('canvas');studio.width=512;studio.height=256;
   const studioCtx=studio.getContext('2d');
   const light=studioCtx.createLinearGradient(0,0,0,256);
-  light.addColorStop(0,'#d9e8d8');light.addColorStop(.46,'#fff8ed');light.addColorStop(1,'#657d70');
+  light.addColorStop(0,'#dff3fb');light.addColorStop(.46,'#fffaf5');light.addColorStop(1,'#98afc1');
   studioCtx.fillStyle=light;studioCtx.fillRect(0,0,512,256);
   studioCtx.fillStyle='#fffef5';studioCtx.fillRect(60,38,100,100);studioCtx.fillRect(350,53,42,90);
   const studioTexture=new T.CanvasTexture(studio);studioTexture.mapping=T.EquirectangularReflectionMapping;studioTexture.colorSpace=T.SRGBColorSpace;
   const pmrem=new T.PMREMGenerator(renderer);const environment=pmrem.fromEquirectangular(studioTexture);
   scene.environment=environment.texture;scene.environmentIntensity=.65;studioTexture.dispose();pmrem.dispose();
   const paper = new T.MeshStandardMaterial({color: 0xfffbef, roughness: .8});
-  const mats = [cream, sage, dark, eyeMat, trim, paper];
+  const mats = [cream, sage, dark, eyeMat, trim, blush, paper];
   const sphere = new T.SphereGeometry(1, 32, 24);
   const geometries = new Set([sphere]);
   function mesh(geometry, material, parent, position = [0,0,0], scale = [1,1,1]) {
@@ -77,10 +78,11 @@ export function createRobot(canvas, {onContextLost, compact = false} = {}) {
     ball(eyes,eyeMat,[x,0,0],[.108,.143,.028]);
     ball(eyes,glint,[x-.025,.05,.025],[.027,.038,.009]);
   }
+  for (const x of [-.46,.46]) ball(head,blush,[x,-.14,.61],[.105,.055,.018]);
   const smileCurve = new T.QuadraticBezierCurve3(new T.Vector3(-.115,-.18,.601),new T.Vector3(0,-.265,.592),new T.Vector3(.115,-.18,.601));
   const smileGeo = new T.TubeGeometry(smileCurve,16,.016,8,false); geometries.add(smileGeo); mesh(smileGeo,eyeMat,head);
   ball(head,sage,[0,.63,-.05],[.04,.095,.04]);
-  ball(head,eyeMat,[0,.735,-.05],[.077,.077,.077]);
+  ball(head,trim,[0,.735,-.05],[.077,.077,.077]);
   // Small glass highlights are geometry, so they move with the head.
   const shine = new T.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.10}); mats.push(shine);
   ball(head,shine,[-.22,.237,.56],[.23,.025,.012]).rotation.z=.12;
@@ -93,7 +95,14 @@ export function createRobot(canvas, {onContextLost, compact = false} = {}) {
     // A thumb makes each little mitten readable during a wave.
     ball(arm,sage,[-side * .15,-.54,.08],[.09,.12,.1]); arms.push(arm);
   }
-  const colors = [0xc8b6dd,0xf1b895,0x9ccab7];
+  // A tiny heart badge and pastel folders keep the helper warm and playful.
+  const heartShape = new T.Shape();
+  heartShape.moveTo(0,-.10); heartShape.bezierCurveTo(-.28,-.28,-.39,.08,-.20,.20);
+  heartShape.bezierCurveTo(-.08,.28,0,.18,0,.10); heartShape.bezierCurveTo(0,.18,.08,.28,.20,.20);
+  heartShape.bezierCurveTo(.39,.08,.28,-.28,0,-.10);
+  const heartGeo = new T.ExtrudeGeometry(heartShape,{depth:.035,bevelEnabled:true,bevelSize:.018,bevelThickness:.018,bevelSegments:3});
+  geometries.add(heartGeo); mesh(heartGeo,trim,robot,[0,1.03,.54],[.42,.42,.42]);
+  const colors = [0xd8c6ef,0xf6c6d8,0xf6dda9];
   const folders = colors.map((color,i) => {
     const folder = new T.Group(); scene.add(folder);
     const material = new T.MeshStandardMaterial({color,roughness:.5,metalness:.06}); mats.push(material);
@@ -105,7 +114,7 @@ export function createRobot(canvas, {onContextLost, compact = false} = {}) {
   });
   const shadowCanvas = document.createElement('canvas'); shadowCanvas.width = shadowCanvas.height = 128;
   const ctx = shadowCanvas.getContext('2d'), grad = ctx.createRadialGradient(64,64,0,64,64,64);
-  grad.addColorStop(0,'rgba(30,60,45,.28)'); grad.addColorStop(.45,'rgba(30,60,45,.12)'); grad.addColorStop(1,'rgba(30,60,45,0)');
+  grad.addColorStop(0,'rgba(55,86,108,.24)'); grad.addColorStop(.45,'rgba(55,86,108,.10)'); grad.addColorStop(1,'rgba(55,86,108,0)');
   ctx.fillStyle=grad; ctx.fillRect(0,0,128,128);
   const shadowTexture = new T.CanvasTexture(shadowCanvas);
   const shadowMat = new T.MeshBasicMaterial({map:shadowTexture,transparent:true,depthWrite:false}); mats.push(shadowMat);
@@ -133,8 +142,10 @@ export function createRobot(canvas, {onContextLost, compact = false} = {}) {
       eyes.position.x=clamp(gaze.x,-1,1)*.035;
       const blink = time % 4.9;
       eyes.scale.y=blink < .16 ? .08 + .92 * Math.abs(blink-.08)/.08 : 1;
-      arms[0].rotation.z=-.22+p.tidy*1.1; arms[0].rotation.x=-p.tidy*.75;
-      arms[1].rotation.z=.22+p.wave*2.05+p.wiggle-p.tidy*1.1; arms[1].rotation.x=-.1-p.tidy*.75;
+      arms[0].rotation.z=-.22+p.tidy*1.1-p.celebrate*1.55-p.think*.7; arms[0].rotation.x=-p.tidy*.75-p.celebrate*.35;
+      arms[1].rotation.z=.22+p.wave*2.05+p.wiggle-p.tidy*1.1+p.celebrate*1.55+p.think*.45; arms[1].rotation.x=-.1-p.tidy*.75-p.celebrate*.35-p.think*.65;
+      robot.position.y+=Math.abs(Math.sin(time*5))*p.celebrate*.10;
+      robot.rotation.z+=Math.sin(time*8)*p.celebrate*.045;
       const scattered=[[-1.0,.65,.35],[1.08,1.0,-.1],[-1.04,1.85,-.22]];
       folders.forEach((folder,i) => {
         const a=scattered[i], t=p.tidy;

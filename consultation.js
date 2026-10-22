@@ -21,7 +21,8 @@ function render() {
   document.querySelectorAll('[data-add-service]').forEach(button=>{
     const selected=state.ids.includes(button.dataset.addService);
     button.setAttribute('aria-pressed',String(selected));
-    button.textContent=selected?'已加入，點此移除 ✓':'加入我的簡化清單 ＋';
+    const label=button.dataset.serviceLabel;
+    button.textContent=label?(selected?`${label}・已加入 ✓`:`${label} ＋`):(selected?'已加入，點此移除 ✓':'加入我的簡化清單 ＋');
   });
   const items=document.querySelector('#selection-items');
   items.replaceChildren();

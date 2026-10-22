@@ -158,6 +158,7 @@ class SearchPagesTest(unittest.TestCase):
         self.assertEqual(robot.select_one('canvas')['aria-hidden'], 'true')
         self.assertIsNotNone(soup.select_one('script[type="module"][src="robot3d.mjs"]'))
         self.assertIsNotNone(soup.select_one('link[href="robot.css"]'))
+
         # Visitors without scripts or a graphics context can still use every route.
         routes = soup.select('.robot-guide a')
         self.assertEqual(len(routes), 3)
@@ -174,6 +175,43 @@ class SearchPagesTest(unittest.TestCase):
                     self.assertEqual(data[:4], b'RIFF')
                     self.assertEqual(data[8:12], b'WEBP')
         self.assertIn('prefers-reduced-motion:reduce', (self.dest / 'motion.css').read_text())
+
+    def test_interactive_studio_is_crawlable_and_has_accessible_fallbacks(self):
+        soup = self.pages['studio/index.html']
+        self.assertEqual(len(soup.select('[data-zone-label]')), 6)
+        self.assertEqual(len(soup.select('[data-studio-index]')), 6)
+        self.assertEqual(len(soup.select('[data-studio-card]')), 6)
+        self.assertEqual(len(soup.select('.studio-static-grid article')), 6)
+        self.assertEqual(len(soup.select('[data-studio-quiz]')), 6)
+        self.assertEqual(len(soup.select('.studio-quiz input[type="radio"]')), 18)
+        self.assertEqual(len(soup.select('[data-service-label]')), 17)
+        self.assertIsNotNone(soup.select_one('[data-studio-progress-text]'))
+        self.assertIsNotNone(soup.select_one('[data-studio-start]'))
+        self.assertIsNotNone(soup.select_one('[data-studio-reset]'))
+        self.assertIsNotNone(soup.select_one('link[href="../studio.css"]'))
+        self.assertIsNotNone(soup.select_one('link[href="../theme.css"]'))
+        self.assertIsNotNone(soup.select_one('script[src="../studio.mjs"]'))
+        self.assertIn('工作室', self.pages['index.html'].get_text())
+
+    def test_primary_rooms_have_accessible_realtime_robot_guides(self):
+        expected = {'growth': 'growth', 'services': 'services', 'cases': 'cases', 'about': 'about'}
+        for folder, guide in expected.items():
+            soup = self.pages[f'{folder}/index.html']
+            with self.subTest(page=folder):
+                world = soup.select_one(f'[data-page-robot="{guide}"]')
+                self.assertIsNotNone(world)
+                self.assertEqual(len(world.select('[data-page-robot-choice]')), 3)
+                self.assertEqual(world.select_one('canvas')['aria-hidden'], 'true')
+                self.assertTrue(world.select_one('picture img')['alt'])
+                self.assertIsNotNone(world.select_one('[data-page-robot-status][aria-live="polite"]'))
+                self.assertIsNotNone(world.select_one('[data-page-robot-pause]'))
+                self.assertIsNotNone(soup.select_one('link[href="../page-robot.css"]'))
+                self.assertIsNotNone(soup.select_one('script[src="../page-robot.mjs"]'))
+        for asset in ['page-robot.css', 'page-robot.mjs', 'page-robot-data.mjs']:
+            self.assertTrue((self.dest / asset).is_file())
+        css = (self.dest / 'page-robot.css').read_text()
+        self.assertIn('prefers-reduced-motion:reduce', css)
+        self.assertIn('#f9e8f0', css)
 
     def test_guide_can_load_and_all_recommendations_link_to_real_pages(self):
         soup = self.pages['index.html']
