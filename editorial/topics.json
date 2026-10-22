@@ -114,7 +114,10 @@
     "angle": "視覺、用詞與資訊層級一致性",
     "service": "brand-marketing",
     "case": "quiz",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-22",
+    "slug": "brand-visual-consistency-five-rules",
+    "targetQueries": ["品牌視覺一致性", "品牌識別規範", "品牌形象統一"]
   },
   {
     "id": "brand-evidence",

@@ -8,7 +8,9 @@
     "indexRequest": "ready_awaiting_action_time_confirmation",
     "indexRequestAttempts": 0,
     "indexing": "not_indexed",
-    "sources": ["https://anson821012.github.io/anson-portfolio/cases/payroll/"],
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/payroll/"
+    ],
     "sourcesCheckedAt": "2026-10-18",
     "aiAssisted": true,
     "editorialNotes": "聚焦知識庫的內容負責人、更新觸發、複查日期、過期處理與錯誤回報，與既有 SOP 建立、交接及固定資料文章的搜尋意圖不同。只使用公開薪資台帳與排班介面的欄位與流程設計，未讀取私人資料，也未宣稱自動排班、計薪或法規正確性。",
@@ -1120,7 +1122,9 @@
     "indexRequest": "accepted",
     "indexRequestAttempts": 1,
     "indexing": "requested_not_yet_indexed",
-    "sources": ["https://anson821012.github.io/anson-portfolio/cases/menu/"],
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/menu/"
+    ],
     "sourcesCheckedAt": "2026-10-05",
     "aiAssisted": true,
     "editorialNotes": "聚焦 AI 草稿的影響分級、覆核角色、完成標準、退回原因與發布權限，與既有工具試跑及內容檢查文章不同。新品活動為明示假設；公開每日菜單案例只支持草稿、預覽、發布與輸出流程，未宣稱菜單內容由 AI 自動判斷。",
@@ -1217,7 +1221,9 @@
     "indexRequest": "ready_awaiting_action_time_confirmation",
     "indexRequestAttempts": 0,
     "indexing": "not_checked",
-    "sources": ["https://anson821012.github.io/anson-portfolio/cases/tasks/"],
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/tasks/"
+    ],
     "sourcesCheckedAt": "2026-10-07",
     "aiAssisted": true,
     "editorialNotes": "聚焦待辦狀態、負責人、卡點與完成標準，與既有任務分工、SOP 交接及每月資料文章的搜尋意圖不同。只使用 Anson 待辦事項案例的公開功能與製作動機，未讀取私人任務，也未宣稱效率成效。",
@@ -1758,5 +1764,33 @@
       "retryStatus": "not_attempted"
     },
     "notes": "文章與 26 頁 PDF 已部署，正式文章、PDF、首頁、筆記入口及 Sitemap 均已驗證。Search Console 已檢查並只送出一次索引要求，Google 明確顯示『已要求建立索引』；目前仍未收錄。已申請不代表已收錄，也不保證大量曝光。"
+  },
+  {
+    "date": "2026-10-22",
+    "topicId": "brand-consistency",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/brand-visual-consistency-five-rules/",
+    "title": "每張圖都好看，放在一起卻不像同一家公司？先固定 5 個品牌規則",
+    "publication": "prepared",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/"
+    ],
+    "sourcesCheckedAt": "2026-10-22",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦品牌視覺一致性的五個共同規則、資訊層級、範本與例外回寫；與既有品牌接點、品牌語氣、公司介紹及品牌證據文章的搜尋意圖不同。只使用公開品牌互動問卷案例的題目、結果與聯絡路徑，未宣稱設計、轉換、流量或營收成效。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": "17 passed",
+      "nodeTests": "22 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry, noindex absence and sitemap passed"
+    },
+    "notes": "文章內容與建置驗證已完成，等待提交與正式部署。"
   }
 ]
