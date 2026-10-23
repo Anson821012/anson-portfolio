@@ -1809,5 +1809,50 @@
       "retryStatus": "not_attempted"
     },
     "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 索引申請因目前 Mac 鎖定而未執行；不得把正式發布視為已申請或已收錄。"
+  },
+  {
+    "date": "2026-10-23",
+    "topicId": "youtube-planning",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/youtube-planning-six-questions-before-filming/",
+    "title": "YouTube 企劃怎麼做？拍攝前先整理 6 個問題",
+    "publication": "published",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-23",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦 YouTube 企劃拍攝前的觀眾、問題、主答案、段落、分工與延伸用途六題；與既有訪談素材再利用及內容素材庫文章的搜尋意圖不同。只使用公開內容企劃案例與已核對署名範圍，未虛構影片成效，也未把攝影、剪輯或團隊成果歸因單一個人。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 39882004951,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/39882004951",
+      "headSha": "922638b13bed2412c0e2cd67873182c7dfa0b677"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 3 FAQ items, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "922638b13bed2412c0e2cd67873182c7dfa0b677",
+    "publishedAt": "2026-10-23T09:05:34+08:00",
+    "liveVerifiedAt": "2026-10-23T09:07:01+08:00",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/youtube-planning-six-questions-before-filming/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 65,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
   }
 ]
