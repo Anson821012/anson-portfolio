@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/youtube-planning-six-questions-before-filming/": {"seoTitle": "YouTube 企劃怎麼做？拍攝前先問 6 題｜蔡鈞佑 Anson Tsai", "description": "YouTube 企劃從哪裡開始？蔡鈞佑 Anson Tsai 用觀眾、問題、主答案、段落、分工與延伸用途六題，整理拍攝前可直接使用的企劃方法。", "tags": ["YouTube 企劃", "影片企劃", "YouTube 腳本", "影音行銷", "內容行銷"]},
   "notes/brand-visual-consistency-five-rules/": {"seoTitle": "品牌視覺怎麼統一？先固定 5 個品牌規則｜蔡鈞佑 Anson Tsai", "description": "每張圖都好看，放一起卻不像同一品牌？從顏色、字體、圖片、資訊順序與語氣 5 個規則，整理社群、網站與簡報的品牌一致性。", "tags": ["品牌視覺一致性", "品牌識別規範", "社群視覺設計", "品牌形象", "品牌行銷"]},
   "notes/ga4-beginner-traffic-events-key-events/": {"seoTitle": "GA4 教學：新手看懂流量來源、事件與轉換｜蔡鈞佑 Anson Tsai", "description": "GA4 怎麼看？用網站像店面的比喻，一步步看 Realtime、流量來源、到達網頁、事件、關鍵事件與 UTM，附 26 頁 GA4 新手圖解 PDF。", "tags": ["GA4 教學", "GA4 新手", "GA4 流量來源", "GA4 事件", "GA4 關鍵事件", "Google Analytics 4"]},
   "notes/seo-geo-beginner-guide/": {"seoTitle": "SEO、GEO 是什麼？從收錄到 AI 引用的白話指南｜蔡鈞佑 Anson Tsai", "description": "SEO、GEO、GSC 與 GA4 怎麼分？蔡鈞佑 Anson Tsai 用圖書館比喻，白話整理抓取、索引、排名、搜尋數據、可信度與 AI 引用。", "tags": ["SEO 是什麼", "GEO 是什麼", "Google Search Console", "GA4", "搜尋引擎最佳化"]},

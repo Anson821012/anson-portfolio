@@ -181,7 +181,9 @@
     "angle": "觀眾問題、段落與後續內容用途",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-23",
+    "slug": "youtube-planning-six-questions-before-filming"
   },
   {
     "id": "content-measure",
