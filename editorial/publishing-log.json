@@ -1854,5 +1854,30 @@
       "retryStatus": "not_attempted"
     },
     "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
+  },
+  {
+    "date": "2026-10-24",
+    "topicId": "quiz-experience",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-qa-quest-learning-path/",
+    "title": "行銷入門怎麼學？用 6 關 QA 從品牌走到 AI 工具",
+    "publication": "preparing",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/studio/"
+    ],
+    "sourcesCheckedAt": "2026-10-24",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦行銷新手的六段學習順序與互動練習，搜尋意圖為行銷入門／行銷新手；與既有 SEO、GA4、品牌定位與單一工具文章不同。只描述公開闖關頁可核對的六關、立即解釋、逐關解鎖、文字入口與降低動態設計，未宣稱學習、流量或轉換成效。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {},
+    "sitemap": {
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章準備中；尚未部署、驗證或申請索引。"
   }
 ]

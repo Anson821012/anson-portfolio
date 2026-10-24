@@ -479,7 +479,9 @@
     "angle": "問題設計與完成後的下一步",
     "service": "ai-integration",
     "case": "menu",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-10-24",
+    "slug": "marketing-qa-quest-learning-path"
   },
   {
     "id": "life-design",
