@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/new-hire-onboarding-first-week-path/": {"seoTitle": "新人到職訓練怎麼安排？第一週路線整理｜蔡鈞佑 Anson Tsai", "description": "新人到職收到很多資料卻不知道先做什麼？用共同入口安排第一天、第一週、角色任務、權限申請與確認窗口，整理可實際跟著走的新人訓練。", "tags": ["新人到職訓練", "新人訓練規劃", "到職流程", "員工內網", "新人 onboarding"]},
   "notes/marketing-qa-quest-learning-path/": {"seoTitle": "行銷入門怎麼學？6 關 QA 從品牌到 AI 工具｜蔡鈞佑 Anson Tsai", "description": "行銷新手不知道從哪開始？用 6 關 QA 依序學問題盤點、品牌定位、內容行銷、顧客轉換、SOP 與 AI 工具，附可實際操作的互動闖關。", "tags": ["行銷入門", "行銷新手", "品牌行銷", "內容行銷", "AI 行銷工具"]},
   "notes/youtube-planning-six-questions-before-filming/": {"seoTitle": "YouTube 企劃怎麼做？拍攝前先問 6 題｜蔡鈞佑 Anson Tsai", "description": "YouTube 企劃從哪裡開始？蔡鈞佑 Anson Tsai 用觀眾、問題、主答案、段落、分工與延伸用途六題，整理拍攝前可直接使用的企劃方法。", "tags": ["YouTube 企劃", "影片企劃", "YouTube 腳本", "影音行銷", "內容行銷"]},
   "notes/brand-visual-consistency-five-rules/": {"seoTitle": "品牌視覺怎麼統一？先固定 5 個品牌規則｜蔡鈞佑 Anson Tsai", "description": "每張圖都好看，放一起卻不像同一品牌？從顏色、字體、圖片、資訊順序與語氣 5 個規則，整理社群、網站與簡報的品牌一致性。", "tags": ["品牌視覺一致性", "品牌識別規範", "社群視覺設計", "品牌形象", "品牌行銷"]},

@@ -271,8 +271,10 @@
     "title": "交接文件都有了，新人為什麼不知道從哪裡看？",
     "angle": "先後順序與入口設計",
     "service": "operations-sop",
-    "case": "payroll",
-    "status": "planned"
+    "case": "team-intranet",
+    "status": "published",
+    "published": "2026-10-26",
+    "slug": "new-hire-onboarding-first-week-path"
   },
   {
     "id": "spreadsheet-version",
