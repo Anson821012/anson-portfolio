@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/chatgpt-ads-brand-opportunity-risk-checklist/": {"seoTitle": "ChatGPT 廣告是什麼？品牌機會、風險與準備清單｜蔡鈞佑 Anson Tsai", "description": "ChatGPT Ads 已開放台灣廣告主申請。白話整理廣告版位、品牌好處與風險、隱私及政策限制，並附投放前 7 項準備清單。", "tags": ["ChatGPT 廣告", "ChatGPT Ads", "AI 行銷", "數位廣告", "品牌行銷", "ChatGPT 廣告優缺點"]},
   "notes/new-hire-onboarding-first-week-path/": {"seoTitle": "新人到職訓練怎麼安排？第一週路線整理｜蔡鈞佑 Anson Tsai", "description": "新人到職收到很多資料卻不知道先做什麼？用共同入口安排第一天、第一週、角色任務、權限申請與確認窗口，整理可實際跟著走的新人訓練。", "tags": ["新人到職訓練", "新人訓練規劃", "到職流程", "員工內網", "新人 onboarding"]},
   "notes/marketing-qa-quest-learning-path/": {"seoTitle": "行銷入門怎麼學？6 關 QA 從品牌到 AI 工具｜蔡鈞佑 Anson Tsai", "description": "行銷新手不知道從哪開始？用 6 關 QA 依序學問題盤點、品牌定位、內容行銷、顧客轉換、SOP 與 AI 工具，附可實際操作的互動闖關。", "tags": ["行銷入門", "行銷新手", "品牌行銷", "內容行銷", "AI 行銷工具"]},
   "notes/youtube-planning-six-questions-before-filming/": {"seoTitle": "YouTube 企劃怎麼做？拍攝前先問 6 題｜蔡鈞佑 Anson Tsai", "description": "YouTube 企劃從哪裡開始？蔡鈞佑 Anson Tsai 用觀眾、問題、主答案、段落、分工與延伸用途六題，整理拍攝前可直接使用的企劃方法。", "tags": ["YouTube 企劃", "影片企劃", "YouTube 腳本", "影音行銷", "內容行銷"]},

@@ -1,5 +1,18 @@
 [
   {
+    "id": "chatgpt-ads-brand-readiness",
+    "pillar": "AI 行銷與數位廣告",
+    "title": "ChatGPT 廣告是什麼？品牌現在要看懂的機會、風險與準備清單",
+    "angle": "區分付費版位與自然回答，整理台灣可用狀態、品牌機會、信任與政策風險，以及小型試跑準備",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "timely",
+    "published": "2026-10-26",
+    "slug": "chatgpt-ads-brand-opportunity-risk-checklist",
+    "targetQueries": ["ChatGPT 廣告", "ChatGPT Ads", "ChatGPT 廣告優缺點", "AI 廣告", "ChatGPT 投放廣告"]
+  },
+  {
     "id": "ai-tool-handoffs",
     "pillar": "AI 與數位轉型",
     "title": "AI 工具越買越多，工作為什麼沒有變簡單？",

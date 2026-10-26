@@ -1945,5 +1945,48 @@
       "retryStatus": "not_attempted"
     },
     "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
+  },
+  {
+    "date": "2026-10-26",
+    "topicId": "chatgpt-ads-brand-readiness",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/chatgpt-ads-brand-opportunity-risk-checklist/",
+    "title": "ChatGPT 廣告是什麼？品牌現在要看懂的機會、風險與準備清單",
+    "publication": "prepared",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://help.openai.com/en/articles/20001047-ads-in-chatgpt",
+      "https://help.openai.com/en/articles/20001245-ads-manager-availability",
+      "https://developers.openai.com/ads",
+      "https://learn.chatgpt.com/ads/reporting",
+      "https://openai.com/policies/ad-policies/",
+      "https://openai.com/index/new-chatgpt-ads-format-and-measurement/"
+    ],
+    "sourcesCheckedAt": "2026-10-26",
+    "aiAssisted": true,
+    "editorialNotes": "依 2026-10-26 OpenAI 官方資料整理台灣自助投放可用性、目前廣告位置與受眾、回答獨立性、衡量方式、資料與政策邊界；加入 Anson 對單一受眾、單一提案、落地頁、關鍵事件與小額停損測試的實務判斷。這是使用者明確指定的單次同日加發，不改動例行每日一篇上限。",
+    "deployment": {
+      "status": "pending"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, SEO fields, 4 FAQ items, related service and case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": false,
+      "liveHTTP": null
+    },
+    "sitemap": {
+      "publicStatus": null,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": null,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "本機內容、SEO 欄位、文章入口與 Sitemap 已通過測試；等待推送與正式站驗證。正式發布、索引申請與已收錄為三個不同狀態。"
   }
 ]
