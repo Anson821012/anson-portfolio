@@ -1900,5 +1900,50 @@
     "publishedAt": "2026-10-24T11:03:11+0800",
     "liveVerifiedAt": "2026-10-24T11:03:11+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-qa-quest-learning-path/"
+  },
+  {
+    "date": "2026-10-26",
+    "topicId": "handover-entry",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/new-hire-onboarding-first-week-path/",
+    "title": "新人到職訓練怎麼安排？先用一個入口排好第一週路線",
+    "publication": "published",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://anson821012.github.io/anson-portfolio/cases/team-intranet/"
+    ],
+    "sourcesCheckedAt": "2026-10-26",
+    "aiAssisted": true,
+    "editorialNotes": "聚焦新人到職訓練的共同入口、第一天與第一週路線、角色任務、權限申請及確認窗口；與既有 SOP 完整性文章的搜尋意圖不同。只使用公開團隊內網案例可核對的入口、版本、負責人與權限邊界，未宣稱正式採用、安全驗證或量化成效。",
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 40262662485,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/40262662485",
+      "headSha": "b9bfb1bba8afebb364363939bd6faf78b9ef5686"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 3 FAQ items, related service and team-intranet case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": true,
+      "liveHTTP": 200
+    },
+    "commit": "b9bfb1bba8afebb364363939bd6faf78b9ef5686",
+    "publishedAt": "2026-10-26T11:10:00+0800",
+    "liveVerifiedAt": "2026-10-26T11:10:59+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/new-hire-onboarding-first-week-path/",
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 67,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已部署，正式文章、首頁、筆記入口及 Sitemap 均已驗證。Search Console 本輪未檢查，也未送出索引要求；不得把正式發布視為已申請或已收錄。"
   }
 ]
