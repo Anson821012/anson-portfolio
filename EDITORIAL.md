@@ -37,7 +37,7 @@
 ## 日常執行
 
 1. 使用 Asia/Taipei 日期。先查 git 狀態、遠端與 editorial/publishing-log.json；每天至多一篇，不因補跑連發，不覆寫使用者未提交的改動。
-2. 從 topics.json 選不同領域且未發布的題目。近期題目相近就換題；題庫用完可依同一品質標準補充。
+2. 先讀 editorial/marketing-search-topic-plan.md，再從 topics.json 選不同搜尋意圖且未發布的題目。優先回答對行銷有興趣的人會主動搜尋的入門、做法、差別、範例、模板與數據問題；主幹大題搭配長尾實作題。若站內已有相同搜尋意圖，先更新舊頁，不另開近似網址。近期題目相近就換題；題庫用完可依同一品質標準補充。
 3. 新增到 content/search-content.mjs 的 notes，填獨立 published、modified（YYYY-MM-DD），更新 content/seo-fields.mjs，記錄對应 topic ID。已發文章日期不隨每日建置改動。
 4. 執行 node --check、python3 -m unittest discover -s tests -p 'test_*.py'、node --test tests/*.test.mjs、node scripts/build.mjs、git diff --check。核對新頁 canonical、可見內文、metadata、相關連結、sitemap 與 noindex 未出現。
 5. 使用者已授權本網站例行文章發布。只提交本次相關檔案，正常 push main，監看 sync-pages.yml 的對應 commit 部署，確認正式文章與 sitemap。禁止 force push 或覆寫未理解的改動。
