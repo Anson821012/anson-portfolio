@@ -2001,7 +2001,7 @@
     "topicId": "marketing-definition-beginner",
     "url": "https://anson821012.github.io/anson-portfolio/notes/what-is-marketing-beginner-guide/",
     "title": "行銷是什麼？不是只有廣告與發文，新手先懂這 5 件事",
-    "publication": "prepared_for_push",
+    "publication": "published",
     "indexRequest": "not_attempted",
     "indexRequestAttempts": 0,
     "indexing": "not_checked",
@@ -2014,7 +2014,10 @@
     "aiAssisted": true,
     "editorialNotes": "建立行銷入門主幹頁，聚焦行銷定義及顧客、問題、價值、接點與結果五格；與既有行銷 QA 學習路線的搜尋意圖分開。官方定義採 AMA 當日頁面，實作判斷與公開內容案例分開呈現，未聲稱熱門搜尋量或保證流量。",
     "deployment": {
-      "status": "pending_push"
+      "status": "success",
+      "runId": "40506316913",
+      "runUrl": "https://github.com/Anson821012/anson-portfolio/actions/runs/40506316913",
+      "headSha": "26a7eb1ba54feb1a762ca2b3e5a715d802bc90d0"
     },
     "validation": {
       "pythonTests": "19 passed",
@@ -2023,16 +2026,25 @@
       "syntax": "passed",
       "gitDiff": "passed",
       "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 FAQ items, related service, studio and content case links, author, home/notes entry, noindex absence and sitemap passed",
-      "articleLive": false
+      "articleLive": true,
+      "liveHttp": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
     },
     "sitemap": {
-      "publicStatus": null,
+      "publicStatus": 200,
       "xmlValid": true,
       "containsArticle": true,
       "urlCount": 69,
       "retryAttempts": 0,
       "retryStatus": "not_attempted"
     },
-    "notes": "文章已完成本機驗證，等待提交、部署與正式網址核對。Search Console 尚未送出索引要求，也未查到實際收錄。"
+    "commit": "26a7eb1ba54feb1a762ca2b3e5a715d802bc90d0",
+    "publishedAt": "2026-10-27T20:47:15+0800",
+    "liveVerifiedAt": "2026-10-27T20:47:15+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/what-is-marketing-beginner-guide/",
+    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 本輪尚未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
   }
 ]
