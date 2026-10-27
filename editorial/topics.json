@@ -1,5 +1,18 @@
 [
   {
+    "id": "marketing-definition-beginner",
+    "pillar": "行銷入門與策略",
+    "title": "行銷是什麼？不是只有廣告與發文，新手先懂這 5 件事",
+    "angle": "用顧客、問題、價值、接點與結果五格，建立行銷的白話全貌",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-pillar",
+    "published": "2026-10-27",
+    "slug": "what-is-marketing-beginner-guide",
+    "targetQueries": ["行銷是什麼", "行銷定義", "行銷入門", "行銷在做什麼"]
+  },
+  {
     "id": "chatgpt-ads-brand-readiness",
     "pillar": "AI 行銷與數位廣告",
     "title": "ChatGPT 廣告是什麼？品牌現在要看懂的機會、風險與準備清單",
