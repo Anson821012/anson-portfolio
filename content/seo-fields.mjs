@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/what-is-digital-marketing-channels-guide/": {"seoTitle": "數位行銷是什麼？SEO、社群、廣告與 Email 分工｜蔡鈞佑 Anson Tsai", "description": "數位行銷不是每個平台都做。用白話整理 SEO、社群、廣告、Email 與合作導流的分工，附新手可照著做的一週起步清單。", "tags": ["數位行銷是什麼", "數位行銷入門", "SEO", "社群行銷", "數位廣告"]},
   "notes/what-is-marketing-beginner-guide/": {"seoTitle": "行銷是什麼？新手先懂顧客、價值與成效 5 件事｜蔡鈞佑 Anson Tsai", "description": "行銷不是只有廣告與發文。用白話整理顧客、問題、價值、接點與結果 5 件事，說清楚品牌、內容、廣告與銷售怎麼分工。", "tags": ["行銷是什麼", "行銷定義", "行銷入門", "品牌行銷", "行銷策略"]},
   "notes/chatgpt-ads-brand-opportunity-risk-checklist/": {"seoTitle": "ChatGPT 廣告是什麼？品牌機會、風險與準備清單｜蔡鈞佑 Anson Tsai", "description": "ChatGPT Ads 已開放台灣廣告主申請。白話整理廣告版位、品牌好處與風險、隱私及政策限制，並附投放前 7 項準備清單。", "tags": ["ChatGPT 廣告", "ChatGPT Ads", "AI 行銷", "數位廣告", "品牌行銷", "ChatGPT 廣告優缺點"]},
   "notes/new-hire-onboarding-first-week-path/": {"seoTitle": "新人到職訓練怎麼安排？第一週路線整理｜蔡鈞佑 Anson Tsai", "description": "新人到職收到很多資料卻不知道先做什麼？用共同入口安排第一天、第一週、角色任務、權限申請與確認窗口，整理可實際跟著走的新人訓練。", "tags": ["新人到職訓練", "新人訓練規劃", "到職流程", "員工內網", "新人 onboarding"]},

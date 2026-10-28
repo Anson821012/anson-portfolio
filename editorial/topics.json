@@ -1,5 +1,18 @@
 [
   {
+    "id": "digital-marketing-beginner",
+    "pillar": "行銷入門與策略",
+    "title": "數位行銷是什麼？SEO、社群、廣告與 Email 怎麼分工",
+    "angle": "用入口、承接頁、關鍵行動與數據，整理五種常見數位行銷管道的分工",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-pillar",
+    "published": "2026-10-28",
+    "slug": "what-is-digital-marketing-channels-guide",
+    "targetQueries": ["數位行銷是什麼", "數位行銷入門", "數位行銷管道", "數位行銷怎麼做"]
+  },
+  {
     "id": "marketing-definition-beginner",
     "pillar": "行銷入門與策略",
     "title": "行銷是什麼？不是只有廣告與發文，新手先懂這 5 件事",

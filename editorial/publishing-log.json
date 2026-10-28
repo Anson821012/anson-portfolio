@@ -2046,5 +2046,45 @@
     "liveVerifiedAt": "2026-10-27T20:47:15+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/what-is-marketing-beginner-guide/",
     "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 本輪尚未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
+  },
+  {
+    "date": "2026-10-28",
+    "topicId": "digital-marketing-beginner",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/what-is-digital-marketing-channels-guide/",
+    "title": "數位行銷是什麼？SEO、社群、廣告與 Email 怎麼分工",
+    "publication": "prepared_for_push",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://www.ama.org/the-definition-of-marketing-what-is-marketing/",
+      "https://support.google.com/analytics/answer/15567068",
+      "https://anson821012.github.io/anson-portfolio/notes/what-is-marketing-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-28",
+    "aiAssisted": true,
+    "editorialNotes": "建立數位行銷入門主幹頁，整理網站與 SEO、社群內容、數位廣告、Email／訊息及合作導流的分工；與既有行銷定義頁、GA4 操作頁及 ChatGPT 廣告專題的搜尋意圖分開。官方事實採 AMA 行銷定義與 Google Analytics 流量來源說明，Anson 的承接能力與小步試跑判斷另外呈現，未聲稱搜尋量或保證流量。",
+    "deployment": {
+      "status": "pending_push"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, previous pillar and content case links, author, home/notes entry, noindex absence and sitemap passed",
+      "articleLive": false
+    },
+    "sitemap": {
+      "publicStatus": null,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 70,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已完成本機驗證，等待提交、部署與正式網址核對。Search Console 尚未送出索引要求，也未查到實際收錄。"
   }
 ]
