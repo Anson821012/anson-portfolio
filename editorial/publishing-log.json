@@ -2104,7 +2104,7 @@
     "topicId": "marketing-strategy-seven-steps",
     "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
     "title": "行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟",
-    "publication": "prepared_for_push",
+    "publication": "published",
     "indexRequest": "not_attempted",
     "indexRequestAttempts": 0,
     "indexing": "not_checked",
@@ -2120,7 +2120,10 @@
     "aiAssisted": true,
     "editorialNotes": "建立行銷策略主幹頁，用目標、客群、價值、顧客路線、管道分工、執行資源與衡量七步驟，補上新手一頁模板及 Anson 對承接能力、小型試跑與取捨的判斷。與既有行銷定義及數位行銷管道頁的搜尋意圖分開，並完成雙向內部連結；未聲稱搜尋量或保證流量。",
     "deployment": {
-      "status": "pending_push"
+      "status": "success",
+      "workflowRunId": 40798516933,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/40798516933",
+      "headSha": "addc508c54432b9f2230c00523af58d80fd2018c"
     },
     "validation": {
       "pythonTests": "19 passed",
@@ -2129,16 +2132,25 @@
       "syntax": "passed",
       "gitDiff": "passed",
       "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, prior pillar and content case links, author, home/notes entry, reciprocal internal links, noindex absence and sitemap passed",
-      "articleLive": false
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
     },
     "sitemap": {
-      "publicStatus": null,
+      "publicStatus": 200,
       "xmlValid": true,
       "containsArticle": true,
       "urlCount": 71,
       "retryAttempts": 0,
       "retryStatus": "not_attempted"
     },
-    "notes": "文章已完成本機驗證，等待提交、部署與正式網址核對。Search Console 尚未送出索引要求，也未查到實際收錄。"
+    "commit": "addc508c54432b9f2230c00523af58d80fd2018c",
+    "publishedAt": "2026-10-29T09:09:27+0800",
+    "liveVerifiedAt": "2026-10-29T09:09:27+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
+    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 尚未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
   }
 ]
