@@ -1,5 +1,18 @@
 [
   {
+    "id": "marketing-strategy-seven-steps",
+    "pillar": "行銷入門與策略",
+    "title": "行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟",
+    "angle": "用目標、客群、價值、顧客路線、管道、執行與衡量，做出一頁可使用的策略",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-pillar",
+    "published": "2026-10-29",
+    "slug": "marketing-strategy-seven-steps",
+    "targetQueries": ["行銷策略", "行銷策略怎麼做", "行銷策略步驟", "行銷企劃策略"]
+  },
+  {
     "id": "digital-marketing-beginner",
     "pillar": "行銷入門與策略",
     "title": "數位行銷是什麼？SEO、社群、廣告與 Email 怎麼分工",

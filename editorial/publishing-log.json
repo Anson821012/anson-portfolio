@@ -2098,5 +2098,47 @@
     "liveVerifiedAt": "2026-10-28T20:34:00+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/what-is-digital-marketing-channels-guide/",
     "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 本輪因 Mac 鎖定而未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
+  },
+  {
+    "date": "2026-10-29",
+    "topicId": "marketing-strategy-seven-steps",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
+    "title": "行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟",
+    "publication": "prepared_for_push",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://www.ama.org/topics/marketing-strategy/",
+      "https://support.google.com/analytics/answer/12571843",
+      "https://www.thinkwithgoogle.com/_qs/documents/5795/1196-Journey-Mapping-Download.pdf",
+      "https://anson821012.github.io/anson-portfolio/notes/what-is-marketing-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/what-is-digital-marketing-channels-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-29",
+    "aiAssisted": true,
+    "editorialNotes": "建立行銷策略主幹頁，用目標、客群、價值、顧客路線、管道分工、執行資源與衡量七步驟，補上新手一頁模板及 Anson 對承接能力、小型試跑與取捨的判斷。與既有行銷定義及數位行銷管道頁的搜尋意圖分開，並完成雙向內部連結；未聲稱搜尋量或保證流量。",
+    "deployment": {
+      "status": "pending_push"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, prior pillar and content case links, author, home/notes entry, reciprocal internal links, noindex absence and sitemap passed",
+      "articleLive": false
+    },
+    "sitemap": {
+      "publicStatus": null,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 71,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "notes": "文章已完成本機驗證，等待提交、部署與正式網址核對。Search Console 尚未送出索引要求，也未查到實際收錄。"
   }
 ]
