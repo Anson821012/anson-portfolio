@@ -2161,9 +2161,11 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
     "title": "行銷 4P 是什麼？用小品牌例子看懂產品、價格、通路與推廣",
     "publication": "published",
-    "indexRequest": "not_attempted",
-    "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "indexRequest": "accepted",
+    "indexRequestAttempts": 1,
+    "indexRequestSubmittedAt": "2026-10-30T11:00:00+08:00",
+    "indexing": "not_indexed",
+    "indexingEvidence": "Google Search Console 在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ 資源中顯示：網址不在 Google 服務中，網頁未編入索引，Google 無法辨識的網址；送出一次要求後，索引控制項進入『再次提出要求』狀態。",
     "sources": [
       "https://www.ama.org/marketing-news/the-four-ps-of-marketing/",
       "https://www.ama.org/marketing-news/how-to-develop-an-effective-marketing-strategy/",
@@ -2207,6 +2209,6 @@
     "publishedAt": "2026-10-30T10:56:53+0800",
     "liveVerifiedAt": "2026-10-30T10:56:53+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
-    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 本輪尚未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
+    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 已送出一次索引要求並進入『再次提出要求』狀態；目前仍顯示尚未編入索引，不能視為已收錄。"
   }
 ]
