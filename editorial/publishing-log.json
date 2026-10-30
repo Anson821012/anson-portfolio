@@ -2160,7 +2160,7 @@
     "topicId": "marketing-4p-beginner-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
     "title": "行銷 4P 是什麼？用小品牌例子看懂產品、價格、通路與推廣",
-    "publication": "pending_deployment",
+    "publication": "published",
     "indexRequest": "not_attempted",
     "indexRequestAttempts": 0,
     "indexing": "not_checked",
@@ -2176,10 +2176,10 @@
     "aiAssisted": true,
     "editorialNotes": "建立行銷 4P 實作長尾頁，用假設的小型甜點品牌說明產品、價格、通路與推廣如何一起判斷，補上新手一頁練習、7P 延伸及 Anson 對承接能力與小型測試的取捨。與行銷定義、數位行銷管道及行銷策略七步驟頁的搜尋意圖分開，並完成雙向內部連結；未聲稱搜尋量或保證流量。",
     "deployment": {
-      "status": "pending",
-      "workflowRunId": null,
-      "url": null,
-      "headSha": null
+      "status": "success",
+      "workflowRunId": 40994465974,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/40994465974",
+      "headSha": "39ea6d7118a5c6d1689098402bbcf7201e400255"
     },
     "validation": {
       "pythonTests": "19 passed",
@@ -2188,25 +2188,25 @@
       "syntax": "passed",
       "gitDiff": "passed",
       "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, prior pillar, strategy and content case links, author, home/notes entry, reciprocal internal link, noindex absence and sitemap passed locally",
-      "articleLive": false,
-      "liveHTTP": null,
-      "homeEntryLive": false,
-      "notesEntryLive": false,
-      "canonicalLive": false,
-      "noindexAbsent": null
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
     },
     "sitemap": {
-      "publicStatus": null,
+      "publicStatus": 200,
       "xmlValid": true,
       "containsArticle": true,
       "urlCount": 72,
       "retryAttempts": 0,
       "retryStatus": "not_attempted"
     },
-    "commit": null,
-    "publishedAt": null,
-    "liveVerifiedAt": null,
-    "liveUrl": null,
-    "notes": "本機文章、SEO 欄位、FAQ、站內連結與建置已通過檢查；待提交、部署及正式網址驗證後才能記為已發布。"
+    "commit": "39ea6d7118a5c6d1689098402bbcf7201e400255",
+    "publishedAt": "2026-10-30T10:56:53+0800",
+    "liveVerifiedAt": "2026-10-30T10:56:53+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
+    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 本輪尚未送出索引要求，也未查到實際收錄；正式發布、索引申請與已收錄為三個不同狀態。"
   }
 ]
