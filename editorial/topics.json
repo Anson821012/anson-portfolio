@@ -1,5 +1,18 @@
 [
   {
+    "id": "marketing-4p-beginner-guide",
+    "pillar": "行銷入門與策略",
+    "title": "行銷 4P 是什麼？用小品牌例子看懂產品、價格、通路與推廣",
+    "angle": "用同一個假設小品牌串起 Product、Price、Place、Promotion，附一頁練習與 7P 延伸",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-10-30",
+    "slug": "marketing-4p-beginner-guide",
+    "targetQueries": ["行銷 4P", "4P 分析", "4P 範例", "行銷 4P 是什麼"]
+  },
+  {
     "id": "marketing-strategy-seven-steps",
     "pillar": "行銷入門與策略",
     "title": "行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟",
