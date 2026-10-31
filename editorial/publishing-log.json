@@ -5,9 +5,11 @@
     "url": "https://anson821012.github.io/anson-portfolio/notes/stp-segmentation-targeting-positioning-guide/",
     "title": "STP 是什麼？市場區隔、目標客群與品牌定位的白話教學",
     "publication": "published",
-    "indexRequest": "not_attempted",
+    "indexRequest": "ready_awaiting_action_time_confirmation",
     "indexRequestAttempts": 0,
-    "indexing": "not_checked",
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-10-31T09:06:37+0800",
+    "indexingEvidence": "Google Search Console 已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ 資源中檢查正式網址，顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』。本輪未點擊『要求建立索引』，因此申請次數仍為 0。",
     "sources": [
       "https://www.ama.org/marketing-news/what-are-marketing-frameworks/",
       "https://www.ama.org/marketing-news/better-segmentation-for-better-insights/",
@@ -44,7 +46,7 @@
     "publishedAt": "2026-10-31T09:05:36+0800",
     "liveVerifiedAt": "2026-10-31T09:05:36+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/stp-segmentation-targeting-positioning-guide/",
-    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證；索引要求尚未嘗試。正式發布、索引申請與已收錄為三個不同狀態。"
+    "notes": "文章已部署，正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 已確認目前尚未收錄；『要求建立索引』會造成外部提交，本輪停在按鈕前，尚未嘗試，待使用者於操作當下明確確認。正式發布、索引申請與已收錄為三個不同狀態。"
   },
   {
     "date": "2026-10-18",
