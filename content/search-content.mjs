@@ -43,10 +43,66 @@ export const services = [
 
 export const notes = [
   {
+    slug:'stp-segmentation-targeting-positioning-guide',
+    title:'STP 是什麼？市場區隔、目標客群與品牌定位的白話教學',
+    category:'行銷入門與策略',
+    published:'2026-10-31',modified:'2026-10-31',topicId:'stp-segmentation-targeting-positioning-guide',aiAssisted:true,
+    description:'STP 分析怎麼做？從市場區隔、目標客群到品牌定位，用假設的香氛品牌範例與一頁練習，把「想賣給所有人」整理成可以執行的選擇。',
+    answer:'STP 是市場區隔（Segmentation）、目標選擇（Targeting）與品牌定位（Positioning）的縮寫。先依需求、情境或行為，把大市場分成有差異的群體；再選出品牌有能力服務、也值得優先投入的客群；最後說清楚品牌希望在這群人心中，因為哪個價值而被記住。STP 的重點不是排除所有人，而是先決定有限資源要對誰說清楚。',
+    sections:[
+      ['先說結論：STP 是幫品牌決定「先服務誰、用什麼理由被選擇」',
+        '美國行銷協會（AMA）把 STP 整理為 Segmentation、Targeting、Positioning：先把受眾分成不同群體，再判斷誰最需要或最可能選擇產品，最後讓產品對目標客群更有吸引力。資料查核日期：2026 年 10 月 31 日。',
+        '這套方法處理的不是「今天要發哪一篇貼文」，而是貼文之前的選擇。品牌若同時對學生、企業主管、新手媽媽與收藏家說同一句話，最後常會像一桌人同時點四種火鍋湯底：很熱鬧，但廚房不一定接得住。'],
+      ['S｜市場區隔：不是把人貼標籤，而是找出需求與選擇差異',
+        '市場區隔是把一個較大的市場，依有意義的共同特徵分成較小群體。常見角度包括地區與人口資料、生活態度與目標、購買或使用行為，以及發生需求的情境。AMA 的數位行銷策略指南也整理了 demographic、firmographic、psychographic 與 behavioral 等分類方式。',
+        '但年齡相同，不代表問題相同。兩位 30 歲消費者，一位想快速找到不出錯的送禮選擇，另一位在意稀有原料與收藏價值；若只寫「25–35 歲女性」，後面的產品、訊息與通路仍然很難判斷。區隔最好能解釋：這群人在什麼情境下，為了什麼結果而做選擇。'],
+      ['T｜目標選擇：不是哪一群最大，而是哪一群最值得先做好',
+        'Targeting 是從區隔中選出優先服務的對象。可以一起看五件事：需求是否明確、品牌是否有適合的產品與證據、能否有效接觸、服務流程是否承接得住，以及這個選擇是否符合品牌方向。市場很大，不等於小團隊現在就有能力做好。',
+        '目標客群也不等於其他人不能買。它比較像把首頁第一句話、第一個方案與主要內容先對準一群人。等這條路線被驗證、交付穩定，再評估下一個客群；不必第一天就把所有可能性塞進同一張海報。'],
+      ['P｜品牌定位：讓目標客群知道你特別適合哪一種選擇',
+        'Positioning 不是只換 Logo、選一組漂亮顏色，也不是自己宣布「高品質、最專業」。定位要回答：對哪一群人、在什麼情境、提供什麼主要價值，以及為什麼值得相信。它也要和顧客目前的替代方案形成清楚差異。',
+        '可以先用一句話練習：「給＿＿＿（目標客群），在＿＿＿（需求情境）時，我們提供＿＿＿（主要價值），因為＿＿＿（可確認的做法或證據）。」這句話不是一定要原封不動放到廣告，而是讓產品、內容、客服與通路有共同判斷。'],
+      ['假設範例：一間香氛品牌怎麼從三群人選出第一個重點',
+        '假設有一個剛起步的香氛品牌，初步看見三種需求：想替自己找日常氣味、需要快速選到體面禮物，以及熟悉香調、在意特殊原料的收藏者。這只是教學情境，不是實際客戶或成效案例。',
+        '若團隊目前擅長的是清楚引導、禮盒包裝與快速出貨，第一階段可以先選「不熟悉香氛，但希望送禮不失禮的人」。定位練習可寫成：「讓第一次挑香的人，不必先背香調，也能依送禮情境選到有說明、可準時交付的香氛禮物。」接著再用產品組合、選購指引、交期與客服話術證明這句話，不是只把它印在首頁。'],
+      ['把 STP 接到 4P：選好對象後，產品、價格、通路與推廣才有共同標準',
+        'STP 先決定服務誰與希望如何被理解，4P 再把選擇落到 Product、Price、Place、Promotion。以前面的假設品牌為例，產品可以是依送禮情境分類的少量組合；價格要說清楚包含內容；通路要讓人快速比較與下單；推廣則回答送誰、怎麼選、何時能收到。',
+        '如果定位說「新手也能放心選」，網站卻先出現二十個沒有解釋的香調名稱，顧客感受到的就不是放心，而是一場臨時小考。定位必須被產品與流程證明，才不會只是一句牆上的標語。'],
+      ['一頁 STP 練習：先用資料寫三個區隔，再選一個小型試跑',
+        '第一步，寫下目前可確認的顧客問題、詢問紀錄、搜尋問題或購買情境；第二步，依需求或行為整理三個有差異的區隔；第三步，分別評估需求、品牌適配、可接觸性與承接能力；第四步，選一個優先客群；第五步，完成一段定位句與一個可觀察的下一步。',
+        '資料不夠時，先標成假設，不要把腦中的想像寫成顧客事實。可以用訪談、客服常見問題、網站搜尋字詞、商品頁行為或小型內容測試補證據。第一次試跑只需要一個客群、一個方案、一條承接頁與一個關鍵行動，例如完成合適的詢問或預訂。'],
+      ['常見錯誤：分得很細，卻沒有辦法改變任何決策',
+        '第一個錯誤是只有人口資料，沒有需求差異；第二個是每一群都選，等於沒有選；第三個是定位只剩「專業、用心、高品質」；第四個是寫完 STP，產品與客服仍照舊；第五個是一次測太多客群、訊息與管道，結果好壞都不知道是哪個選擇造成。',
+        '有效的區隔應該會改變某些決定，例如方案內容、資訊順序、通路、素材或服務流程。若分完之後每一群都看到同一頁、同一段文案、同一個方案，這份分析可能還停在表格裡，沒有真正走進日常工作。'],
+      ['STP、Persona、品牌定位與 4P 有什麼差別？',
+        'STP 是整體選擇流程；Persona 是把某個重要客群的情境、任務與疑問整理成較具體的代表，幫團隊理解內容與體驗；品牌定位是 STP 的 P，說清楚希望如何被目標客群理解；4P 則把策略落到產品、價格、通路與推廣。',
+        '順序不必僵硬，但不要用一張虛構得很完整的人物誌，取代真實資料。Persona 寫了姓名、星座與早餐喜好，卻沒有說他為什麼購買，團隊還是很難做決定。先保留會影響選擇的資訊，其他細節有證據、有用途再加。'],
+      ['Anson 會怎麼判斷：先選「能被服務好」的客群，不只選「看起來很多」的客群',
+        '我的判斷是，中小品牌做 STP 時，除了市場機會，也要把承接能力放進 Targeting。內容吸引到人之後，方案是否說得清楚、資料是否一致、客服能不能回答、交付是否穩定，會直接決定定位能不能成立。流量先來、流程後補，常常只是讓原本的小麻煩排隊進門。',
+        '我會先選一個需求明確、品牌有證據、團隊接得住的客群，做兩到四週的小型試跑。觀察對的人是否看懂、是否完成預期行動、哪些問題一直被問，再調整區隔、訊息與方案。STP 不是一次定終身的答案，而是一組能隨證據修正的選擇。你的品牌現在最需要先分清楚的是哪一種顧客情境？']
+    ],
+    takeaways:['STP 是市場區隔、目標選擇與品牌定位，重點是在有限資源裡先做清楚的選擇。','區隔要能解釋需求、情境或行為差異，不只用年齡與性別貼標籤。','定位要被產品、通路、客服與交付證明；先用一個客群和一條路線小規模驗證。'],
+    faq:[
+      ['STP 三個英文字母分別是什麼？','S 是 Segmentation 市場區隔，T 是 Targeting 目標選擇，P 是 Positioning 品牌定位。先分群、再選優先客群，最後說清楚希望因為什麼價值被這群人記住。'],
+      ['市場區隔只能用年齡、性別和地區嗎？','不是。也可以依需求、使用情境、價值觀、購買行為、使用頻率或企業特徵分群。選擇的依據應該能幫助產品、訊息、通路或服務流程做出不同決定。'],
+      ['目標客群選了一群，其他人就不能買嗎？','不一定。目標客群代表品牌現階段優先配置產品、訊息與資源的對象，不等於拒絕所有其他顧客。小品牌可以先把一條路線做好，再依資料擴充。'],
+      ['STP 做完後，下一步要做什麼？','把定位接到 4P、網站、內容、客服與交付流程，選一個客群和一個關鍵行動做小型測試。再依詢問品質、完成行動與常見問題，修正原本的區隔和定位假設。']
+    ],
+    sources:[
+      {title:'American Marketing Association：Marketing Frameworks 與 STP（2026-10-31 查核）',url:'https://www.ama.org/marketing-news/what-are-marketing-frameworks/'},
+      {title:'American Marketing Association：Better Segmentation for Better Insights（2026-10-31 查核）',url:'https://www.ama.org/marketing-news/better-segmentation-for-better-insights/'},
+      {title:'American Marketing Association：Digital Marketing Strategy 的區隔方式（2026-10-31 查核）',url:'https://www.ama.org/marketing-news/how-to-create-a-digital-marketing-strategy/'},
+      {title:'延伸閱讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
+      {title:'延伸閱讀：行銷 4P 是什麼？',url:'../marketing-4p-beginner-guide/'},
+      {title:'福韻品牌內容與跨平台整合：公開參與範圍',url:'../../cases/content/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'marketing-4p-beginner-guide',
     title:'行銷 4P 是什麼？用小品牌例子看懂產品、價格、通路與推廣',
     category:'行銷入門與策略',
-    published:'2026-10-30',modified:'2026-10-30',topicId:'marketing-4p-beginner-guide',aiAssisted:true,
+    published:'2026-10-30',modified:'2026-10-31',topicId:'marketing-4p-beginner-guide',aiAssisted:true,
     description:'行銷 4P 怎麼用？用 Product、Price、Place、Promotion 四格整理產品、價格、通路與推廣，附小品牌範例及一頁練習。',
     answer:'行銷 4P 是用產品（Product）、價格（Price）、通路（Place）與推廣（Promotion）檢查一個提案是否完整的方法。產品回答顧客得到什麼；價格說明交換條件與價值；通路安排在哪裡買、怎麼取得；推廣則讓合適的人看懂並採取下一步。四格要互相配合，不能只把 Promotion 當成全部行銷。',
     sections:[
@@ -94,6 +150,7 @@ export const notes = [
       {title:'American Marketing Association：Marketing Frameworks 與 7P（2026-10-30 查核）',url:'https://www.ama.org/marketing-news/what-are-marketing-frameworks/'},
       {title:'延伸閱讀：行銷是什麼？',url:'../what-is-marketing-beginner-guide/'},
       {title:'延伸閱讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
+      {title:'下一步：STP 市場區隔、目標客群與定位',url:'../stp-segmentation-targeting-positioning-guide/'},
       {title:'福韻品牌內容與跨平台整合：公開參與範圍',url:'../../cases/content/'}
     ],
     service:'brand-marketing',case:'content'
@@ -102,7 +159,7 @@ export const notes = [
     slug:'marketing-strategy-seven-steps',
     title:'行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟',
     category:'行銷入門與策略',
-    published:'2026-10-29',modified:'2026-10-30',topicId:'marketing-strategy-seven-steps',aiAssisted:true,
+    published:'2026-10-29',modified:'2026-10-31',topicId:'marketing-strategy-seven-steps',aiAssisted:true,
     description:'行銷策略不是先排貼文。用 7 個步驟整理目標、客群、價值、顧客路線、管道、行動與指標，附新手可直接填寫的一頁範例。',
     answer:'行銷策略是為了達成一個明確結果，選擇要服務的客群、要解決的問題、要提供的價值，以及用哪些接點把顧客帶到下一步。新手可以依序整理：問題與目標、目標客群、價值主張、顧客路線、管道分工、執行資源、衡量與調整。策略決定取捨，貼文、廣告與活動才是執行方法。',
     sections:[
@@ -151,6 +208,7 @@ export const notes = [
       {title:'延伸閱讀：行銷是什麼？',url:'../what-is-marketing-beginner-guide/'},
       {title:'延伸閱讀：數位行銷是什麼？',url:'../what-is-digital-marketing-channels-guide/'},
       {title:'下一步：行銷 4P 是什麼？',url:'../marketing-4p-beginner-guide/'},
+      {title:'下一步：用 STP 選客群與定位',url:'../stp-segmentation-targeting-positioning-guide/'},
       {title:'福韻品牌內容與跨平台整合：公開參與範圍',url:'../../cases/content/'}
     ],
     service:'brand-marketing',case:'content'

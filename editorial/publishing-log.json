@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-10-31",
+    "topicId": "stp-segmentation-targeting-positioning-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/stp-segmentation-targeting-positioning-guide/",
+    "title": "STP 是什麼？市場區隔、目標客群與品牌定位的白話教學",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://www.ama.org/marketing-news/what-are-marketing-frameworks/",
+      "https://www.ama.org/marketing-news/better-segmentation-for-better-insights/",
+      "https://www.ama.org/marketing-news/how-to-create-a-digital-marketing-strategy/",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-10-31",
+    "aiAssisted": true,
+    "editorialNotes": "建立 STP 實作長尾頁，用假設香氛品牌說明市場區隔、目標客群與品牌定位，補上一頁練習、常見錯誤、與 Persona／4P 的分工，以及 Anson 對承接能力與小型試跑的判斷。與行銷策略及 4P 頁的搜尋意圖分開，並加入雙向內部連結；未聲稱搜尋量或保證流量。",
+    "deployment": {"status": "pending"},
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, prior strategy, 4P and content case links, author, home/notes entry, reciprocal internal links, noindex absence and sitemap passed locally",
+      "articleLive": false,
+      "homeEntryLive": false,
+      "notesEntryLive": false
+    },
+    "sitemap": {"localXmlValid": true, "containsArticle": true, "urlCount": 73, "retryAttempts": 0, "retryStatus": "not_attempted"},
+    "notes": "內容、測試與本機建置已完成，待部署、正式網址與索引狀態驗證。"
+  },
+  {
     "date": "2026-10-18",
     "topicId": "knowledge-owner",
     "url": "https://anson821012.github.io/anson-portfolio/notes/knowledge-base-owner-update-rules/",

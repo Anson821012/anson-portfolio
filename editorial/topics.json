@@ -1,5 +1,18 @@
 [
   {
+    "id": "stp-segmentation-targeting-positioning-guide",
+    "pillar": "行銷入門與策略",
+    "title": "STP 是什麼？市場區隔、目標客群與品牌定位的白話教學",
+    "angle": "用假設香氛品牌串起 Segmentation、Targeting、Positioning，附一頁練習與 4P 銜接",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-10-31",
+    "slug": "stp-segmentation-targeting-positioning-guide",
+    "targetQueries": ["STP", "STP 分析", "市場區隔", "目標客群", "品牌定位"]
+  },
+  {
     "id": "marketing-4p-beginner-guide",
     "pillar": "行銷入門與策略",
     "title": "行銷 4P 是什麼？用小品牌例子看懂產品、價格、通路與推廣",
