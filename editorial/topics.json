@@ -1,5 +1,18 @@
 [
   {
+    "id": "swot-analysis-from-four-boxes-to-actions",
+    "pillar": "行銷入門與策略",
+    "title": "SWOT 怎麼寫才不會只列四格？從分析到行動的白話教學",
+    "angle": "分清內部與外部條件，用假設陶藝品牌示範把四格交叉成可負責、可衡量的行動",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-01",
+    "slug": "swot-analysis-from-four-boxes-to-actions",
+    "targetQueries": ["SWOT", "SWOT 分析", "SWOT 範例", "SWOT 怎麼寫", "行銷策略"]
+  },
+  {
     "id": "stp-segmentation-targeting-positioning-guide",
     "pillar": "行銷入門與策略",
     "title": "STP 是什麼？市場區隔、目標客群與品牌定位的白話教學",

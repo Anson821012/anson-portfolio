@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-01",
+    "topicId": "swot-analysis-from-four-boxes-to-actions",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/swot-analysis-from-four-boxes-to-actions/",
+    "title": "SWOT 怎麼寫才不會只列四格？從分析到行動的白話教學",
+    "publication": "pending_deployment",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "sources": [
+      "https://business.gov.au/planning/business-plans/do-a-swot-analysis",
+      "https://www.ama.org/marketing-news/how-to-create-a-digital-marketing-strategy/",
+      "https://www.ama.org/quizzes/marketing-strategy/",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
+      "https://anson821012.github.io/anson-portfolio/notes/stp-segmentation-targeting-positioning-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-4p-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-11-01",
+    "aiAssisted": true,
+    "editorialNotes": "建立 SWOT 實作長尾頁，區分內部優勢／劣勢與外部機會／威脅，用假設陶藝品牌示範 SO、ST、WO、WT 行動法，補上一頁練習、常見錯誤、與 STP／4P／行銷策略的分工，以及 Anson 對承接能力與小型試跑的判斷。與既有策略頁搜尋意圖分開並加入雙向內部連結；未聲稱搜尋量或保證流量。",
+    "deployment": {"status": "pending"},
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "26 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, strategy, STP, 4P and content case links, author, home/notes entry, reciprocal internal link, noindex absence and sitemap passed locally"
+    },
+    "sitemap": {"publicStatus": "pending", "localXmlValid": true, "localContainsArticle": true, "localUrlCount": 74, "retryAttempts": 0, "retryStatus": "not_attempted"},
+    "notes": "文章、SEO 欄位與本機驗證已完成，等待部署與正式網址驗證。"
+  },
+  {
     "date": "2026-10-31",
     "topicId": "stp-segmentation-targeting-positioning-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/stp-segmentation-targeting-positioning-guide/",

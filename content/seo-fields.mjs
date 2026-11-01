@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/swot-analysis-from-four-boxes-to-actions/": {"seoTitle": "SWOT 分析怎麼寫？從四格整理到行動策略｜蔡鈞佑 Anson Tsai", "description": "SWOT 分析怎麼做才有用？白話分清內部優勢、劣勢與外部機會、威脅，附假設品牌範例、SO／ST／WO／WT 行動法及一頁練習。", "tags": ["SWOT", "SWOT 分析", "SWOT 範例", "行銷策略", "競爭分析"]},
   "notes/stp-segmentation-targeting-positioning-guide/": {"seoTitle": "STP 是什麼？市場區隔、目標客群與定位教學｜蔡鈞佑 Anson Tsai", "description": "STP 分析怎麼做？白話整理市場區隔、目標客群與品牌定位，附香氛品牌假設範例、一頁練習、常見錯誤及與 4P 的差別。", "tags": ["STP", "STP 分析", "市場區隔", "目標客群", "品牌定位"]},
   "notes/marketing-4p-beginner-guide/": {"seoTitle": "行銷 4P 是什麼？產品、價格、通路與推廣｜蔡鈞佑 Anson Tsai", "description": "行銷 4P 怎麼用？用小品牌例子看懂 Product、Price、Place、Promotion，附一頁練習、常見錯誤與服務業 7P 延伸。", "tags": ["行銷 4P", "4P 分析", "4P 範例", "行銷入門", "行銷策略"]},
   "notes/marketing-strategy-seven-steps/": {"seoTitle": "行銷策略怎麼做？目標、客群到執行 7 步驟｜蔡鈞佑 Anson Tsai", "description": "行銷策略不是先排貼文。用 7 個步驟整理目標、客群、價值、顧客路線、管道分工、執行資源與衡量方式，附新手一頁模板。", "tags": ["行銷策略", "行銷策略怎麼做", "行銷策略步驟", "行銷企劃", "目標客群"]},
