@@ -43,6 +43,44 @@
     heroArt.addEventListener('pointerleave', resetDepth, {passive:true});
   }
 
+  const pathCards = [...document.querySelectorAll('[data-path-card]')];
+  const robotStatus = document.querySelector('[data-robot-status]');
+  const defaultRobotMessage = robotStatus?.textContent || '';
+  let pathFrame = 0;
+  const previewPath = card => {
+    if (robotStatus && card.dataset.robotMessage) robotStatus.textContent = card.dataset.robotMessage;
+    heroArt?.classList.add('is-path-preview');
+  };
+  const clearPathPreview = card => {
+    for (const property of ['--path-rx','--path-ry','--path-x','--path-y','--path-glow-x','--path-glow-y']) card.style.removeProperty(property);
+    if (!pathCards.some(item => item.matches(':hover,:focus-visible'))) {
+      if (robotStatus) robotStatus.textContent = defaultRobotMessage;
+      heroArt?.classList.remove('is-path-preview');
+    }
+  };
+  for (const card of pathCards) {
+    card.addEventListener('pointerenter', () => previewPath(card), {passive:true});
+    card.addEventListener('focus', () => previewPath(card));
+    card.addEventListener('pointerleave', () => clearPathPreview(card), {passive:true});
+    card.addEventListener('blur', () => queueMicrotask(() => clearPathPreview(card)));
+    if (!finePointer.matches) continue;
+    card.addEventListener('pointermove', event => {
+      if (root.dataset.motionPaused === 'true' || reduceMotion.matches) return;
+      const bounds = card.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - .5;
+      const y = (event.clientY - bounds.top) / bounds.height - .5;
+      cancelAnimationFrame(pathFrame);
+      pathFrame = requestAnimationFrame(() => {
+        card.style.setProperty('--path-rx', `${(-y * 3).toFixed(2)}deg`);
+        card.style.setProperty('--path-ry', `${(x * 4).toFixed(2)}deg`);
+        card.style.setProperty('--path-x', `${(x * 2).toFixed(2)}px`);
+        card.style.setProperty('--path-y', `${(y * 2).toFixed(2)}px`);
+        card.style.setProperty('--path-glow-x', `${(-x * 16).toFixed(2)}px`);
+        card.style.setProperty('--path-glow-y', `${(-y * 12).toFixed(2)}px`);
+      });
+    }, {passive:true});
+  }
+
   const revealSelector = [
     '.home-directory .directory-card',
     '.growth-heading',

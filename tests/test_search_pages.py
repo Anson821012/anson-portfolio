@@ -169,8 +169,8 @@ class SearchPagesTest(unittest.TestCase):
         self.assertEqual(len(routes), 3)
         self.assertEqual(routes[-1]['href'], 'contact/')
         self.assertIn('facet=operations', routes[1]['href'])
-        self.assertIsNotNone(soup.select_one('link[href="motion.css?v=20260930-phase3"]'))
-        self.assertIsNotNone(soup.select_one('script[src="motion.js?v=20260930-phase3"][defer]'))
+        self.assertIsNotNone(soup.select_one('link[href="motion.css?v=20261101-paths"]'))
+        self.assertIsNotNone(soup.select_one('script[src="motion.js?v=20261101-paths"][defer]'))
         for name in ['motion.css', 'motion.js', 'robot.css', 'robot3d.mjs', 'robot-model.mjs', 'robot-state.mjs', 'vendor/three-0.180.0/three.module.min.js', 'vendor/three-0.180.0/three.core.min.js', 'vendor/three-0.180.0/LICENSE', 'assets/robot-pop-640.webp', 'assets/robot-pop-1000.webp']:
             with self.subTest(asset=name):
                 asset = self.dest / name

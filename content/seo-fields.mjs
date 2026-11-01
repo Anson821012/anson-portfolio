@@ -49,7 +49,7 @@ export const pageFields = {
   'contact/': {seoTitle:'合作詢問｜蔡鈞佑 Anson Tsai・麻煩整理所',tags:['AI 整合合作','品牌營運','需求盤點']},
   'profile/': {seoTitle:'合作與招募摘要｜蔡鈞佑 Anson Tsai',description:'蔡鈞佑 Anson Tsai 的品牌、內容、營運流程與 AI 整合能力摘要，附代表作品、公開署名、近期可核對資料與聯絡方式。',tags:['AI 與品牌營運整合','專案合作','內容企劃','流程整理']},
   'notes/content-from-customer-questions/': {"seoTitle":"社群不知道發什麼？從顧客問題整理選題｜蔡鈞佑 Anson Tsai","description":"社群不知道要發什麼，可以先從顧客問題找題目。蔡鈞佑 Anson Tsai 整理問題紀錄、選題順序與內容分工，附手作餅乾店的假設練習，讓中小企業的內容行銷更貼近日常需求。","tags":["社群選題","內容行銷","顧客問題","中小企業行銷"]},
-  '': {seoTitle:'蔡鈞佑 Anson Tsai｜中小企業 AI 導入、SOP 與品牌行銷', description:'蔡鈞佑 Anson Tsai 創立麻煩整理所，提供中小企業 AI 導入、工作流程自動化、公司 SOP 建立與品牌行銷整合。從一件真實工作開始盤點，保留人工確認與可交接的方法。', tags:['中小企業 AI 導入顧問','工作流程自動化','公司 SOP 建立','高雄品牌行銷顧問']},
+  '': {seoTitle:'蔡鈞佑 Anson Tsai｜中小企業 AI 導入、SOP 與品牌行銷', description:'蔡鈞佑 Anson Tsai 的麻煩整理所：找 Anson 討論品牌、行銷、SOP 與 AI 整合，或從六關行銷 QA 闖關學懂品牌、內容、顧客、營運與 AI。', tags:['中小企業 AI 導入顧問','工作流程自動化','公司 SOP 建立','高雄品牌行銷顧問','行銷 QA']},
   'services/': {seoTitle:'中小企業 AI 導入、SOP 建立與品牌行銷服務｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 的中小企業服務地圖：AI 導入與工作流程自動化、公司 SOP 建立與流程改善、品牌行銷與內容整合。先找到一件值得整理的工作，再確認交付、費用與時程。', tags:['中小企業 AI 導入顧問','AI 工作流程自動化','SOP 建立顧問','高雄品牌行銷顧問']},
   'studio/': {seoTitle:'行銷 QA 闖關｜蔡鈞佑 Anson Tsai', description:'六個由淺入深的行銷 QA 關卡，帶你用白話認識問題盤點、品牌定位、內容行銷、顧客轉換、SOP 與 AI 工具。答題後解鎖下一關。', tags:['行銷 QA','行銷入門','品牌定位','內容行銷','顧客旅程','AI 行銷工具']},
   'services/brand-marketing/': {seoTitle:'高雄品牌行銷顧問：內容、社群與活動整合｜蔡鈞佑 Anson Tsai', description:'高雄品牌行銷顧問蔡鈞佑 Anson Tsai 協助整理品牌定位、內容行銷、社群、影音、活動與顧客接點，建立一致方向與可交接的發布流程。', tags:['高雄品牌行銷顧問','品牌定位顧問','內容行銷顧問','社群行銷規劃']},

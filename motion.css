@@ -104,6 +104,22 @@
   transform:none;
 }
 
+.hero-art.is-path-preview .robot-speech{
+  opacity:1;
+  transform:none;
+}
+
+@media (hover:hover) and (pointer:fine){
+  .hero-path:hover,.hero-path:focus-visible{
+    --path-lift:-6px;
+    border-color:#9fc4d4;
+    box-shadow:0 20px 38px #52748721,inset 0 1px #fff;
+  }
+  .hero-path--learn:hover,.hero-path--learn:focus-visible{border-color:#b9b2df}
+  .hero-path:hover .hero-path-action b,.hero-path:focus-visible .hero-path-action b{transform:translateX(3px) rotate(-6deg)}
+  .hero-path:hover .hero-path-icon,.hero-path:focus-visible .hero-path-icon{animation:path-icon-bob 1.6s ease-in-out infinite}
+}
+
 .robot-orbit{
   position:absolute;
   display:grid;
@@ -182,6 +198,8 @@
     border-color:#b9cbb8;
   }
 }
+
+@keyframes path-icon-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(-3deg)}}
 
 .motion-progress{
   position:fixed;
