@@ -47,7 +47,7 @@ export const pageFields = {
   "notes/documents-findable-current/": {"seoTitle": "評鑑資料如何整理？目錄、版本與查找方法｜蔡鈞佑 Anson Tsai", "description": "資料庫需要讓人找得到，也看得懂目前能用哪一份。蔡鈞佑 Anson Tsai 從福韻評鑑與專業資料庫的公開設計，整理文件目錄、用途說明、版本與公開範圍的實作方法，並說明 AI 分類前要先確認的事。", "tags": ["評鑑資料整理", "文件管理", "資訊設計", "AI 工具整合"]},
   "notes/tasks-owner-and-done/": {"seoTitle": "工作交代了卻沒人做？釐清負責人與完成標準｜蔡鈞佑 Anson Tsai", "description": "事情交代了卻沒往下走，可能缺的是負責窗口、下一步與完成標準。蔡鈞佑 Anson Tsai 用假設的新品上架情境，整理中小企業把待辦接成可追蹤工作的做法，並說明 AI 能協助到哪裡。", "tags": ["工作分工", "待辦管理", "完成標準", "公司 SOP", "AI 工作流程"]},
   'contact/': {seoTitle:'合作詢問｜蔡鈞佑 Anson Tsai・麻煩整理所',tags:['AI 整合合作','品牌營運','需求盤點']},
-  'profile/': {seoTitle:'合作與招募摘要｜蔡鈞佑 Anson Tsai',tags:['AI 與品牌營運整合','專案合作','內容企劃','流程整理']},
+  'profile/': {seoTitle:'合作與招募摘要｜蔡鈞佑 Anson Tsai',description:'蔡鈞佑 Anson Tsai 的品牌、內容、營運流程與 AI 整合能力摘要，附代表作品、公開署名、近期可核對資料與聯絡方式。',tags:['AI 與品牌營運整合','專案合作','內容企劃','流程整理']},
   'notes/content-from-customer-questions/': {"seoTitle":"社群不知道發什麼？從顧客問題整理選題｜蔡鈞佑 Anson Tsai","description":"社群不知道要發什麼，可以先從顧客問題找題目。蔡鈞佑 Anson Tsai 整理問題紀錄、選題順序與內容分工，附手作餅乾店的假設練習，讓中小企業的內容行銷更貼近日常需求。","tags":["社群選題","內容行銷","顧客問題","中小企業行銷"]},
   '': {seoTitle:'蔡鈞佑 Anson Tsai｜中小企業 AI 導入、SOP 與品牌行銷', description:'蔡鈞佑 Anson Tsai 創立麻煩整理所，提供中小企業 AI 導入、工作流程自動化、公司 SOP 建立與品牌行銷整合。從一件真實工作開始盤點，保留人工確認與可交接的方法。', tags:['中小企業 AI 導入顧問','工作流程自動化','公司 SOP 建立','高雄品牌行銷顧問']},
   'services/': {seoTitle:'中小企業 AI 導入、SOP 建立與品牌行銷服務｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 的中小企業服務地圖：AI 導入與工作流程自動化、公司 SOP 建立與流程改善、品牌行銷與內容整合。先找到一件值得整理的工作，再確認交付、費用與時程。', tags:['中小企業 AI 導入顧問','AI 工作流程自動化','SOP 建立顧問','高雄品牌行銷顧問']},
@@ -74,8 +74,8 @@ export const pageFields = {
   'notes/social-content-brand/': {seoTitle:'社群一直發文，品牌為何仍說不清楚？｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 從福韻內容與影音企劃的參與經驗，整理社群、文章、短影音及網站如何分工，讓中小企業的內容行銷接到品牌理解與顧客詢問。', tags:['內容行銷','社群經營','品牌定位','中小企業行銷']},
   'notes/sop-handover/': {seoTitle:'SOP 寫好了，新人為什麼還是一直問？｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 以福韻薪資排班的資料設計，說明公司 SOP 需要補上哪些入口、判斷、例外及更新責任，讓中小企業數位轉型從可交接的流程開始。', tags:['公司 SOP','新人交接','中小企業數位轉型','流程改善']},
   'notes/daily-menu-system/': {seoTitle:'每日菜單為什麼需要前後台整合？｜蔡鈞佑 Anson Tsai', description:'蔡鈞佑 Anson Tsai 拆解福韻每日菜單的前後台設計：如何兼顧同事更新、顧客查閱及 PNG、Excel 輸出，讓同一份資料支援不同服務情境。', tags:['前後台整合','每日菜單','資料整合','數位工具設計']},
-  'about/': {seoTitle:'蔡鈞佑 Anson Tsai 是誰？中小企業 AI 與品牌營運整合者', description:identityDescription, tags:['蔡鈞佑','Anson Tsai','中小企業 AI 轉型','品牌營運整合']},
-  'growth/': {seoTitle:'福韻品牌整合成果與公開署名｜蔡鈞佑 Anson Tsai', tags:['品牌成長','Google 搜尋成效','內容行銷','福韻']}
+  'about/': {seoTitle:'蔡鈞佑 Anson Tsai 是誰？中小企業 AI 與品牌營運整合者', description:'認識蔡鈞佑 Anson Tsai 的品牌行銷、營運流程與 AI 整合方法，並查看福韻官網署名、公開公司資料與代表作品。', tags:['蔡鈞佑','Anson Tsai','中小企業 AI 轉型','品牌營運整合']},
+  'growth/': {seoTitle:'福韻品牌整合成果與公開署名｜蔡鈞佑 Anson Tsai', description:'查看福韻已核對的累計合約業績、Google 搜尋成效與蔡鈞佑最新官網編輯署名，附資料日期、統計口徑及團隊共同參與說明。', tags:['品牌成長','Google 搜尋成效','內容行銷','福韻']}
 };
 
 export function fieldsFor(page) {
