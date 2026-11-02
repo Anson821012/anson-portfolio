@@ -1,5 +1,18 @@
 [
   {
+    "id": "marketing-plan-nine-sections-template",
+    "pillar": "行銷入門與策略",
+    "title": "行銷企劃書怎麼寫？新手從目標到執行的 9 個基本欄位",
+    "angle": "用九個基本欄位把策略轉成可執行、可分工、可衡量的一頁企劃，附假設烘焙品牌範例",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-02",
+    "slug": "marketing-plan-nine-sections-template",
+    "targetQueries": ["行銷企劃書", "行銷企劃書範例", "行銷企劃怎麼寫", "行銷計畫", "行銷 KPI"]
+  },
+  {
     "id": "swot-analysis-from-four-boxes-to-actions",
     "pillar": "行銷入門與策略",
     "title": "SWOT 怎麼寫才不會只列四格？從分析到行動的白話教學",
