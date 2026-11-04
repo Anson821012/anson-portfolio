@@ -43,6 +43,61 @@ export const services = [
 
 export const notes = [
   {
+    slug:'why-google-cannot-find-new-website',
+    title:'網站上線了，為什麼 Google 還找不到？從抓取、索引到排名的檢查順序',
+    category:'SEO、網站與流量',
+    published:'2026-11-04',modified:'2026-11-04',topicId:'seo-indexing',aiAssisted:true,
+    description:'網站能開啟，不代表 Google 已經收錄。白話分清上線、發現、抓取、索引與排名，並用 6 步檢查 Search Console、noindex、canonical、站內連結及 Sitemap。',
+    answer:'網站已上線卻搜尋不到，通常要先分清楚它卡在「發現、抓取、索引」還是「排名」。頁面回傳 HTTP 200、放進 Sitemap，甚至在 Search Console 要求建立索引，都不保證一定收錄或排到前面。先確認網址公開可開啟、沒有 robots 或 noindex 阻擋、canonical 指向正確網址，再補上可抓取的站內連結與 Sitemap，最後用網址審查工具檢查並只提交一次。若已編入索引卻找不到目標關鍵字，才回頭檢查搜尋意圖、內容品質與競爭。',
+    sections:[
+      ['先說結論：網站上線，只代表讀者有機會打得開',
+        'Google 官方把探索、檢索與建立索引分成不同階段。頁面公開且回傳成功狀態，只是基本條件；Google 仍要先找到網址、讀取內容，再決定是否建立索引。資料查核日期：2026 年 11 月 4 日。',
+        '所以「我用瀏覽器看得到」和「Google 搜得到」不是同一件事。網站上線像店門打開，索引則像地圖真的收錄了店家；門開得很漂亮，地圖還是不會自己瞬間長出一個圖釘。'],
+      ['先把五個狀態分開：上線、被發現、被抓取、被索引、取得排名',
+        '上線是網址可以公開開啟；被發現是 Google 知道這個網址存在；被抓取是 Googlebot 曾讀取頁面；被索引是內容進入 Google 可提供的資料庫；取得排名則是頁面針對某個查詢出現在搜尋結果。前一關完成，不等於後一關一定發生。',
+        '檢查時先問「哪一關有證據」。只看到 HTTP 200，不能直接寫成已收錄；Search Console 接受索引要求，也不能寫成已建立索引；真的查到已收錄，仍不代表所有關鍵字都會有好排名。'],
+      ['常見原因一：新頁面還沒被發現，或入口太孤單',
+        'Google 可以透過其他頁面的連結與 Sitemap 發現網址。若新文章沒有從首頁、文章列表或相關內容連過去，只靠手動貼出完整網址，搜尋引擎與讀者都比較難找到它。',
+        '先替新頁安排至少一個可抓取的 HTML 連結，並確認它出現在正確的 Sitemap。Sitemap 是提供網址線索，不是保證收錄的通行證；站內連結還能補上上下文，讓搜尋引擎與讀者知道這頁和哪些主題有關。'],
+      ['常見原因二：頁面可開啟，卻不符合索引的技術條件',
+        'Google 的技術最低要求包含：Googlebot 沒有被封鎖、頁面回傳 HTTP 200，且內容可以被建立索引。登入牆、錯誤狀態、robots.txt 阻擋或頁面上的 noindex，都可能讓頁面無法進入索引。',
+        '也要檢查 canonical。若頁面把主要版本指向另一個網址，Google 可能把訊號合併到別頁；網址大小寫、斜線、參數與 HTTP／HTTPS 版本不一致，也容易讓同一內容出現多個候選網址。'],
+      ['常見原因三：Google 抓到了，但還沒有選擇建立索引',
+        'Google 官方說明，即使頁面符合技術要求，也不保證一定被抓取、建立索引或提供搜尋結果。新網站與新頁面可能需要幾天到幾週；內容重複、資訊不足、網站訊號尚少或抓取資源安排，都可能影響處理。',
+        '這時不要一直改日期或重複按「要求建立索引」。先確認頁面是否真的回答一個明確問題、是否提供其他頁面沒有的實用內容，以及讀者能不能從網站內自然抵達。必要時更新內容與內部連結，再等待重新處理。'],
+      ['常見原因四：已經建立索引，但你查的關鍵字排不到前面',
+        '若網址審查顯示已編入索引，問題就從「能不能被收錄」轉成「為什麼這個查詢沒有選到你」。這時要比對搜尋意圖、標題與內文答案、內容完整性、網站整體可信度、其他頁面是否互相競爭，以及搜尋結果目前提供什麼。',
+        '不要只用 site: 查詢當作唯一證據。Google 說明這類搜尋不一定完整；真正要判斷特定網址的索引狀態，優先使用 Search Console 的網址審查工具。曝光、點擊、平均排名也要和「已索引」分開記錄。'],
+      ['6 步檢查清單：先排除技術問題，再談內容與排名',
+        '第一，無痕視窗開啟完整網址，確認不用登入也能閱讀。第二，確認正式網址回傳 HTTP 200。第三，檢查 robots.txt、meta robots、X-Robots-Tag 與 canonical。第四，從首頁、列表或相關文章加入可抓取的站內連結。第五，確認 Sitemap 格式正確並包含正式網址。第六，用 Search Console 網址審查查看目前狀態，必要時執行線上測試並提交一次索引要求。',
+        '每一步都留下結果與日期。若工具顯示抓取或索引錯誤，就先修錯誤；若只是新網址尚未處理，給 Google 合理時間。把問題拆開，會比同一天重按十次有效，也比較不會把自己按成一位很忙但沒有新證據的人。'],
+      ['哪些事不要做：重複提交、誤用 API、用假更新騙抓取',
+        'Google 明確說明，多次要求同一網址重新抓取不會加快速度。Indexing API 只適用於具有 JobPosting 或 BroadcastEvent 的特定頁面，不能拿一般文章硬套。修改日期也應反映實質內容更新，不要每天刷新舊文日期製造新鮮感。',
+        '如果網站有大量相似頁面，也不要為了關鍵字把同一答案複製成很多網址。先合併重複搜尋意圖，替每一頁安排獨特任務，再用內部連結把主題群組接起來。'],
+      ['Anson 會怎麼判斷：先確認卡在哪一關，再只修那一關',
+        '我的做法會把「已部署」「Sitemap 可讀」「已提出索引要求」「Google 已建立索引」「開始取得曝光或排名」分成五個欄位。這樣才不會把網站能開啟，誤報成 Google 已經收錄，也不會把送出要求當成成效。',
+        '如果技術條件都正常，我會把時間放回讀者問題：標題是否就是他會搜尋的問法、開頭有沒有直接答案、步驟能不能照著做、相關頁面是否互相支援。索引是入口，不是終點。你的網站目前最不確定的是「Google 還沒收錄」，還是「已收錄但沒有曝光」？']
+    ],
+    takeaways:['網站能開啟、出現在 Sitemap、送出索引要求、已建立索引與取得排名，是五個不同狀態。','先檢查公開存取、HTTP 200、robots／noindex、canonical、站內連結與 Sitemap，再用網址審查工具確認。','重複要求建立索引不會加快處理；已索引卻沒有曝光時，應回頭檢查搜尋意圖、內容與網站訊號。'],
+    faq:[
+      ['網站已經上線，為什麼 Google 還搜尋不到？','Google 需要先發現網址、抓取內容並決定建立索引。網站可以公開開啟，不代表已被 Google 收錄；先用 Search Console 網址審查確認卡在哪個階段。'],
+      ['Sitemap 提交成功，就代表文章一定會被收錄嗎？','不代表。Sitemap 協助 Google 發現網址，但不保證抓取、建立索引或排名。頁面仍要公開可讀、符合技術條件並提供有用內容。'],
+      ['新網站或新文章多久會出現在 Google？','Google 官方表示可能需要幾天到幾週，且不保證一定建立索引。先排除封鎖、錯誤狀態、canonical 與內容問題，再持續觀察。'],
+      ['可以每天重複按要求建立索引嗎？','不建議。Google 明確說明，對同一網址重複提出要求不會加快抓取；修正實質問題後再提交一次即可。']
+    ],
+    sources:[
+      {title:'Google Search Central：Crawling and indexing FAQ（2026-11-04 查核）',url:'https://developers.google.com/search/help/crawling-index-faq'},
+      {title:'Google Search Console：URL Inspection Tool（2026-11-04 查核）',url:'https://support.google.com/webmasters/answer/9012289'},
+      {title:'Google Search Central：Ask Google to recrawl your URLs（2026-11-04 查核）',url:'https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl'},
+      {title:'Google Search Central：Sitemaps overview（2026-11-04 查核）',url:'https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview'},
+      {title:'Google Search Essentials：Technical requirements（2026-11-04 查核）',url:'https://developers.google.com/search/docs/essentials/technical'},
+      {title:'先從搜尋意圖把問題回答清楚',url:'../keywords-answer-search-intent/'},
+      {title:'SEO、AEO、GEO 新手分工指南',url:'../seo-geo-beginner-guide/'},
+      {title:'內容整合與影音企劃案例',url:'../../cases/content/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'marketing-plan-nine-sections-template',
     title:'行銷企劃書怎麼寫？新手從目標到執行的 9 個基本欄位',
     category:'行銷入門與策略',

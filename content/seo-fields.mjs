@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/why-google-cannot-find-new-website/": {"seoTitle": "網站上線 Google 找不到？抓取與索引檢查順序｜蔡鈞佑 Anson Tsai", "description": "網站上線卻搜尋不到？白話分清抓取、索引與排名，依序檢查 HTTP 200、noindex、canonical、站內連結、Sitemap 及 Search Console。", "tags": ["Google 搜尋不到網站", "網站未收錄", "Google 索引", "Search Console", "Sitemap"]},
   "notes/marketing-plan-nine-sections-template/": {"seoTitle": "行銷企劃書怎麼寫？新手 9 個基本欄位與範例｜蔡鈞佑 Anson Tsai", "description": "行銷企劃書怎麼寫才可執行？用 9 個欄位整理目標、客群、提案、管道、時程、分工、預算與 KPI，附一頁範例及檢查表。", "tags": ["行銷企劃書", "行銷企劃書範例", "行銷企劃怎麼寫", "行銷計畫", "行銷 KPI"]},
   "notes/swot-analysis-from-four-boxes-to-actions/": {"seoTitle": "SWOT 分析怎麼寫？從四格整理到行動策略｜蔡鈞佑 Anson Tsai", "description": "SWOT 分析怎麼做才有用？白話分清內部優勢、劣勢與外部機會、威脅，附假設品牌範例、SO／ST／WO／WT 行動法及一頁練習。", "tags": ["SWOT", "SWOT 分析", "SWOT 範例", "行銷策略", "競爭分析"]},
   "notes/stp-segmentation-targeting-positioning-guide/": {"seoTitle": "STP 是什麼？市場區隔、目標客群與定位教學｜蔡鈞佑 Anson Tsai", "description": "STP 分析怎麼做？白話整理市場區隔、目標客群與品牌定位，附香氛品牌假設範例、一頁練習、常見錯誤及與 4P 的差別。", "tags": ["STP", "STP 分析", "市場區隔", "目標客群", "品牌定位"]},

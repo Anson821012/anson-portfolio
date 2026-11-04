@@ -509,7 +509,11 @@
     "angle": "抓取、索引與排名差異；查官方文件",
     "service": "ai-integration",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "priority": "search-long-tail",
+    "targetQueries": ["Google 搜尋不到網站", "網站未收錄", "Google 索引", "Search Console 網址審查"],
+    "published": "2026-11-04",
+    "slug": "why-google-cannot-find-new-website"
   },
   {
     "id": "seo-sitemap",
