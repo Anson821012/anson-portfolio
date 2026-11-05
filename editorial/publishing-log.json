@@ -1,5 +1,62 @@
 [
   {
+    "date": "2026-11-05",
+    "topicId": "website-traffic-four-routes",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+    "title": "網站流量怎麼增加？先分清搜尋、社群、廣告與回訪 4 條路線",
+    "publication": "publishing",
+    "indexRequest": "not_attempted_tool_unavailable",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "indexingEvidence": "本輪沒有可操作已登入 yo30437@gmail.com Search Console 的瀏覽器工作階段，未查詢索引狀態，也未點擊『要求建立索引』；不能把部署成功或 Sitemap 可讀誤記為 Google 已收錄或已受理索引要求。",
+    "sources": [
+      "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "https://support.google.com/analytics/answer/14731736",
+      "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "https://support.google.com/google-ads/answer/14086",
+      "https://anson821012.github.io/anson-portfolio/notes/what-is-digital-marketing-channels-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/why-google-cannot-find-new-website/",
+      "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-11-05",
+    "aiAssisted": true,
+    "editorialNotes": "建立『增加網站流量』主幹頁，將搜尋、社群分發、付費廣告與回訪四條路線的速度、成本、承接與衡量方式分開，補上一週小型試跑、UTM／GA4／Search Console 的分層觀察與 Anson 對先整理承接再放大流量的判斷。與既有數位行銷管道、Google 未收錄及 GA4 入門頁搜尋意圖分開並加入內部連結；未聲稱搜尋量、流量成效、索引受理或排名。",
+    "publicInformationSync": {
+      "checkedAt": "2026-11-05",
+      "found": "未發現可由姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。",
+      "source": null,
+      "updatedPages": [],
+      "boundary": "搜尋結果中的其他 Anson Tsai 個人檔案與不同同名人士，因缺乏可確認的品牌、帳號或作品關聯而未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "pending",
+      "workflowRunId": null,
+      "url": null,
+      "headSha": null
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, three related notes and content case link, author, home/notes entry, noindex meta absence and sitemap passed locally",
+      "articleLive": false,
+      "liveHTTP": null,
+      "homeEntryLive": false,
+      "notesEntryLive": false,
+      "canonicalLive": false,
+      "noindexAbsent": null
+    },
+    "sitemap": {"publicStatus": null, "xmlValid": null, "containsArticle": false, "urlCount": null, "retryAttempts": 0, "retryStatus": "not_attempted"},
+    "commit": null,
+    "publishedAt": null,
+    "liveVerifiedAt": null,
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+    "notes": "文章已通過本機檢查，等待推送、GitHub Pages 部署與正式網址驗證。Search Console 本輪未操作，因此索引申請與收錄狀態仍未知。"
+  },
+  {
     "date": "2026-11-04",
     "topicId": "seo-indexing",
     "url": "https://anson821012.github.io/anson-portfolio/notes/why-google-cannot-find-new-website/",

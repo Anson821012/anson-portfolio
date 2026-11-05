@@ -1,5 +1,18 @@
 [
   {
+    "id": "website-traffic-four-routes",
+    "pillar": "SEO、廣告與網站流量",
+    "title": "網站流量怎麼增加？先分清搜尋、社群、廣告與回訪 4 條路線",
+    "angle": "把增加網站流量拆成四種進站路線，補上承接頁、UTM、GA4、關鍵事件與一週小型試跑清單",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-pillar",
+    "published": "2026-11-05",
+    "slug": "increase-website-traffic-four-routes",
+    "targetQueries": ["網站流量", "增加網站流量", "網站流量怎麼增加", "網站行銷", "流量來源"]
+  },
+  {
     "id": "marketing-plan-nine-sections-template",
     "pillar": "行銷入門與策略",
     "title": "行銷企劃書怎麼寫？新手從目標到執行的 9 個基本欄位",
