@@ -1,5 +1,67 @@
 [
   {
+    "date": "2026-11-08",
+    "topicId": "google-ads-search-advertising-beginner-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/google-ads-search-advertising-beginner-guide/",
+    "title": "Google Ads 是什麼？搜尋廣告新手先看懂競價、費用與成效",
+    "publication": "published",
+    "indexRequest": "attempted_result_unconfirmed",
+    "indexRequestAttempts": 1,
+    "indexRequestAttemptedAt": "2026-11-08T22:46:52+0800",
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-08T22:46:52+0800",
+    "indexingEvidence": "Google Search Console 已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ 資源中檢查正式網址，顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』。本輪只點擊一次『要求建立索引』並完成線上網址可索引性測試；返回檢查頁後沒有出現可留存的受理成功訊息，因此僅記為已嘗試、結果未確認，不重複提交。",
+    "sources": [
+      "https://support.google.com/google-ads/answer/6319?hl=zh-Hant",
+      "https://support.google.com/google-ads/answer/1722122?hl=zh-Hant",
+      "https://support.google.com/adspolicy/answer/6368661?hl=zh-Hant",
+      "https://support.google.com/google-ads/answer/6308?hl=zh-Hant",
+      "https://anson821012.github.io/anson-portfolio/notes/seo-vs-google-ads-difference/",
+      "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+      "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-11-08",
+    "aiAssisted": true,
+    "editorialNotes": "建立 Google Ads 搜尋廣告入門主幹頁，分清即時競價、廣告評級、預算與出價、到達網頁、轉換追蹤及適合／不適合試跑的情況。與 2026-11-07 的『SEO 和 Google Ads 差別』比較頁搜尋意圖分開並建立雙向內部連結；官方事實與 Anson 判斷分開，未聲稱最低有效預算、保證排名、點擊或轉換成效。",
+    "publicInformationSync": {
+      "checkedAt": "2026-11-08",
+      "found": "核對到福韻官網 2026-11-01 與 2026-10-30 的蔡鈞佑編輯署名，以及 1111 韻好有限公司公開頁的聯絡人與 20 人員工規模；這些資料網站既有公開證據區已收錄，因此今天沒有重複更新頁面。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://www.1111.com.tw/corp/73136378/?agent=newsWeb"
+      ],
+      "updatedPages": [],
+      "boundary": "1111 的『聯絡人』欄位未擴寫成完整職稱或責任；福韻內容與節目仍保留團隊署名邊界。海巡與校園等同名蔡鈞佑結果缺乏品牌、帳號或作品關聯，未採用。"
+    },
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 42491243661,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/42491243661",
+      "headSha": "f08cc1a8487b10d43fa7e8e89eae4bd5c0eac653"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, visible HTML, 5 SEO tags, 4 visible FAQ items, related service, three related notes and content case link, reciprocal SEO comparison link, author, home/notes entry, noindex meta absence and sitemap passed locally",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {"publicStatus": 200, "xmlValid": true, "containsArticle": true, "urlCount": 79, "retryAttempts": 0, "retryStatus": "not_attempted"},
+    "commit": "f08cc1a8487b10d43fa7e8e89eae4bd5c0eac653",
+    "publishedAt": "2026-11-08T22:46:52+0800",
+    "liveVerifiedAt": "2026-11-08T22:46:52+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/google-ads-search-advertising-beginner-guide/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 顯示目前未編入索引，並已單次嘗試要求建立索引，但沒有可確認受理的成功訊息。正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-07",
     "topicId": "seo-vs-google-ads-difference",
     "url": "https://anson821012.github.io/anson-portfolio/notes/seo-vs-google-ads-difference/",
