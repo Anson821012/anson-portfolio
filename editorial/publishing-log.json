@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-07",
+    "topicId": "seo-vs-google-ads-difference",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/seo-vs-google-ads-difference/",
+    "title": "SEO 和 Google Ads 差在哪？速度、成本、控制與適合情況一次看懂",
+    "publication": "publishing",
+    "indexRequest": "not_attempted",
+    "indexRequestAttempts": 0,
+    "indexing": "not_checked",
+    "indexingEvidence": "尚未部署與執行 Search Console 網址審查；發布、Sitemap 可讀、索引申請與已收錄仍為不同狀態。",
+    "sources": [
+      "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "https://support.google.com/google-ads/answer/1722080?hl=zh-Hant",
+      "https://support.google.com/google-ads/answer/6319?hl=zh-Hant",
+      "https://support.google.com/google-ads/answer/14086?hl=zh-Hant",
+      "https://support.google.com/google-ads/answer/7521212?hl=zh-Hant",
+      "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+      "https://anson821012.github.io/anson-portfolio/notes/seo-geo-beginner-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/"
+    ],
+    "sourcesCheckedAt": "2026-11-07",
+    "aiAssisted": true,
+    "editorialNotes": "建立『SEO 和 Google Ads 差別』實作長尾頁，分清自然搜尋與付費搜尋的速度、成本、控制、累積與風險，補上適合／不適合情境、共同承接頁、追蹤分工與 Anson 的判斷。官方事實與個人判斷分開呈現；未聲稱搜尋量、保證排名、廣告成效或轉換。",
+    "publicInformationSync": {
+      "checkedAt": "2026-11-07",
+      "found": "未發現可由姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。",
+      "source": null,
+      "updatedPages": [],
+      "boundary": "搜尋結果中的同名或無法確認品牌、帳號、作品關聯資料未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {"status": "pending"},
+    "validation": {"status": "pending"},
+    "sitemap": {"publicStatus": null, "xmlValid": null, "containsArticle": null, "retryAttempts": 0, "retryStatus": "not_attempted"},
+    "commit": null,
+    "publishedAt": null,
+    "liveVerifiedAt": null,
+    "liveUrl": null,
+    "notes": "文章內容已完成，待測試、建置、部署與正式網址核對。"
+  },
+  {
     "date": "2026-11-05",
     "topicId": "website-traffic-four-routes",
     "url": "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
