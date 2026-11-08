@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/google-ads-search-advertising-beginner-guide/": {"seoTitle": "Google Ads 是什麼？搜尋廣告競價、費用與成效｜蔡鈞佑 Anson Tsai", "description": "Google Ads 搜尋廣告怎麼運作？白話看懂競價、廣告評級、預算、到達網頁、轉換追蹤與小型試跑開始清單。", "tags": ["Google Ads", "Google 廣告", "搜尋廣告", "Google Ads 費用", "Google Ads 教學"]},
   "notes/seo-vs-google-ads-difference/": {"seoTitle": "SEO 和 Google Ads 差在哪？速度、成本與適合情況｜蔡鈞佑 Anson Tsai", "description": "SEO 和 Google Ads 差在哪？比較速度、成本、控制、累積與風險，附選擇情境、準備清單、衡量指標與 Anson 的判斷。", "tags": ["SEO 和 Google Ads 差別", "SEO 廣告", "Google Ads", "SEO", "搜尋引擎行銷"]},
   "notes/increase-website-traffic-four-routes/": {"seoTitle": "網站流量怎麼增加？搜尋、社群、廣告與回訪｜蔡鈞佑 Anson Tsai", "description": "網站流量怎麼增加？分清搜尋、社群、廣告與回訪 4 條路線，整理承接頁、UTM、GA4、關鍵事件與一週小型試跑清單。", "tags": ["網站流量", "增加網站流量", "網站行銷", "SEO 流量", "流量來源"]},
   "notes/why-google-cannot-find-new-website/": {"seoTitle": "網站上線 Google 找不到？抓取與索引檢查順序｜蔡鈞佑 Anson Tsai", "description": "網站上線卻搜尋不到？白話分清抓取、索引與排名，依序檢查 HTTP 200、noindex、canonical、站內連結、Sitemap 及 Search Console。", "tags": ["Google 搜尋不到網站", "網站未收錄", "Google 索引", "Search Console", "Sitemap"]},
