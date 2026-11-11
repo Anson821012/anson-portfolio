@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/target-audience-five-fields-not-everyone/": {"seoTitle": "目標客群怎麼找？5 個欄位整理客群分析｜蔡鈞佑 Anson Tsai", "description": "目標客群怎麼找？用需求情境、問題與替代方式、選擇標準、可接觸位置、驗證方式 5 個欄位，附客群分析範例與小型試跑方法。", "tags": ["目標客群", "目標客群怎麼找", "客群分析", "目標市場", "目標客群範例"]},
   "notes/landing-page-ad-click-seven-checkpoints/": {"seoTitle": "Landing Page 是什麼？廣告承接頁 7 個重點｜蔡鈞佑 Anson Tsai", "description": "Landing Page 怎麼做？整理廣告訊息、第一畫面、CTA、手機速度、網址政策、GA4 與轉換追蹤 7 個重點，附中小品牌檢查方法。", "tags": ["Landing Page", "著陸頁", "到達網頁", "廣告承接頁", "Landing Page 設計"]},
   "notes/google-ads-search-advertising-beginner-guide/": {"seoTitle": "Google Ads 是什麼？搜尋廣告競價、費用與成效｜蔡鈞佑 Anson Tsai", "description": "Google Ads 搜尋廣告怎麼運作？白話看懂競價、廣告評級、預算、到達網頁、轉換追蹤與小型試跑開始清單。", "tags": ["Google Ads", "Google 廣告", "搜尋廣告", "Google Ads 費用", "Google Ads 教學"]},
   "notes/seo-vs-google-ads-difference/": {"seoTitle": "SEO 和 Google Ads 差在哪？速度、成本與適合情況｜蔡鈞佑 Anson Tsai", "description": "SEO 和 Google Ads 差在哪？比較速度、成本、控制、累積與風險，附選擇情境、準備清單、衡量指標與 Anson 的判斷。", "tags": ["SEO 和 Google Ads 差別", "SEO 廣告", "Google Ads", "SEO", "搜尋引擎行銷"]},

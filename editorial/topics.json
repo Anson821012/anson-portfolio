@@ -1,5 +1,24 @@
 [
   {
+    "id": "target-audience-five-fields-not-everyone",
+    "pillar": "品牌與目標客群",
+    "title": "目標客群怎麼找？別再只寫「所有人」，先整理這 5 個欄位",
+    "angle": "用需求情境、問題與替代方式、選擇標準、可接觸位置、驗證方式，把模糊客群整理成能執行與修正的假設",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-11",
+    "slug": "target-audience-five-fields-not-everyone",
+    "targetQueries": [
+      "目標客群",
+      "目標客群怎麼找",
+      "客群分析",
+      "目標市場",
+      "目標客群範例"
+    ]
+  },
+  {
     "id": "landing-page-ad-click-seven-checkpoints",
     "pillar": "SEO、廣告與網站流量",
     "title": "Landing Page 是什麼？廣告點進來後要看到的 7 個重點",
