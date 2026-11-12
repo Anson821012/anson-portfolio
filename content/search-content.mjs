@@ -43,10 +43,60 @@ export const services = [
 
 export const notes = [
   {
+    slug:'persona-six-fields-evidence-based-guide',
+    title:'Persona 是什麼？人物誌別只寫年齡興趣，先整理這 6 個欄位',
+    category:'品牌與目標客群',
+    published:'2026-11-12',modified:'2026-11-12',topicId:'persona-six-fields-evidence-based-guide',aiAssisted:true,
+    description:'Persona（人物誌）怎麼寫才有用？用需求情境、任務、現在做法、選擇條件、接觸路線、證據與日期 6 個欄位，整理能幫團隊做決定的顧客代表。',
+    answer:'Persona（人物誌）是以使用者研究與可確認資料為基礎，整理某一群人的需求、行為、目標與使用情境，讓團隊在產品、內容、通路與服務上有共同判斷。它不是一位真實顧客，也不是靠想像填滿的角色傳記。第一版可整理六個欄位：需求情境、想完成的任務、目前做法、選擇條件與疑慮、接觸路線與下一步、資料來源與更新日期。',
+    sections:[
+      ['先說答案：Persona 是「一群人的具體代表」，不是虛構履歷',
+        '英國地方政府協會將 Persona development 說明為：用使用者研究建立特定服務或解決方案之使用者的具體代表，目的在幫助團隊理解目標受眾的需求、行為與目標。GOV.UK 也建議以 user profiles 或 personas 分享具有相近行為與需求的使用者群體。資料查核日期：2026 年 11 月 12 日。',
+        'Persona 可以有名字或簡短故事，方便團隊記得，但名字不是重點。若一張人物誌知道他愛喝拿鐵、週末爬山，卻不知道他為什麼需要服務、現在怎麼處理、在哪一步卡住，會議還是只能靠猜。'],
+      ['先分清楚：目標客群決定優先服務誰，Persona 幫大家怎麼服務',
+        '目標市場是品牌可能服務的較大範圍；目標客群是現階段優先理解與投入的一群人；Persona 則把這一群人的共同情境、任務、行為與疑慮整理成容易使用的代表。先有客群選擇，再做 Persona，比較不會從一張漂亮照片開始倒推顧客。',
+        '同一個目標客群也可能需要兩個 Persona。例如都是小型品牌負責人，有人第一次找外部協作，需要看懂流程與風險；有人已有合作經驗，更在意交付範圍與銜接方式。只有當差異會改變產品、內容、通路或服務流程，才值得分開。'],
+      ['欄位一與二：需求在什麼情境發生？他想完成什麼任務？',
+        'GOV.UK 的使用者研究指引建議先了解可能的使用者是誰、想完成什麼、目前如何完成、遇到哪些問題，以及需要什麼結果。人物誌第一格先寫觸發情境，例如「第一次負責跨部門活動，兩週內要完成報名、素材與現場分工」；第二格再寫他真正想完成的任務與結果。',
+        '任務不要直接寫成品牌準備賣的方案。使用者可能需要的是「讓同事知道下一步並準時交付」，不一定一開始就知道要買流程顧問或某套軟體。先寫問題與結果，才不會把人物誌變成替既定答案找理由。'],
+      ['欄位三與四：現在怎麼做？選擇時在意什麼、擔心什麼？',
+        '第三格整理目前做法與替代方案：自己整理、繼續用舊表格、問熟人、選另一家，或先擱著。第四格則寫會影響選擇的條件，例如交期、預算透明、能否小規模試用、操作難度、資料安全與後續支援，再補上常見疑慮。',
+        '這些資訊可來自訪談、觀察、匿名化的重複詢問、網站搜尋字詞與客服常見問題。GOV.UK 提醒，未來自使用者的意見或建議應先視為待證明的假設；所以團隊腦中的「顧客一定很在意」要先貼上假設標籤，不要一夜之間升格成事實。'],
+      ['欄位五：他在哪裡找答案？下一步要完成什麼？',
+        '把搜尋、社群、合作介紹、實體活動、門市、Email 或客服等接觸位置，和當下任務一起寫。搜尋者可能需要完整比較，社群讀者先需要一個熟悉情境，已經來到服務頁的人則要確認條件、證據與聯絡方式。',
+        '接著寫一個可觀察的下一步，例如看完比較表、下載準備清單、填完需求表或完成預約。Persona 若不能幫團隊決定「這一頁先回答什麼、要帶人走到哪裡」，就還只是介紹卡，不是工作工具。'],
+      ['欄位六：每個判斷來自哪裡？什麼時候要更新？',
+        '在每個重要欄位旁標記來源，可分成「已確認」「有跡象」「待驗證」，再留下查核日期與下一次回顧時間。來源可以是經同意的訪談、匿名化行為資料、公開市場資料、搜尋與網站分析，或第一線窗口整理的重複問題。不要放入不必要的私人顧客資料。',
+        '地方政府協會的指引也把分析資料、驗證人物誌與持續更新列為 Persona 工作的一部分。使用者的需求、產品條件與接觸管道會變，人物誌不應做完就封存；但也不用每週換一位新角色，先看證據是否真的改變決策。'],
+      ['假設範例：第一次辦品牌工作坊的專案窗口',
+        '以下只是教學情境，不是實際客戶或成效案例。Persona 可以寫成：「第一次替公司辦 30 人品牌工作坊的行銷窗口；四週內要完成主題、報名、講者資料與現場分工；目前用訊息與多份表格追進度；在意交付邊界、時程、主管能否快速看懂，也擔心臨時異動無人接手。」',
+        '這張人物誌會改變做法：服務頁先提供流程與交付清單，文章回答第一次籌備容易漏掉什麼，需求表只問會影響範圍的資料，洽談時先確認窗口與決策節點。若後續訪談發現真正卡點是預算核准，不是活動流程，就更新 Persona，而不是硬把新答案塞進舊故事。'],
+      ['Anson 會怎麼判斷：Persona 只有在改變決定時才有用',
+        '我會拿人物誌去測四個決定：頁面第一段要說什麼、要提供哪一份證據、哪個接點負責帶到下一步、後端服務能不能接住。如果做了兩張 Persona，最後仍得到完全相同的內容、方案與流程，可能代表兩群人的差異還不需要分開。',
+        '第一輪先做一張、挑一個頁面或流程試用。觀察團隊是否少了反覆猜測、詢問是否更符合條件、常見疑問有沒有改變，再決定要修欄位、合併或新增。你現在的人物誌，最缺的是情境、選擇條件，還是可以驗證的來源？']
+    ],
+    takeaways:['Persona 是以研究與資料整理出的使用者群體代表，不是一位真實顧客，也不是靠想像寫滿的履歷。','先整理需求情境、任務、目前做法、選擇條件、接觸路線、證據與日期六個欄位，並區分已確認、跡象與假設。','人物誌要能改變產品、內容、通路或服務決定；先用一張 Persona 測一個頁面或流程，再依證據更新。'],
+    faq:[
+      ['Persona 和目標客群有什麼不同？','目標客群決定品牌現階段優先理解與服務哪一群人；Persona 則把這群人的共同情境、任務、行為與疑慮整理成具體代表，幫助團隊做產品、內容、通路與服務決定。'],
+      ['Persona 一定要是真人、姓名或照片嗎？','不必。Persona 是一群人的代表，不是公開某位顧客的個資。名字或示意圖只能幫助溝通，真正重要的是有來源的需求、行為、目標、障礙與使用情境。'],
+      ['還沒有顧客資料，可以先做 Persona 嗎？','可以先做假設版，但要明確標示待驗證。從公開資料、可能使用者訪談、匿名化詢問類型與小型頁面測試開始，安排能推翻假設的問題，不要把團隊想像寫成已確認事實。'],
+      ['一個品牌可以有幾個 Persona？','沒有固定數量。只有當不同群體會需要不同產品、訊息、接觸路線或服務流程時才分開。資源有限時先做一張主要 Persona；太多人物誌容易讓團隊重新回到「每個人都要顧」的狀態。']
+    ],
+    sources:[
+      {title:'Local Government Association：Persona development（2026-11-12 查核）',url:'https://www.local.gov.uk/our-support/transformation/transformation-capability-framework/design-persona'},
+      {title:'GOV.UK Service Manual：Learning about users and their needs（2026-11-12 查核）',url:'https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs'},
+      {title:'GOV.UK Service Manual：User research for government services（2026-11-12 查核）',url:'https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design'},
+      {title:'先讀：用 5 個欄位找出目標客群',url:'../target-audience-five-fields-not-everyone/'},
+      {title:'延伸閱讀：STP 市場區隔、目標客群與品牌定位',url:'../stp-segmentation-targeting-positioning-guide/'},
+      {title:'品牌問卷與需求路由案例',url:'../../cases/quiz/'}
+    ],
+    service:'brand-marketing',case:'quiz'
+  },
+  {
     slug:'target-audience-five-fields-not-everyone',
     title:'目標客群怎麼找？別再只寫「所有人」，先整理這 5 個欄位',
     category:'品牌與目標客群',
-    published:'2026-11-11',modified:'2026-11-11',topicId:'target-audience-five-fields-not-everyone',aiAssisted:true,
+    published:'2026-11-11',modified:'2026-11-12',topicId:'target-audience-five-fields-not-everyone',aiAssisted:true,
     description:'目標客群怎麼找？用需求情境、問題與替代方式、選擇標準、可接觸位置、驗證方式 5 個欄位，整理能執行也能修正的客群假設。',
     answer:'目標客群不是所有可能購買的人，而是品牌現階段最值得優先理解、溝通與服務的一群人。可以先整理五個欄位：需求在什麼情境發生、正在處理什麼問題與使用哪些替代方式、選擇時在意什麼、能在哪裡接觸到，以及要用什麼真實資料驗證。先選一群人做小型試跑，不代表拒絕其他顧客，而是讓有限的產品、內容與服務資源先對準同一個問題。',
     sections:[
@@ -88,6 +138,7 @@ export const notes = [
     sources:[
       {title:'Australian Government business.gov.au：Identify your target market（2026-11-11 查核）',url:'https://business.gov.au/marketing-and-advertising/identify-your-target-market'},
       {title:'U.S. Small Business Administration：Market research and competitive analysis（2026-11-11 查核）',url:'https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis'},
+      {title:'下一步：用 6 個欄位建立 Persona 人物誌',url:'../persona-six-fields-evidence-based-guide/'},
       {title:'延伸閱讀：STP 市場區隔、目標客群與品牌定位',url:'../stp-segmentation-targeting-positioning-guide/'},
       {title:'延伸閱讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
       {title:'品牌問卷與需求路由案例',url:'../../cases/quiz/'}

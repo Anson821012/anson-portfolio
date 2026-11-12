@@ -1,5 +1,24 @@
 [
   {
+    "id": "persona-six-fields-evidence-based-guide",
+    "pillar": "品牌與目標客群",
+    "title": "Persona 是什麼？人物誌別只寫年齡興趣，先整理這 6 個欄位",
+    "angle": "用需求情境、任務、現在做法、選擇條件、接觸路線、證據與日期，建立能改變產品、內容與服務決定的人物誌",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-12",
+    "slug": "persona-six-fields-evidence-based-guide",
+    "targetQueries": [
+      "Persona",
+      "Persona 是什麼",
+      "人物誌",
+      "Persona 範例",
+      "Persona 怎麼寫"
+    ]
+  },
+  {
     "id": "target-audience-five-fields-not-everyone",
     "pillar": "品牌與目標客群",
     "title": "目標客群怎麼找？別再只寫「所有人」，先整理這 5 個欄位",
