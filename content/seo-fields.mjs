@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/brand-positioning-five-questions-positioning-statement/": {"seoTitle": "品牌定位怎麼做？5 個問題與定位句範例｜蔡鈞佑 Anson Tsai", "description": "品牌定位怎麼做？用客群、情境、價值、證據與差異 5 個問題，寫出能接到產品、網站、內容與服務的品牌定位句。", "tags": ["品牌定位", "品牌定位怎麼做", "品牌定位範例", "定位句", "品牌策略"]},
   "notes/persona-six-fields-evidence-based-guide/": {"seoTitle": "Persona 是什麼？人物誌 6 個欄位與範例｜蔡鈞佑 Anson Tsai", "description": "Persona 人物誌怎麼寫？用情境、任務、現在做法、選擇條件、接觸路線、證據與日期 6 個欄位，附假設範例與驗證方法。", "tags": ["Persona", "Persona 是什麼", "人物誌", "Persona 範例", "Persona 怎麼寫"]},
   "notes/target-audience-five-fields-not-everyone/": {"seoTitle": "目標客群怎麼找？5 個欄位整理客群分析｜蔡鈞佑 Anson Tsai", "description": "目標客群怎麼找？用需求情境、問題與替代方式、選擇標準、可接觸位置、驗證方式 5 個欄位，附客群分析範例與小型試跑方法。", "tags": ["目標客群", "目標客群怎麼找", "客群分析", "目標市場", "目標客群範例"]},
   "notes/landing-page-ad-click-seven-checkpoints/": {"seoTitle": "Landing Page 是什麼？廣告承接頁 7 個重點｜蔡鈞佑 Anson Tsai", "description": "Landing Page 怎麼做？整理廣告訊息、第一畫面、CTA、手機速度、網址政策、GA4 與轉換追蹤 7 個重點，附中小品牌檢查方法。", "tags": ["Landing Page", "著陸頁", "到達網頁", "廣告承接頁", "Landing Page 設計"]},

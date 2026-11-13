@@ -43,10 +43,67 @@ export const services = [
 
 export const notes = [
   {
+    slug:'brand-positioning-five-questions-positioning-statement',
+    title:'品牌定位怎麼做？先用 5 個問題說清楚你幫誰、為什麼選你',
+    category:'品牌與目標客群',
+    published:'2026-11-13',modified:'2026-11-13',topicId:'brand-positioning-five-questions-positioning-statement',aiAssisted:true,
+    description:'品牌定位怎麼做？用目標客群、需求情境、主要價值、可信證據、替代方式與差異 5 個問題，寫出能接到產品、內容與服務的定位句。',
+    answer:'品牌定位不是先想一句響亮口號，而是說清楚：品牌優先幫誰、在什麼情境解決什麼問題、提供哪個主要價值、憑什麼讓人相信，以及和顧客目前的替代方式相比有什麼差異。第一版可用五個問題整理，再寫成一句內部定位句，拿去檢查產品、網站、內容、客服與交付是否說到也做得到。',
+    sections:[
+      ['先說答案：品牌定位是做選擇，不是把所有優點排成一列',
+        '美國行銷協會（AMA）把品牌定位說明為：界定品牌相對於競爭者在市場中的位置，並指引品牌如何向目標受眾溝通價值與利益。英國 Business.gov.uk 的品牌指引也把企業為何存在、解決什麼問題、目標顧客與競爭差異放在視覺識別之前。資料查核日期：2026 年 11 月 13 日。',
+        '所以定位不是「專業、用心、品質好」全部都要。這些詞很多品牌都能說，像會議上每個人都說自己會配合，真正要做時還是得問：誰先做、做哪一件、怎樣算完成。定位也需要同樣清楚。'],
+      ['先分清楚：定位、品牌識別與廣告口號不是同一件事',
+        '品牌定位回答希望因為什麼價值，被哪一群人記住；品牌識別把這個方向化成名稱、Logo、色彩、字型與影像；廣告口號則是在特定情境中，讓人快速記得的一句話。順序可以來回調整，但三件事不能互相代替。',
+        '換一組顏色不會自動改變顧客選擇你的理由；寫出定位句，也不代表它要原封不動出現在首頁。定位比較像團隊共用的尺：每次做產品、內容或服務決定時，都能拿來比一下有沒有走偏。'],
+      ['問題一：你優先幫誰？需求在什麼情境發生？',
+        '先從目標客群與 Persona 裡選一個優先情境，不只寫年齡或職稱。例如「第一次替公司辦跨部門工作坊、四週內要完成報名與現場分工的行銷窗口」，就比「企業客戶」更能幫助團隊決定資訊順序。',
+        '如果同一個方案同時想服務新手、熟手、個人與大型企業，先問這些人是否真的需要相同證據、交付與下一步。差異會改變做法才分開；沒有改變就不必為了表格漂亮多做四張人物卡。'],
+      ['問題二：他要完成什麼？現在用什麼方式處理？',
+        '顧客不一定在找你的品類名稱，可能只是想準時交付、減少重工、挑到不出錯的選擇，或讓主管看懂進度。先寫他想完成的任務，再列出現在的替代方式：自己做、繼續用舊方法、問熟人、找另一家，或先不處理。',
+        '美國小型企業管理局（SBA）提醒，市場研究與競爭分析要一起看：前者幫助理解顧客，後者幫助找出差異。真正的競爭者不一定是同業，也可能是「先放著」。定位若沒看見目前做法，很容易只和自己腦中的對手比賽。'],
+      ['問題三：你提供的主要價值是什麼？',
+        '主要價值要接到顧客想完成的結果，不是功能清單。例如「提供一份流程圖、表單與會議」是交付物；「讓跨部門窗口知道下一步、資料放哪裡、遇到例外找誰」才比較接近顧客價值。兩者都要寫，但不能混成同一句。',
+        '一次先選一個主要價值，其餘作為支持理由。若一句話同時承諾最快、最便宜、最完整、最客製，顧客很難判斷哪一個是真的，團隊也很難同時守住。定位不是許願池，寫得越滿不代表越有方向。'],
+      ['問題四：憑什麼相信？把形容詞換成可確認的證據',
+        '證據可以是公開案例、流程、規格、作品、交付範圍、專業分工、認證或可查核資料。要分清楚「已經做到」「正在試」「希望帶來的好處」。功能存在不等於已證明省下多少時間，團隊成果也不能全部歸因一個人。',
+        '如果目前沒有足夠證據，不必硬說自己領先。可以先把定位寫成假設，選一個小型服務或頁面測試，再累積適合公開的證據。誠實說清楚範圍，往往比一排沒有出處的最高級形容詞更能讓人放心。'],
+      ['問題五：和替代方式相比，你選擇強調什麼，也不做什麼？',
+        '英國 Business.gov.uk 建議理解競爭者如何定價、推廣與提供服務，以及自己的產品有何不同、適合放在市場哪裡。差異不一定是全球唯一，也可以是明確取捨：先小型試跑再擴大、保留人工覆核、服務特定地區，或把交接與維護納入交付。',
+        '同時寫出不適合的情況。例如需要大量即時客服、保證特定成效或完全代營運的客戶，可能不適合某個小型方案。願意說清楚邊界，不是把生意推出門，而是避免雙方進門後才發現拿錯號碼牌。'],
+      ['假設範例：第一次辦企業工作坊的窗口',
+        '以下是教學情境，不是實際客戶或成效案例。定位練習可以寫成：「給第一次籌辦跨部門工作坊、需要在四週內把資料與分工整理好的行銷窗口，我們提供從企劃到現場交接的一頁式工作路線，讓參與者知道下一步；不同於只交付活動流程表，我們把責任、資料位置與例外處理一起說清楚。」',
+        '接著要逐句找證據：服務頁是否看得到交付範圍？範本是否真的包含責任與例外？客服能否說明不包含什麼？若答不出來，就先修產品與流程，不要急著把定位句換成更華麗的版本。'],
+      ['把五個答案寫成一句定位句，再拿去測四個接點',
+        '可以使用這個內部模板：「給＿＿（優先客群），在＿＿（需求情境）時，我們提供＿＿（品類或做法），幫助他＿＿（主要價值）；和＿＿（替代方式）相比，我們的差異是＿＿（可確認證據或取捨）。」這是整理工具，不是每個空格都要硬塞進廣告。',
+        '完成後檢查四個接點：產品是否真的交付這個價值、首頁是否先回答這個問題、內容是否提供相關證據、客服與流程是否接得住。再選一個頁面、一種客群與一個下一步試跑，觀察合適詢問、常見疑問與完成行動，不只看曝光或按讚。'],
+      ['Anson 會怎麼判斷：能被日常工作證明的定位，才值得放大',
+        '我的判斷是，定位不能只在簡報裡成立。品牌說自己簡單，表單卻要填十五格；說重視交接，資料仍散在三個群組；說為新手設計，第一頁卻全是術語，這些落差會比口號更快教會顧客怎麼理解品牌。',
+        '我會先選一個客群、一個情境與一個可確認價值，把產品、頁面、內容與服務路線對齊，再用真實問題修正。定位不是一次寫到完美，而是讓團隊知道這一輪先守住什麼。你的品牌現在最難說清楚的是服務誰、主要價值，還是可信證據？']
+    ],
+    takeaways:['品牌定位要說清楚優先客群、需求情境、主要價值、可信證據，以及相對於替代方式的差異與取捨。','定位、品牌識別與廣告口號不是同一件事；定位應先成為產品、網站、內容、客服與交付的共同判斷。','先寫一版定位假設，選一個頁面與一個下一步小型試跑，再用合適詢問、常見疑問與完成行動修正。'],
+    faq:[
+      ['品牌定位和品牌形象有什麼不同？','品牌定位是希望因為什麼價值，被哪一群人記住；品牌形象則是顧客實際形成的整體印象。定位是品牌的選擇，形象還會受到產品、內容、服務與他人經驗影響。'],
+      ['品牌定位一定要和競爭者完全不同嗎？','不必宣稱全球唯一，但要有對目標客群有意義的差異或取捨，並能提出證據。差異可以來自服務情境、流程、交付範圍、專業分工或維護方式。'],
+      ['品牌定位句可以直接當廣告標語嗎？','可以再改寫，但通常不必原封不動使用。定位句是內部判斷工具，會包含客群、情境、價值、替代方式與證據；廣告標語則要配合特定媒體與溝通任務。'],
+      ['小品牌沒有研究預算，怎麼驗證定位？','先整理匿名化的常見詢問、網站搜尋字詞、客服問題與沒有完成下一步的原因，再訪談少量可能使用者。用一個頁面、一個方案與一個關鍵行動試跑，並保留能推翻原假設的問題。']
+    ],
+    sources:[
+      {title:'American Marketing Association：Branding 與 Brand Positioning（2026-11-13 查核）',url:'https://www.ama.org/topics/brand-and-branding/'},
+      {title:'Business.gov.uk：Creating your business brand（2026-11-13 查核）',url:'https://www.business.gov.uk/support/ideas-planning-strategy/creating-business-brand/'},
+      {title:'U.S. Small Business Administration：Market research and competitive analysis（2026-11-13 查核）',url:'https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis'},
+      {title:'先讀：用 5 個欄位找出目標客群',url:'../target-audience-five-fields-not-everyone/'},
+      {title:'延伸閱讀：Persona 人物誌怎麼寫',url:'../persona-six-fields-evidence-based-guide/'},
+      {title:'延伸閱讀：STP 市場區隔、目標客群與定位',url:'../stp-segmentation-targeting-positioning-guide/'},
+      {title:'品牌內容與跨平台整合案例',url:'../../cases/content/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'persona-six-fields-evidence-based-guide',
     title:'Persona 是什麼？人物誌別只寫年齡興趣，先整理這 6 個欄位',
     category:'品牌與目標客群',
-    published:'2026-11-12',modified:'2026-11-12',topicId:'persona-six-fields-evidence-based-guide',aiAssisted:true,
+    published:'2026-11-12',modified:'2026-11-13',topicId:'persona-six-fields-evidence-based-guide',aiAssisted:true,
     description:'Persona（人物誌）怎麼寫才有用？用需求情境、任務、現在做法、選擇條件、接觸路線、證據與日期 6 個欄位，整理能幫團隊做決定的顧客代表。',
     answer:'Persona（人物誌）是以使用者研究與可確認資料為基礎，整理某一群人的需求、行為、目標與使用情境，讓團隊在產品、內容、通路與服務上有共同判斷。它不是一位真實顧客，也不是靠想像填滿的角色傳記。第一版可整理六個欄位：需求情境、想完成的任務、目前做法、選擇條件與疑慮、接觸路線與下一步、資料來源與更新日期。',
     sections:[
@@ -87,6 +144,7 @@ export const notes = [
       {title:'GOV.UK Service Manual：Learning about users and their needs（2026-11-12 查核）',url:'https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs'},
       {title:'GOV.UK Service Manual：User research for government services（2026-11-12 查核）',url:'https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design'},
       {title:'先讀：用 5 個欄位找出目標客群',url:'../target-audience-five-fields-not-everyone/'},
+      {title:'下一步：用 5 個問題整理品牌定位',url:'../brand-positioning-five-questions-positioning-statement/'},
       {title:'延伸閱讀：STP 市場區隔、目標客群與品牌定位',url:'../stp-segmentation-targeting-positioning-guide/'},
       {title:'品牌問卷與需求路由案例',url:'../../cases/quiz/'}
     ],
@@ -96,7 +154,7 @@ export const notes = [
     slug:'target-audience-five-fields-not-everyone',
     title:'目標客群怎麼找？別再只寫「所有人」，先整理這 5 個欄位',
     category:'品牌與目標客群',
-    published:'2026-11-11',modified:'2026-11-12',topicId:'target-audience-five-fields-not-everyone',aiAssisted:true,
+    published:'2026-11-11',modified:'2026-11-13',topicId:'target-audience-five-fields-not-everyone',aiAssisted:true,
     description:'目標客群怎麼找？用需求情境、問題與替代方式、選擇標準、可接觸位置、驗證方式 5 個欄位，整理能執行也能修正的客群假設。',
     answer:'目標客群不是所有可能購買的人，而是品牌現階段最值得優先理解、溝通與服務的一群人。可以先整理五個欄位：需求在什麼情境發生、正在處理什麼問題與使用哪些替代方式、選擇時在意什麼、能在哪裡接觸到，以及要用什麼真實資料驗證。先選一群人做小型試跑，不代表拒絕其他顧客，而是讓有限的產品、內容與服務資源先對準同一個問題。',
     sections:[
@@ -139,6 +197,7 @@ export const notes = [
       {title:'Australian Government business.gov.au：Identify your target market（2026-11-11 查核）',url:'https://business.gov.au/marketing-and-advertising/identify-your-target-market'},
       {title:'U.S. Small Business Administration：Market research and competitive analysis（2026-11-11 查核）',url:'https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis'},
       {title:'下一步：用 6 個欄位建立 Persona 人物誌',url:'../persona-six-fields-evidence-based-guide/'},
+      {title:'下一步：用 5 個問題整理品牌定位',url:'../brand-positioning-five-questions-positioning-statement/'},
       {title:'延伸閱讀：STP 市場區隔、目標客群與品牌定位',url:'../stp-segmentation-targeting-positioning-guide/'},
       {title:'延伸閱讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
       {title:'品牌問卷與需求路由案例',url:'../../cases/quiz/'}
@@ -546,7 +605,7 @@ export const notes = [
     slug:'stp-segmentation-targeting-positioning-guide',
     title:'STP 是什麼？市場區隔、目標客群與品牌定位的白話教學',
     category:'行銷入門與策略',
-    published:'2026-10-31',modified:'2026-11-11',topicId:'stp-segmentation-targeting-positioning-guide',aiAssisted:true,
+    published:'2026-10-31',modified:'2026-11-13',topicId:'stp-segmentation-targeting-positioning-guide',aiAssisted:true,
     description:'STP 分析怎麼做？從市場區隔、目標客群到品牌定位，用假設的香氛品牌範例與一頁練習，把「想賣給所有人」整理成可以執行的選擇。',
     answer:'STP 是市場區隔（Segmentation）、目標選擇（Targeting）與品牌定位（Positioning）的縮寫。先依需求、情境或行為，把大市場分成有差異的群體；再選出品牌有能力服務、也值得優先投入的客群；最後說清楚品牌希望在這群人心中，因為哪個價值而被記住。STP 的重點不是排除所有人，而是先決定有限資源要對誰說清楚。',
     sections:[
@@ -593,6 +652,7 @@ export const notes = [
       {title:'American Marketing Association：Better Segmentation for Better Insights（2026-10-31 查核）',url:'https://www.ama.org/marketing-news/better-segmentation-for-better-insights/'},
       {title:'American Marketing Association：Digital Marketing Strategy 的區隔方式（2026-10-31 查核）',url:'https://www.ama.org/marketing-news/how-to-create-a-digital-marketing-strategy/'},
       {title:'下一步：用 5 個欄位找出目標客群',url:'../target-audience-five-fields-not-everyone/'},
+      {title:'下一步：用 5 個問題整理品牌定位',url:'../brand-positioning-five-questions-positioning-statement/'},
       {title:'延伸閱讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
       {title:'延伸閱讀：行銷 4P 是什麼？',url:'../marketing-4p-beginner-guide/'},
       {title:'福韻品牌內容與跨平台整合：公開參與範圍',url:'../../cases/content/'}
