@@ -1,5 +1,24 @@
 [
   {
+    "id": "value-proposition-four-fields-customer-choice",
+    "pillar": "品牌與目標客群",
+    "title": "價值主張怎麼寫？用 4 個欄位說清楚顧客為什麼選你",
+    "angle": "用顧客情境、問題與替代方式、想得到的結果、證據與差異，把功能清單整理成可測試的購買理由",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-14",
+    "slug": "value-proposition-four-fields-customer-choice",
+    "targetQueries": [
+      "價值主張",
+      "價值主張怎麼寫",
+      "Value Proposition",
+      "價值主張範例",
+      "購買理由"
+    ]
+  },
+  {
     "id": "brand-positioning-five-questions-positioning-statement",
     "pillar": "品牌與目標客群",
     "title": "品牌定位怎麼做？先用 5 個問題說清楚你幫誰、為什麼選你",
