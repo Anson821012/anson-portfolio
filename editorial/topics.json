@@ -421,10 +421,15 @@
     "id": "content-measure",
     "pillar": "社群與內容行銷",
     "title": "文章有人看，接下來該觀察什麼？",
-    "angle": "閱讀到理解、詢問的觀察指標",
+    "angle": "把被發現、被閱讀、走下一步與有效詢問分成四層，搭配每週回顧方法",
     "service": "brand-marketing",
     "case": "content",
-    "status": "planned"
+    "status": "published",
+    "published": "2026-11-15",
+    "slug": "content-marketing-performance-four-levels",
+    "cluster": "社群與內容行銷",
+    "intent": "practical-long-tail",
+    "targetQueries": ["內容行銷成效", "內容行銷 KPI", "文章成效", "內容行銷指標", "GA4 內容分析"]
   },
   {
     "id": "event-goal",

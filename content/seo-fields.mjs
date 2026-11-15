@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/content-marketing-performance-four-levels/": {"seoTitle": "內容行銷成效怎麼看？4 層指標與回顧表｜蔡鈞佑 Anson Tsai", "description": "內容行銷成效怎麼看？把曝光與點擊、閱讀與互動、下一步、有效詢問與成交分成 4 層，附每週回顧方法。", "tags": ["內容行銷成效", "內容行銷 KPI", "文章成效", "GA4 內容分析", "Search Console"]},
   "notes/value-proposition-four-fields-customer-choice/": {"seoTitle": "價值主張怎麼寫？4 個欄位與範例｜蔡鈞佑 Anson Tsai", "description": "價值主張怎麼寫？用顧客情境、問題與替代方式、結果、證據與差異 4 個欄位，附一句話模板、假設範例與驗證方法。", "tags": ["價值主張", "價值主張怎麼寫", "Value Proposition", "價值主張範例", "購買理由"]},
   "notes/brand-positioning-five-questions-positioning-statement/": {"seoTitle": "品牌定位怎麼做？5 個問題與定位句範例｜蔡鈞佑 Anson Tsai", "description": "品牌定位怎麼做？用客群、情境、價值、證據與差異 5 個問題，寫出能接到產品、網站、內容與服務的品牌定位句。", "tags": ["品牌定位", "品牌定位怎麼做", "品牌定位範例", "定位句", "品牌策略"]},
   "notes/persona-six-fields-evidence-based-guide/": {"seoTitle": "Persona 是什麼？人物誌 6 個欄位與範例｜蔡鈞佑 Anson Tsai", "description": "Persona 人物誌怎麼寫？用情境、任務、現在做法、選擇條件、接觸路線、證據與日期 6 個欄位，附假設範例與驗證方法。", "tags": ["Persona", "Persona 是什麼", "人物誌", "Persona 範例", "Persona 怎麼寫"]},
