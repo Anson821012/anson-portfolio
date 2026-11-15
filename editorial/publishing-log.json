@@ -1,5 +1,79 @@
 [
   {
+    "date": "2026-11-15",
+    "topicId": "content-measure",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
+    "title": "內容行銷成效怎麼看？別只看流量，先分 4 層指標",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-15T09:06:00+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址，畫面顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』。『要求建立索引』按鈕可用，但本輪尚未點擊；透過瀏覽器提交索引要求屬於會改變外部平台狀態的動作，需在動作當下取得使用者確認。",
+    "sources": [
+      "https://support.google.com/webmasters/answer/7576553",
+      "https://support.google.com/analytics/answer/11109416",
+      "https://support.google.com/analytics/answer/12926615",
+      "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+      "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-15",
+    "aiAssisted": true,
+    "editorialNotes": "建立『社群與內容行銷』實作長尾頁，把內容成效分成被發現、被閱讀、走下一步與有效詢問／成交四層，補上每週回顧方法及 Anson 從後往前找斷點的判斷。與 GA4 工具入門頁、增加網站流量主幹頁的搜尋意圖分開，並和流量主幹頁建立雙向內部連結；未把曝光、瀏覽或事件直接當成詢問與成交，也未聲稱熱門搜尋量或保證成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-15",
+      "source": "Google Search Console 三個月搜尋結果成效報表",
+      "finding": "可用查詢資料包含『ga4 事件』與『ga4 流量來源』，顯示網站已有與內容衡量相鄰的搜尋曝光；本篇仍只視為需求假設，未把查詢曝光寫成搜尋量、排名或成效保證。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-15",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。搜尋到的 1111 韻好有限公司聯絡人資料已在首頁與既有同步內容呈現；福韻 2026-10-06 署名文章早於網站已收錄的 2026-11-01 與 2026-10-30 署名紀錄。",
+      "sources": [
+        "https://www.1111.com.tw/corp/73136378/?agent=newsWeb",
+        "https://www.fuyunlovemommy.com/blogs/news/tagged/%E7%A6%8F%E9%9F%BB%E6%9C%88%E5%AD%90%E9%A4%90",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏品牌、帳號、作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 43661294417,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/43661294417",
+      "headSha": "09edf85bcbd5bfa71957e39c690228899615ac87"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, 4 visible FAQ items, official sources, related brand-marketing service, website traffic and GA4 notes, content case link, reciprocal website traffic link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 85,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "09edf85bcbd5bfa71957e39c690228899615ac87",
+    "publishedAt": "2026-11-15T09:05:19+0800",
+    "liveVerifiedAt": "2026-11-15T09:06:49+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口及 Sitemap 均已驗證。Search Console 已確認目前未編入索引，但尚未點擊要求建立索引；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-14",
     "topicId": "value-proposition-four-fields-customer-choice",
     "url": "https://anson821012.github.io/anson-portfolio/notes/value-proposition-four-fields-customer-choice/",
