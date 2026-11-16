@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-11-16",
+    "topicId": "marketing-funnel-four-stages-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-funnel-four-stages-guide/",
+    "title": "行銷漏斗是什麼？從看見、考慮到行動與回訪的 4 階段圖解",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_checked",
+    "indexingCheckedAt": null,
+    "indexingEvidence": "正式頁與 Sitemap 已可讀；本輪未進入 Search Console 檢查或送出索引要求，因此不宣稱已申請或已收錄。透過瀏覽器提交索引要求屬於會改變外部平台狀態的動作，需在動作當下取得使用者確認。",
+    "sources": [
+      "https://www.thinkwithgoogle.com/_qs/documents/17977/TwG_CMO_CFO_Media_Effectiveness_Guide.pdf",
+      "https://business.gov.au/planning/business-plans/develop-your-marketing-plan",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-strategy-seven-steps/",
+      "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-16",
+    "aiAssisted": true,
+    "editorialNotes": "建立『漏斗、數據與成效』主幹頁，用看見、考慮、行動與回訪四段整理顧客問題、內容接點、下一步與主要指標，說明漏斗是找斷點的共同地圖，不是顧客必須直線前進的預言。加入明確標示為假設的高雄手作甜點企業送禮練習，以及 Anson 從結果往前找斷點的判斷；與行銷策略、內容成效頁建立雙向內部連結，未聲稱熱門搜尋量、流量、詢問或成交成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-16",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "目前可用資料未建立『行銷漏斗』的直接搜尋量或查詢需求證據；本篇依既定行銷搜尋主題規劃，作為連接行銷策略與內容成效的需求假設與主幹頁，未把假設寫成熱門關鍵字或成效保證。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-16",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網最新可確認的蔡鈞佑署名內容仍為 2026-11-01 與 2026-10-30，網站既有內容已收錄；搜尋到的 LinkedIn 價值主張分享及 Apple Podcasts 公開製作名單亦已由既有文章或作品資料涵蓋。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/",
+        "https://podcasts.apple.com/tw/podcast/%E5%A5%B3%E4%BA%BA%E4%B8%8D%E7%B0%A1%E5%96%AE/id1792420169"
+      ],
+      "updatedPages": [],
+      "boundary": "同名、政治人物或缺乏品牌、帳號、作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "published_with_source_refresh_failure",
+      "workflowRunId": 43785283345,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/43785283345",
+      "headSha": "843374707b082f219d9bd05c9763da167c271832",
+      "pagesDeployment": "success",
+      "workflowConclusion": "failure",
+      "sourceRefresh": "content: error (URLError); site retained the previous verified public data while publishing the new article"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, 4 visible FAQ items, two current official sources, related brand-marketing service, marketing strategy and content measurement notes, content case link, reciprocal links, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 86,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "843374707b082f219d9bd05c9763da167c271832",
+    "publishedAt": "2026-11-16T09:17:22+0800",
+    "liveVerifiedAt": "2026-11-16T09:18:13+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-funnel-four-stages-guide/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口及 Sitemap 均已驗證。工作流程因 content 公開資料來源 URLError 最終標記失敗，但 Pages 已成功發布，並保留上一份已驗證公開資料。Search Console 未檢查或送出索引要求；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-15",
     "topicId": "content-measure",
     "url": "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
