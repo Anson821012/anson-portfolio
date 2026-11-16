@@ -43,10 +43,67 @@ export const services = [
 
 export const notes = [
   {
+    slug:'marketing-funnel-four-stages-guide',
+    title:'行銷漏斗是什麼？從看見、考慮到行動與回訪的 4 階段圖解',
+    category:'漏斗、數據與成效',
+    published:'2026-11-16',modified:'2026-11-16',topicId:'marketing-funnel-four-stages-guide',aiAssisted:true,
+    description:'行銷漏斗是什麼？用看見、考慮、行動、回訪 4 階段整理顧客問題、內容、下一步與指標，附一頁漏斗練習。',
+    answer:'行銷漏斗是一張用來整理顧客從認識品牌到採取行動、再次回來的工作地圖。新手可以先分成四段：看見、考慮、行動、回訪。每一段都要寫清楚顧客在想什麼、品牌提供什麼內容、合理的下一步，以及要用哪個指標觀察。真實顧客不一定照直線前進，所以漏斗適合找斷點，不適合拿來假設每個人都會照表購買。',
+    sections:[
+      ['先說答案：漏斗不是把人推下去，而是找出哪一段接不起來',
+        '行銷漏斗把顧客和品牌的關係分成幾個階段，常見做法是看見、考慮、行動與回訪。它的用途不是替每位顧客預言購買路線，而是幫團隊回答：現在缺的是被發現、被理解、完成下一步，還是讓既有顧客願意再回來？',
+        'Google 的行銷衡量指南用 Awareness、Consideration、Action、Loyalty 四段整理顧客旅程，也提醒各階段應使用符合原本目標的結果衡量。資料查核日期：2026 年 11 月 16 日。若用短期銷售衡量原本負責建立認識的內容，就像叫新同事第一天上班先交年度成果，大家都會有點尷尬。'],
+      ['漏斗和顧客旅程差在哪？一個看階段，一個看實際接點',
+        '漏斗把許多人的狀態濃縮成階段，方便安排目標、內容與指標；顧客旅程則更靠近個別情境，會整理顧客在哪裡遇見品牌、帶著什麼問題、接觸哪些頁面或人，以及過程中卡在哪裡。兩者可以一起用，但不能互相取代。',
+        '真實路線通常不是直線。有人先看價格再回頭讀品牌故事，有人由朋友推薦直接詢問，也有人買過一次後才開始追蹤社群。漏斗是共同地圖，不是排隊動線；看到顧客回頭比較，不代表他走錯路。'],
+      ['第一階段「看見」：先確認出現在合適的人面前',
+        '這一段的問題是「合適的人知不知道你存在」。入口可能來自搜尋、社群、廣告、活動、合作推薦或既有顧客分享。內容要先回答一個容易辨認的問題，讓人知道你在談什麼、和他有沒有關係。',
+        '可觀察曝光、觸及、搜尋查詢、網站新使用者與來源，但不要把曝光直接寫成需求。若曝光很多、進站很少，先檢查題目、受眾與說法是否對得上；若根本沒有被合適的人看見，再討論分發與入口。'],
+      ['第二階段「考慮」：讓人能比較、理解，也看得到證據',
+        '知道品牌存在，不等於已經理解方案。考慮階段要協助讀者回答：這能解決我的情況嗎、和其他做法差在哪、需要準備什麼、有哪些限制、為什麼可以相信？比較文、服務說明、常見問題、公開案例與流程邊界都在這裡工作。',
+        '可觀察重要頁面閱讀、相關內容移動、案例與服務頁點擊，以及詢問中出現的問題。停留時間長不一定代表喜歡，也可能是資訊難找；報表只能指出可疑位置，仍要實際打開手機頁面走一次。'],
+      ['第三階段「行動」：只安排一個清楚、做得到的下一步',
+        '行動不一定立刻購買。依服務情境，它可以是查看方案、下載清單、預約試談、填寫詢問表單或完成訂單。重點是顧客知道按下去會發生什麼，也知道需要提供哪些資料、多久會收到回覆。',
+        '可觀察主要按鈕、表單開始與完成、預約、結帳或其他已定義事件，再和實際詢問或訂單核對。若按鈕有人點、表單卻沒完成，先修欄位、條件與錯誤訊息；不要急著再買一批流量來陪前一批人一起卡住。'],
+      ['第四階段「回訪」：成交後仍有服務、提醒與關係',
+        'Google 指南把 Loyalty 放進顧客旅程，提醒品牌關係不在第一次行動後結束。回訪可能是再次購買、續約、閱讀教學、回覆服務提醒、留下評價或願意推薦。這一段更需要客服、交付與營運一起參與。',
+        '可觀察回訪、續購、留存、服務問題、評價與推薦，但要先定義適合自己的週期。高頻商品和一年一次的專案不能用同一個月份比較。沒有建立同意與正確聯絡方式，也不要把大量訊息當成顧客關係。'],
+      ['用一個假設情境，把四段接起來',
+        '假設一間高雄手作甜點店想承接企業送禮：看見階段用文章回答「企業禮盒怎麼選」；考慮階段提供口味、保存、交期、最低數量與包裝案例；行動階段讓採購填寫日期、數量與需求；回訪階段保留交付確認、節日前提醒與再次詢問入口。',
+        '這不是實際客戶案例，也不預設一定成交。練習的重點是讓每段只有一個主要任務。如果入口談企業送禮，服務頁卻只剩婚禮照片，表單又要求十幾項還沒決定的資料，問題不是漏斗畫得不夠漂亮，而是接點彼此沒有接上。'],
+      ['一頁漏斗練習：每一段只填四格',
+        '拿一張紙畫四列，每列填：顧客此刻的問題、品牌提供的內容或接點、合理的下一步、要觀察的主要指標。再用手機從入口走到完成，記下訊息不一致、連結找不到、條件不清楚與沒有人接手的地方。',
+        '第一次不用把所有管道都放進去。選一種優先客群、一個入口、一個承接頁與一個主要行動，跑兩到四週可停止的小型試驗。資料少時只寫觀察與待確認，不把一次詢問說成穩定轉換。'],
+      ['Anson 會怎麼判斷：從結果往前找斷點，而不是每段一起加工作',
+        '我的判斷會從後往前看：有沒有合適的詢問或回訪；有沒有完成合理下一步；服務、案例與條件有沒有被理解；合適的人能不能找到入口。斷在哪一段，就先修哪一段。這樣比四個階段同時加貼文、加廣告、加表單，容易知道改動有沒有用。',
+        '漏斗也要接回真實營運。內容有人看，客服卻不知道怎麼回；表單有人填，回覆時間沒有安排；訂單完成，交付資訊又分散，流量只會把小麻煩放大。你現在最需要整理的是看見、考慮、行動，還是回訪？']
+    ],
+    takeaways:[
+      '行銷漏斗可先分為看見、考慮、行動與回訪四段，用來分工與找斷點，不是預言每位顧客的直線路線。',
+      '每段寫清顧客問題、內容或接點、合理下一步與一個主要指標，避免用曝光直接代表詢問或成交。',
+      '先用一種客群、一個入口、一個承接頁與一個主要行動小型試跑，再依真實資料修正。'
+    ],
+    faq:[
+      ['行銷漏斗有哪些階段？','新手可以先用看見、考慮、行動與回訪四段。不同產業會拆成更多階段，但名稱不是重點；要能說清楚顧客問題、品牌接點、下一步與衡量方式。'],
+      ['行銷漏斗和顧客旅程一樣嗎？','不完全一樣。漏斗把多數顧客濃縮成共同階段，方便安排目標與指標；顧客旅程更重視某種情境下的實際接點、感受與卡點。兩者可一起使用。'],
+      ['每一層漏斗都要追很多指標嗎？','不用。先為每段選一個主要任務與一至兩個輔助指標。看見可看合適曝光與進站，考慮看重要頁面與比較行為，行動看完成事件，回訪看留存、續購或服務紀錄。'],
+      ['漏斗最下面沒成交，要先增加流量嗎？','不一定。先從後往前檢查表單、服務條件、證據與入口客群。若有人看、有人點，卻在同一位置中斷，先修承接流程通常比立刻增加流量更容易驗證。']
+    ],
+    sources:[
+      {title:'Think with Google：Marketing effectiveness across the customer journey（2026-11-16 查核）',url:'https://www.thinkwithgoogle.com/_qs/documents/17977/TwG_CMO_CFO_Media_Effectiveness_Guide.pdf'},
+      {title:'Australian Government business.gov.au：Develop your marketing plan（2026-11-16 查核）',url:'https://business.gov.au/planning/business-plans/develop-your-marketing-plan'},
+      {title:'先讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
+      {title:'下一步：內容行銷成效怎麼看？',url:'../content-marketing-performance-four-levels/'},
+      {title:'內容整合與影音企劃案例',url:'../../cases/content/'},
+      {title:'品牌行銷與內容整合服務',url:'../../services/brand-marketing/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'content-marketing-performance-four-levels',
     title:'內容行銷成效怎麼看？別只看流量，先分 4 層指標',
     category:'社群與內容行銷',
-    published:'2026-11-15',modified:'2026-11-15',topicId:'content-measure',aiAssisted:true,
+    published:'2026-11-15',modified:'2026-11-16',topicId:'content-measure',aiAssisted:true,
     description:'內容行銷成效怎麼看？把曝光與點擊、閱讀與互動、下一步、有效詢問與成交分成 4 層，附每週回顧表與判斷方法。',
     answer:'內容行銷成效不要只看瀏覽量。可以分成四層：第一層看內容有沒有被合適的人發現；第二層看進站後是否真的閱讀與理解；第三層看是否完成服務頁、下載、訂閱或詢問等下一步；第四層再回到有效詢問、成交、回訪與實際營運紀錄。每篇內容先選一個主要任務與一個關鍵行動，再用 Search Console、GA4 和人工紀錄交叉判斷。',
     sections:[
@@ -89,6 +146,7 @@ export const notes = [
       {title:'Google Search Console：搜尋成效報表（2026-11-15 查核）',url:'https://support.google.com/webmasters/answer/7576553'},
       {title:'Google Analytics：使用者互動與互動時間（2026-11-15 查核）',url:'https://support.google.com/analytics/answer/11109416'},
       {title:'Google Analytics：事件報表與關鍵事件（2026-11-15 查核）',url:'https://support.google.com/analytics/answer/12926615'},
+      {title:'主幹閱讀：行銷漏斗是什麼？',url:'../marketing-funnel-four-stages-guide/'},
       {title:'先讀：網站流量怎麼增加？',url:'../increase-website-traffic-four-routes/'},
       {title:'GA4 新手實作：流量來源、事件與關鍵事件',url:'../ga4-beginner-traffic-events-key-events/'},
       {title:'內容整合與影音企劃案例',url:'../../cases/content/'},
@@ -833,7 +891,7 @@ export const notes = [
     slug:'marketing-strategy-seven-steps',
     title:'行銷策略怎麼做？新手從目標、客群到執行的 7 個步驟',
     category:'行銷入門與策略',
-    published:'2026-10-29',modified:'2026-11-02',topicId:'marketing-strategy-seven-steps',aiAssisted:true,
+    published:'2026-10-29',modified:'2026-11-16',topicId:'marketing-strategy-seven-steps',aiAssisted:true,
     description:'行銷策略不是先排貼文。用 7 個步驟整理目標、客群、價值、顧客路線、管道、行動與指標，附新手可直接填寫的一頁範例。',
     answer:'行銷策略是為了達成一個明確結果，選擇要服務的客群、要解決的問題、要提供的價值，以及用哪些接點把顧客帶到下一步。新手可以依序整理：問題與目標、目標客群、價值主張、顧客路線、管道分工、執行資源、衡量與調整。策略決定取捨，貼文、廣告與活動才是執行方法。',
     sections:[
@@ -879,6 +937,7 @@ export const notes = [
       {title:'American Marketing Association：Marketing Strategy（2026-10-29 查核）',url:'https://www.ama.org/topics/marketing-strategy/'},
       {title:'Google Analytics Help：Report on key events（2026-10-29 查核）',url:'https://support.google.com/analytics/answer/12571843'},
       {title:'Think with Google：Customer journey mapping（2026-10-29 查核）',url:'https://www.thinkwithgoogle.com/_qs/documents/5795/1196-Journey-Mapping-Download.pdf'},
+      {title:'把策略接成四階段：行銷漏斗是什麼？',url:'../marketing-funnel-four-stages-guide/'},
       {title:'延伸閱讀：行銷是什麼？',url:'../what-is-marketing-beginner-guide/'},
       {title:'延伸閱讀：數位行銷是什麼？',url:'../what-is-digital-marketing-channels-guide/'},
       {title:'下一步：行銷 4P 是什麼？',url:'../marketing-4p-beginner-guide/'},
