@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-11-17",
+    "topicId": "customer-journey-five-fields-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/customer-journey-five-fields-guide/",
+    "title": "顧客旅程是什麼？用 5 個欄位找出顧客在哪裡卡住",
+    "publication": "published",
+    "indexRequest": "not_attempted_search_console_unavailable",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_checked",
+    "indexingCheckedAt": null,
+    "indexingEvidence": "正式頁與 Sitemap 已可讀；本輪嘗試開啟既有 Search Console 資源時，網址檢查頁回傳 404，重新開啟資源頁也逾時，未能確認索引狀態或送出要求。因此不宣稱已申請或已收錄，亦未重複提交。",
+    "sources": [
+      "https://www.gov.uk/service-manual/design/map-a-users-whole-problem",
+      "https://www.gov.uk/service-manual/user-research/creating-an-experience-map",
+      "https://www.local.gov.uk/our-support/transformation/transformation-capability-framework/design-journey",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-funnel-four-stages-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/brand-image-beyond-logo-touchpoints/",
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-17",
+    "aiAssisted": true,
+    "editorialNotes": "建立『漏斗、數據與成效』實作長尾頁，以情境與任務、行動與接點、問題與感受、證據與卡點、下一步與負責人五個欄位整理顧客旅程。明確區分行銷漏斗、顧客旅程與內部流程圖，加入標示為假設的高雄企業工作坊報名練習，以及 Anson 先修一個有證據斷點的判斷；與行銷漏斗頁建立雙向內部連結，未聲稱熱門搜尋量、流量、詢問或成交成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-17",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站沒有以『顧客旅程怎麼畫』為主要搜尋意圖的獨立頁面；既有行銷漏斗頁著重共同階段與指標，品牌形象頁著重五個品牌接點。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；儲存庫可用 Search Console 資料不是本網站的當日查詢證據，因此未聲稱搜尋量或熱門程度。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-17",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網可見的蔡鈞佑署名內容沒有比網站既有 2026-11-01 與 2026-10-30 紀錄更新；搜尋到的 LinkedIn 價值主張分享已連到網站既有 2026-11-14 文章。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news/tagged/%E7%A6%8F%E9%9F%BB%E6%9C%88%E5%AD%90%E9%A4%90",
+        "https://cn.linkedin.com/posts/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181_%E5%83%B9%E5%80%BC%E4%B8%BB%E5%BC%B5-%E5%93%81%E7%89%8C%E5%AE%9A%E4%BD%8D-%E5%93%81%E7%89%8C%E8%A1%8C%E9%8A%B7-activity-7527230006331346944-oIgR",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "published_with_source_refresh_failure",
+      "workflowRunId": 43993183190,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/43993183190",
+      "headSha": "3ed793e481d5e3d2d8909511fec1986e75e77bff",
+      "pagesDeployment": "success",
+      "workflowConclusion": "failure",
+      "sourceRefresh": "search: error (TimeoutError); content and revenue: ok; site retained the previous verified search data while publishing the new article"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, 4 visible FAQ items, three current official sources, related brand-marketing service, marketing funnel and brand touchpoint notes, quiz case link, reciprocal funnel link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 87,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "3ed793e481d5e3d2d8909511fec1986e75e77bff",
+    "publishedAt": "2026-11-17T09:09:23+0800",
+    "liveVerifiedAt": "2026-11-17T09:10:14+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/customer-journey-five-fields-guide/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口及 Sitemap 均已驗證。工作流程因 search 公開資料來源 TimeoutError 最終標記失敗，但 Pages 已成功發布，content 與 revenue 更新正常，搜尋資料保留上一份已驗證內容。Search Console 頁面錯誤，未檢查或送出索引要求；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-16",
     "topicId": "marketing-funnel-four-stages-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-funnel-four-stages-guide/",
