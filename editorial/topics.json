@@ -1,5 +1,24 @@
 [
   {
+    "id": "customer-journey-five-fields-guide",
+    "pillar": "漏斗、數據與成效",
+    "title": "顧客旅程是什麼？用 5 個欄位找出顧客在哪裡卡住",
+    "angle": "用情境與任務、行動與接點、問題與感受、證據與卡點、下一步與負責人五欄，畫出現況並找出可驗證的體驗斷點",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-17",
+    "slug": "customer-journey-five-fields-guide",
+    "targetQueries": [
+      "顧客旅程",
+      "Customer Journey",
+      "顧客旅程地圖",
+      "顧客旅程怎麼畫",
+      "顧客接點"
+    ]
+  },
+  {
     "id": "marketing-funnel-four-stages-guide",
     "pillar": "漏斗、數據與成效",
     "title": "行銷漏斗是什麼？從看見、考慮到行動與回訪的 4 階段圖解",
