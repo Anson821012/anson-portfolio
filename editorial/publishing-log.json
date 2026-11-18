@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-11-18",
+    "topicId": "conversion-rate-definition-calculation-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/conversion-rate-definition-calculation-guide/",
+    "title": "轉換率是什麼？先說清楚哪個動作算完成",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-18T10:31:13+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址，畫面顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』，尚未偵測到參照 Sitemap 或參照網頁。『要求建立索引』按鈕可用，但本輪尚未點擊；透過瀏覽器提交索引要求屬於會改變外部平台狀態的動作，需在動作當下取得使用者確認。",
+    "sources": [
+      "https://support.google.com/google-ads/answer/2684489",
+      "https://support.google.com/analytics/answer/13965727",
+      "https://support.google.com/analytics/answer/9267568",
+      "https://anson821012.github.io/anson-portfolio/notes/marketing-funnel-four-stages-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/customer-journey-five-fields-guide/",
+      "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
+      "https://anson821012.github.io/anson-portfolio/cases/quiz/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-18",
+    "aiAssisted": true,
+    "editorialNotes": "建立『漏斗、數據與成效』實作長尾頁，先定義完成動作、分母、期間與計數方式，再分清主要轉換、微轉換、GA4 關鍵事件、廣告轉換與實際成交。加入明確標示為練習的工作坊頁面範例、六欄轉換定義清單及 Anson 先修資料口徑再找斷點的判斷；與行銷漏斗頁建立雙向內部連結，未聲稱通用優良轉換率、搜尋量、詢問或成交成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-18",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站已有行銷漏斗、顧客旅程、內容成效與 GA4 入門頁，但沒有以『轉換率定義與公式』為主要搜尋意圖的獨立頁面。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；儲存庫沒有可驗證的當日搜尋量，因此未聲稱熱門程度或保證曝光。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-18",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網最新可確認的蔡鈞佑署名內容仍為 2026-11-01；LinkedIn 公開目錄可見的價值主張與內容行銷分享，均已對應網站既有 2026-11-14 與 2026-11-15 文章。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://cn.linkedin.com/directory/posts/j-1",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "published_with_source_refresh_failure",
+      "workflowRunId": 44223535631,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/44223535631",
+      "headSha": "b02d693fe04e6152d484cb66c51b9d5a05f593a3",
+      "pagesDeployment": "success",
+      "workflowConclusion": "failure",
+      "sourceRefresh": "content: error (TimeoutError); search and revenue: ok; site retained the previous verified content data while publishing the new article"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, 4 visible FAQ items, three current official sources, related brand-marketing service, marketing funnel, customer journey and content measurement notes, quiz case link, reciprocal funnel link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 88,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "b02d693fe04e6152d484cb66c51b9d5a05f593a3",
+    "publishedAt": "2026-11-18T10:29:55+0800",
+    "liveVerifiedAt": "2026-11-18T10:32:49+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/conversion-rate-definition-calculation-guide/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口及 Sitemap 均已驗證。工作流程因 content 公開資料來源 TimeoutError 最終標記失敗，但 Pages 已成功發布，search 與 revenue 更新正常，content 保留上一份已驗證資料。Search Console 已確認目前未收錄，未送出索引要求；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-17",
     "topicId": "customer-journey-five-fields-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/customer-journey-five-fields-guide/",
