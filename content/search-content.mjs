@@ -43,6 +43,59 @@ export const services = [
 
 export const notes = [
   {
+    slug:'conversion-rate-definition-calculation-guide',
+    title:'轉換率是什麼？先說清楚哪個動作算完成',
+    category:'漏斗、數據與成效',
+    published:'2026-11-18',modified:'2026-11-18',topicId:'conversion-rate-definition-calculation-guide',aiAssisted:true,
+    description:'轉換率怎麼算？先定義完成動作、分母與期間，再分清主要轉換、微轉換、GA4 關鍵事件與實際成交。',
+    answer:'轉換率是完成指定動作的次數或人數，占相關機會總數的比例。基本公式是「完成數 ÷ 機會數 × 100%」。真正要先說清楚的是：哪個動作算完成、分母是使用者、工作階段還是廣告互動、統計哪段期間，以及是否重複計算。沒有共同定義，同一個百分比也可能在回答不同問題。',
+    sections:[
+      ['先說答案：轉換率不只是一條公式，還要把完成和機會說清楚',
+        '轉換率的基本公式是「完成指定動作的次數或人數 ÷ 相關機會數 × 100%」。例如 500 次到達頁瀏覽中有 10 次完成詢問，若以到達頁瀏覽為分母，詢問完成率就是 2%。',
+        'Google Ads 官方把廣告轉換率定義為轉換次數除以同期可追蹤至轉換的廣告互動；若同一互動能計入多個轉換，比例甚至可能超過 100%。資料查核日期：2026 年 11 月 18 日。公式不難，難的是大家口中的「有轉換」常常不是同一件事。'],
+      ['先選一個主要轉換，再安排微轉換',
+        '主要轉換應接近這次行銷真正要完成的結果，例如付款完成、符合條件的詢問、預約成功或報名完成。微轉換則是走向結果前的重要步驟，例如看完服務條件、點擊聯絡方式、開始填表或下載說明。',
+        '微轉換可以幫你找斷點，但不能自動等於成交。若把滑動頁面、點按按鈕和完成詢問全部混成「轉換」，數字會很好看，營運端卻可能完全沒收到新案件。每份報表最好明列事件名稱、代表意思與資料來源。'],
+      ['分母不同，同一批資料會得到不同答案',
+        '假設一個明確標示為練習的品牌工作坊頁面有 500 次工作階段、25 次開始填表、10 次送出成功。以頁面工作階段為分母，表單完成率是 2%；以開始填表為分母，完成率是 40%。兩個數字都能算，但回答的是不同問題。',
+        '前者比較整條頁面到詢問的結果，後者比較表單本身是否讓人順利完成。報告轉換率時，至少把分子、分母、期間與篩選條件一起寫出來，不要只留下孤零零的 40%，讓下個月的自己猜謎。'],
+      ['GA4 的關鍵事件、廣告轉換與實際成交要分開',
+        'Google Analytics 目前把對企業重要的行為稱為「關鍵事件」；若要跨 Google Analytics 與 Google Ads 衡量或用於廣告優化，則可由 Analytics 事件建立轉換。官方也提醒，關鍵事件與轉換的用途、歸因、回溯期與計數方式可能不同。',
+        '因此 GA4 記到一次 generate_lead，不代表客服已確認需求有效，更不代表已成交。網站事件用來看行為，廣告平台用來看媒體與歸因，客服、業務或訂單資料再確認有效詢問、取消、重複及實際結果。三份資料可以互相核對，不要硬湊成完全一樣。'],
+      ['建立轉換定義時，先填這 6 個欄位',
+        '第一，動作名稱；第二，完成條件；第三，分母；第四，統計期間；第五，重複與取消怎麼處理；第六，最後由哪份資料確認。例如「有效合作詢問率」可定義為當月符合服務範圍且聯絡資料完整的詢問數，除以當月服務頁工作階段。',
+        '若資料還接不起來，可以先選一個主要轉換與兩個微轉換，小範圍跑一週。實際操作表單、檢查手機畫面、核對成功頁與事件，再抽查後台或客服紀錄。追蹤先求能對得上，不必第一天就蓋數據皇宮。'],
+      ['轉換率高低不能脫離客群、來源與成本',
+        '「多少算好」沒有一個能套用所有網站的答案。免費下載、預約諮詢與高單價企業採購的決策成本不同；品牌搜尋、冷流量廣告與既有顧客回訪的意圖也不同。先和自己的同一來源、同一頁面、同一轉換定義及相近期間比較。',
+        '轉換率上升也不一定代表生意更好。若入口縮得很窄，比例可能變高但有效詢問總數下降；若表單太鬆，完成數會增加但無效案件也可能增加。至少一起看完成數、有效比例、成本、回覆與後續結果。'],
+      ['Anson 會怎麼判斷：先修定義，再修真正的斷點',
+        '我會先從營運結果往前問：最後要確認的是付款、預約，還是符合條件的詢問？接著把一個主要轉換和兩個前置動作接回漏斗與顧客旅程，找出人是沒看懂、沒點擊、開始後放棄，還是送出後沒有被接住。',
+        '若追蹤名稱、成功條件與後台紀錄對不上，我不會急著換標題或加預算。先讓同一個動作在網站、分析工具與營運紀錄中說同一種語言，下一次修改才知道是在改善什麼。你現在最需要定義的是購買、預約、詢問，還是另一個完成動作？']
+    ],
+    takeaways:[
+      '轉換率的基本公式是完成數除以相關機會數再乘以 100%，但必須同時說明分子、分母、期間與計數方式。',
+      '主要轉換接近商業結果，微轉換用來找前置斷點；GA4 關鍵事件、廣告轉換與實際成交不能直接畫上等號。',
+      '先定義一個主要轉換、兩個微轉換，核對網站事件與後台紀錄，再依同一口徑比較與改善。'
+    ],
+    faq:[
+      ['轉換率怎麼算？','用完成指定動作的次數或人數，除以相關機會數，再乘以 100%。報告時要一起標明分子、分母、統計期間、篩選條件與是否重複計算。'],
+      ['什麼轉換率算好？','沒有適用所有產業與頁面的固定數字。先用相同客群、來源、頁面、轉換定義與相近期間比較，再一起看完成數、有效比例、成本與實際結果。'],
+      ['點擊按鈕算轉換嗎？','如果按鈕點擊是重要的前置動作，可以列為微轉換；但它不一定代表表單完成、有效詢問或成交。應另外追蹤後續完成與營運結果。'],
+      ['GA4 的關鍵事件等於實際成交嗎？','不一定。關鍵事件代表被設定為重要的網站或 App 行為；實際成交仍要用訂單、客服或業務紀錄確認，並處理重複、取消與無效案件。']
+    ],
+    sources:[
+      {title:'Google Ads Help：Conversion rate definition（2026-11-18 查核）',url:'https://support.google.com/google-ads/answer/2684489'},
+      {title:'Google Analytics Help：Conversions vs. key events（2026-11-18 查核）',url:'https://support.google.com/analytics/answer/13965727'},
+      {title:'Google Analytics Help：About key events（2026-11-18 查核）',url:'https://support.google.com/analytics/answer/9267568'},
+      {title:'先讀：行銷漏斗的 4 個階段',url:'../marketing-funnel-four-stages-guide/'},
+      {title:'延伸：顧客旅程的 5 個欄位',url:'../customer-journey-five-fields-guide/'},
+      {title:'延伸：內容行銷成效的 4 層指標',url:'../content-marketing-performance-four-levels/'},
+      {title:'品牌問卷與探索案例',url:'../../cases/quiz/'},
+      {title:'品牌行銷與內容整合服務',url:'../../services/brand-marketing/'}
+    ],
+    service:'brand-marketing',case:'quiz'
+  },
+  {
     slug:'customer-journey-five-fields-guide',
     title:'顧客旅程是什麼？用 5 個欄位找出顧客在哪裡卡住',
     category:'漏斗、數據與成效',
@@ -104,7 +157,7 @@ export const notes = [
     slug:'marketing-funnel-four-stages-guide',
     title:'行銷漏斗是什麼？從看見、考慮到行動與回訪的 4 階段圖解',
     category:'漏斗、數據與成效',
-    published:'2026-11-16',modified:'2026-11-17',topicId:'marketing-funnel-four-stages-guide',aiAssisted:true,
+    published:'2026-11-16',modified:'2026-11-18',topicId:'marketing-funnel-four-stages-guide',aiAssisted:true,
     description:'行銷漏斗是什麼？用看見、考慮、行動、回訪 4 階段整理顧客問題、內容、下一步與指標，附一頁漏斗練習。',
     answer:'行銷漏斗是一張用來整理顧客從認識品牌到採取行動、再次回來的工作地圖。新手可以先分成四段：看見、考慮、行動、回訪。每一段都要寫清楚顧客在想什麼、品牌提供什麼內容、合理的下一步，以及要用哪個指標觀察。真實顧客不一定照直線前進，所以漏斗適合找斷點，不適合拿來假設每個人都會照表購買。',
     sections:[
@@ -151,6 +204,7 @@ export const notes = [
       {title:'Think with Google：Marketing effectiveness across the customer journey（2026-11-16 查核）',url:'https://www.thinkwithgoogle.com/_qs/documents/17977/TwG_CMO_CFO_Media_Effectiveness_Guide.pdf'},
       {title:'Australian Government business.gov.au：Develop your marketing plan（2026-11-16 查核）',url:'https://business.gov.au/planning/business-plans/develop-your-marketing-plan'},
       {title:'下一步：顧客旅程的 5 個欄位',url:'../customer-journey-five-fields-guide/'},
+      {title:'下一步：轉換率怎麼定義與計算？',url:'../conversion-rate-definition-calculation-guide/'},
       {title:'先讀：行銷策略怎麼做？',url:'../marketing-strategy-seven-steps/'},
       {title:'下一步：內容行銷成效怎麼看？',url:'../content-marketing-performance-four-levels/'},
       {title:'內容整合與影音企劃案例',url:'../../cases/content/'},

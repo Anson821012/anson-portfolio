@@ -1,5 +1,24 @@
 [
   {
+    "id": "conversion-rate-definition-calculation-guide",
+    "pillar": "漏斗、數據與成效",
+    "title": "轉換率是什麼？先說清楚哪個動作算完成",
+    "angle": "從完成動作、分母、期間與計數方式說清轉換率公式，分辨主要轉換、微轉換、GA4 關鍵事件與實際成交",
+    "service": "brand-marketing",
+    "case": "quiz",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-18",
+    "slug": "conversion-rate-definition-calculation-guide",
+    "targetQueries": [
+      "轉換率",
+      "Conversion Rate",
+      "轉換率怎麼算",
+      "網站轉換率",
+      "轉換率公式"
+    ]
+  },
+  {
     "id": "customer-journey-five-fields-guide",
     "pillar": "漏斗、數據與成效",
     "title": "顧客旅程是什麼？用 5 個欄位找出顧客在哪裡卡住",
