@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/utm-parameters-source-medium-campaign-guide/": {"seoTitle": "UTM 是什麼？5 個參數、命名與 GA4 查看方式｜蔡鈞佑 Anson Tsai", "description": "UTM 參數怎麼設定？用 source、medium、campaign、content、term 5 個欄位整理流量來源，附命名範例、GA4 查看方式與常見錯誤。", "tags": ["UTM", "UTM 是什麼", "UTM 參數", "UTM 教學", "GA4 流量來源"]},
   "notes/conversion-rate-definition-calculation-guide/": {"seoTitle": "轉換率是什麼？公式、定義與計算範例｜蔡鈞佑 Anson Tsai", "description": "轉換率怎麼算？先定義完成動作、分母、期間與計數方式，再分清主要轉換、微轉換、GA4 關鍵事件與成交。", "tags": ["轉換率", "Conversion Rate", "轉換率怎麼算", "網站轉換率", "轉換率公式"]},
   "notes/customer-journey-five-fields-guide/": {"seoTitle": "顧客旅程是什麼？5 個欄位與地圖範例｜蔡鈞佑 Anson Tsai", "description": "顧客旅程怎麼畫？用情境、接點、問題與感受、證據、下一步與負責人 5 個欄位，找出顧客卡住的位置。", "tags": ["顧客旅程", "Customer Journey", "顧客旅程地圖", "顧客旅程怎麼畫", "顧客接點"]},
   "notes/marketing-funnel-four-stages-guide/": {"seoTitle": "行銷漏斗是什麼？看見到回訪 4 階段圖解｜蔡鈞佑 Anson Tsai", "description": "行銷漏斗怎麼畫？用看見、考慮、行動、回訪 4 階段整理顧客問題、內容、下一步與指標，附一頁練習。", "tags": ["行銷漏斗", "行銷漏斗是什麼", "行銷漏斗圖", "顧客旅程", "行銷轉換"]},

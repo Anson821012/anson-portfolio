@@ -43,6 +43,62 @@ export const services = [
 
 export const notes = [
   {
+    slug:'utm-parameters-source-medium-campaign-guide',
+    title:'UTM 是什麼？用 5 個參數看懂流量從哪裡來',
+    category:'漏斗、數據與成效',
+    published:'2026-11-20',modified:'2026-11-20',topicId:'utm-parameters-source-medium-campaign-guide',aiAssisted:true,
+    description:'UTM 參數怎麼設定？用 source、medium、campaign、content、term 5 個欄位整理流量來源，附命名範例、GA4 查看方式與常見錯誤。',
+    answer:'UTM 是加在連結後方的一組活動追蹤參數，讓 Google Analytics 等分析工具知道這次造訪來自哪個來源、哪種媒介與哪個活動。新手先固定三個核心欄位：utm_source 記平台或來源、utm_medium 記管道類型、utm_campaign 記活動名稱；需要比較素材或關鍵字時，再加 utm_content 與 utm_term。UTM 能整理來源，不能單獨證明詢問或成交。',
+    sections:[
+      ['先說答案：UTM 是替每一條對外連結貼上來源標籤',
+        'UTM 是放在網址問號後方的參數。讀者點擊帶有 UTM 的連結進站後，分析工具可以把來源、媒介與活動名稱寫進流量報表。它適合社群貼文、Email、合作夥伴連結、廣告以外的付費曝光，以及 QR Code 或 PDF 內的網站連結。',
+        'Google Analytics 官方目前支援手動標記，也支援部分廣告平台整合後的自動標記。資料查核日期：2026 年 11 月 20 日。UTM 不是另一種縮網址，也不是在連結後方灑一排英文字母就會長出訂單；它先回答的是「人從哪裡來」。'],
+      ['先固定 3 個核心欄位，再依需要補 2 個',
+        'utm_source 記具體來源，例如 linkedin、newsletter、partner_a；utm_medium 記管道類型，例如 social、email、referral；utm_campaign 記同一波行銷活動，例如 2026_winter_workshop。這三個欄位最好每次都有，才能穩定比較。',
+        'utm_content 可分辨同一活動裡的不同素材、按鈕或版位，例如 case_post、cover_a；utm_term 傳統上用於付費關鍵字，也可以在有明確規範時記錄另一個需要比較的細項。Google 官方另支援 utm_id、utm_source_platform 等參數；小團隊不用一次把欄位開滿，先把會使用的名稱定清楚。'],
+      ['命名規則比參數數量更重要',
+        '假設要推廣一場高雄品牌工作坊，LinkedIn 貼文的連結可以寫成：?utm_source=linkedin&utm_medium=social&utm_campaign=2026_brand_workshop&utm_content=case_post。這是教學假設，不代表實際活動或成效。',
+        '同一平台不要今天寫 linkedin、明天寫 LinkedIn、下週又改成 li。Google Analytics 會把不同字串當成不同值，報表就會像三個同事各自開了一份 Excel。可以固定使用小寫英文、底線與清楚縮寫，並保留一張命名表，記錄建立日期、負責人、目的頁與參數。'],
+      ['哪些連結適合加？哪些先不要？',
+        '對外分發且需要比較來源的連結適合加 UTM，例如兩封電子報、不同社群平台、不同合作入口或同一活動的兩種素材。網站內部導覽通常不加，否則原本的進站來源可能被新的活動標籤蓋掉，讓工作階段與歸因更難讀。',
+        'Google Ads 等已和 Analytics 串接的工具可使用自動標記，官方說明自動標記能提供更多平台專屬維度。若手動與自動標記混用，要先理解平台規則，不要為了看起來完整就覆寫原本可靠的資料。'],
+      ['在 GA4 哪裡看？先確認連結真的把參數帶進站',
+        'Google Analytics 的 Manual report 會呈現手動標記活動的工作階段來源、媒介、活動名稱、內容與字詞。官方目前提供的路徑是「報表 → 生命週期 → 客戶開發總覽」，再從 Session manual source 卡片查看手動活動；若預設報表被移除，編輯者或管理員可再加入。',
+        '正式發布前，先用無痕視窗點一次完整連結，確認到達頁正確、UTM 沒被重新導向或縮網址吃掉，再到即時或 DebugView 檢查。不要只看網址長得很專業；標籤沒有順利進站，後面的報表再漂亮也只是空桌子。'],
+      ['UTM 能做什麼，也不能做什麼',
+        'UTM 可以協助區分來源、媒介、活動與素材，讓你知道哪些連結帶來工作階段、互動與已設定事件。它不能自己判斷詢問是否有效，也不能證明某次成交完全由最後一個連結造成。廣告成本、客服紀錄、表單品質與實際成交仍要另外核對。',
+        'Google 官方也提醒，缺少來源資訊、重新導向、部分縮網址或攔截工具，都可能讓流量落到 direct／none 或其他不完整分類。數字出現空白時，先檢查標記與技術路徑，不要立刻判定顧客是靠心電感應找到網站。'],
+      ['小團隊可先用這張 7 欄 UTM 表',
+        '每一列記七件事：使用日期、目的頁、utm_source、utm_medium、utm_campaign、需要時的 utm_content，以及負責人。建立連結後保留完整網址與測試結果；活動結束再補上工作階段、主要事件與營運端結果。',
+        '第一次可以只比較兩個清楚入口，例如 LinkedIn 與 Email，連到同一個承接頁，使用同一個 campaign 名稱。跑一週後看哪個來源有人進站、是否走到下一步，以及實際收到多少有效詢問。入口不同，目標與計數方式要相同，才有比較意義。'],
+      ['Anson 會怎麼判斷：先讓命名有人維護，再增加追蹤細節',
+        '我的判斷是，UTM 最常失敗的地方不是少一個參數，而是沒人知道該用哪個名稱。若每位同事自行命名，報表只會把原本的溝通問題忠實保存下來。先選一位維護者、一張命名表與一個主要轉換，再談更細的素材比較。',
+        '我會先追蹤最接近決策的兩三個入口，確認承接頁、表單、GA4 事件與客服紀錄接得起來。來源資料能回答「哪裡帶人進來」，營運資料才回答「後來有沒有成為有效機會」。你現在最想分清的是社群平台、合作來源，還是同一活動的不同素材？']
+    ],
+    takeaways:[
+      'UTM 是加在對外連結上的活動參數，先用 source、medium、campaign 說清楚來源、管道與活動。',
+      '需要比較素材或字詞時再加 content、term；固定命名、負責人與測試紀錄，比一次開滿參數更重要。',
+      'UTM 能整理流量來源，不能直接等於有效詢問或成交，仍要接回 GA4 事件與營運紀錄。'
+    ],
+    faq:[
+      ['UTM 是什麼？','UTM 是加在網址後方的活動追蹤參數，讓 Google Analytics 等工具辨認造訪來自哪個來源、哪種媒介、哪個活動或素材。'],
+      ['UTM 參數一定要全部填嗎？','新手先固定 utm_source、utm_medium、utm_campaign 三個核心欄位；需要比較素材或關鍵字時，再加 utm_content、utm_term。欄位越多不一定越好，命名一致才容易維護。'],
+      ['網站內部連結要加 UTM 嗎？','通常不要。內部連結加 UTM 可能覆寫原本的進站來源，使工作階段與歸因更難判讀。UTM 優先用在網站外部的分發連結。'],
+      ['UTM 可以追蹤成交嗎？','UTM 可以標示帶來流量的來源；是否完成表單、有效詢問或成交，還要搭配 GA4 事件、訂單、客服或業務紀錄確認。']
+    ],
+    sources:[
+      {title:'Google Analytics Help：Traffic-source dimensions, manual tagging, and auto-tagging（2026-11-20 查核）',url:'https://support.google.com/analytics/answer/11242870'},
+      {title:'Google Analytics Help：Manual report（2026-11-20 查核）',url:'https://support.google.com/analytics/answer/14264492'},
+      {title:'Google Analytics Help：Understand direct / none traffic（2026-11-20 查核）',url:'https://support.google.com/analytics/answer/15258820'},
+      {title:'先讀：網站流量的 4 條路線',url:'../increase-website-traffic-four-routes/'},
+      {title:'延伸：GA4 流量來源、事件與關鍵事件',url:'../ga4-beginner-traffic-events-key-events/'},
+      {title:'延伸：轉換率的定義與計算方式',url:'../conversion-rate-definition-calculation-guide/'},
+      {title:'內容整合與影音企劃案例',url:'../../cases/content/'},
+      {title:'品牌行銷與內容整合服務',url:'../../services/brand-marketing/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'conversion-rate-definition-calculation-guide',
     title:'轉換率是什麼？先說清楚哪個動作算完成',
     category:'漏斗、數據與成效',
@@ -659,7 +715,7 @@ export const notes = [
     slug:'increase-website-traffic-four-routes',
     title:'網站流量怎麼增加？先分清搜尋、社群、廣告與回訪 4 條路線',
     category:'SEO、網站與流量',
-    published:'2026-11-05',modified:'2026-11-15',topicId:'website-traffic-four-routes',aiAssisted:true,
+    published:'2026-11-05',modified:'2026-11-20',topicId:'website-traffic-four-routes',aiAssisted:true,
     description:'網站流量不是只靠 SEO。用搜尋、社群、廣告與回訪四條路線，整理適合情況、開始步驟、承接頁與衡量方式，附一週試跑清單。',
     answer:'增加網站流量，先不要把所有力氣押在同一個平台。可分成四條路線：搜尋流量回答讀者主動查找的問題；社群分發把內容帶到既有對話；廣告用預算放大已經清楚的提案；回訪則靠 Email、LINE、收藏或會員內容，讓曾經認識你的人願意再回來。開始前先選一個目標客群、一個承接頁和一個關鍵行動，再用 UTM、GA4 與 Search Console 分開觀察來源、閱讀與轉換。',
     sections:[
@@ -706,6 +762,7 @@ export const notes = [
       {title:'數位行銷管道怎麼分工？',url:'../what-is-digital-marketing-channels-guide/'},
       {title:'網站上線後 Google 找不到的檢查順序',url:'../why-google-cannot-find-new-website/'},
       {title:'GA4 新手實作：流量來源、事件與關鍵事件',url:'../ga4-beginner-traffic-events-key-events/'},
+      {title:'UTM 參數怎麼設定？5 個欄位與命名方法',url:'../utm-parameters-source-medium-campaign-guide/'},
       {title:'下一步：內容行銷成效的四層指標',url:'../content-marketing-performance-four-levels/'},
       {title:'內容整合與影音企劃案例',url:'../../cases/content/'}
     ],

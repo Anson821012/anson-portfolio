@@ -1,5 +1,24 @@
 [
   {
+    "id": "utm-parameters-source-medium-campaign-guide",
+    "pillar": "漏斗、數據與成效",
+    "title": "UTM 是什麼？用 5 個參數看懂流量從哪裡來",
+    "angle": "用 source、medium、campaign、content、term 五個欄位整理外部流量來源，補上命名規則、GA4 查看方式與不能直接等同成交的限制",
+    "service": "brand-marketing",
+    "case": "content",
+    "status": "published",
+    "priority": "search-long-tail",
+    "published": "2026-11-20",
+    "slug": "utm-parameters-source-medium-campaign-guide",
+    "targetQueries": [
+      "UTM",
+      "UTM 是什麼",
+      "UTM 參數",
+      "UTM 教學",
+      "GA4 UTM"
+    ]
+  },
+  {
     "id": "conversion-rate-definition-calculation-guide",
     "pillar": "漏斗、數據與成效",
     "title": "轉換率是什麼？先說清楚哪個動作算完成",
