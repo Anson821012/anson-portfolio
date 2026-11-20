@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-11-20",
+    "topicId": "utm-parameters-source-medium-campaign-guide",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/utm-parameters-source-medium-campaign-guide/",
+    "title": "UTM 是什麼？用 5 個參數看懂流量從哪裡來",
+    "publication": "published",
+    "indexRequest": "accepted_priority_crawl_queue",
+    "indexRequestAttempts": 1,
+    "indexRequestAttemptedAt": "2026-11-20T09:13:00+0800",
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-20T09:12:00+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址。提交前顯示『網址不在 Google 服務中』、『網頁未編入索引：Google 無法辨識的網址』；本日只點擊一次『要求建立索引』，Google 隨後明確顯示『已要求建立索引』及『已將網址加入優先檢索佇列』。這代表申請已接受，不代表網頁已收錄；未重複提交。",
+    "sources": [
+      "https://support.google.com/analytics/answer/11242870",
+      "https://support.google.com/analytics/answer/14264492",
+      "https://support.google.com/analytics/answer/15258820",
+      "https://anson821012.github.io/anson-portfolio/notes/increase-website-traffic-four-routes/",
+      "https://anson821012.github.io/anson-portfolio/notes/ga4-beginner-traffic-events-key-events/",
+      "https://anson821012.github.io/anson-portfolio/notes/conversion-rate-definition-calculation-guide/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-20",
+    "aiAssisted": true,
+    "editorialNotes": "建立『漏斗、數據與成效』實作長尾頁，用 source、medium、campaign、content、term 五個參數整理外部流量來源，補上命名規則、GA4 Manual report、適用與不適用情況、技術限制與七欄管理表。加入明確標示為教學假設的高雄品牌工作坊範例，以及 Anson 先指定維護者與主要轉換再增加細節的判斷；與網站流量主幹頁建立雙向內部連結，未把 UTM、工作階段或事件直接當成有效詢問與成交，也未聲稱熱門搜尋量或保證成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-20",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站已有網站流量、GA4、內容成效與轉換率文章，但沒有以『UTM 參數設定與命名』為主要搜尋意圖的獨立頁面。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；未取得可驗證的本網站當日 UTM 查詢或搜尋量，因此未聲稱熱門程度或保證曝光。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-20",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網最新可確認的蔡鈞佑署名內容仍為 2026-11-01；近期可見的 LinkedIn 內容行銷分享對應網站既有文章，沒有新增可驗證職稱、作品角色或個人成效。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 44651671581,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/44651671581",
+      "headSha": "5a7bd7a6734344eca42125833ab39702f7719539",
+      "pagesDeployment": "success",
+      "workflowConclusion": "success",
+      "sourceRefresh": "content, search and revenue refresh completed; no source failure was reported"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed in isolated temporary output because the managed sandbox could not overwrite the existing _site directory",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, 4 visible FAQ items, three current official Google Analytics sources, related brand-marketing service, website traffic, GA4 and conversion-rate notes, content case link, reciprocal website-traffic link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 89,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "5a7bd7a6734344eca42125833ab39702f7719539",
+    "publishedAt": "2026-11-20T09:12:00+0800",
+    "liveVerifiedAt": "2026-11-20T09:13:00+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/utm-parameters-source-medium-campaign-guide/",
+    "notes": "文章與公開資料更新工作流程均成功；正式文章、首頁／筆記入口及 Sitemap 已驗證。Search Console 已確認當下尚未收錄，並只提交一次索引要求；Google 已接受並加入優先檢索佇列。正式發布、Sitemap 可讀、索引申請已接受與實際收錄仍為不同狀態。"
+  },
+  {
     "date": "2026-11-18",
     "topicId": "conversion-rate-definition-calculation-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/conversion-rate-definition-calculation-guide/",
