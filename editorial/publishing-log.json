@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-11-21",
+    "topicId": "social-media-content-calendar-four-content-types",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/social-media-content-calendar-four-content-types/",
+    "title": "社群內容月曆怎麼排？先用 4 種內容排出一週",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-21T09:08:00+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址，畫面顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』。『要求建立索引』按鈕可用，但本輪尚未點擊；依瀏覽器操作規則，向 Google 提交索引要求屬於外部表單送出，需在動作當下取得使用者確認。",
+    "sources": [
+      "https://business.gov.au/online-and-digital/social-media-for-business",
+      "https://business.gov.au/online-and-digital/develop-your-digital-strategy",
+      "https://business.gov.au/online-and-digital/measure-your-digital-performance",
+      "https://anson821012.github.io/anson-portfolio/notes/content-from-customer-questions/",
+      "https://anson821012.github.io/anson-portfolio/notes/social-content-brand/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-21",
+    "aiAssisted": true,
+    "editorialNotes": "建立『社群與內容行銷』實作長尾頁，先選一個受眾與一週主題，再用顧客問題、選擇依據、品牌證據與下一步四種內容角色安排月曆，補上八欄排程表、製作與確認責任及每週回顧方法。加入明確標示為教學假設的高雄手作禮盒情境，以及 Anson 先排內容角色與責任、再依產能決定篇數的判斷；與既有顧客問題選題頁建立雙向內部連結，未把四種角色寫成平台演算法公式，也未聲稱搜尋量、曝光、詢問或成交成效。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-21",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站已有從顧客問題找題目、品牌理解與跨平台內容案例，但沒有以『社群內容月曆怎麼排』為主要搜尋意圖的獨立頁面。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；未取得可驗證的本網站當日社群內容月曆查詢或搜尋量，因此未聲稱熱門程度或保證曝光。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-21",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網最新可確認的蔡鈞佑署名內容仍為 2026-11-01；近期可見的本人 LinkedIn 內容行銷分享已對應網站既有內容，沒有新增可驗證職稱、作品角色或個人成效。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://cn.linkedin.com/posts/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181_%E5%85%A7%E5%AE%B9%E8%A1%8C%E9%8A%B7-%E8%A1%8C%E9%8A%B7%E6%88%90%E6%95%88-ga4-activity-7527722455465963520-5LVw",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把團隊成果改寫為個人成效。"
+    },
+    "deployment": {
+      "status": "published_with_source_refresh_failure",
+      "workflowRunId": 44848028635,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/44848028635",
+      "headSha": "42ca6e24a3eb1458c3631f46164b36f02763895f",
+      "pagesDeployment": "success",
+      "workflowConclusion": "failure",
+      "sourceRefresh": "content: error (TimeoutError); search and revenue: ok; site retained the previous verified content data while publishing the new article"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO fields, 4 visible FAQ items, three current official Australian Government sources, related brand-marketing service, customer-question and brand-understanding notes, content case link, reciprocal customer-question link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 90,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "42ca6e24a3eb1458c3631f46164b36f02763895f",
+    "publishedAt": "2026-11-21T09:06:36+0800",
+    "liveVerifiedAt": "2026-11-21T09:07:30+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/social-media-content-calendar-four-content-types/",
+    "notes": "文章已部署；正式文章、首頁／筆記入口、反向連結及 Sitemap 均已驗證。工作流程因 content 公開資料來源 TimeoutError 最終標記失敗，但 Pages 已成功發布，search 與 revenue 更新正常，content 保留上一份已驗證資料。Search Console 已確認目前未收錄，索引要求尚未送出；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-20",
     "topicId": "utm-parameters-source-medium-campaign-guide",
     "url": "https://anson821012.github.io/anson-portfolio/notes/utm-parameters-source-medium-campaign-guide/",
