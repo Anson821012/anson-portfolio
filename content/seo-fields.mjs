@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/social-media-content-calendar-four-content-types/": {"seoTitle": "社群內容月曆怎麼排？一週 4 種內容與表格欄位｜蔡鈞佑 Anson Tsai", "description": "社群內容月曆怎麼排？先選一週主題，再用顧客問題、選擇依據、品牌證據、下一步 4 種內容角色，附 8 欄排程表與回顧方法。", "tags": ["社群內容月曆", "社群排程", "社群內容規劃", "內容行銷題目", "社群行銷"]},
   "notes/utm-parameters-source-medium-campaign-guide/": {"seoTitle": "UTM 是什麼？5 個參數、命名與 GA4 查看方式｜蔡鈞佑 Anson Tsai", "description": "UTM 參數怎麼設定？用 source、medium、campaign、content、term 5 個欄位整理流量來源，附命名範例、GA4 查看方式與常見錯誤。", "tags": ["UTM", "UTM 是什麼", "UTM 參數", "UTM 教學", "GA4 流量來源"]},
   "notes/conversion-rate-definition-calculation-guide/": {"seoTitle": "轉換率是什麼？公式、定義與計算範例｜蔡鈞佑 Anson Tsai", "description": "轉換率怎麼算？先定義完成動作、分母、期間與計數方式，再分清主要轉換、微轉換、GA4 關鍵事件與成交。", "tags": ["轉換率", "Conversion Rate", "轉換率怎麼算", "網站轉換率", "轉換率公式"]},
   "notes/customer-journey-five-fields-guide/": {"seoTitle": "顧客旅程是什麼？5 個欄位與地圖範例｜蔡鈞佑 Anson Tsai", "description": "顧客旅程怎麼畫？用情境、接點、問題與感受、證據、下一步與負責人 5 個欄位，找出顧客卡住的位置。", "tags": ["顧客旅程", "Customer Journey", "顧客旅程地圖", "顧客旅程怎麼畫", "顧客接點"]},
