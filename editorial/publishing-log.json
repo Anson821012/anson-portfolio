@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-11-22",
+    "topicId": "content-marketing-definition-audience-value-next-step",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/what-is-content-marketing-audience-value-next-step/",
+    "title": "內容行銷是什麼？不是每天發文，先把內容接到顧客下一步",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-22T09:13:00+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址，畫面顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』，尚未偵測到參照 Sitemap 或參照網頁。『要求建立索引』按鈕可用，但本輪尚未點擊；依瀏覽器操作規則，向 Google 提交索引要求屬於外部表單送出，需在動作當下取得使用者確認。",
+    "sources": [
+      "https://contentmarketinginstitute.com/getting-started",
+      "https://business.gov.au/planning/business-plans/develop-your-marketing-plan",
+      "https://business.gov.au/online-and-digital/develop-your-digital-strategy",
+      "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "https://anson821012.github.io/anson-portfolio/notes/social-media-content-calendar-four-content-types/",
+      "https://anson821012.github.io/anson-portfolio/notes/content-from-customer-questions/",
+      "https://anson821012.github.io/anson-portfolio/notes/content-marketing-performance-four-levels/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-22",
+    "aiAssisted": true,
+    "editorialNotes": "建立『社群與內容行銷』入門主幹頁，先說清內容行銷與社群、廣告的差別，再用受眾與情境、問題、內容價值、內容角色與管道、承接與衡量五個欄位安排一週小型試跑。加入明確標示為教學假設的高雄手作禮盒情境，以及 Anson 先確認顧客要完成什麼、再決定文章、影片或社群形式的判斷；與社群內容月曆及內容成效頁建立雙向內部連結，未把福韻團隊成果改寫為個人成效，也未聲稱搜尋量、流量、詢問或成交保證。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-22",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站已有社群內容月曆、顧客問題選題、內容成效與跨平台案例，但沒有以『內容行銷是什麼』為主要搜尋意圖的入門主幹頁。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；未取得可驗證的本網站當日內容行銷查詢或搜尋量，因此未聲稱熱門程度或保證曝光。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-22",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網可確認的蔡鈞佑署名內容、本人 LinkedIn 近期可見的內容行銷分享與網站既有頁面相比，沒有新增可驗證職稱、作品角色或個人成效；也未找到可確認的新 YouTube 公開製作名單。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/",
+        "https://www.youtube.com/results?search_query=%E8%94%A1%E9%88%9E%E4%BD%91+Anson+Tsai"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把單一署名或團隊成果擴寫成完整職稱或個人成效。"
+    },
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 44970160474,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/44970160474",
+      "headSha": "5751eb75c4be97214c30fb6a3809321c3a455a1a",
+      "pagesDeployment": "success",
+      "workflowConclusion": "success",
+      "sourceRefresh": "content, search and revenue refresh completed; no source failure was reported"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO fields, 4 visible FAQ items, four current official or primary sources, related brand-marketing service, social calendar, customer-question and content-performance notes, content case link, reciprocal social-calendar and content-performance links, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 91,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "5751eb75c4be97214c30fb6a3809321c3a455a1a",
+    "publishedAt": "2026-11-22T09:11:01+0800",
+    "liveVerifiedAt": "2026-11-22T09:11:45+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/what-is-content-marketing-audience-value-next-step/",
+    "notes": "文章與公開資料更新工作流程均成功；正式文章、首頁／筆記入口、雙向內部連結及 Sitemap 均已驗證。個人公開資訊同步未找到足以更新網站的新資料。Search Console 已確認目前未收錄，索引要求尚未送出；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-21",
     "topicId": "social-media-content-calendar-four-content-types",
     "url": "https://anson821012.github.io/anson-portfolio/notes/social-media-content-calendar-four-content-types/",
