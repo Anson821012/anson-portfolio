@@ -43,10 +43,67 @@ export const services = [
 
 export const notes = [
   {
+    slug:'what-is-content-marketing-audience-value-next-step',
+    title:'內容行銷是什麼？不是每天發文，先把內容接到顧客下一步',
+    category:'社群與內容行銷',
+    published:'2026-11-22',modified:'2026-11-22',topicId:'content-marketing-definition-audience-value-next-step',aiAssisted:true,
+    description:'內容行銷是什麼？用受眾、問題、價值、內容角色與下一步 5 個欄位，分清內容行銷、社群發文與廣告，附一週試跑方法。',
+    answer:'內容行銷是針對一群清楚的受眾，持續製作與分發有用、相關且一致的內容，幫助他們理解問題、比較選擇並走到合理下一步。它不等於每天發文，也不只追求流量；開始前要先說清楚受眾、問題、內容能提供的價值、分發位置，以及看完後要承接的下一步。',
+    sections:[
+      ['先說答案：內容行銷是在顧客做決定前，先把有用的資訊準備好',
+        'Content Marketing Institute 將內容行銷說明為：為明確受眾持續建立與分發有價值、相關且一致的內容，目標是帶動對企業有意義的顧客行動。資料查核日期：2026 年 11 月 22 日。',
+        '換成小品牌的說法，就是先整理顧客會遇到的問題、選擇條件與不確定，再用文章、影片、Email、社群或工具協助他理解。內容可以帶到詢問或購買，但不是每一篇都要立刻成交；入門文負責解釋，比較文協助判斷，案例提供證據，服務頁才承接合作。'],
+      ['內容行銷不等於社群發文，也不是把廣告寫長一點',
+        '社群是分發與互動管道，廣告是付費取得觸及的方式，內容行銷則先決定「要替哪一群人解決哪一種資訊問題」。一篇內容可以放在網站，再依情境拆成社群、電子報或影片；也可以付費推廣，但付費不會自動讓內容變得有用。',
+        '澳洲政府 business.gov.au 的行銷計畫指引，會先要求企業定義目標市場、訊息、目標、管道、活動與評估方式。這表示發文只是活動之一。若不知道寫給誰、要改善什麼、誰負責承接，排得再滿也只是一張很勤勞的日曆。'],
+      ['開始前先填 5 個欄位',
+        '第一是受眾與情境：哪一種人正在完成什麼事。第二是問題：他現在不懂、擔心或需要比較什麼。第三是內容價值：看完能得到答案、清單、比較依據或可採取的小步驟。第四是內容角色與管道：這篇負責入門、比較、證據還是下一步，最適合放在哪裡。第五是承接與衡量：讀完能做什麼，以及用哪個訊號判斷是否有幫助。',
+        'Google Search 目前仍建議建立以讀者為先的內容：有清楚受眾、網站主題明確，讀完能幫助對方完成目標，而不是只為搜尋流量大量整理近義頁面。關鍵字可以協助說清問題，但不能代替原創判斷、實際資料與清楚邊界。'],
+      ['用一個假設情境，把「持續發文」改成「持續解題」',
+        '假設高雄手作禮盒品牌想服務第一次辦企業送禮的行政窗口。主題不必先定成「本週四篇貼文」，可以先寫成「協助行政窗口確認份數、交期與寄送」。接著安排：一篇入門文說明準備順序、一張比較表整理單點與分批寄送、一個公開流程呈現如何核對資料，再把適合的人帶到詢問表單。這是教學假設，不代表真實客戶、服務規格或成效。',
+        '同一份主題資料可以跨平台重組，但每個版本仍要配合閱讀情境。網站保留完整條件，社群先回答一個問題，Email 提醒期限，客服使用已確認的規格。這樣的再利用有共同來源，不是把同一段話貼到四個地方後，祈禱其中一篇自己去上班。'],
+      ['內容要接到品牌證據，也要保留不能說的邊界',
+        '有用不只代表教學完整，也代表讀者知道資訊從哪裡來。證據可以是公開案例、作者經驗、流程、規格、來源、日期與適用條件。價格、平台功能、資格或服務範圍會變，就在發布前重新核對；缺少資料時，直接列出待確認事項。',
+        '在「內容編輯、YouTube 企劃與跨平台整合」公開案例裡，可以看到文章、影音企劃和不同平台文案如何各自交付，並保留角色與成效邊界。案例的用途是讓方法能被檢查，不是把福韻團隊成果全部改寫成一個人的功勞。'],
+      ['製作流程至少留三個責任：資料、內容、確認',
+        '資料負責人提供目前有效的規格與來源；內容負責人整理讀者問題與表達方式；確認人判斷品牌承諾、風險與下一步能不能發布。小團隊可以由同一人兼任，但每個角色仍要走過一次，尤其是 AI 協助產生草稿時。',
+        '可以從一週試跑開始：選一種受眾、一個主題、兩到四種內容角色，記下素材來源、負責人、狀態與主要行動。先把兩篇做清楚，比先排三十格、月底再一起搬家更容易維護。'],
+      ['成效不要只看流量，先看內容有沒有完成自己的工作',
+        'business.gov.au 建議先有數位目標，再選指標並依結果調整。入門內容可看合適查詢、閱讀與相關文章；比較內容可看服務條件或案例是否被查看；接近決策的頁面再看表單、有效詢問與後續結果。曝光、點擊、詢問與成交是不同階段，不能用其中一個數字代替全部。',
+        '每週回顧只問三句就好：我看到什麼、可能原因是什麼、下週只改哪一件事。若有人找到文章卻沒有下一步，就先檢查相關連結與服務說明；若詢問很多卻都不合適，可能要收窄受眾與條件，不一定是再多寫十篇。'],
+      ['Anson 會怎麼判斷：先確定內容要幫誰完成什麼，再決定形式',
+        '我的判斷是，中小品牌不用先成立一座內容工廠。先挑一個反覆需要解釋、又能用公開資料回答的問題，把受眾、答案、證據、下一步與確認責任接好，再決定要做文章、影片還是社群貼文。',
+        '內容行銷的價值，不只是讓品牌有東西可以發，而是讓顧客少猜一點、團隊少重講一次，並把合適的人帶到能被承接的位置。若內容看起來很完整，服務頁、表單或客服卻接不住，我會先修承接，不會再加一篇來掩護它。你目前最常重複解釋的是哪一個問題？']
+    ],
+    takeaways:[
+      '內容行銷是針對清楚受眾，持續提供有用、相關且一致的內容，協助理解、比較並走到合理下一步。',
+      '開始前先填受眾與情境、問題、內容價值、角色與管道、承接與衡量 5 個欄位。',
+      '先用一種受眾、一個主題與兩到四種內容角色試跑，分開觀察被發現、被閱讀、走下一步與實際結果。'
+    ],
+    faq:[
+      ['內容行銷和社群行銷一樣嗎？','不一樣。內容行銷先定義受眾、問題、價值與下一步；社群是其中一種分發和互動管道。內容也可以透過網站、Email、影片、工具或實體資料交付。'],
+      ['內容行銷一定要寫文章嗎？','不用。形式應依問題與使用情境決定，可以是文章、比較表、影片、電子報、FAQ、工具或公開案例。重點是資訊有用、來源清楚，而且有適合的承接方式。'],
+      ['小品牌多久要發一次內容？','沒有所有品牌都適用的固定頻率。先依團隊產能安排能穩定確認與維護的節奏；一週做好兩篇有任務的內容，通常比每天發布卻無法更新更實際。'],
+      ['內容行銷多久會有成效？','沒有固定保證。搜尋內容需要被抓取、索引與累積資料，社群和 Email 又有不同分發條件。先替每篇定義任務與指標，按週看過程、按月看趨勢，再和有效詢問或營運紀錄對照。']
+    ],
+    sources:[
+      {title:'Content Marketing Institute：Getting Started／What exactly is content marketing?（2026-11-22 查核）',url:'https://contentmarketinginstitute.com/getting-started'},
+      {title:'Australian Government business.gov.au：Develop your marketing plan（2026-11-22 查核）',url:'https://business.gov.au/planning/business-plans/develop-your-marketing-plan'},
+      {title:'Australian Government business.gov.au：Develop your digital strategy（2026-11-22 查核）',url:'https://business.gov.au/online-and-digital/develop-your-digital-strategy'},
+      {title:'Google Search Central：Creating helpful, reliable, people-first content（2026-11-22 查核）',url:'https://developers.google.com/search/docs/fundamentals/creating-helpful-content'},
+      {title:'延伸：社群內容月曆怎麼排？',url:'../social-media-content-calendar-four-content-types/'},
+      {title:'延伸：從顧客問題整理內容題目',url:'../content-from-customer-questions/'},
+      {title:'延伸：內容行銷成效的 4 層指標',url:'../content-marketing-performance-four-levels/'},
+      {title:'內容編輯、YouTube 企劃與跨平台整合案例',url:'../../cases/content/'},
+      {title:'品牌行銷與內容整合服務',url:'../../services/brand-marketing/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'social-media-content-calendar-four-content-types',
     title:'社群內容月曆怎麼排？先用 4 種內容排出一週',
     category:'社群與內容行銷',
-    published:'2026-11-21',modified:'2026-11-21',topicId:'social-media-content-calendar-four-content-types',aiAssisted:true,
+    published:'2026-11-21',modified:'2026-11-22',topicId:'social-media-content-calendar-four-content-types',aiAssisted:true,
     description:'社群內容月曆怎麼排？先選一週主題，再用顧客問題、選擇依據、品牌證據、下一步 4 種內容角色，附 8 欄排程表與回顧方法。',
     answer:'社群內容月曆不要先把每天塞滿。先選一個受眾與一週主題，再安排四種內容角色：回答顧客問題、提供選擇依據、呈現品牌證據、帶出清楚下一步。每則再記日期、平台、主訊息、素材來源、負責人、狀態與衡量方式。四種角色不等於每週一定發四篇，應依團隊產能與讀者反應調整。',
     sections:[
@@ -87,6 +144,7 @@ export const notes = [
       ['同一個主題可以跨平台使用嗎？','可以，但要依平台與閱讀情境重新安排資訊量、形式和下一步，保留原始資料與角色署名，不宜只把同一段文字原封不動貼滿所有平台。']
     ],
     sources:[
+      {title:'主幹閱讀：內容行銷是什麼？',url:'../what-is-content-marketing-audience-value-next-step/'},
       {title:'Australian Government business.gov.au：Social media for business（2026-11-21 查核）',url:'https://business.gov.au/online-and-digital/social-media-for-business'},
       {title:'Australian Government business.gov.au：Develop your digital strategy（2026-11-21 查核）',url:'https://business.gov.au/online-and-digital/develop-your-digital-strategy'},
       {title:'Australian Government business.gov.au：Measure your digital performance（2026-11-21 查核）',url:'https://business.gov.au/online-and-digital/measure-your-digital-performance'},
@@ -327,7 +385,7 @@ export const notes = [
     slug:'content-marketing-performance-four-levels',
     title:'內容行銷成效怎麼看？別只看流量，先分 4 層指標',
     category:'社群與內容行銷',
-    published:'2026-11-15',modified:'2026-11-16',topicId:'content-measure',aiAssisted:true,
+    published:'2026-11-15',modified:'2026-11-22',topicId:'content-measure',aiAssisted:true,
     description:'內容行銷成效怎麼看？把曝光與點擊、閱讀與互動、下一步、有效詢問與成交分成 4 層，附每週回顧表與判斷方法。',
     answer:'內容行銷成效不要只看瀏覽量。可以分成四層：第一層看內容有沒有被合適的人發現；第二層看進站後是否真的閱讀與理解；第三層看是否完成服務頁、下載、訂閱或詢問等下一步；第四層再回到有效詢問、成交、回訪與實際營運紀錄。每篇內容先選一個主要任務與一個關鍵行動，再用 Search Console、GA4 和人工紀錄交叉判斷。',
     sections:[
@@ -367,6 +425,7 @@ export const notes = [
       ['多久回顧一次內容成效？','可每週看追蹤與明顯異常，每月比較主題、查詢與下一步趨勢。新文章需要時間被發現和累積資料，避免一天內反覆修改；時效內容則依事實與平台變動立即更新。']
     ],
     sources:[
+      {title:'主幹閱讀：內容行銷是什麼？',url:'../what-is-content-marketing-audience-value-next-step/'},
       {title:'Google Search Console：搜尋成效報表（2026-11-15 查核）',url:'https://support.google.com/webmasters/answer/7576553'},
       {title:'Google Analytics：使用者互動與互動時間（2026-11-15 查核）',url:'https://support.google.com/analytics/answer/11109416'},
       {title:'Google Analytics：事件報表與關鍵事件（2026-11-15 查核）',url:'https://support.google.com/analytics/answer/12926615'},
