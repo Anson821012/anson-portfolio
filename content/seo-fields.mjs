@@ -3,6 +3,7 @@ export const identityName = '蔡鈞佑 Anson Tsai';
 export const identityDescription = '蔡鈞佑 Anson Tsai 是麻煩整理所的 AI 與品牌營運整合者，協助中小企業從品牌行銷、SOP、資料與工作流程出發，規劃適合日常使用的 AI 轉型與數位工具。';
 export const blogTitle = '蔡鈞佑 Anson Tsai 的 AI 轉型與品牌整理筆記';
 export const pageFields = {
+  "notes/marketing-copywriting-five-fields-audience-situation-action/": {"seoTitle": "行銷文案怎麼寫？5 個欄位、模板與範例｜蔡鈞佑 Anson Tsai", "description": "行銷文案怎麼寫？用對象與情境、任務、價值、證據與限制、下一步 5 個欄位，附白話模板、假設範例與發布前檢查。", "tags": ["行銷文案", "行銷文案怎麼寫", "文案範例", "文案模板", "CTA"]},
   "notes/what-is-content-marketing-audience-value-next-step/": {"seoTitle": "內容行銷是什麼？受眾、價值與下一步 5 欄位｜蔡鈞佑 Anson Tsai", "description": "內容行銷是什麼？用受眾、問題、價值、內容角色與下一步 5 個欄位，分清內容行銷、社群發文與廣告，附一週試跑方法。", "tags": ["內容行銷", "內容行銷是什麼", "內容行銷入門", "內容策略", "社群行銷"]},
   "notes/social-media-content-calendar-four-content-types/": {"seoTitle": "社群內容月曆怎麼排？一週 4 種內容與表格欄位｜蔡鈞佑 Anson Tsai", "description": "社群內容月曆怎麼排？先選一週主題，再用顧客問題、選擇依據、品牌證據、下一步 4 種內容角色，附 8 欄排程表與回顧方法。", "tags": ["社群內容月曆", "社群排程", "社群內容規劃", "內容行銷題目", "社群行銷"]},
   "notes/utm-parameters-source-medium-campaign-guide/": {"seoTitle": "UTM 是什麼？5 個參數、命名與 GA4 查看方式｜蔡鈞佑 Anson Tsai", "description": "UTM 參數怎麼設定？用 source、medium、campaign、content、term 5 個欄位整理流量來源，附命名範例、GA4 查看方式與常見錯誤。", "tags": ["UTM", "UTM 是什麼", "UTM 參數", "UTM 教學", "GA4 流量來源"]},

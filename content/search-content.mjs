@@ -43,10 +43,66 @@ export const services = [
 
 export const notes = [
   {
+    slug:'marketing-copywriting-five-fields-audience-situation-action',
+    title:'行銷文案怎麼寫？先用 5 個欄位說清楚對象、情境與下一步',
+    category:'社群與內容行銷',
+    published:'2026-11-23',modified:'2026-11-23',topicId:'marketing-copywriting-five-fields-audience-situation-action',aiAssisted:true,
+    description:'行銷文案怎麼寫？先整理對象與情境、任務、價值、證據與限制、下一步 5 個欄位，附文案模板、假設範例與檢查方法。',
+    answer:'行銷文案不是先想一句厲害口號，而是先回答五件事：寫給誰、他正處在什麼情境、要完成什麼任務、品牌能提供什麼價值與證據、看完後最適合走哪一步。先把這五格寫成白話，再依網站、社群、廣告或 Email 的閱讀情境調整長短。每一則文案只安排一個主要訊息與一個主要行動，發布前再確認事實、限制與承接頁真的接得住。',
+    sections:[
+      ['先說答案：行銷文案要幫讀者做決定，不是把形容詞排得很熱鬧',
+        '文案開始前，先寫出「誰在什麼時候，需要完成什麼事」。英國 GOV.UK 的內容指引要求每份內容回應有效的使用者需求，並以使用者、任務與原因三部分整理；澳洲政府的行銷計畫也把目標市場、訊息、管道與衡量方式放在同一份規劃裡。資料查核日期：2026 年 11 月 23 日。',
+        '這些不是商業文案的固定公式，但提醒了同一件事：先理解讀者的任務，再決定要說什麼。若第一版只寫「專業、用心、品質第一」，讀者可能每個字都看懂，仍不知道這和自己的問題有什麼關係。'],
+      ['欄位一：對象與情境，要比「所有人」再清楚一點',
+        '不要只寫年齡、性別或職稱。先描述需求發生的時刻，例如「第一次替公司安排 20 人週末活動、需要在兩週內確認場地與流程的行政窗口」。情境會決定讀者先問期限、預算、風險，還是使用方式。',
+        '資料可以來自去除個資後的重複詢問、站內搜尋、公開研究或第一線同事整理。證據不足時就標示為受眾假設，先用小範圍內容與承接頁驗證，不要把會議室裡最有把握的聲音直接升級成顧客事實。'],
+      ['欄位二：讀者要完成的任務，不要先偷換成你的產品',
+        'GOV.UK 建議以行動或任務描述使用者需求，也提醒不要為既有解法倒推需求。讀者真正要完成的事，可能是比較方案、確認資格、降低出錯風險或向主管說明；「需要使用我們的服務」只是品牌希望的答案。',
+        '可以用一句話整理：「身為＿＿，當＿＿發生時，我需要＿＿，好讓我能＿＿。」填完後再問：這則文案需要先解釋、提供比較、證明可信，還是帶到詢問？一篇同時負責八件事，通常只會讓八個重點一起擠在門口。'],
+      ['欄位三：價值要寫成讀者得到什麼，不只寫品牌做了什麼',
+        '功能是品牌提供的內容，價值是它如何幫助讀者完成任務。例如「提供可下載流程表」是功能；「讓窗口能在會議前確認分工與缺口」才把功能接回情境。價值不必誇大，先說一個可理解、可交付的結果。',
+        '一句話可以先寫成：「幫助哪一種人，在什麼情境下，用什麼方法，完成哪一步。」若結果會受到預算、時間、資格或第三方影響，就把條件一起留下。文案不是許願池，寫得很有氣勢也不會自動替團隊補齊交付能力。'],
+      ['欄位四：證據與限制，決定這句話能不能被相信',
+        '證據可以是公開案例、流程、規格、來源、角色分工或目前有效的服務條件。澳洲政府 Style Manual 建議使用日常詞彙、主動語態、短句，並把最重要的訊息放前面；說人話不代表省略限制，而是讓讀者更快看懂能做什麼、不能做什麼。',
+        '在「內容編輯、YouTube 企劃與跨平台整合」公開案例裡，網站文章、影音企劃與平台文案的參與範圍分開說明，也保留團隊成果與個人成效邊界。這種可檢查的說法，比「全方位打造爆款內容」更慢一點，但比較不會讓客服在後面收拾驚喜。'],
+      ['欄位五：下一步只留一個主要動作，而且後面真的有人接',
+        '下一步可以是看規格、下載清單、比較方案、填表或聯絡窗口，不必每次都立即購買。依讀者目前的決策位置安排：還在理解問題的人先看完整說明，正在比較的人需要條件與證據，已確認需求的人才適合進入詢問。',
+        '行動文字要說清楚會發生什麼，例如「查看活動準備清單」比「立即探索」具體。發布前實際打開連結，確認手機可讀、表單欄位合理、客服知道如何接手。按鈕寫得再勇敢，點進去若是失效頁面，也只是在帶讀者一起迷路。'],
+      ['假設範例：地方選物店的週末體驗活動',
+        '以下是教學假設，不是真實客戶、正式活動或成效。原句若是「質感生活限時登場，立即報名」，可以先補五格：寫給想帶朋友參加週末手作的初學者；需要確認內容、時間與是否要自備材料；活動提供 90 分鐘引導與材料；名額、費用、退改方式待品牌正式確認；主要動作是查看完整場次。',
+        '再改成：「第一次做也可以。用 90 分鐘完成一件手作作品，材料與步驟由現場引導；先查看週末場次、費用與需要準備的物品。」正式發布時再填入已確認資訊。這版不一定比較華麗，但讀者比較容易判斷適不適合自己。'],
+      ['Anson 會怎麼判斷：先修承接，再把文字寫得更有力',
+        '我的判斷是，中小品牌寫文案前，先看商品頁、表單、客服與實際交付是不是同一套答案。若價格、資格與流程還在變，文案應先處理資訊缺口；不然流量增加，只會把原本散落的小麻煩排成比較長的隊伍。',
+        '第一輪先選一個受眾情境、一個主要訊息與一個下一步，做兩個版本時只改一項，例如標題或證據。除了曝光與點擊，也要看讀者是否完成下一步、詢問是否符合條件，以及第一線仍重複解釋什麼。你現在的文案最難寫清楚的是對象、價值，還是下一步？']
+    ],
+    takeaways:[
+      '先填對象與情境、任務、價值、證據與限制、下一步五個欄位，再開始修句子。',
+      '每則文案只安排一個主要訊息與一個主要行動；形式與長度再依網站、社群、廣告或 Email 調整。',
+      '發布前核對承接頁、表單、客服與交付條件，並把曝光、點擊、有效詢問與實際結果分開看。'
+    ],
+    faq:[
+      ['行銷文案一定要很有創意嗎？','不一定。創意要幫助讀者理解或記住重點，不能取代對象、情境、價值、證據與下一步。先把資訊寫清楚，再判斷是否需要比喻、故事或特殊語氣。'],
+      ['行銷文案可以用固定模板嗎？','可以用模板避免漏掉重要資訊，但不宜原封不動套用。每次仍要核對受眾、任務、管道、服務條件與承接方式；同一模板放到不同情境，重點和篇幅都可能不同。'],
+      ['文案的 CTA 要怎麼寫？','先確認讀者看完後最合理的一步，再用動詞說清楚會發生什麼，例如查看規格、下載清單、比較方案或填寫需求。每則內容以一個主要 CTA 為主，連結後方也要能完成承諾。'],
+      ['怎麼判斷行銷文案有沒有效？','先依文案任務選指標。入門文看是否被合適的人找到與閱讀，比較文看證據或服務頁是否被查看，行動文再看表單、有效詢問與營運結果。曝光、點擊與成交不能互相代替。']
+    ],
+    sources:[
+      {title:'Australian Government business.gov.au：Develop your marketing plan（2026-11-23 查核）',url:'https://business.gov.au/planning/business-plans/develop-your-marketing-plan'},
+      {title:'GOV.UK Content and Publishing：Identify user needs（2026-11-23 查核）',url:'https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/identify-user-needs/'},
+      {title:'Australian Government Style Manual：Quick guide to plain language（2026-11-23 查核）',url:'https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-plain-language'},
+      {title:'主幹閱讀：內容行銷是什麼？',url:'../what-is-content-marketing-audience-value-next-step/'},
+      {title:'延伸：價值主張的 4 個欄位',url:'../value-proposition-four-fields-customer-choice/'},
+      {title:'延伸：社群內容月曆怎麼排？',url:'../social-media-content-calendar-four-content-types/'},
+      {title:'內容編輯、YouTube 企劃與跨平台整合案例',url:'../../cases/content/'},
+      {title:'品牌行銷與內容整合服務',url:'../../services/brand-marketing/'}
+    ],
+    service:'brand-marketing',case:'content'
+  },
+  {
     slug:'what-is-content-marketing-audience-value-next-step',
     title:'內容行銷是什麼？不是每天發文，先把內容接到顧客下一步',
     category:'社群與內容行銷',
-    published:'2026-11-22',modified:'2026-11-22',topicId:'content-marketing-definition-audience-value-next-step',aiAssisted:true,
+    published:'2026-11-22',modified:'2026-11-23',topicId:'content-marketing-definition-audience-value-next-step',aiAssisted:true,
     description:'內容行銷是什麼？用受眾、問題、價值、內容角色與下一步 5 個欄位，分清內容行銷、社群發文與廣告，附一週試跑方法。',
     answer:'內容行銷是針對一群清楚的受眾，持續製作與分發有用、相關且一致的內容，幫助他們理解問題、比較選擇並走到合理下一步。它不等於每天發文，也不只追求流量；開始前要先說清楚受眾、問題、內容能提供的價值、分發位置，以及看完後要承接的下一步。',
     sections:[
@@ -91,6 +147,7 @@ export const notes = [
       {title:'Australian Government business.gov.au：Develop your marketing plan（2026-11-22 查核）',url:'https://business.gov.au/planning/business-plans/develop-your-marketing-plan'},
       {title:'Australian Government business.gov.au：Develop your digital strategy（2026-11-22 查核）',url:'https://business.gov.au/online-and-digital/develop-your-digital-strategy'},
       {title:'Google Search Central：Creating helpful, reliable, people-first content（2026-11-22 查核）',url:'https://developers.google.com/search/docs/fundamentals/creating-helpful-content'},
+      {title:'下一步：用 5 個欄位寫行銷文案',url:'../marketing-copywriting-five-fields-audience-situation-action/'},
       {title:'延伸：社群內容月曆怎麼排？',url:'../social-media-content-calendar-four-content-types/'},
       {title:'延伸：從顧客問題整理內容題目',url:'../content-from-customer-questions/'},
       {title:'延伸：內容行銷成效的 4 層指標',url:'../content-marketing-performance-four-levels/'},
