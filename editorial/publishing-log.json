@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-11-23",
+    "topicId": "marketing-copywriting-five-fields-audience-situation-action",
+    "url": "https://anson821012.github.io/anson-portfolio/notes/marketing-copywriting-five-fields-audience-situation-action/",
+    "title": "行銷文案怎麼寫？先用 5 個欄位說清楚對象、情境與下一步",
+    "publication": "published",
+    "indexRequest": "not_attempted_confirmation_required",
+    "indexRequestAttempts": 0,
+    "indexRequestAttemptedAt": null,
+    "indexing": "not_indexed",
+    "indexingCheckedAt": "2026-11-23T09:09:00+0800",
+    "indexingEvidence": "已在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址，畫面顯示『網址不在 Google 服務中』、『這個網頁未編入索引』及『Google 無法辨識的網址』；當下尚未偵測到參照 Sitemap 或參照網頁。公開 Sitemap 已可讀且含有本文，但 Search Console 尚未辨識。『要求建立索引』按鈕可用，尚未點擊；向 Google 送出索引要求屬於外部表單提交，等待使用者在動作當下確認。",
+    "sources": [
+      "https://business.gov.au/planning/business-plans/develop-your-marketing-plan",
+      "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/identify-user-needs/",
+      "https://www.stylemanual.gov.au/style-manual-resources/quick-guides/quick-guide-plain-language",
+      "https://anson821012.github.io/anson-portfolio/notes/what-is-content-marketing-audience-value-next-step/",
+      "https://anson821012.github.io/anson-portfolio/notes/value-proposition-four-fields-customer-choice/",
+      "https://anson821012.github.io/anson-portfolio/notes/social-media-content-calendar-four-content-types/",
+      "https://anson821012.github.io/anson-portfolio/cases/content/",
+      "https://anson821012.github.io/anson-portfolio/services/brand-marketing/"
+    ],
+    "sourcesCheckedAt": "2026-11-23",
+    "aiAssisted": true,
+    "editorialNotes": "建立『社群與內容行銷』實作長尾頁，用對象與情境、任務、價值、證據與限制、下一步五個欄位整理行銷文案，補上白話模板、假設範例、承接檢查與衡量方式。加入明確標示為教學假設的地方選物店週末體驗活動，以及 Anson 先修承接頁、表單、客服與實際交付，再把文字寫得更有力的判斷；與 2026-11-22 內容行銷主幹頁建立雙向內部連結，未虛構客戶故事或成效，也未聲稱搜尋量、流量、詢問或成交保證。",
+    "searchDemandReview": {
+      "checkedAt": "2026-11-23",
+      "source": "editorial/marketing-search-topic-plan.md、全站既有文章與儲存庫內可用 Search Console 紀錄",
+      "finding": "全站已有內容行銷主幹、社群內容月曆、價值主張與品牌文案相關內容，但沒有以『行銷文案怎麼寫』為主要搜尋意圖、同時整理情境、任務、價值、證據與下一步的獨立實作頁。本篇依既定行銷搜尋主題規劃與內容缺口建立需求假設；未取得可驗證的本網站當日行銷文案查詢或搜尋量，因此未聲稱熱門程度或保證曝光。"
+    },
+    "publicInformationSync": {
+      "checkedAt": "2026-11-23",
+      "found": "未發現能以姓名、品牌、帳號或作品上下文確認，且網站尚未收錄的新公開資訊。福韻官網的既有蔡鈞佑署名內容沒有出現較網站紀錄更新且角色邊界清楚的新資料；本人 LinkedIn 近期可見的內容行銷成效分享已對應網站既有文章，也未找到可確認的新 YouTube 公開製作名單。",
+      "sources": [
+        "https://www.fuyunlovemommy.com/blogs/news",
+        "https://www.linkedin.com/in/%E9%88%9E%E4%BD%91-%E8%94%A1-2b25b7181/",
+        "https://www.youtube.com/results?search_query=%E8%94%A1%E9%88%9E%E4%BD%91+Anson+Tsai+%E7%A6%8F%E9%9F%BB"
+      ],
+      "updatedPages": [],
+      "boundary": "同名但缺乏福韻、本人帳號或既有作品關聯的搜尋結果未採用；未讀取非公開個資，也未把單一署名、製作名單欄位或團隊成果擴寫成完整職稱或個人成效。"
+    },
+    "deployment": {
+      "status": "success",
+      "workflowRunId": 45092700768,
+      "url": "https://github.com/Anson821012/anson-portfolio/actions/runs/45092700768",
+      "headSha": "67d9fb3d1a2fb8f485607de76e69fef000e5bdff",
+      "pagesDeployment": "success",
+      "workflowConclusion": "success",
+      "sourceRefresh": "content, search and revenue refresh completed; no source failure was reported"
+    },
+    "validation": {
+      "pythonTests": "19 passed",
+      "nodeTests": "29 passed",
+      "build": "passed",
+      "syntax": "passed",
+      "gitDiff": "passed",
+      "pageChecks": "canonical, readable HTML, 5 SEO tags, direct answer, 4 visible FAQ items, three current official government sources, related brand-marketing service, content-marketing pillar, value-proposition and social-calendar notes, content case link, reciprocal content-marketing pillar link, author, home/notes entry, noindex meta absence and sitemap passed locally and live",
+      "articleLive": true,
+      "liveHTTP": 200,
+      "homeEntryLive": true,
+      "notesEntryLive": true,
+      "canonicalLive": true,
+      "noindexAbsent": true
+    },
+    "sitemap": {
+      "publicStatus": 200,
+      "xmlValid": true,
+      "containsArticle": true,
+      "urlCount": 92,
+      "retryAttempts": 0,
+      "retryStatus": "not_attempted"
+    },
+    "commit": "67d9fb3d1a2fb8f485607de76e69fef000e5bdff",
+    "publishedAt": "2026-11-23T09:07:58+0800",
+    "liveVerifiedAt": "2026-11-23T09:08:30+0800",
+    "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-copywriting-five-fields-audience-situation-action/",
+    "notes": "文章與公開資料更新工作流程均成功；正式文章、首頁／筆記入口、主幹雙向內部連結及 Sitemap 均已驗證。個人公開資訊同步未找到足以更新網站的新資料。Search Console 已確認目前未收錄，索引要求尚未送出並等待動作當下確認；正式發布、Sitemap 可讀、索引申請與已收錄為不同狀態。"
+  },
+  {
     "date": "2026-11-22",
     "topicId": "content-marketing-definition-audience-value-next-step",
     "url": "https://anson821012.github.io/anson-portfolio/notes/what-is-content-marketing-audience-value-next-step/",
