@@ -8,9 +8,9 @@
     "indexRequest": "accepted_priority_crawl_queue",
     "indexRequestAttempts": 1,
     "indexRequestAttemptedAt": "2026-11-27T11:40+08:00",
-    "indexing": "not_indexed",
-    "indexingCheckedAt": "2026-11-27T11:39+08:00",
-    "indexingEvidence": "在 yo30437@gmail.com、https://anson821012.github.io/anson-portfolio/ Search Console 資源檢查正式網址。提交前顯示『網址不在 Google 服務中』及『網頁未編入索引：Google 無法辨識的網址』，當時尚未偵測到參照 Sitemap 或參照網頁。11/27 送出一次索引要求，Google 顯示『已要求建立索引』和『已將網址加入優先檢索佇列』。正式頁和含本文的公開 Sitemap 同日重查可讀，收錄仍待後續確認。",
+    "indexing": "indexed",
+    "indexingCheckedAt": "2026-11-28T12:18+08:00",
+    "indexingEvidence": "11/27 Search Console 接受一次索引要求並加入優先檢索佇列。11/28 使用同一帳號和資源核對正式網址，顯示『網址在 Google 服務中』與『網頁已編入索引』。Googlebot 智慧型手機上次於 11/27 上午 11:40:28 成功擷取，Google 所選標準網址為受檢測網址。雖然公開 Sitemap 已驗證包含本文，網址審查畫面仍顯示未偵測到參照 Sitemap。",
     "sources": [
       "https://business.gov.au/planning/business-plans/develop-your-marketing-plan",
       "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/identify-user-needs/",
@@ -75,7 +75,7 @@
     "publishedAt": "2026-11-23T09:07:58+0800",
     "liveVerifiedAt": "2026-11-23T09:08:30+0800",
     "liveUrl": "https://anson821012.github.io/anson-portfolio/notes/marketing-copywriting-five-fields-audience-situation-action/",
-    "notes": "文章與公開資料更新工作流程均成功，正式文章、首頁／筆記入口、主幹雙向內部連結及 Sitemap 均已驗證。個人公開資訊同步未找到足以更新網站的新資料。11/27 Google 已接受本篇索引要求並加入優先檢索佇列。提交前無收錄紀錄，尚待重新檢索。"
+    "notes": "文章與公開資料更新工作流程均成功，正式文章、首頁／筆記入口、主幹雙向內部連結及公開 Sitemap 均已驗證。個人公開資訊同步未找到足以更新網站的新資料。Google 於 11/27 接受索引要求，11/28 於網址審查查到已收錄。"
   },
   {
     "date": "2026-11-22",
